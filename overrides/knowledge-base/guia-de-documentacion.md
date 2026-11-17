@@ -42,7 +42,7 @@ Ejemplo real: `docs/es/operaciones/compras/que-es-la-seccion-compras/que-es-la-s
 
 ## 2. Tipos de Artículo
 
-Definir exactamente 6 tipos y usarlos de forma consistente. Cada artículo debe ser de un solo tipo: nunca mezclar una guía con una FAQ en la misma página.
+Definir exactamente 7 tipos y usarlos de forma consistente. Cada artículo debe ser de un solo tipo: nunca mezclar una guía con una FAQ en la misma página.
 
 | Tipo | Propósito | Ejemplo |
 |:-----|:----------|:--------|
@@ -52,6 +52,7 @@ Definir exactamente 6 tipos y usarlos de forma consistente. Cada artículo debe 
 | Referencia / Glosario | Definiciones, explicación de campos | "Glosario de Ventas" |
 | Referencia de ventana / Gestión | Cómo consultar y administrar una ventana ya poblada de registros: vista lista, vista detalle/formulario, estados y acciones disponibles | "Gestionar tus facturas de compra" |
 | Preguntas frecuentes | Resolución de problemas, casos borde | "App móvil: preguntas frecuentes" |
+| Crear y gestionar [documento] | Ciclo completo de un documento de compra o venta, cuando crearlo y darle seguimiento forman un único recorrido: cómo crearlo, sus estados y sus acciones. Si para ese documento ya existen un artículo de tarea y una referencia de ventana separados, no se fusionan | "Crear y gestionar presupuestos" |
 
 ## 3. Estilo y Tono de Escritura
 
@@ -221,6 +222,38 @@ H2: Acciones Disponibles
 [Artículos relacionados: máximo 3 enlaces]
 ```
 
+### Crear y gestionar [documento]
+
+```
+H1: Crear y gestionar [documentos]
+H2: Descripción general
+  [1-2 párrafos: para qué le sirve el documento al usuario y de qué documento viene o a cuál da lugar]
+  [Diagrama del ciclo de estados]
+  [1 oración que anuncia los dos flujos: crear y gestionar]
+
+H2: Crear [un documento]
+  H3: 1. [Paso — verbo de acción]
+  H3: 2. [Paso]
+    [Captura de pantalla justo debajo del encabezado]
+    [Campos en lista: etiqueta en negrita + para qué sirve]
+  H3: N. Confirma [el documento] ...
+
+H2: Gestionar [documentos]
+  H3: 1. Busca [el documento]   (vista lista)
+  H3: 2. Abre [el documento]    (vista detalle)
+  H3: 3. [Siguiente paso del ciclo]
+
+H2: Estados del Documento
+  [Tabla de estados con descripción]
+
+H2: Acciones Disponibles
+  [Tabla de acciones con descripción y estado en que aplican]
+
+[Artículos relacionados: máximo 3 enlaces]
+```
+
+Usar este tipo solo cuando crear y gestionar el documento forman un mismo recorrido para el usuario. Puede superar la extensión de un artículo de tarea (orientativo: hasta 2.500 palabras); si crece más, dividirlo en un artículo de tarea y una referencia de ventana / gestión.
+
 ### Artículo de referencia / glosario
 
 ```
@@ -342,6 +375,7 @@ Cada artículo debe tener los siguientes metadatos completos:
 | Descripción general | 400-700 palabras |
 | Guía de inicio | 600-1.200 palabras |
 | Artículo de tarea | 300-600 palabras |
+| Crear y gestionar [documento] | Hasta 2.500 palabras (si crece más, dividir en tarea + referencia de ventana) |
 | Referencia / Glosario | Variable (definición por término) |
 | Preguntas frecuentes | 200-500 palabras (suma de Q&A) |
 
@@ -402,6 +436,7 @@ Usar una herramienta consistente en todo el equipo. Las anotaciones permitidas s
 | Tipo | Patrón | Ejemplo |
 |:-----|:-------|:--------|
 | Tarea | `como-[verbo]-[objeto]` | `como-crear-una-factura-de-venta` |
+| Crear y gestionar | `crear-y-gestionar-[documentos]` | `crear-y-gestionar-presupuestos` |
 | Descripción general | `que-es-[modulo]` | `que-es-el-modulo-de-ventas` |
 | Guía de inicio | `[modulo]-guia-de-inicio` | `ventas-guia-de-inicio` |
 | Guía avanzada | `[modulo]-guia-avanzada` | `ventas-guia-avanzada` |
@@ -536,4 +571,4 @@ Señalar con una nota destacada cuando una funcionalidad es exclusiva de cierto 
 - El H1 debe coincidir con cómo el usuario buscaría ese tema.
 - Usar los mismos términos que usa la interfaz del producto — si el botón dice "Nueva factura", el artículo dice "Nueva factura".
 - No usar sinónimos distintos para el mismo elemento de UI en el mismo artículo.
-- Los títulos de artículos son el principal insumo para la búsqueda interna — comenzar con el sustantivo principal, no con el verbo.
+- Los títulos de artículos son el principal insumo para la búsqueda interna. En los tipos cuyo H1 no tiene un patrón fijo en §4, empezar con el sustantivo principal. En los que sí lo tienen (tarea, Crear y gestionar [documento], descripción general), seguir el patrón y procurar que el sustantivo principal aparezca en las primeras tres palabras.
