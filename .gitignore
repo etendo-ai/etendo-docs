@@ -9,3 +9,6 @@ claude/
 .cache/
 fyso/team.json
 .codex/
+
+# Configuracion local de Claude Code (puede contener credenciales)
+.claude/settings.local.json

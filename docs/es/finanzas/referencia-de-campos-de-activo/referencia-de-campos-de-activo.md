@@ -77,7 +77,7 @@ Campos opcionales para asociar el activo a dimensiones de análisis contable. Se
 
 - **Proyecto** — úsalo cuando el activo está vinculado a un proyecto concreto y su amortización forma parte del costo de ese proyecto.
 - **Centro de coste** — úsalo cuando la amortización debe imputarse a un área o departamento específico (ej: Tecnología, Operaciones).
-- **Contacto** — úsalo cuando el activo está asignado a un tercero (proveedor, cliente o entidad relacionada) relevante para la contabilidad.
+- **Contacto** — úsalo cuando el activo está asignado a un contacto (proveedor, cliente o entidad relacionada) relevante para la contabilidad.
 - **Producto** — vincula el activo a un producto del catálogo cuando corresponda, por ejemplo para relacionarlo con un ítem de inventario concreto.
 
 ## Qué ves después de generar el plan de amortización

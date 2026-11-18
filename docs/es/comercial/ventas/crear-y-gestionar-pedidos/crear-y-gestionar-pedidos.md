@@ -1,8 +1,8 @@
 ---
 title: Crear y gestionar pedidos
 description: >-
-  Aprende a crear pedidos de venta en Etendo, hacer seguimiento de su ciclo
-  de vida y generar los albaranes y facturas derivados de cada pedido.
+  Aprende a crear y confirmar pedidos de venta en Etendo, enviarlos al
+  cliente y generar desde ellos el albarán y la factura sin repetir datos.
 tags:
     - Pedido de Venta
     - Ventas
@@ -15,211 +15,247 @@ tags:
 
 ## Descripción general
 
-El **pedido de venta** es el documento que formaliza el compromiso de entrega con el cliente. Puede crearse directamente o generarse a partir de un [presupuesto de venta](../crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md) aceptado. Una vez confirmado, el pedido queda bloqueado y da lugar opcionalmente a un [albarán](../crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md) (documento de entrega) y a una [factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md).
+El **pedido de venta** es el compromiso que asumes con tu cliente: qué productos le entregas, a qué precio y en qué condiciones de pago. Te sirve para saber qué te queda por entregar y por facturar en cada venta.
 
-El siguiente diagrama muestra las dos vías para crear un pedido de venta y su ciclo de vida hasta los documentos derivados:
+Puedes crearlo desde cero o a partir de un [presupuesto de venta](../crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md) que el cliente aceptó, sin volver a escribir los datos. Cuando lo confirmas, el pedido da lugar al [albarán](../crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md), que acompaña la entrega de la mercancía, y a la [factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md).
+
+El siguiente diagrama muestra las dos formas de crear un pedido, sus estados y los documentos que puedes generar desde él:
 
 ```mermaid
 flowchart LR
-  A[Presupuesto de venta] -->|Crear pedido| B[Pedido de venta]
-  C[Nuevo pedido] --> B
-  B -->|Confirmar| D[Completado]
-  D -->|Opcional| E[Albarán]
-  D -->|Opcional| F[Factura de venta]
-  E --> F
+  P[Presupuesto de venta] -->|Crear pedido de venta| A[Borrador]
+  N[Nuevo pedido] --> A
+  A -->|Confirmar| B[Completado]
+  B -->|Crear albarán| E[Albarán]
+  B -->|Crear factura| F[Factura de venta]
+  B -->|Reactivar| A
 ```
 
-Este artículo se organiza en dos flujos: primero cómo **crear un pedido** y confirmarlo, y luego cómo **gestionarlo** — enviarlo al cliente y generar los documentos derivados.
+Este artículo explica primero cómo **crear un pedido** y después cómo **gestionarlo**.
 
 ---
 
-## Crear pedido de venta
+## Crear un pedido
 
 ### 1. Empieza un pedido nuevo
 
-Para crear un pedido nuevo, accede a **[Ventas > Pedido](https://app.etendo.ai/sales-order){target="_blank"}** y usa el botón **+ Nuevo pedido** en la esquina superior derecha. Alternativamente, puedes generar el pedido a partir de un [presupuesto de venta](../crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md) ya confirmado, en cuyo caso el pedido se crea con los datos del presupuesto ya cargados.
+Accede a **[Ventas > Pedido](https://app.etendo.ai/sales-order){target="_blank"}** y haz clic en **+ Nuevo pedido**, en la esquina superior derecha. Se abre el formulario en blanco.
+
+Si el cliente aceptó un presupuesto, crea el pedido desde ese presupuesto. En el presupuesto, haz clic en **Confirmar**, elige **Crear pedido de venta** y haz clic en **Continuar** (ver [Crear y gestionar presupuestos](../crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md)). El pedido se crea en **Borrador** para que lo revises.
+
+!!! info "Qué datos pasan del presupuesto al pedido"
+    El cliente, la dirección, la tarifa, las condiciones y el método de pago, las líneas con sus precios y descuentos, y la nota.
 
 ### 2. Completa el formulario
 
 <figure markdown="span">
-  ![Vista formulario de Pedido de venta](assets/crear-y-gestionar-pedidos-3.png)
-  <figcaption>Formulario de creación y edición del Pedido de venta.</figcaption>
+  ![Formulario de Pedido de venta en Borrador con el cliente, tres líneas, el presupuesto del que sale y los totales](assets/crear-y-gestionar-pedidos-3.png)
+  <figcaption>Formulario del Pedido de venta en Borrador, creado a partir de un presupuesto.</figcaption>
 </figure>
-
-El formulario se abre al crear un pedido nuevo o al hacer clic en **Editar** desde la vista detalle.
 
 **Cabecera**
 
-- **Contacto** — cliente al que se dirige el pedido. Al seleccionarlo, el sistema autocompleta la Dirección, el Método de pago y las Condiciones de pago configurados en ese contacto.
-- **Nº documento** — se genera automáticamente al guardar por primera vez.
-- **Fecha de pedido** — toma por defecto la fecha actual; editable.
-- **Dirección** — cargada desde el contacto; editable para este documento.
-- **Tarifa** — determina a qué precios se cotizarán los productos en este pedido (lista de precios asignada al cliente). Normalmente se carga sola al seleccionar el cliente.
-- **Método de pago** — heredado del contacto; editable para este documento.
-- **Condiciones de pago** — vienen de la ficha del cliente. Puedes cambiarlas solo para este pedido. Puedes elegir cualquiera de las condiciones de pago creadas en tu cuenta, o crear una nueva con **+ Crear condición de pago**. Ver [Cómo configurar las condiciones de pago](../../../sistema/configuracion/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago.md).
-- **Moneda** — moneda en la que se expresa el pedido. Por defecto, la moneda de la organización.
-- **Almacén** — almacén desde el cual se despachará la mercadería de este pedido.
+- **Contacto** *(obligatorio)* — el cliente que te hace el pedido. Al elegirlo, la Dirección, la Tarifa, el Método de pago y las Condiciones de pago se completan solos con los datos de su ficha.
+- **Fecha de pedido** *(obligatorio)* — por defecto, la fecha de hoy. Puedes cambiarla.
+- **Dirección** *(obligatorio)* — viene de la ficha del cliente. Puedes cambiarla solo para este pedido.
+- **Moneda** *(obligatorio)* — la moneda en la que haces la venta. Por defecto, la moneda de tu empresa.
+- **Tarifa** *(obligatorio)* — la lista de precios con la que se calculan los precios de los productos. Normalmente es la que tiene asignada el cliente.
+- **Condiciones de pago** *(obligatorio)* — vienen de la ficha del cliente. Puedes cambiarlas solo para este pedido, elegir otras condiciones de tu cuenta o crear unas nuevas con **+ Crear condición de pago**. Ver [Cómo configurar las condiciones de pago](../../../sistema/configuracion/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago.md).
+- **Almacén** *(obligatorio)* — el almacén del que sale la mercancía de este pedido.
+- **Nº documento** — Etendo le asigna el número al guardar el pedido.
+- **Método de pago** — viene de la ficha del cliente. Puedes cambiarlo solo para este pedido. Lo ves al hacer clic en **Mostrar más datos**, debajo de la cabecera.
 
-!!! tip "Campos autocargados desde el contacto"
-    Son editables solo para este pedido, sin afectar la configuración del cliente.
+!!! tip "Datos que vienen de la ficha del cliente"
+    Puedes cambiarlos solo para este pedido. La ficha del cliente no cambia.
 
 **Pestaña Líneas**
 
 <figure markdown="span">
-  ![Pestaña Líneas del Pedido de venta](assets/crear-y-gestionar-pedidos-4.png)
+  ![Pestaña Líneas del Pedido de venta con un monitor, un cable de red y un servicio de instalación](assets/crear-y-gestionar-pedidos-4.png)
   <figcaption>Pestaña Líneas con los productos y servicios incluidos en el pedido.</figcaption>
 </figure>
 
-Las líneas representan los productos o servicios incluidos en el pedido. Usa el botón **+ Añadir línea** para incorporar una nueva línea.
+Las líneas son los productos o servicios que vendes en este pedido. Haz clic en **+ Añadir línea** para añadir cada una.
 
-- **Producto** — al seleccionarlo autocompleta la descripción y el precio según la tarifa seleccionada en la cabecera; editable si se necesita ajustar para este pedido.
-- **Descripción** — precompletada desde el producto; editable por línea.
-- **Cant. pedido** — cantidad del producto. Por defecto 1.
-- **Precio** — precio del producto según la tarifa de la cabecera; editable.
-- **% de descuento** — descuento aplicado sobre el precio de tarifa de la línea.
-- **Impuesto** — tipo impositivo aplicable a la línea.
-- **Importe bruto de línea** — resultado de multiplicar el precio unitario por la cantidad, menos el descuento de línea aplicado.
+- **Producto** — al elegirlo, la descripción y el precio se completan solos según la tarifa de la cabecera.
+- **Descripción** — viene de la ficha del producto. Puedes cambiarla en cada línea.
+- **Cant. pedido** — cuántas unidades vendes. Por defecto, 1.
+- **Precio** — el precio del producto en la tarifa elegida. Puedes cambiarlo si necesitas ajustarlo para este cliente.
+- **% de descuento** — el descuento que aplicas sobre el precio de esa línea.
+- **Impuesto** — el impuesto que corresponde a la línea.
+- **Importe bruto de línea** — se calcula solo: precio por cantidad, con el descuento aplicado y el impuesto incluido.
 
-Para guardar una línea pulsa ++enter++ o haz clic fuera de la fila. Para cancelar sin guardar, pulsa ++esc++.
+Para guardar una línea, usa la tecla ++enter++ o haz clic fuera de la fila. Para descartarla, usa la tecla ++esc++.
 
 **Totales**
 
 <figure markdown="span">
-  ![Panel de totales del Pedido de venta](assets/crear-y-gestionar-pedidos-5.png)
+  ![Panel de totales del Pedido de venta con subtotal, descuento por producto, impuesto y total](assets/crear-y-gestionar-pedidos-5.png)
   <figcaption>Panel de totales con desglose de subtotal, descuentos, impuesto e importe final.</figcaption>
 </figure>
 
-El sistema permite dos tipos de descuento: uno por línea (aplicado en la Pestaña Líneas) y uno global sobre el total del pedido.
+Puedes descontar en cada línea, con **% de descuento**, o sobre el total del pedido. El panel de totales, abajo a la derecha, muestra:
 
-El panel de totales en la parte inferior derecha muestra:
+- **Subtotal sin descuento** — precio por cantidad de todas las líneas, sin descuentos ni impuestos.
+- **Descuento por producto** — la suma de los descuentos de las líneas.
+- **Descuento total** — un descuento adicional sobre todo el pedido. Se añade con el enlace **+ Añadir descuento total**.
+- **Subtotal** — el importe sin impuestos, con los descuentos ya aplicados.
+- **Impuesto** — el impuesto de todas las líneas.
+- **Total** — el importe final que paga el cliente.
 
-- **Subtotal sin descuento** — suma del importe bruto de todas las líneas antes de descuentos.
-- **Descuento por producto** — suma de los descuentos aplicados por línea.
-- **Descuento total** — descuento adicional aplicado al documento completo. Se activa con el enlace **+ Añadir descuento total**.
-- **Subtotal** — base imponible tras descuentos.
-- **Impuesto** — importe de impuesto calculado según el tipo seleccionado en cada línea.
-- **Total** — importe final a pagar.
+**Documentos, notas y adjuntos**
 
-**Notas**
+Si el pedido sale de un presupuesto, la sección **Documentos** lo muestra con su importe y su estado. Haz clic en él para abrirlo.
 
-El campo **Notas** permite añadir observaciones internas. Este contenido no se incluye en el PDF enviado al cliente.
+Usa el campo **Notas** para añadir observaciones, como el plazo de entrega. Este texto se imprime en el PDF del pedido, en el bloque **Observaciones**, así que el cliente también lo ve.
 
-Junto a la pestaña **Líneas**, el formulario incluye también una pestaña **Adjuntos** para vincular archivos al pedido.
+La pestaña **Adjuntos**, junto a **Líneas**, sirve para guardar archivos junto al pedido.
 
 ### 3. Confirma el pedido
 
 <figure markdown="span">
-  ![Popup de confirmación del Pedido de venta](assets/crear-y-gestionar-pedidos-8.png)
-  <figcaption>Popup de confirmación del Pedido de venta con opciones para generar documentos derivados.</figcaption>
+  ![Ventana Confirmar pedido con el resumen del pedido y las opciones Crear albarán y Crear factura](assets/crear-y-gestionar-pedidos-8.png){ width=420 }
+  <figcaption>Ventana de confirmación del Pedido de venta con la opción de generar el albarán y la factura.</figcaption>
 </figure>
 
-Al hacer clic en **Confirmar**, el sistema muestra el popup **Confirmar pedido** con el resumen del documento (contacto, importe total, número de líneas y subtotal).
+Cuando el pedido esté completo, haz clic en **Confirmar**. Se abre la ventana **Confirmar pedido** con el cliente, el total, el número de líneas y el subtotal.
 
-!!! warning "El pedido queda bloqueado"
-    Una vez confirmado, el pedido no se puede editar directamente. Si todavía no generaste el albarán ni la factura, puedes usar **Reactivar** para devolverlo a Borrador (ver [Acciones Disponibles](#acciones-disponibles)); en cuanto el pedido tiene algún documento relacionado, Reactivar deja de estar disponible y la única opción es usar **Copia** para trabajar sobre un nuevo pedido con los mismos datos.
+!!! warning "Revisa el pedido antes de confirmarlo"
+    La ventana te avisa: «Una vez confirmado no podrás editar el pedido». Comprueba líneas, cantidades y precios. Si después necesitas cambiarlo, mira cuándo puedes usar **Reactivar** en [Estados del Documento](#estados-del-documento).
 
-La sección **Generar documentos (opcional)** permite seleccionar qué documentos crear en ese momento:
+En la sección **Generar documentos (opcional)** eliges qué documentos crear en el mismo momento:
 
-- **Crear albarán** — genera un albarán en estado Borrador, independiente de la factura. Úsalo cuando haya entrega física de mercadería.
-- **Crear factura** — genera una factura en estado Borrador con las cantidades del pedido.
+- **Crear albarán** — crea el albarán en **Borrador**, independiente de la factura. Úsalo cuando entregas mercancía o cuando quieres dejar constancia de un servicio realizado. Por eso las líneas de servicio también se incluyen, aunque no salga mercancía del almacén.
+- **Crear factura** — crea la factura con las cantidades del pedido, ya confirmada.
 
-Puedes marcar uno, ambos o ninguno. Si no marcas ninguno, el pedido queda Completado sin documentos asociados y puedes generar el albarán o la factura más adelante desde la sección **Documentos relacionados** del propio pedido.
+Puedes marcar uno, los dos o ninguno. Después haz clic en **Confirmar pedido**. Ves el aviso «Pedido confirmado» y el pedido pasa a **Completado**. Si no marcaste ninguna opción, puedes crear el albarán y la factura más adelante (ver [Genera los documentos pendientes](#4-genera-los-documentos-pendientes)).
 
-!!! info "Datos heredados en los documentos generados"
-    El albarán y la factura creados desde el pedido heredan el contacto, la dirección, las condiciones de pago y todas las líneas.
+!!! info "Qué datos pasan al albarán y a la factura"
+    El albarán y la factura llevan el cliente, la dirección, las condiciones de pago y las líneas del pedido.
 
 ---
 
-## Gestionar pedidos de venta
+## Gestionar pedidos
+
+Cuando el pedido ya está confirmado, esta parte te muestra cómo encontrarlo, enviarlo y completar la entrega y la factura.
 
 ### 1. Busca el pedido
 
 <figure markdown="span">
-  ![Vista lista de Pedido de venta](assets/crear-y-gestionar-pedidos-1.png)
+  ![Vista lista de Pedido de venta con los indicadores de facturación y entrega de cada pedido](assets/crear-y-gestionar-pedidos-1.png)
   <figcaption>Vista lista del Pedido de venta con columnas de estado, facturación y entrega.</figcaption>
 </figure>
 
-La vista lista muestra todos los pedidos con las columnas **Fecha de pedido**, **Nº documento**, **Contacto**, **Estado doc.**, **Imp. total**, **Estado de facturación** y **Estado de entrega**.
+La vista lista muestra todos tus pedidos con las columnas **Fecha de pedido**, **Nº documento**, **Contacto**, **Estado doc.** (ver [Estados del Documento](#estados-del-documento)), **Imp. total**, **Estado de facturación** y **Estado de entrega**.
 
-**Estado de facturación** y **Estado de entrega** — indican qué porcentaje del pedido ya se facturó o se entregó. Ambas columnas muestran barras de progreso con porcentaje: verde cuando está al 100 %, naranja cuando es parcial y gris cuando no ha comenzado.
+Las dos últimas columnas te dicen qué parte del pedido ya facturaste y qué parte ya entregaste. Cada una muestra un indicador circular con el porcentaje: verde y completo al 100 %, gris y vacío al 0 %. Las líneas de servicio también cuentan en **Estado de entrega**, porque también pueden llevar albarán.
 
-Para filtrar la lista utiliza los selectores de **estado del documento** y **fecha de pedido** en la barra superior. El ícono de embudo permite aplicar filtros adicionales.
+Para encontrar un pedido, tienes estas opciones:
+
+- **Filtrar por estado** — el selector **Todos los estados** de la barra superior.
+- **Filtrar por fecha** — el selector **Cualquier fecha**. Opciones: Hoy, Ayer, Últimos 7 días, Últimos 30 días, Últimos 12 meses, Todo el tiempo y Personalizado.
+- **Filtros** — para añadir más criterios de búsqueda.
+- **Ordenar** — haz clic en el encabezado de una columna.
+
+Junto a **+ Nuevo pedido** tienes botones para ordenar, actualizar e imprimir la lista.
+
+Al pasar el cursor sobre una fila aparecen accesos rápidos para trabajar con ese pedido sin abrirlo: **Editar**, **Clonar**, **Enviar / Descargar** (solo en pedidos **Completados**), **Más acciones** y **Eliminar**. En un pedido **Completado** con algo pendiente, **Más acciones** ofrece **Gestionar envío y factura** y, si todavía no tiene albarán ni factura, **Reactivar**. Cuando el pedido ya está entregado y facturado al 100 %, **Más acciones** no aparece.
 
 ### 2. Abre el pedido
 
 <figure markdown="span">
-  ![Vista detalle de Pedido de venta](assets/crear-y-gestionar-pedidos-2.png)
+  ![Vista detalle de Pedido de venta con la vista previa del PDF y el panel lateral con total, estado y presupuesto relacionado](assets/crear-y-gestionar-pedidos-2.png)
   <figcaption>Vista detalle con la previsualización del PDF y el panel lateral de información clave.</figcaption>
 </figure>
 
-Al hacer clic sobre un pedido existente en la lista se abre la vista detalle. El centro muestra una previsualización del PDF y el panel derecho muestra la información clave: total, contacto, fecha, estado, y las barras de progreso de **Facturado** y **Entregado**.
+Haz clic en un pedido de la lista para abrir la vista detalle. En el centro ves el PDF del pedido, con botones para acercarlo, alejarlo o verlo a pantalla completa. En el panel derecho ves el **Total**, el **Contacto**, la **Fecha**, el **Estado** y los indicadores **Facturado** y **Entregado** con su porcentaje.
 
 Desde este panel puedes:
 
 - **Enviar** — abre el panel de envío por email al cliente.
-- **Descargar PDF** — descarga el pedido en formato PDF.
-- **Editar** — abre el formulario completo para modificar el documento.
+- **Descargar PDF** — descarga el pedido en PDF.
+- **Editar** — abre el formulario completo. En **Completado** ya no puedes cambiar los datos.
 
-El panel también incluye la sección **Emails** con el historial de correos enviados, y la sección **Documentos relacionados**, que muestra los documentos vinculados al pedido: el presupuesto de origen (si el pedido fue generado desde uno) y los albaranes o facturas creados al confirmar, cada uno como un enlace navegable. Esta misma información aparece también dentro del formulario completo, accesible desde **Editar**.
+Debajo, el panel tiene dos secciones:
+
+- **Emails** — los correos que le enviaste al cliente. Desde el enlace **Enviar email** puedes mandar uno nuevo.
+- **Documentos relacionados** — el presupuesto del que sale el pedido y los albaranes o facturas que creaste desde él, con su importe y su estado.
 
 ### 3. Envía el pedido al cliente
 
 <figure markdown="span">
-  ![Popup de envío por email del Pedido de venta](assets/crear-y-gestionar-pedidos-7.png)
+  ![Panel Enviar Pedido de Venta con la vista previa del PDF, el correo del cliente, el asunto y el mensaje](assets/crear-y-gestionar-pedidos-7.png)
   <figcaption>Panel de envío por email del Pedido de venta.</figcaption>
 </figure>
 
-El botón **Enviar**, disponible una vez que el pedido está Completado, abre el panel **Enviar Pedido de Venta**, con los campos **Para**, el enlace **Añadir CC** para sumar destinatarios en copia, **Asunto** (autocompletado con el número de documento y nombre del contacto) y **Mensaje**. Desde este panel también puedes descargar el PDF con el botón **Descargar PDF**.
+Con el pedido **Completado**, tienes tres formas de hacérselo llegar al cliente:
 
-Junto al botón **Enviar**, el botón **Imprimir** (también solo en Completado) genera directamente una copia imprimible del pedido, sin pasar por el panel de envío.
+- **Envíalo por email** — haz clic en el icono **Enviar / Descargar** (con forma de sobre) de la barra superior, o en **Enviar** desde la vista detalle. Se abre el panel **Enviar Pedido de Venta**, con una vista previa del PDF a la izquierda.
+    - **Para** ya viene con el correo del cliente, si su ficha lo tiene. Con **Añadir CC** puedes sumar destinatarios en copia.
+    - **Asunto** ya viene completado con el número del pedido y el nombre del cliente.
+    - **Mensaje** trae un saludo que puedes cambiar.
+
+    Haz clic en **Enviar** para mandar el correo.
+- **Descarga el PDF y envíalo por otro medio** — con el botón **Descargar PDF**.
+- **Imprímelo y entrégalo en persona** — usa el icono **Imprimir** de la barra superior.
+
+En **Borrador** no están disponibles **Enviar / Descargar** ni **Imprimir**.
 
 ### 4. Genera los documentos pendientes
 
 <figure markdown="span">
-  ![Popup Gestionar documentos del Pedido de venta](assets/crear-y-gestionar-pedidos-9.png)
-  <figcaption>Popup Gestionar documentos, con las opciones para crear el albarán y/o la factura pendientes.</figcaption>
+  ![Ventana Gestionar envío y factura con las opciones Crear albarán y Crear factura](assets/crear-y-gestionar-pedidos-9.png){ width=420 }
+  <figcaption>Ventana Gestionar envío y factura, con las opciones para crear el albarán y la factura pendientes.</figcaption>
 </figure>
 
-Si al confirmar no generaste el albarán y/o la factura, el pedido ya Completado muestra un botón **Gestionar envío y factura** en la barra superior, junto a los indicadores **Entregado** y **Facturado** con su porcentaje. Al hacer clic se abre el popup **Gestionar documentos**, que ofrece **Crear albarán** y/o **Crear factura** simultáneamente, según qué cantidades sigan pendientes de entrega y de facturación.
+Si queda algo por entregar o facturar, créalo desde el pedido **Completado**:
 
-!!! info "Solo se ofrecen las cantidades pendientes"
-    Si el pedido ya está entregado o facturado al 100 %, la acción correspondiente deja de aparecer en el popup automáticamente.
+1. Haz clic en **Gestionar envío y factura**, en la barra superior. Se abre la ventana del mismo nombre.
+2. En **Generar documentos (opcional)**, marca lo que necesites:
+    - **Crear albarán** — debajo ves cuántas unidades quedan pendientes de entrega.
+    - **Crear factura** — debajo ves el importe pendiente de facturar.
+3. Haz clic en **Crear →**.
+
+!!! info "Solo se ofrece lo que queda pendiente"
+    Cuando el pedido ya está entregado o facturado al 100 %, la opción correspondiente deja de aparecer.
 
 ---
 
 ## Estados del Documento
 
-La barra superior del formulario muestra el estado actual del pedido junto a los indicadores de entrega y facturación.
+El estado se muestra como una etiqueta junto al botón **Cancelar**, en la barra superior.
 
 | Estado | Descripción |
 |---|---|
-| <span style="background:#F3F4F6;color:#6B7280;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Borrador</span> | En preparación. El documento es completamente editable. |
-| <span style="background:#F0FDF4;color:#22C55E;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Completado</span> | Confirmado. Ya no es editable. Se pueden generar albarán y factura. |
+| <span style="background:#F3F4F6;color:#6B7280;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Borrador</span> | En preparación. Puedes cambiar todos sus datos. |
+| <span style="background:#F0FDF4;color:#22C55E;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Completado</span> | Confirmado. Ya no puedes cambiar sus datos. Puedes enviarlo y crear el albarán y la factura. |
 
-!!! warning "El pedido no se puede editar tras confirmar"
-    Una vez confirmado, el pedido queda bloqueado. Verifica las líneas, cantidades y precios antes de confirmar. Si todavía no generaste el albarán ni la factura, puedes usar **Reactivar** (ver [Acciones Disponibles](#acciones-disponibles)) para devolverlo a Borrador; si el pedido ya tiene algún documento relacionado, Reactivar ya no está disponible y la única opción es usar **Copia** para crear un nuevo pedido con los mismos datos.
+!!! warning "Si necesitas cambiar un pedido confirmado"
+    Si todavía no creaste el albarán ni la factura, haz clic en **Reactivar**, en el menú de tres puntos, para devolver el pedido a **Borrador**. Si el pedido ya tiene algún albarán o factura, **Reactivar** deja de estar disponible: haz clic en **Clonar** para crear un pedido nuevo con los mismos datos y trabaja sobre él.
 
 ---
 
 ## Acciones Disponibles
 
 <figure markdown="span">
-  ![Barra de acciones del Pedido de venta](assets/crear-y-gestionar-pedidos-6.png)
-  <figcaption>Barra de acciones del Pedido de venta.</figcaption>
+  ![Barra de acciones del Pedido de venta Completado con los indicadores Entregado y Facturado, los iconos de acción y Gestionar envío y factura](assets/crear-y-gestionar-pedidos-6.png)
+  <figcaption>Barra de acciones del Pedido de venta en estado Completado.</figcaption>
 </figure>
 
-La barra superior del formulario muestra las siguientes acciones:
+La barra superior del formulario muestra estas acciones:
 
 | Acción | Descripción | Estado |
 | :--- | :--- | :--- |
-| **Cancelar** | Descarta los cambios no guardados y vuelve a la lista. | Solo en Borrador |
-| **Guardar** | Guarda el documento sin cambiar su estado. | Solo en Borrador |
-| **Confirmar** | Confirma el pedido y lo pasa a estado Completado (ver [Crear pedido de venta](#crear-pedido-de-venta)). | Solo en Borrador |
-| **Copia** | Clona el pedido actual creando un nuevo borrador con el mismo contacto, líneas y condiciones. | Borrador y Completado |
-| **Enviar** | Abre el panel de envío por correo electrónico. | Solo en Completado |
-| **Imprimir** | Genera una copia imprimible del pedido. | Solo en Completado |
-| **Reactivar** | Disponible en el menú de tres puntos. Devuelve el pedido a estado Borrador para poder editarlo de nuevo. Deja de estar disponible en cuanto el pedido tiene un albarán o una factura generados. | Solo en Completado sin documentos relacionados |
-| **Papelera** | Elimina el documento con confirmación previa. | Solo en Borrador |
+| **Cancelar** | Descarta los cambios sin guardar y vuelve a la lista. | Todos los estados |
+| **Guardar** | Guarda el pedido sin cambiar su estado. | Solo en Borrador |
+| **Confirmar** | Abre la ventana **Confirmar pedido** y pasa el pedido a Completado (ver [Confirma el pedido](#3-confirma-el-pedido)). | Solo en Borrador |
+| **Copiar enlace** | Copia el enlace directo a este pedido, para compartirlo con otra persona de tu equipo. | Todos los estados |
+| **Clonar** | Crea un borrador nuevo con los mismos datos del pedido. | Todos los estados |
+| **Enviar / Descargar** | Icono con forma de sobre. Abre el panel de envío por email, desde donde también puedes descargar el PDF. | Solo en Completado |
+| **Imprimir** | Crea una copia para imprimir y entregar en persona. | Solo en Completado |
+| **Gestionar envío y factura** | Abre la ventana para crear el albarán o la factura de lo que queda pendiente (ver [Genera los documentos pendientes](#4-genera-los-documentos-pendientes)). | Completado, mientras quede algo por entregar o facturar |
+| **Reactivar** | En el menú de tres puntos. Devuelve el pedido a Borrador para que puedas cambiarlo. | Completado, sin albarán ni factura |
+| **Papelera** | Elimina el pedido. Antes te pide confirmación. | Solo en Borrador |
 
 ## Artículos Relacionados
 

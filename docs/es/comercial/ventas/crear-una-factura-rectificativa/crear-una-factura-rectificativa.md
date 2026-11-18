@@ -69,7 +69,7 @@ Si el cliente te devuelve productos, tienes tres formas de crear la rectificativ
 
 La rectificativa no sustituye a la factura original: solo recoge la diferencia, en más o en menos. Lo que pasa después depende de si esa diferencia baja o sube el importe:
 
-- **Si lo baja** (una devolución, un descuento o un precio facturado de más) — la rectificativa aparece con importe en negativo en la lista de facturas. Al confirmarla, queda como un importe a favor del cliente, que no se descuenta automáticamente de la factura original. Consulta [Aplicar saldo a favor o crédito disponible](../anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md#aplicar-saldo-a-favor-o-credito-disponible-opcional).
+- **Si lo baja** (una devolución, un descuento o un precio facturado de más) — la rectificativa aparece con importe en negativo en la lista de facturas. Al confirmarla, queda como un importe a favor del cliente, que no se descuenta automáticamente de la factura original. Consulta [Aplicar saldo a favor o crédito disponible](../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md#aplicar-saldo-a-favor-o-credito-disponible).
 - **Si lo sube** (un precio facturado de menos) — el cliente te debe la diferencia. Queda pendiente de cobro, como en cualquier factura.
 
 !!! info "Para tu asesor"

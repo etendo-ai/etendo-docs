@@ -36,9 +36,9 @@ Las acciones de creación de documentos derivados —**Crear albarán**, **Crear
 
 No. Etendo usa un único tipo de documento, la **factura rectificativa**, tanto si hay devolución física como si no — no hay un tipo separado para cada caso. Lo que cambia es cómo se generan sus líneas: vinculadas a un albarán de devolución cuando el cliente ha devuelto mercancía, o añadidas a mano o importadas desde la factura original cuando es un ajuste financiero sin retorno de mercancía (error de precio, descuento o bonificación). Consulta [Crear una factura rectificativa](../crear-una-factura-rectificativa/crear-una-factura-rectificativa.md) para el caso sin devolución y [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md) para el caso con devolución.
 
-## ¿Puedo registrar pagos parciales en una factura?
+## ¿Puedo registrar cobros parciales en una factura?
 
-Sí. Puedes registrar tantos pagos parciales como necesites hasta cubrir el total de la factura. El indicador **Pendiente de pago** se actualiza con cada pago registrado. Ver [Añadir pagos a tu factura de venta](../anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md).
+Sí. Puedes registrar tantos cobros parciales como necesites hasta cubrir el total de la factura. La columna **Saldo pendiente** y el indicador de la barra superior se actualizan con cada cobro. Ver [Añadir cobros a tu factura de venta](../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md).
 
 ## ¿Puedo reenviar una factura ya enviada por email?
 
