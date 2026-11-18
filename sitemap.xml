@@ -175,10 +175,28 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://help.etendo.ai/finanzas/como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario/"/>
     </url>
     <url>
+        <loc>https://help.etendo.ai/finanzas/como-registrar-un-cobro/como-registrar-un-cobro/</loc>
+        <lastmod>2026-11-18</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://help.etendo.ai/finanzas/como-registrar-un-cobro/como-registrar-un-cobro/"/>
+    </url>
+    <url>
+        <loc>https://help.etendo.ai/finanzas/como-registrar-un-pago/como-registrar-un-pago/</loc>
+        <lastmod>2026-11-18</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://help.etendo.ai/finanzas/como-registrar-un-pago/como-registrar-un-pago/"/>
+    </url>
+    <url>
         <loc>https://help.etendo.ai/finanzas/glosario-de-finanzas/glosario-de-finanzas/</loc>
         <lastmod>2026-11-18</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://help.etendo.ai/finanzas/glosario-de-finanzas/glosario-de-finanzas/"/>
+    </url>
+    <url>
+        <loc>https://help.etendo.ai/finanzas/que-es-cobros-y-pagos/que-es-cobros-y-pagos/</loc>
+        <lastmod>2026-11-18</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://help.etendo.ai/finanzas/que-es-cobros-y-pagos/que-es-cobros-y-pagos/"/>
     </url>
     <url>
         <loc>https://help.etendo.ai/finanzas/que-es-finanzas/que-es-finanzas/</loc>
