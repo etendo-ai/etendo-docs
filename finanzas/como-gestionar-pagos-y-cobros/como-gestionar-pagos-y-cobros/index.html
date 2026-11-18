@@ -4546,11 +4546,11 @@
 <p>Un cobro registra el dinero que recibes de un cliente por una factura de venta; un pago registra el dinero que entregas a un proveedor por una factura de compra. Ambos se crean desde la propia factura y quedan disponibles también en las vistas globales <strong>Cobro</strong> y <strong>Pago</strong> dentro de Finanzas.</p>
 <h2 id="registrar-un-cobro">Registrar un cobro<a class="headerlink" href="#registrar-un-cobro" title="Permanent link">¶</a></h2>
 <ol>
-<li>Abre la factura de venta y haz clic en <strong>Añadir pago</strong>.</li>
+<li>Abre la factura de venta y haz clic en <strong>Añadir cobro</strong>.</li>
 <li>En <strong>Nuevo cobro</strong>, completa los campos obligatorios:<ul>
 <li><strong>Importe</strong> — se autocompleta con el pendiente de la factura.</li>
 <li><strong>Fecha</strong>.</li>
-<li><strong>Método de pago</strong> — Efectivo, Transferencia bancaria, Cheque, Tarjeta o Transferencia. <strong>Transferencia bancaria</strong> y <strong>Transferencia</strong> son opciones independientes: usa la que tengas configurada en tus cuentas.</li>
+<li><strong>Método de pago</strong> — Efectivo, Recibo, Tarjeta o Transferencia bancaria.</li>
 <li><strong>Cuenta</strong> — la cuenta donde se registra el ingreso. Las opciones dependen del método elegido (por ejemplo, con Efectivo solo aparecen cajas). Si el campo no muestra ninguna cuenta para el método seleccionado, prueba con otro método de pago.</li>
 </ul>
 </li>
@@ -4570,12 +4570,13 @@
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-gestionar-pagos-y-cobros-2.png" data-desc-position="bottom"><img alt="Modal Nuevo pago con Método de pago Efectivo, Cuenta Caja Chica Oficina Central, y el bloque Total factura/Dinero/Aplicado/Diferencia con el botón Igualar" src="../assets/como-gestionar-pagos-y-cobros-2.png"></a></p>
 <h2 id="conciliar-pagos-y-cobros">Conciliar pagos y cobros<a class="headerlink" href="#conciliar-pagos-y-cobros" title="Permanent link">¶</a></h2>
 <p>Un cobro o pago recién confirmado queda registrado con su actividad (por ejemplo, <em>"Cobro creado"</em> → <em>"Cobro confirmado · depositado"</em>), visible en el detalle del documento. Desde las vistas globales <strong><a href="https://app.etendo.ai/payment-in" target="_blank">Finanzas &gt; Cobro</a></strong> y <strong><a href="https://app.etendo.ai/payment-out" target="_blank">Finanzas &gt; Pago</a></strong> puedes:</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-gestionar-pagos-y-cobros-3.png" data-desc-position="bottom"><img alt="Panel lateral en Finanzas > Cobro — el panel en Finanzas > Pago es simétrico" src="../assets/como-gestionar-pagos-y-cobros-3.png"></a></p>
 <ul>
-<li>Ver el estado de cada uno (por ejemplo, <strong>Cobro depositado</strong>, <strong>Pago depositado</strong>) y el total del mes agrupado <strong>Por método de pago</strong>.</li>
+<li>Ver el estado de cada uno (por ejemplo, <strong>Cobro depositado</strong>, <strong>Pago depositado</strong>) y el total del período en el panel lateral. El total <strong>Cobrado</strong> o <strong>Pagado</strong> corresponde al filtro de fechas activo (no siempre al mes en curso) y se desglosa en <strong>Pendiente</strong>, <strong>Por método de pago</strong> y <strong>Detalle por moneda</strong>. Si operas con más de una moneda, el total aparece con <strong>≈</strong> (importe aproximado convertido a la moneda de tu empresa).</li>
 <li>Abrir cualquier cobro o pago para <strong>Reactivar</strong> (revertir su confirmación) o eliminarlo, si todavía no fue conciliado.</li>
 </ul>
 <p>Una vez que el cobro o pago aparece en el extracto de tu cuenta, conciliarlo es igual que conciliar cualquier otro movimiento: ver <a href="../../como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos/">Conciliar o desconciliar movimientos contra documentos</a>.</p>
-<p>Esto aplica sin importar el método de pago: tanto con <strong>Efectivo</strong> como con <strong>Transferencia bancaria</strong> o <strong>Tarjeta</strong>, al hacer clic en <strong>Confirmar</strong> el cobro o pago queda depositado directamente, sin un paso adicional de "Ejecutar".</p>
+<p>Esto aplica sin importar el método de pago: tanto con <strong>Efectivo</strong>, <strong>Recibo</strong>, <strong>Transferencia bancaria</strong> o <strong>Tarjeta</strong>, al hacer clic en <strong>Confirmar</strong> el cobro o pago queda depositado directamente, sin un paso adicional de "Ejecutar".</p>
 <hr>
 <h2 id="articulos-relacionados">Artículos Relacionados<a class="headerlink" href="#articulos-relacionados" title="Permanent link">¶</a></h2>
 <ul>
@@ -4607,7 +4608,7 @@
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="29 de septiembre de 2026 17:35:37 UTC">29 de septiembre de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="18 de noviembre de 2026 16:40:52 UTC">18 de noviembre de 2026</span>
   </span>
 
     
@@ -4634,6 +4635,11 @@
 
     
     <nav>
+      
+        <a href="https://github.com/ramirosansebastian" class="md-author" title="@ramirosansebastian">
+          
+          <img src="https://avatars.githubusercontent.com/u/319142943?v=4&amp;size=72" alt="ramirosansebastian">
+        </a>
       
         <a href="https://github.com/isaiasb-etendo" class="md-author" title="@isaiasb-etendo">
           
