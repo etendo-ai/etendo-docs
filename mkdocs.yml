@@ -82,7 +82,7 @@ plugins:
                         - Crear y gestionar albaranes: comercial/ventas/crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md
                         - Crear una factura de venta: comercial/ventas/crear-una-factura-de-venta/crear-una-factura-de-venta.md
                         - Gestionar tus facturas de venta: comercial/ventas/gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md
-                        - Enviar tus facturas por email: comercial/ventas/enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md
+                        - Enviar documentos por email: comercial/ventas/enviar-documentos-por-email/enviar-documentos-por-email.md
                         - Añadir cobros a tu factura de venta: comercial/ventas/anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md
                         - Crear y gestionar devoluciones: comercial/ventas/crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md
                         - Crear una factura rectificativa: comercial/ventas/crear-una-factura-rectificativa/crear-una-factura-rectificativa.md
@@ -94,6 +94,7 @@ plugins:
                     - Gestión de compras:
                         - Crear un pedido de compra: operaciones/compras/crear-un-pedido-de-compra/crear-un-pedido-de-compra.md
                         - Gestionar tus pedidos de compra: operaciones/compras/gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md
+                        - Enviar documentos por email: comercial/ventas/enviar-documentos-por-email/enviar-documentos-por-email.md
                         - Crear y gestionar albaranes de compra: operaciones/compras/crear-y-gestionar-albaranes-de-compra/crear-y-gestionar-albaranes-de-compra.md
                         - Registrar una factura de compra: operaciones/compras/crear-una-factura-de-compra/crear-una-factura-de-compra.md
                         - Escanear facturas de compra con Copilot: operaciones/compras/escanear-facturas-de-compra-con-copilot/escanear-facturas-de-compra-con-copilot.md
@@ -181,6 +182,8 @@ plugins:
       redirect_maps:
         # Renombrados en ETP-6115: la interfaz dice "cobro", no "pago"
         es/comercial/ventas/anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md: es/comercial/ventas/anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md
+        # Generalizado en ETP-6115: la ventana de envio es la misma en todos los documentos
+        es/comercial/ventas/enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md: es/comercial/ventas/enviar-documentos-por-email/enviar-documentos-por-email.md
 
 extra:
   social:

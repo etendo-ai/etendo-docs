@@ -113,7 +113,7 @@ Cuando los importes y el contacto sean correctos, haz clic en **Confirmar**. La 
 
     Tienes el detalle de **Reactivar** en [Gestionar tus facturas de venta](../gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md#acciones-disponibles) y las formas de corregirla en [Crear una factura rectificativa](../crear-una-factura-rectificativa/crear-una-factura-rectificativa.md).
 
-Con la factura confirmada, ya puedes [registrar el cobro](../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md) y [enviársela al cliente](../enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md).
+Con la factura confirmada, ya puedes [registrar el cobro](../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md) y [enviársela al cliente](../enviar-documentos-por-email/enviar-documentos-por-email.md).
 
 ## Artículos Relacionados
 

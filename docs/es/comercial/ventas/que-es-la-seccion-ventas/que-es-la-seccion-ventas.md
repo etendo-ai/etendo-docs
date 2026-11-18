@@ -47,7 +47,7 @@ Cuando un cliente te devuelve mercancía, la registras en dos pasos. Primero, un
 - [Crear y gestionar albaranes](../crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md)
 - [Crear una factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md)
 - [Gestionar tus facturas de venta](../gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md)
-- [Enviar tus facturas por email](../enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md)
+- [Enviar documentos por email](../enviar-documentos-por-email/enviar-documentos-por-email.md)
 - [Añadir cobros a tu factura de venta](../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md)
 - [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md)
 - [Crear una factura rectificativa](../crear-una-factura-rectificativa/crear-una-factura-rectificativa.md)

@@ -100,13 +100,13 @@ Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etend
 
     [:octicons-arrow-right-24: Leer más](ventas/gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md)
 
--   :material-email-arrow-right-outline:{ .lg .middle } **Enviar tus facturas por email**
+-   :material-email-arrow-right-outline:{ .lg .middle } **Enviar documentos por email**
 
     ---
 
-    Aprende a enviar una factura al cliente por correo electrónico, con o sin adjuntar el PDF, y a consultar el historial de envíos.
+    Aprende a enviar presupuestos, pedidos, albaranes y facturas por correo electrónico desde la propia ventana, y a consultar el historial de envíos.
 
-    [:octicons-arrow-right-24: Leer más](ventas/enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md)
+    [:octicons-arrow-right-24: Leer más](ventas/enviar-documentos-por-email/enviar-documentos-por-email.md)
 
 -   :material-cash-plus:{ .lg .middle } **Añadir cobros a tu factura de venta**
 

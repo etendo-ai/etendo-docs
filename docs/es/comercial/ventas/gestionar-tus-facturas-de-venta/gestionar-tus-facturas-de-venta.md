@@ -53,7 +53,7 @@ Haz clic en una factura de la lista para abrir la vista detalle. En el centro ve
 
 En el panel derecho, bajo el número de la factura y el cliente, tienes estos botones:
 
-- **Enviar** — abre el panel de envío por email al cliente. Ver [Enviar tus facturas por email](../enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md).
+- **Enviar** — abre el panel de envío por email al cliente. Ver [Enviar documentos por email](../enviar-documentos-por-email/enviar-documentos-por-email.md).
 - **Añadir cobro** — registra un cobro total o parcial de la factura. Ver [Añadir cobros a tu factura de venta](../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md).
 - **Descargar PDF** — descarga la factura en PDF.
 - **Editar** — abre el formulario completo.
@@ -104,7 +104,7 @@ La barra superior del formulario muestra estas acciones:
 
 - [Crear una factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md)
 - [Añadir cobros a tu factura de venta](../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md)
-- [Enviar tus facturas por email](../enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md)
+- [Enviar documentos por email](../enviar-documentos-por-email/enviar-documentos-por-email.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.
