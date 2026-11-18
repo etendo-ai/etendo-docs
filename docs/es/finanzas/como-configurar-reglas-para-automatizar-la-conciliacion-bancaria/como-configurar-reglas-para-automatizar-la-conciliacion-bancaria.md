@@ -22,7 +22,7 @@ Cuando un movimiento se repite con el mismo texto pero no tiene una factura asoc
       - **Nombre** (por ejemplo, "Comisiones bancarias").
       - **Patrón a buscar** (por ejemplo, "comisión").
       - **Cuenta contable** — la cuenta contable que se asigna al movimiento cuando la regla aplica.
-      - **Condición sobre el concepto** — cómo se compara el patrón contra la descripción del movimiento: **Contiene**, **Empieza con** o **Regex**.
+      - **Condición sobre el concepto** — cómo se compara el patrón contra la descripción del movimiento: **Contiene**, **Empieza con** o **Coincide con patrón**.
       - **Prioridad** — numérica, por defecto *20*. A menor número, mayor prioridad.
 4. Opcionalmente, define:
       - **Afecta a** — una cuenta específica o **Todas las cuentas** (valor por defecto).
