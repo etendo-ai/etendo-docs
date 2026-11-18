@@ -4536,32 +4536,47 @@
 
 
 <h1 id="que-es-la-conciliacion-bancaria-en-etendo">¿Qué es la conciliación bancaria en Etendo?<a class="headerlink" href="#que-es-la-conciliacion-bancaria-en-etendo" title="Permanent link">¶</a></h1>
-<p>Conciliar es confirmar que cada línea de tu extracto bancario tiene su documento correspondiente en Etendo (una factura, un cobro o un pago), para que el saldo de tu cuenta coincida siempre con el saldo real de tu banco.</p>
+<p>Conciliar es vincular cada línea de tu extracto bancario con la operación de Etendo que le corresponde, para que el saldo de tu cuenta coincida siempre con el saldo real de tu banco. Normalmente esa operación es un documento que ya existe (una factura, un cobro o un pago); en los movimientos recurrentes sin factura, como una comisión bancaria, Etendo puede crear el movimiento por ti a partir de una regla.</p>
 <h2 id="como-funciona-el-proceso-de-conciliacion">Cómo funciona el proceso de conciliación<a class="headerlink" href="#como-funciona-el-proceso-de-conciliacion" title="Permanent link">¶</a></h2>
 <pre class="mermaid"><code>flowchart LR
   A([Extracto importado o cuenta conectada]) --&gt; B[Líneas pendientes]
   B --&gt; C{Automatch}
-  C --&gt;|Sugerencia aceptada| D([Conciliado])
-  C --&gt;|Sin sugerencia| E[Selección manual del documento]
-  E --&gt; D</code></pre>
-<p>Para cada línea pendiente del extracto, Etendo busca coincidencias entre cuatro tipos de documento: <strong>Facturas de venta</strong>, <strong>Facturas de compra</strong>, <strong>Cobros</strong> y <strong>Pagos</strong>. Puedes dejar que el sistema proponga la coincidencia con <strong>Automatch</strong>, o elegir el documento manualmente filtrando por tipo, fecha e importe. Una vez que el importe de los documentos seleccionados cubre el importe de la línea, la conciliación queda registrada.</p>
+  C --&gt;|Con sugerencia| D[Documento existente]
+  C --&gt;|Por regla| E[Nuevo movimiento]
+  C --&gt;|Sin coincidencia| F[Selección manual del documento]
+  D --&gt; G([Conciliado])
+  E --&gt; G
+  F --&gt; G</code></pre>
+<p>Las líneas del extracto llegan a la pestaña <strong>Conciliación</strong> de la cuenta como pendientes. A partir de ahí tienes tres caminos:</p>
+<ul>
+<li><strong>Con sugerencia</strong>: <strong>Automatch</strong> encontró una factura, un cobro o un pago que coincide con la línea y te lo propone para que lo vincules.</li>
+<li><strong>Por regla</strong>: la línea coincide con una regla de matcheo. En lugar de vincular un documento, Etendo crea un movimiento nuevo con los datos de la regla.</li>
+<li><strong>Selección manual</strong>: eliges el tipo de documento (<strong>Facturas de venta</strong>, <strong>Facturas de compra</strong>, <strong>Cobros</strong> o <strong>Pagos</strong>), lo buscas por fecha o con el buscador, marcas los que corresponden a la línea hasta que el <strong>Restante por conciliar</strong> llega a 0 y haces clic en <strong>Conciliar</strong>.</li>
+</ul>
+<p>Si te equivocas, puedes <strong>desconciliar</strong> la línea más tarde: el vínculo se rompe y su importe vuelve a quedar pendiente de conciliar.</p>
 <h2 id="que-incluye-esta-seccion">Qué incluye esta sección<a class="headerlink" href="#que-incluye-esta-seccion" title="Permanent link">¶</a></h2>
 <ul>
-<li><strong>Conciliación por cuenta</strong> — dentro de cada cuenta, la pestaña <strong>Conciliación</strong> muestra las líneas pendientes y te deja elegir el documento con el que hacen match.</li>
-<li><strong>Automatch</strong> — sugerencias automáticas de conciliación para toda la cuenta, basadas en fecha e importe.</li>
-<li><strong>Reglas de matcheo</strong> — reglas configurables para automatizar coincidencias recurrentes (por ejemplo, comisiones bancarias).</li>
-<li><strong>Tolerancia de conciliación</strong> — configurada por cuenta en <strong>Editar cuenta</strong> (tolerancia de fecha en días y de importe en %), usada por Automatch y por las reglas.</li>
+<li><strong>Conciliación por cuenta</strong>: dentro de cada cuenta, la pestaña <strong>Conciliación</strong> muestra las líneas del extracto y te deja filtrarlas por estado (<strong>Todos</strong>, <strong>Pendientes</strong>, <strong>Con sugerencia</strong>, <strong>Por regla</strong>, <strong>Con diferencia</strong> y <strong>Conciliadas</strong>), con un contador en cada filtro.</li>
+<li><strong>Automatch</strong>: la ventana <strong>Conciliación automática sugerida</strong> agrupa cada línea pendiente con su operación y te deja conciliar varios grupos a la vez. Si hay sugerencias, se abre sola al entrar en la pestaña <strong>Conciliación</strong>.</li>
+<li><strong>Reglas de matcheo</strong>: reglas configurables para los movimientos que se repiten sin factura asociada (por ejemplo, comisiones bancarias). Se aplican a las líneas que Automatch no pudo conciliar.</li>
+<li><strong>Tolerancia de conciliación</strong>: el margen de fecha (en días) y de importe (en %) que Automatch acepta para sugerir una coincidencia. Se configura en cada cuenta, desde <strong>Editar cuenta</strong>.</li>
 </ul>
-<p>Así se ve la pestaña <strong>Conciliación</strong> filtrada por <strong>Con sugerencia</strong>, con una línea de extracto pendiente y, a la derecha, la sugerencia de Automatch ya seleccionada:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/que-es-la-conciliacion-bancaria-en-etendo-1.png" data-desc-position="bottom"><img alt="Pestaña Conciliación con el filtro Con sugerencia mostrando una línea de extracto pendiente y, a la derecha, el cobro sugerido ya seleccionado con el importe totalmente cubierto" src="../assets/que-es-la-conciliacion-bancaria-en-etendo-1.png"></a></p>
+<p>Así se ve la pestaña <strong>Conciliación</strong> filtrada por <strong>Con sugerencia</strong>, con una línea de extracto seleccionada y, a la derecha, el documento que sugiere Automatch ya marcado:</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/que-es-la-conciliacion-bancaria-en-etendo-1.png" data-desc-position="bottom"><img alt="Pestaña Conciliación con el filtro Con sugerencia: una línea de extracto seleccionada a la izquierda y, a la derecha, el cobro sugerido ya marcado, con Restante por conciliar a 0,00 € y el botón Conciliar (1) activo" src="../assets/que-es-la-conciliacion-bancaria-en-etendo-1.png"></a></p>
 <h2 id="recursos-y-proximos-pasos">Recursos y próximos pasos<a class="headerlink" href="#recursos-y-proximos-pasos" title="Permanent link">¶</a></h2>
-<p>Antes de conciliar necesitas movimientos o un extracto en la cuenta. Empieza por <a href="../../como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario/">Importar o descargar el extracto bancario</a>, y después concilia cada línea desde <a href="../../como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos/">Conciliar o desconciliar movimientos contra documentos</a>.</p>
+<p>Antes de conciliar necesitas líneas de extracto en la cuenta. Puedes <a href="../../como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/">conectar la cuenta con tu banco</a> para que se sincronicen solas, o <a href="../../como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario/">importar el extracto bancario</a> como archivo. Después, concilia cada línea desde <a href="../../como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos/">Conciliar o desconciliar movimientos contra documentos</a>.</p>
 <hr>
 <h2 id="articulos-relacionados">Artículos Relacionados<a class="headerlink" href="#articulos-relacionados" title="Permanent link">¶</a></h2>
 <ul>
 <li><a href="../../como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos/">Conciliar o desconciliar movimientos contra documentos</a></li>
 <li><a href="../../como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/">Configurar reglas para automatizar la conciliación</a></li>
 <li><a href="../../como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario/">Importar o descargar el extracto bancario</a></li>
+<li><a href="../../como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario/">Borrar movimientos del extracto bancario</a></li>
+<li><a href="../../como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/">Conectar, desconectar, archivar, desarchivar o eliminar una cuenta</a></li>
+<li><a href="../../como-editar-una-cuenta/como-editar-una-cuenta/">Cómo editar una cuenta</a></li>
+<li><a href="../../como-registrar-un-cobro/como-registrar-un-cobro/">Registrar un cobro</a></li>
+<li><a href="../../como-registrar-un-pago/como-registrar-un-pago/">Registrar un pago</a></li>
+<li><a href="../../como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros/">Gestionar pagos y cobros</a></li>
 </ul>
 <hr>
 <p>Esta obra está bajo la licencia <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m11.89 10.34-1.34.7c-.14-.3-.31-.51-.52-.63s-.41-.18-.58-.18c-.9 0-1.34.59-1.34 1.77 0 .54.11.97.34 1.29.22.32.55.48 1 .48.58 0 .99-.27 1.23-.86l1.23.63c-.26.49-.62.87-1.09 1.15q-.69.42-1.53.42c-.9 0-1.62-.27-2.17-.82C6.58 13.74 6.3 13 6.3 12c0-.95.28-1.7.83-2.26q.84-.84 2.1-.84c1.24-.01 2.13.48 2.66 1.44m5.77 0-1.32.7c-.14-.3-.34-.51-.53-.63q-.315-.18-.6-.18c-.89 0-1.34.59-1.34 1.77 0 .54.13.97.34 1.29.23.32.56.48 1 .48.59 0 1-.27 1.24-.86l1.25.63c-.28.49-.65.87-1.11 1.15-.47.28-.97.42-1.52.42-.9 0-1.63-.27-2.17-.82S12.09 13 12.09 12c0-.95.28-1.7.83-2.26S14.17 8.9 15 8.9c1.26-.01 2.14.48 2.66 1.44M12 3.5a8.5 8.5 0 0 1 8.5 8.5 8.5 8.5 0 0 1-8.5 8.5A8.5 8.5 0 0 1 3.5 12 8.5 8.5 0 0 1 12 3.5M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M322.9 194.4v101.4h-28.3v120.5h-77.1V295.9h-28.3V194.4c0-4.4 1.6-8.2 4.6-11.3 3.1-3.1 6.9-4.7 11.3-4.7H307c4.1 0 7.8 1.6 11.1 4.7 3.1 3.2 4.8 6.9 4.8 11.3m-32.5-64.5a34.5 34.5 0 1 1-69 .8 34.5 34.5 0 1 1 69-.8M255.6 8C397.4 8 504 118.1 504 256c0 147.1-118.5 248-248.4 248C121.6 504 8 394.5 8 256 8 123.1 112.7 8 255.6 8m.8 44.7C138.2 52.7 52.7 150.6 52.7 256c0 109.8 91.2 202.8 203.7 202.8 103.2 0 202.8-81.1 202.8-202.8.1-113.8-90.2-203.3-202.8-203.3"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M255.6 8C397.4 8 504 118.1 504 256c0 147.1-118.5 248-248.4 248C121.6 504 8 394.5 8 256 8 123.1 112.7 8 255.6 8m.8 44.7C138.2 52.7 52.7 150.6 52.7 256c0 109.8 91.2 202.8 203.7 202.8 103.2 0 202.8-81.1 202.8-202.8.1-113.8-90.2-203.3-202.8-203.3M145.7 221c13-83.9 80.5-95.7 108.9-95.7 99.8 0 127.5 82.5 127.5 134.2 0 63.6-41 132.9-128.9 132.9-38.9 0-99.1-20-109.4-97h62.5c1.5 30.1 19.6 45.2 54.5 45.2 23.3 0 58-18.2 58-82.8 0-82.5-49.1-80.6-56.7-80.6q-49.65 0-55.8 43.8h18.2l-49.2 49.2-49-49.2z"></path></svg></span> <a href="https://creativecommons.org/licenses/by-sa/2.5/es/" target="_blank">CC BY-SA 2.5 ES</a> de <a href="https://etendo.software" target="_blank">Futit Services S.L</a>.</p>
@@ -4587,7 +4602,7 @@
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="21 de septiembre de 2026 11:35:21 UTC">21 de septiembre de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="18 de noviembre de 2026 18:19:47 UTC">18 de noviembre de 2026</span>
   </span>
 
     
@@ -4614,6 +4629,11 @@
 
     
     <nav>
+      
+        <a href="https://github.com/ramirosansebastian" class="md-author" title="@ramirosansebastian">
+          
+          <img src="https://avatars.githubusercontent.com/u/319142943?v=4&amp;size=72" alt="ramirosansebastian">
+        </a>
       
         <a href="https://github.com/isaiasb-etendo" class="md-author" title="@isaiasb-etendo">
           
