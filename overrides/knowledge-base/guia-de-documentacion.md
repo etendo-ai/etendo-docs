@@ -116,6 +116,7 @@ Escribe como le hablarías a alguien que lleva su propio negocio, no como un con
 | documento de origen | el pedido (o el albarán, la factura) del que sale | Nombrar el documento concreto |
 | obligación de pago | lo que le debes al proveedor | Lenguaje contable innecesario |
 | contabilización del documento | para tu contabilidad | Lenguaje contable innecesario |
+| tercero, terceros | contacto, contactos | Lenguaje contable innecesario; el producto llama **Contacto** a clientes y proveedores |
 | Etendo Go, Etendo GO | Etendo | El producto ya no se llama Etendo Go |
 | asistente (referido a Copilot o a cualquier IA) | agente | Terminología del producto. "Asistente" solo se usa para los formularios guiados de varios pasos (ej. el asistente **Crear Devolución desde Albarán**) |
 
@@ -379,7 +380,7 @@ Cada artículo debe tener los siguientes metadatos completos:
 | Referencia / Glosario | Variable (definición por término) |
 | Preguntas frecuentes | 200-500 palabras (suma de Q&A) |
 
-Más corto es mejor. Si un artículo supera estos rangos, evaluar dividirlo en dos artículos enlazados — pero no es una regla absoluta: cuando el contenido cubre variantes estrechamente relacionadas de un mismo flujo (por ejemplo, distintas formas de completar el mismo popup o pantalla), mantenerlo en un solo artículo puede ser preferible a fragmentar la navegación, aunque supere el rango objetivo (actualizado 2026-08-24, caso de referencia: `anadir-pagos-a-tu-factura-de-venta.md`).
+Más corto es mejor. Si un artículo supera estos rangos, evaluar dividirlo en dos artículos enlazados — pero no es una regla absoluta: cuando el contenido cubre variantes estrechamente relacionadas de un mismo flujo (por ejemplo, distintas formas de completar el mismo popup o pantalla), mantenerlo en un solo artículo puede ser preferible a fragmentar la navegación, aunque supere el rango objetivo (actualizado 2026-08-24, caso de referencia: `anadir-cobros-a-tu-factura-de-venta.md`).
 
 ## 10. Qué Evitar
 

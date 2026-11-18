@@ -83,7 +83,7 @@ plugins:
                         - Crear una factura de venta: comercial/ventas/crear-una-factura-de-venta/crear-una-factura-de-venta.md
                         - Gestionar tus facturas de venta: comercial/ventas/gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md
                         - Enviar tus facturas por email: comercial/ventas/enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md
-                        - Añadir pagos a tu factura de venta: comercial/ventas/anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md
+                        - Añadir cobros a tu factura de venta: comercial/ventas/anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md
                         - Crear y gestionar devoluciones: comercial/ventas/crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md
                         - Crear una factura rectificativa: comercial/ventas/crear-una-factura-rectificativa/crear-una-factura-rectificativa.md
                     - Ventas - Preguntas frecuentes: comercial/ventas/documentos-de-venta-preguntas-frecuentes/documentos-de-venta-preguntas-frecuentes.md
@@ -177,6 +177,10 @@ plugins:
       enable_git_follow: true
       type: date
   - social
+  - redirects:
+      redirect_maps:
+        # Renombrados en ETP-6115: la interfaz dice "cobro", no "pago"
+        es/comercial/ventas/anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md: es/comercial/ventas/anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md
 
 extra:
   social:
@@ -223,7 +227,9 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      base_path: ['.']
+      check_paths: true
   - pymdownx.keys
   - pymdownx.caret
   - pymdownx.tilde

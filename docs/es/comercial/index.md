@@ -88,7 +88,7 @@ Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etend
 
     ---
 
-    Aprende a emitir el documento fiscal que formaliza el cobro al cliente, registrar pagos parciales y hacer seguimiento del importe pendiente.
+    Aprende a emitir el documento fiscal que formaliza el cobro al cliente, registrar cobros parciales y hacer seguimiento del importe pendiente.
 
     [:octicons-arrow-right-24: Leer más](ventas/crear-una-factura-de-venta/crear-una-factura-de-venta.md)
 
@@ -108,13 +108,13 @@ Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etend
 
     [:octicons-arrow-right-24: Leer más](ventas/enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md)
 
--   :material-cash-plus:{ .lg .middle } **Añadir pagos a tu factura de venta**
+-   :material-cash-plus:{ .lg .middle } **Añadir cobros a tu factura de venta**
 
     ---
 
-    Registra cobros totales o parciales sobre tus facturas de venta, y aplica saldo a favor o crédito disponible del cliente.
+    Registra cobros totales o parciales de tus facturas de venta, aplica el saldo a favor del cliente y resuelve un cobro de más.
 
-    [:octicons-arrow-right-24: Leer más](ventas/anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md)
+    [:octicons-arrow-right-24: Leer más](ventas/anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md)
 
 -   :material-cash-refund:{ .lg .middle } **Crear y gestionar devoluciones**
 

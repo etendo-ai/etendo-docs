@@ -34,7 +34,7 @@ flowchart LR
 - **[Pedido de venta](../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md)** — formaliza el compromiso de compra del cliente. Es el punto de partida habitual cuando hay stock o entregas físicas de por medio.
 - **[Albarán de venta](../crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md)** — documenta la entrega física de la mercancía.
 - **[Factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md)** — el documento fiscal que le indica al cliente cuánto te debe y cuándo tiene que pagarte.
-- **Cobro** — lo que el cliente te paga por una factura, de una vez o en varias partes. Ver [Añadir pagos a tu factura de venta](../anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md).
+- **Cobro** — lo que el cliente te paga por una factura, de una vez o en varias partes. Ver [Añadir cobros a tu factura de venta](../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md).
 
 ## El ciclo de devolución
 
@@ -48,7 +48,7 @@ Cuando un cliente te devuelve mercancía, la registras en dos pasos. Primero, un
 - [Crear una factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md)
 - [Gestionar tus facturas de venta](../gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md)
 - [Enviar tus facturas por email](../enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md)
-- [Añadir pagos a tu factura de venta](../anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md)
+- [Añadir cobros a tu factura de venta](../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md)
 - [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md)
 - [Crear una factura rectificativa](../crear-una-factura-rectificativa/crear-una-factura-rectificativa.md)
 
