@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Aprende a crear y gestionar albaranes de venta en Etendo para documentar la entrega física de mercadería y habilitar la factura correspondiente.">
+        <meta name="description" content="Aprende a crear y confirmar albaranes de venta en Etendo para registrar la entrega de mercancía al cliente, enviarlos y generar la factura pendiente.">
       
       
       
@@ -61,7 +61,7 @@
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="Crear y gestionar albaranes - Etendo Academy">
-<meta property="og:description" content="Aprende a crear y gestionar albaranes de venta en Etendo para documentar la entrega física de mercadería y habilitar la factura correspondiente.">
+<meta property="og:description" content="Aprende a crear y confirmar albaranes de venta en Etendo para registrar la entrega de mercancía al cliente, enviarlos y generar la factura pendiente.">
 <meta property="og:image" content="https://help.etendo.ai/assets/images/social/comercial/ventas/crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
@@ -69,7 +69,7 @@
 <meta property="og:url" content="https://help.etendo.ai/comercial/ventas/crear-y-gestionar-albaranes/crear-y-gestionar-albaranes/">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:title" content="Crear y gestionar albaranes - Etendo Academy">
-<meta property="twitter:description" content="Aprende a crear y gestionar albaranes de venta en Etendo para documentar la entrega física de mercadería y habilitar la factura correspondiente.">
+<meta property="twitter:description" content="Aprende a crear y confirmar albaranes de venta en Etendo para registrar la entrega de mercancía al cliente, enviarlos y generar la factura pendiente.">
 <meta property="twitter:image" content="https://help.etendo.ai/assets/images/social/comercial/ventas/crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.png">
 <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
@@ -1338,10 +1338,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-enviar-o-imprimir-albaran" class="md-nav__link">
+  <a href="#3-envia-o-imprime-el-albaran" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Enviar o Imprimir albarán
+        3. Envía o imprime el albarán
       
     </span>
   </a>
@@ -1469,14 +1469,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../enviar-tus-facturas-por-email/enviar-tus-facturas-por-email/" class="md-nav__link">
+      <a href="../../enviar-documentos-por-email/enviar-documentos-por-email/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Enviar tus facturas por email
+    Enviar documentos por email
   
 
     
@@ -1497,14 +1497,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta/" class="md-nav__link">
+      <a href="../../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Añadir pagos a tu factura de venta
+    Añadir cobros a tu factura de venta
   
 
     
@@ -1813,6 +1813,8 @@
       
         
       
+        
+      
     
     
     
@@ -1901,6 +1903,34 @@
     
   
     Gestionar tus pedidos de compra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enviar-documentos-por-email/enviar-documentos-por-email/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enviar documentos por email
   
 
     
@@ -4547,10 +4577,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-enviar-o-imprimir-albaran" class="md-nav__link">
+  <a href="#3-envia-o-imprime-el-albaran" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Enviar o Imprimir albarán
+        3. Envía o imprime el albarán
       
     </span>
   </a>
@@ -4759,89 +4789,172 @@
 
 <h1 id="crear-y-gestionar-albaranes">Crear y gestionar albaranes<a class="headerlink" href="#crear-y-gestionar-albaranes" title="Permanent link">¶</a></h1>
 <h2 id="descripcion-general">Descripción general<a class="headerlink" href="#descripcion-general" title="Permanent link">¶</a></h2>
-<p>El <strong>albarán de venta</strong> documenta la entrega física de mercadería al cliente. Puede generarse desde un <a href="../../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos/">pedido de venta</a> confirmado — marcando la opción <strong>Crear albarán</strong> en el popup de confirmación, o más adelante con el botón <strong>Gestionar envío y factura</strong> del pedido — o crearse directamente desde la ventana <strong><a href="https://app.etendo.ai/goods-shipment" target="_blank">Ventas &gt; Albarán</a></strong> con <strong>+ Nuevo albarán</strong>. Una vez completado, habilita la generación de la <a href="../../crear-una-factura-de-venta/crear-una-factura-de-venta/">factura de venta</a> o de una devolución.</p>
+<p>El <strong>albarán de venta</strong> es el documento que acompaña la entrega de la mercancía a tu cliente. Te sirve para dejar constancia de qué le entregaste, en qué cantidad y desde qué almacén, y para que el cliente firme al recibirla. Al confirmarlo, la mercancía sale de tu almacén.</p>
+<p>Lo normal es crearlo desde un <a href="../../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos/">pedido de venta</a>, sin volver a escribir los datos, aunque también puedes crearlo desde cero. Una vez confirmado, el albarán da lugar a la <a href="../../crear-una-factura-de-venta/crear-una-factura-de-venta/">factura de venta</a> y, si el cliente te devuelve algo, al albarán de devolución.</p>
+<p>El siguiente diagrama muestra las dos formas de crear un albarán, sus estados y los documentos que puedes generar desde él:</p>
 <pre class="mermaid"><code>flowchart LR
-  A[Pedido de venta] --&gt;|Crear albarán| B[Albarán de venta]
-  N[Nuevo albarán] --&gt; B
-  B --&gt;|Confirmar| C[Completado]
-  C --&gt;|Crear Factura| D[Factura de venta]
-  C --&gt;|Crear Devolución| E[Recepción de Devolución]</code></pre>
-<p>Este artículo se organiza en dos flujos: primero cómo <strong>crear un albarán</strong> y confirmarlo, y luego cómo <strong>gestionarlo</strong> — enviarlo y generar la factura o la devolución.</p>
+  P[Pedido de venta] --&gt;|Crear albarán| A[Borrador]
+  N[Nuevo albarán] --&gt; A
+  A --&gt;|Confirmar| B[Completado]
+  B --&gt;|Crear Factura| F[Factura de venta]
+  B --&gt;|Crear Devolución| D[Albarán de devolución]</code></pre>
+<p>Este artículo explica primero cómo <strong>crear un albarán</strong> y después cómo <strong>gestionarlo</strong>.</p>
 <hr>
 <h2 id="crear-un-albaran">Crear un albarán<a class="headerlink" href="#crear-un-albaran" title="Permanent link">¶</a></h2>
 <h3 id="1-empieza-un-albaran-nuevo">1. Empieza un albarán nuevo<a class="headerlink" href="#1-empieza-un-albaran-nuevo" title="Permanent link">¶</a></h3>
-<p>Puedes generar el albarán desde un <a href="../../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos/">pedido de venta</a> confirmado — marcando <strong>Crear albarán</strong> en el popup de confirmación del pedido, o más adelante con el botón <strong>Gestionar envío y factura</strong> — en cuyo caso el albarán hereda el contacto, la dirección y las líneas del pedido de origen. Alternativamente, puedes crearlo directamente accediendo a <strong><a href="https://app.etendo.ai/goods-shipment" target="_blank">Ventas &gt; Albarán</a></strong> y usando el botón <strong>+ Nuevo albarán</strong> en la esquina superior derecha.</p>
+<p>Si la entrega corresponde a un pedido de venta, crea el albarán desde ese pedido. Tienes dos momentos para hacerlo:</p>
+<ul>
+<li><strong>Al confirmar el pedido</strong> — en la ventana <strong>Confirmar pedido</strong>, marca <strong>Crear albarán</strong>.</li>
+<li><strong>Más tarde</strong> — en el pedido <strong>Completado</strong>, haz clic en <strong>Gestionar envío y factura</strong>, marca <strong>Crear albarán</strong> y haz clic en <strong>Crear →</strong> (ver <a href="../../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos/">Crear y gestionar pedidos</a>).</li>
+</ul>
+<p>Se abre la ventana <strong>Albarán creado</strong>, con el aviso «Se ha generado un documento». Haz clic en <strong>Ver albarán</strong> para revisarlo o en <strong>Cerrar</strong> para seguir en el pedido. El albarán se crea en <strong>Borrador</strong>.</p>
+<p>Para crear un albarán sin pedido, accede a <strong><a href="https://app.etendo.ai/goods-shipment" target="_blank">Ventas &gt; Albarán</a></strong> y haz clic en <strong>+ Nuevo albarán</strong>, en la esquina superior derecha. Se abre el formulario en blanco.</p>
+<div class="admonition info">
+<p class="admonition-title">Qué datos pasan del pedido al albarán</p>
+<p>El cliente, la dirección, el almacén y las líneas con sus cantidades. La nota del pedido no pasa al albarán. Si el pedido ya tiene parte de la mercancía entregada, el albarán solo propone las unidades que quedan pendientes.</p>
+</div>
 <h3 id="2-completa-el-formulario">2. Completa el formulario<a class="headerlink" href="#2-completa-el-formulario" title="Permanent link">¶</a></h3>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-albaranes-3.png" data-desc-position="bottom"><img alt="Vista formulario del Albarán de venta" src="../assets/crear-y-gestionar-albaranes-3.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-albaranes-3.png" data-desc-position="bottom"><img alt="Formulario de Albarán de Venta en Borrador con el cliente, el almacén, dos líneas de producto y el pedido del que sale en la sección Documentos" src="../assets/crear-y-gestionar-albaranes-3.png"></a>
 <br>
-<figcaption>Formulario de creación y edición del Albarán de venta.</figcaption>
+<figcaption>Formulario del Albarán de Venta en Borrador, creado a partir de un pedido de venta.</figcaption>
 </figure>
-<p>El formulario se abre al crear un albarán nuevo o al hacer clic en <strong>Editar</strong> desde la vista detalle.</p>
 <p><strong>Cabecera</strong></p>
 <ul>
-<li><strong>Contacto</strong> — cliente destinatario; se prellena desde el pedido de origen si el albarán se generó desde uno.</li>
-<li><strong>Nº documento</strong> — se genera automáticamente al guardar.</li>
-<li><strong>Fecha del movimiento</strong> — fecha real de la entrega; por defecto, la fecha actual.</li>
-<li><strong>Almacén</strong> — almacén desde el cual se despacha la mercadería.</li>
-<li><strong>Dirección</strong> — se autocompleta con la dirección de entrega del contacto al seleccionarlo (o se hereda del pedido de origen, si el albarán se generó desde uno); editable, por ejemplo cuando el contacto tiene más de una dirección de entrega.</li>
+<li><strong>Contacto</strong> <em>(obligatorio)</em> — el cliente que recibe la mercancía. Si el albarán sale de un pedido, ya viene completado.</li>
+<li><strong>Nº documento</strong> — Etendo le asigna el número al guardar el albarán.</li>
+<li><strong>Fecha del movimiento</strong> <em>(obligatorio)</em> — el día en que entregas la mercancía. Por defecto, la fecha de hoy.</li>
+<li><strong>Almacén</strong> <em>(obligatorio)</em> — el almacén del que sale la mercancía.</li>
+<li><strong>Moneda</strong> <em>(obligatorio)</em> — por defecto, la moneda de tu empresa.</li>
+<li><strong>Dirección</strong> <em>(obligatorio)</em> — la dirección de entrega. Viene de la ficha del cliente o del pedido. Puedes cambiarla solo para este albarán, por ejemplo si el cliente tiene varias direcciones de entrega.</li>
+<li><strong>Proyecto</strong> y <strong>Centro de costos</strong> — opcionales. Te sirven para analizar tus ventas y tus costes por proyecto o por área de tu negocio.</li>
 </ul>
 <p><strong>Pestaña Líneas</strong></p>
-<p>El botón <strong>+ Añadir línea</strong> agrega una línea vacía para cargar manualmente; su menú desplegable ofrece además <strong>Añadir desde pedido</strong> y <strong>Añadir desde Factura</strong>, para incorporar líneas directamente desde un pedido o una factura ya completada del mismo cliente. Al importar puedes indicar en cada línea cuántas unidades traer, sin tener que importar la línea completa.</p>
-<p>Las líneas muestran, por producto, la <strong>Cant. movida</strong> (cantidad incluida en este albarán) y la <strong>Cant. pedido</strong> (cantidad total del pedido de origen), a modo de referencia. Si el albarán no se generó a partir de un pedido de venta, estos campos quedan vacíos.</p>
-<p>La sección <strong>DOCUMENTOS</strong> muestra el pedido de origen como enlace navegable (esta misma información aparece también en la vista detalle; ver <a href="#2-abre-el-albaran">Abre el albarán</a>), y el campo <strong>NOTAS</strong> permite añadir observaciones internas que no se incluyen en el PDF.</p>
-<p>El formulario incluye también una pestaña <strong>Adjuntos</strong>, para vincular archivos al albarán.</p>
+<p>Las líneas son los productos que entregas. Cada línea muestra:</p>
+<ul>
+<li><strong>Producto</strong> — el producto que entregas.</li>
+<li><strong>Cant. movida</strong> — cuántas unidades entregas con este albarán.</li>
+<li><strong>Unidad</strong> — la unidad de medida del producto.</li>
+<li><strong>Cant. pedido</strong> — cuántas unidades tenía el pedido, como referencia. Si el albarán no sale de un pedido, queda vacía.</li>
+</ul>
+<p>Para añadir líneas, haz clic en <strong>+ Añadir línea</strong>. Con la flecha de ese botón puedes elegir <strong>Añadir desde pedido</strong> o <strong>Añadir desde Factura</strong>, para traer las líneas de un pedido o de una factura del mismo cliente.</p>
+<p>Al pasar el cursor sobre una línea aparecen tres iconos: <strong>Editar dimensiones</strong>, <strong>Editar línea</strong> y <strong>Eliminar</strong>. Con la flecha <strong>Expandir</strong>, a la izquierda de la línea, ves el <strong>Proyecto</strong> y el <strong>Centro de costos</strong> de esa línea.</p>
+<div class="admonition tip">
+<p class="admonition-title">Si solo entregas una parte</p>
+<p>Antes de confirmar, quita las líneas que no entregas con el icono <strong>Eliminar</strong> de la línea. Etendo te pide confirmación, porque no se puede deshacer. Lo que quites queda pendiente de entrega en el pedido.</p>
+</div>
+<p>Los servicios del pedido también pueden ir en el albarán. Así dejas constancia de que el servicio se hizo, aunque no salga mercancía del almacén.</p>
+<p><strong>Documentos, notas, adjuntos y otros datos</strong></p>
+<ul>
+<li><strong>Documentos</strong> — muestra el pedido del que sale el albarán, con su importe y su estado. Haz clic en él para abrirlo.</li>
+<li><strong>Notas</strong> — para añadir observaciones sobre la entrega.</li>
+<li>Pestaña <strong>Adjuntos</strong> — para guardar archivos junto al albarán.</li>
+<li>Pestaña <strong>Otros</strong> — te dice si el albarán ya está registrado en tu contabilidad.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Para tu asesor</p>
+<ul>
+<li><strong>Proyecto</strong> y <strong>Centro de costos</strong> son dimensiones analíticas. Se pueden indicar en la cabecera o en cada línea, con <strong>Editar dimensiones</strong>.</li>
+<li>La pestaña <strong>Otros</strong> muestra el <strong>Estado contable</strong> del albarán, con el mismo valor que la columna <strong>Contabilizado</strong> de la lista: <strong>Sin contabilizar</strong> mientras no se haya registrado en la contabilidad y <strong>Contabilizado</strong> una vez registrado.</li>
+</ul>
+</div>
 <h3 id="3-confirma-el-albaran">3. Confirma el albarán<a class="headerlink" href="#3-confirma-el-albaran" title="Permanent link">¶</a></h3>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-albaranes-5.png" data-desc-position="bottom"><img alt="Popup de confirmación del Albarán de venta" src="../assets/crear-y-gestionar-albaranes-5.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-albaranes-5.png" data-desc-position="bottom"><img alt="Ventana Confirmar albarán de venta con el interruptor Crear factura de venta activado, el selector Tarifa y el botón Confirmar y crear factura" src="../assets/crear-y-gestionar-albaranes-5.png" width="420"></a>
 <br>
-<figcaption>Popup de confirmación del Albarán de venta, con la opción para generar la factura de venta.</figcaption>
+<figcaption>Ventana de confirmación del Albarán de venta con la opción de crear la factura de venta.</figcaption>
 </figure>
-<p>Al hacer clic en <strong>Confirmar</strong>, el sistema muestra el popup de confirmación con la opción <strong>Crear factura de venta en borrador</strong>, desactivada por defecto (la factura se generaría prellenada con el cliente, los productos enviados y las cantidades del albarán). Si el pedido de origen ya está facturado en su totalidad, esta opción no aparece y el popup solo indica que se registrará el movimiento, sin crear una factura nueva.</p>
-<p>Si confirmas sin activar la opción, el albarán pasa a Completado y se procesa la salida de la mercadería del stock; la factura queda pendiente y puedes generarla más adelante con la acción <strong>Crear Factura</strong> (ver <a href="#4-genera-la-factura-pendiente">Genera la factura pendiente</a>).</p>
+<p>Cuando hayas revisado las líneas, haz clic en <strong>Confirmar</strong>. Se abre la ventana <strong>Confirmar albarán de venta</strong>, con el número del albarán y el cliente.</p>
+<p>El interruptor <strong>Crear factura de venta</strong> viene activado. Así, en el mismo paso creas la factura con el cliente, los productos enviados y las cantidades del albarán:</p>
+<ul>
+<li><strong>Si quieres la factura ahora</strong> — deja el interruptor activado, elige la <strong>Tarifa</strong> con la que se calculan los precios y haz clic en <strong>Confirmar y crear factura</strong>.</li>
+<li><strong>Si prefieres facturar más tarde</strong> — desactiva el interruptor y haz clic en <strong>Confirmar albarán</strong>. Puedes crear la factura después (ver <a href="#4-genera-la-factura-pendiente">Genera la factura pendiente</a>).</li>
+</ul>
+<p>El albarán pasa a <strong>Completado</strong> y la mercancía sale del almacén.</p>
 <div class="admonition warning">
-<p class="admonition-title">El albarán queda bloqueado</p>
-<p>Una vez confirmado, el albarán no se puede editar directamente. Si necesitas revertir la entrega, deberás crear una devolución para volver a generar la entrada de stock.</p>
+<p class="admonition-title">Si no tienes stock suficiente</p>
+<p>Si falta stock de algún producto, la ventana muestra el aviso «No hay suficiente en stock», con la línea y el producto, y el albarán no se confirma. Registra primero la entrada de esa mercancía, por ejemplo con un <a href="../../../../operaciones/compras/crear-y-gestionar-albaranes-de-compra/crear-y-gestionar-albaranes-de-compra/">albarán de compra</a>, y vuelve a confirmar.</p>
 </div>
 <hr>
 <h2 id="gestionar-albaranes">Gestionar albaranes<a class="headerlink" href="#gestionar-albaranes" title="Permanent link">¶</a></h2>
+<p>Cuando el albarán ya está confirmado, esta parte te muestra cómo encontrarlo, enviarlo y facturarlo.</p>
 <h3 id="1-busca-el-albaran">1. Busca el albarán<a class="headerlink" href="#1-busca-el-albaran" title="Permanent link">¶</a></h3>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-albaranes-1.png" data-desc-position="bottom"><img alt="Vista lista del Albarán de venta" src="../assets/crear-y-gestionar-albaranes-1.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-albaranes-1.png" data-desc-position="bottom"><img alt="Vista lista de Albarán de Venta con albaranes Completados, contabilizados y facturados al 100 %, con su fecha, número, cliente y almacén" src="../assets/crear-y-gestionar-albaranes-1.png"></a>
 <br>
-<figcaption>Vista lista del Albarán de venta con columnas de estado y facturación.</figcaption>
+<figcaption>Vista lista del Albarán de Venta con las columnas de estado, contabilidad y facturación.</figcaption>
 </figure>
-<p>La vista lista de <strong><a href="https://app.etendo.ai/goods-shipment" target="_blank">Ventas &gt; Albarán</a></strong> muestra las columnas <strong>Fecha del movimiento</strong>, <strong>Nº documento</strong>, <strong>Contacto</strong>, <strong>Estado doc.</strong>, <strong>Almacén</strong> y <strong>Estado de facturación</strong>. Al pasar el cursor sobre una fila aparecen accesos rápidos para editar, clonar y enviar. Para filtrar la lista utiliza los selectores de <strong>estado del documento</strong> en la barra superior.</p>
+<p>La vista lista muestra todos tus albaranes con las columnas <strong>Fecha del movimiento</strong>, <strong>Nº documento</strong>, <strong>Contacto</strong>, <strong>Estado doc.</strong> (ver <a href="#estados-del-documento">Estados del Documento</a>), <strong>Contabilizado</strong>, <strong>Almacén</strong> y <strong>Estado de facturación</strong>.</p>
+<p><strong>Estado de facturación</strong> te dice qué parte del albarán ya facturaste. Muestra un indicador circular con el porcentaje: verde y completo al 100 %, gris y vacío al 0 %.</p>
+<p>Para encontrar un albarán, tienes estas opciones:</p>
+<ul>
+<li><strong>Filtrar por estado</strong> — el selector <strong>Todos los estados</strong> de la barra superior.</li>
+<li><strong>Filtrar por fecha</strong> — el selector <strong>Cualquier fecha</strong>.</li>
+<li><strong>Filtros</strong> — para añadir más criterios de búsqueda.</li>
+</ul>
+<p>Junto a <strong>+ Nuevo albarán</strong> tienes botones para ordenar, actualizar e imprimir la lista.</p>
+<p>Al pasar el cursor sobre una fila aparecen accesos rápidos para trabajar con ese albarán sin abrirlo: <strong>Editar</strong>, <strong>Clonar</strong>, <strong>Enviar / Descargar</strong>, <strong>Más acciones</strong> y <strong>Eliminar</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Para tu asesor</p>
+<p>La columna <strong>Contabilizado</strong> muestra si el albarán ya está registrado en tu contabilidad: <strong>Contabilizado</strong> cuando lo está y <strong>Sin contabilizar</strong> mientras no lo esté. Para registrarlo, usa la acción <strong>Contabilizar</strong> (ver <a href="#acciones-disponibles">Acciones Disponibles</a>).</p>
+</div>
 <h3 id="2-abre-el-albaran">2. Abre el albarán<a class="headerlink" href="#2-abre-el-albaran" title="Permanent link">¶</a></h3>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-albaranes-2.png" data-desc-position="bottom"><img alt="Vista detalle del Albarán de venta" src="../assets/crear-y-gestionar-albaranes-2.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-albaranes-2.png" data-desc-position="bottom"><img alt="Vista detalle de Albarán de Venta con la vista previa del PDF y el panel lateral con estado, emails y el pedido relacionado" src="../assets/crear-y-gestionar-albaranes-2.png"></a>
 <br>
 <figcaption>Vista detalle con la previsualización del PDF y el panel lateral de información clave.</figcaption>
 </figure>
-<p>Al hacer clic sobre un albarán existente se abre la vista detalle, con la previsualización del PDF a la izquierda y, a la derecha, los botones <strong>Enviar</strong>, <strong>Descargar PDF</strong> y <strong>Editar</strong>. El panel derecho muestra la información clave: <strong>Nº documento</strong>, <strong>Contacto</strong>, <strong>Almacén</strong>, <strong>Fecha movimiento</strong>, <strong>Estado</strong> y <strong>Estado de facturación</strong>. El panel incluye también la pestaña <strong>General</strong>, que agrega las secciones <strong>EMAILS</strong> y <strong>DOCUMENTOS RELACIONADOS</strong>, que muestra el pedido de origen (si el albarán se generó desde uno) como enlace navegable. Esta misma información aparece también dentro del formulario completo, en la pestaña Líneas, accesible desde <strong>Editar</strong>.</p>
-<h3 id="3-enviar-o-imprimir-albaran">3. Enviar o Imprimir albarán<a class="headerlink" href="#3-enviar-o-imprimir-albaran" title="Permanent link">¶</a></h3>
+<p>Haz clic en un albarán de la lista para abrir la vista detalle. En el centro ves el PDF del albarán, con botones para acercarlo, alejarlo o verlo a pantalla completa.</p>
+<p>El PDF muestra tus datos y los del cliente, la fecha, el pedido del que sale, el almacén y cada producto en dos columnas: <strong>Cant. pedida</strong>, lo que el cliente pidió, y <strong>Cant. entregada</strong>, lo que le entregas con este albarán. Al pie tiene espacio para la <strong>Firma del receptor</strong> y la <strong>Fecha de recepción</strong>, para que el cliente firme al recibir la mercancía. No lleva precios.</p>
+<p>En el panel derecho, la sección <strong>Estado</strong> muestra el <strong>Nº documento</strong>, el <strong>Contacto</strong>, el <strong>Almacén</strong>, la <strong>Fecha movimiento</strong>, el <strong>Estado</strong> y el <strong>Estado de facturación</strong>. Desde este panel puedes:</p>
+<ul>
+<li><strong>Enviar</strong> — abre el panel de envío por email al cliente.</li>
+<li><strong>Descargar PDF</strong> — descarga el albarán en PDF.</li>
+<li><strong>Editar</strong> — abre el formulario completo.</li>
+</ul>
+<p>Debajo, el panel tiene dos secciones:</p>
+<ul>
+<li><strong>Emails</strong> — los correos que le enviaste al cliente. Desde el enlace <strong>Enviar email</strong> puedes mandar uno nuevo.</li>
+<li><strong>Documentos relacionados</strong> — el pedido del que sale el albarán, con su importe y su estado.</li>
+</ul>
+<h3 id="3-envia-o-imprime-el-albaran">3. Envía o imprime el albarán<a class="headerlink" href="#3-envia-o-imprime-el-albaran" title="Permanent link">¶</a></h3>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-albaranes-4.png" data-desc-position="bottom"><img alt="Popup de envío por email del Albarán de venta" src="../assets/crear-y-gestionar-albaranes-4.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-albaranes-4.png" data-desc-position="bottom"><img alt="Panel Enviar Albarán de Venta con la vista previa del PDF, el correo del cliente, el asunto y el mensaje" src="../assets/crear-y-gestionar-albaranes-4.png"></a>
 <br>
 <figcaption>Panel de envío por email del Albarán de venta.</figcaption>
 </figure>
-<p>El botón <strong>Enviar</strong>, disponible una vez que el albarán está Completado, abre el panel <strong>Enviar Albarán de Venta</strong>, con los campos <strong>Para</strong>, el enlace <strong>Añadir CC</strong> para sumar destinatarios en copia, <strong>Asunto</strong> (autocompletado con el número de documento y nombre del contacto) y <strong>Mensaje</strong>. Desde este panel también puedes descargar el PDF con el botón <strong>Descargar PDF</strong>.</p>
-<p>Junto al botón <strong>Enviar</strong>, el botón <strong>Imprimir</strong> (también solo en Completado) genera directamente el PDF del albarán, sin pasar por el panel de envío.</p>
+<p>Con el albarán <strong>Completado</strong>, tienes tres formas de hacérselo llegar al cliente:</p>
+<ul>
+<li>
+<p><strong>Envíalo por email</strong> — haz clic en el icono <strong>Enviar / Descargar</strong> (con forma de sobre) de la barra superior, o en <strong>Enviar</strong> desde la vista detalle. Se abre el panel <strong>Enviar Albarán de Venta</strong>, con una vista previa del PDF a la izquierda.</p>
+<ul>
+<li><strong>Para</strong> ya viene con el correo del cliente, si su ficha lo tiene. Con <strong>Añadir CC</strong> puedes sumar destinatarios en copia.</li>
+<li><strong>Asunto</strong> ya viene completado con el número del albarán y el nombre del cliente.</li>
+<li><strong>Mensaje</strong> trae un saludo que puedes cambiar.</li>
+</ul>
+<p>Haz clic en <strong>Enviar</strong> para mandar el correo.
+- <strong>Descarga el PDF y envíalo por otro medio</strong> — con el botón <strong>Descargar PDF</strong>.
+- <strong>Imprímelo y entrégalo con la mercancía</strong> — usa el icono <strong>Imprimir</strong> de la barra superior.</p>
+</li>
+</ul>
+<p>En <strong>Borrador</strong> no están disponibles <strong>Enviar / Descargar</strong> ni <strong>Imprimir</strong>.</p>
 <h3 id="4-genera-la-factura-pendiente">4. Genera la factura pendiente<a class="headerlink" href="#4-genera-la-factura-pendiente" title="Permanent link">¶</a></h3>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-albaranes-7.png" data-desc-position="bottom"><img alt="Popup Gestionar documentos del Albarán de venta" src="../assets/crear-y-gestionar-albaranes-7.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-albaranes-7.png" data-desc-position="bottom"><img alt="Ventana Generar factura con el cliente, el importe a facturar, el selector Tarifa y las unidades pendientes de facturar" src="../assets/crear-y-gestionar-albaranes-7.png" width="420"></a>
 <br>
-<figcaption>Popup Gestionar documentos, con la selección de tarifa para generar la factura pendiente.</figcaption>
+<figcaption>Ventana Generar factura, con la tarifa y las unidades pendientes de facturar.</figcaption>
 </figure>
-<p>Si el albarán Completado todavía no tiene una factura asociada, la acción <strong>Crear Factura</strong> (ver <a href="#acciones-disponibles">Acciones Disponibles</a>) abre el popup <strong>Gestionar documentos</strong>. Antes de generar la factura debes seleccionar la <strong>Tarifa</strong> que se usará para aplicar los precios, ya que el albarán en sí no tiene una tarifa propia. La sección <strong>Generar documentos (opcional)</strong> muestra las unidades pendientes de facturar con la opción <strong>Crear factura</strong> ya marcada; al confirmar, se genera una factura de venta en Borrador con esas cantidades.</p>
-<p>El botón <strong>Crear Devolución</strong>, visible en la barra de acciones una vez que el albarán está Completado, permite iniciar una devolución; para el detalle completo de ese proceso, ver <a href="../../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones/">Crear y gestionar devoluciones</a>.</p>
-<div class="admonition info">
-<p class="admonition-title">Cantidades pendientes</p>
-<p>Cuando un pedido está parcialmente entregado, la opción de crear el albarán solo propone las unidades aún no incluidas en albaranes confirmados. La acción deja de estar disponible cuando el pedido queda entregado al 100 %.</p>
-</div>
+<p>Si confirmaste el albarán sin crear la factura, créala desde el albarán <strong>Completado</strong>:</p>
+<ol>
+<li>Haz clic en <strong>Crear Factura</strong>, en la barra superior. Se abre la ventana <strong>Generar factura</strong>, con el cliente y las unidades pendientes de facturar.</li>
+<li>Elige la <strong>Tarifa</strong>. El albarán no tiene precios propios, así que la factura toma los precios de la tarifa que elijas.</li>
+<li>Haz clic en <strong>Crear →</strong>.</li>
+</ol>
+<p>Etendo crea la factura de venta ya confirmada, con las cantidades entregadas y los precios de esa tarifa. Cuando el albarán queda facturado al 100 %, la etiqueta pasa a <strong>Facturado 100%</strong> y <strong>Crear Factura</strong> deja de aparecer en la barra superior.</p>
+<p>Si el cliente te devuelve mercancía, haz clic en <strong>Crear Devolución</strong>, en la barra superior. Ver <a href="../../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones/">Crear y gestionar devoluciones</a>.</p>
 <hr>
 <h2 id="estados-del-documento">Estados del Documento<a class="headerlink" href="#estados-del-documento" title="Permanent link">¶</a></h2>
-<p>La barra superior del formulario muestra el estado actual del albarán junto al indicador de <strong>Estado de facturación</strong>.</p>
+<p>El estado se muestra como una etiqueta junto al botón <strong>Cancelar</strong>, en la barra superior.</p>
 <table>
 <thead>
 <tr>
@@ -4852,25 +4965,26 @@
 <tbody>
 <tr>
 <td><span style="background:#F3F4F6;color:#6B7280;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Borrador</span></td>
-<td>Sin efecto sobre el stock ni sobre los indicadores del pedido de origen.</td>
+<td>En preparación. Puedes cambiar todos sus datos. Todavía no sale mercancía del almacén.</td>
 </tr>
 <tr>
 <td><span style="background:#F0FDF4;color:#22C55E;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Completado</span></td>
-<td>Actualiza el <strong>Estado de facturación</strong> del pedido de venta origen y habilita la generación de la factura o de una devolución.</td>
+<td>Confirmado. La mercancía ya salió del almacén. Puedes enviarlo, facturarlo y crear una devolución.</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition warning">
-<p class="admonition-title">El albarán no se puede editar tras confirmar</p>
-<p>Una vez confirmado, el albarán queda bloqueado y ya no admite cambios. Si necesitas revertir la entrega, deberás crear una devolución para volver a generar la entrada de stock.</p>
+<p class="admonition-title">Si necesitas corregir un albarán confirmado</p>
+<p>En <strong>Completado</strong>, la mayoría de los datos ya no se pueden cambiar: cliente, fechas, almacén y líneas. Solo puedes elegir el <strong>Proyecto</strong> y el <strong>Centro de costos</strong>. Si necesitas deshacer la entrega, total o parcialmente, haz clic en <strong>Crear Devolución</strong>.</p>
 </div>
 <hr>
 <h2 id="acciones-disponibles">Acciones Disponibles<a class="headerlink" href="#acciones-disponibles" title="Permanent link">¶</a></h2>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-albaranes-6.png" data-desc-position="bottom"><img alt="Barra de acciones del Albarán de venta" src="../assets/crear-y-gestionar-albaranes-6.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-albaranes-6.png" data-desc-position="bottom"><img alt="Barra de acciones del Albarán de venta Completado con las etiquetas Completado, Sin contabilizar y Facturado 0%, los iconos de acción y los botones Crear Devolución y Crear Factura" src="../assets/crear-y-gestionar-albaranes-6.png"></a>
 <br>
-<figcaption>Barra de acciones del Albarán de venta.</figcaption>
+<figcaption>Barra de acciones del Albarán de venta en estado Completado.</figcaption>
 </figure>
+<p>La barra superior del formulario muestra estas acciones:</p>
 <table>
 <thead>
 <tr>
@@ -4882,47 +4996,57 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Cancelar</strong></td>
-<td style="text-align: left;">Descarta los cambios no guardados y vuelve a la lista.</td>
-<td style="text-align: left;">Solo en Borrador</td>
+<td style="text-align: left;">Descarta los cambios sin guardar y vuelve a la lista.</td>
+<td style="text-align: left;">Todos los estados</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Guardar</strong></td>
-<td style="text-align: left;">Guarda el documento sin cambiar su estado.</td>
+<td style="text-align: left;">Guarda el albarán sin cambiar su estado.</td>
 <td style="text-align: left;">Solo en Borrador</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Confirmar</strong></td>
-<td style="text-align: left;">Confirma el albarán y lo pasa a estado Completado (ver <a href="#crear-un-albaran">Crear un albarán</a>).</td>
+<td style="text-align: left;">Abre la ventana <strong>Confirmar albarán de venta</strong> y pasa el albarán a Completado (ver <a href="#3-confirma-el-albaran">Confirma el albarán</a>).</td>
 <td style="text-align: left;">Solo en Borrador</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Clonar</strong></td>
-<td style="text-align: left;">Crea un nuevo borrador con los mismos datos.</td>
-<td style="text-align: left;">Borrador y Completado</td>
+<td style="text-align: left;"><strong>Copiar enlace</strong></td>
+<td style="text-align: left;">Copia el enlace directo a este albarán, para compartirlo con otra persona de tu equipo.</td>
+<td style="text-align: left;">Todos los estados</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Enviar</strong></td>
-<td style="text-align: left;">Abre el panel de envío por correo electrónico.</td>
+<td style="text-align: left;"><strong>Clonar</strong></td>
+<td style="text-align: left;">Crea un borrador nuevo con los mismos datos del albarán.</td>
+<td style="text-align: left;">Todos los estados</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Enviar / Descargar</strong></td>
+<td style="text-align: left;">Icono con forma de sobre. Abre el panel de envío por email, desde donde también puedes descargar el PDF.</td>
 <td style="text-align: left;">Solo en Completado</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Imprimir</strong></td>
-<td style="text-align: left;">Genera el PDF del albarán.</td>
+<td style="text-align: left;">Crea una copia para imprimir y entregar con la mercancía.</td>
 <td style="text-align: left;">Solo en Completado</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Crear Factura</strong></td>
-<td style="text-align: left;">Abre el popup Gestionar documentos para elegir la tarifa y generar la factura de venta en Borrador con las cantidades entregadas.</td>
-<td style="text-align: left;">Solo en Completado</td>
+<td style="text-align: left;">Abre la ventana <strong>Generar factura</strong> y crea la factura de venta ya confirmada con lo entregado (ver <a href="#4-genera-la-factura-pendiente">Genera la factura pendiente</a>).</td>
+<td style="text-align: left;">Completado, mientras quede algo por facturar</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Crear Devolución</strong></td>
-<td style="text-align: left;">Abre el asistente para crear una devolución a partir de este albarán. Ver <a href="../../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones/">Crear y gestionar devoluciones</a>.</td>
+<td style="text-align: left;">Inicia la devolución de la mercancía entregada. Ver <a href="../../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones/">Crear y gestionar devoluciones</a>.</td>
 <td style="text-align: left;">Solo en Completado</td>
 </tr>
 <tr>
+<td style="text-align: left;"><strong>Contabilizar</strong></td>
+<td style="text-align: left;">En el menú de tres puntos. Registra el albarán en tu contabilidad. Si tienes dudas, consúltalo con tu asesor.</td>
+<td style="text-align: left;">Completado, sin contabilizar</td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Papelera</strong></td>
-<td style="text-align: left;">Elimina el documento con confirmación previa.</td>
+<td style="text-align: left;">Elimina el albarán. Antes te pide confirmación.</td>
 <td style="text-align: left;">Solo en Borrador</td>
 </tr>
 </tbody>
@@ -4957,7 +5081,7 @@
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 de noviembre de 2026 15:58:45 UTC">6 de noviembre de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="17 de noviembre de 2026 16:36:33 UTC">17 de noviembre de 2026</span>
   </span>
 
     
@@ -4985,6 +5109,11 @@
     
     <nav>
       
+        <a href="https://github.com/isaiasb-etendo" class="md-author" title="@isaiasb-etendo">
+          
+          <img src="https://avatars.githubusercontent.com/u/106354215?v=4&amp;size=72" alt="isaiasb-etendo">
+        </a>
+      
         <a href="https://github.com/valeg-etendo" class="md-author" title="@valeg-etendo">
           
           <img src="https://avatars.githubusercontent.com/u/95085326?v=4&amp;size=72" alt="valeg-etendo">
@@ -4993,11 +5122,6 @@
         <a href="https://github.com/mapenglishservices" class="md-author" title="@mapenglishservices">
           
           <img src="https://avatars.githubusercontent.com/u/125575495?v=4&amp;size=72" alt="mapenglishservices">
-        </a>
-      
-        <a href="https://github.com/isaiasb-etendo" class="md-author" title="@isaiasb-etendo">
-          
-          <img src="https://avatars.githubusercontent.com/u/106354215?v=4&amp;size=72" alt="isaiasb-etendo">
         </a>
       
       

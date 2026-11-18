@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Aprende a crear, enviar y confirmar presupuestos de venta en Etendo, y a convertirlos en pedidos o facturas sin volver a cargar los mismos datos.">
+        <meta name="description" content="Aprende a crear, enviar y confirmar presupuestos de venta en Etendo, y a convertirlos en pedidos o facturas sin volver a escribir los mismos datos.">
       
       
       
@@ -61,7 +61,7 @@
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="Crear y gestionar presupuestos - Etendo Academy">
-<meta property="og:description" content="Aprende a crear, enviar y confirmar presupuestos de venta en Etendo, y a convertirlos en pedidos o facturas sin volver a cargar los mismos datos.">
+<meta property="og:description" content="Aprende a crear, enviar y confirmar presupuestos de venta en Etendo, y a convertirlos en pedidos o facturas sin volver a escribir los mismos datos.">
 <meta property="og:image" content="https://help.etendo.ai/assets/images/social/comercial/ventas/crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
@@ -69,7 +69,7 @@
 <meta property="og:url" content="https://help.etendo.ai/comercial/ventas/crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos/">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:title" content="Crear y gestionar presupuestos - Etendo Academy">
-<meta property="twitter:description" content="Aprende a crear, enviar y confirmar presupuestos de venta en Etendo, y a convertirlos en pedidos o facturas sin volver a cargar los mismos datos.">
+<meta property="twitter:description" content="Aprende a crear, enviar y confirmar presupuestos de venta en Etendo, y a convertirlos en pedidos o facturas sin volver a escribir los mismos datos.">
 <meta property="twitter:image" content="https://help.etendo.ai/assets/images/social/comercial/ventas/crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.png">
 <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
@@ -1458,14 +1458,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../enviar-tus-facturas-por-email/enviar-tus-facturas-por-email/" class="md-nav__link">
+      <a href="../../enviar-documentos-por-email/enviar-documentos-por-email/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Enviar tus facturas por email
+    Enviar documentos por email
   
 
     
@@ -1486,14 +1486,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta/" class="md-nav__link">
+      <a href="../../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Añadir pagos a tu factura de venta
+    Añadir cobros a tu factura de venta
   
 
     
@@ -1802,6 +1802,8 @@
       
         
       
+        
+      
     
     
     
@@ -1890,6 +1892,34 @@
     
   
     Gestionar tus pedidos de compra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enviar-documentos-por-email/enviar-documentos-por-email/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enviar documentos por email
   
 
     
@@ -4737,140 +4767,175 @@
 
 <h1 id="crear-y-gestionar-presupuestos">Crear y gestionar presupuestos<a class="headerlink" href="#crear-y-gestionar-presupuestos" title="Permanent link">¶</a></h1>
 <h2 id="descripcion-general">Descripción general<a class="headerlink" href="#descripcion-general" title="Permanent link">¶</a></h2>
-<p>El <strong>presupuesto de venta</strong> es un documento opcional del ciclo comercial. Representa una oferta enviada al cliente con el detalle de productos, precios, descuentos y condiciones de pago. Una vez confirmado, da lugar a un <a href="../../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos/">pedido de venta</a> o a una <a href="../../crear-una-factura-de-venta/crear-una-factura-de-venta/">factura de venta</a> directa sin necesidad de reintroducir datos. El pedido de venta es la opción habitual cuando se comercializan productos con stock o que requieren entrega física; la factura directa se usa para servicios o ventas sin entrega.</p>
-<p>El siguiente diagrama muestra el ciclo de vida del presupuesto de venta, incluyendo los tres estados de cierre posibles:</p>
+<p>El <strong>presupuesto de venta</strong> es la oferta que le envías a un cliente antes de que se comprometa a comprar. Incluye los productos, los precios, los descuentos y las condiciones de pago.</p>
+<p>Es un documento opcional. Cuando el cliente lo acepta, lo conviertes en un <a href="../../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos/">pedido de venta</a> o directamente en una <a href="../../crear-una-factura-de-venta/crear-una-factura-de-venta/">factura de venta</a>, sin volver a escribir los datos. El pedido es la opción habitual cuando vendes productos que tienes que entregar. La factura directa es para servicios o ventas sin entrega.</p>
+<p>El siguiente diagrama muestra los estados por los que pasa un presupuesto, incluidos los tres estados de cierre posibles:</p>
 <pre class="mermaid"><code>flowchart LR
   A[Borrador] --&gt;|Confirmar| B[Bajo evaluación]
   B --&gt;|Rechazar| R[Cerrado - Rechazado]
   B --&gt;|Crear pedido de venta| C[Cerrado - Pedido creado]
   B --&gt;|Facturar directamente| D[Cerrado - Factura creada]</code></pre>
-<p>Este artículo se organiza en dos flujos: primero cómo <strong>crear un presupuesto</strong> y enviarlo al cliente, y luego cómo <strong>gestionarlo</strong> cuando el cliente responde.</p>
+<p>Este artículo se organiza en dos partes: primero cómo <strong>crear un presupuesto</strong> y enviarlo al cliente, y luego cómo <strong>gestionarlo</strong> cuando el cliente responde.</p>
 <hr>
 <h2 id="crear-un-presupuesto">Crear un presupuesto<a class="headerlink" href="#crear-un-presupuesto" title="Permanent link">¶</a></h2>
 <h3 id="1-empieza-un-presupuesto-nuevo">1. Empieza un presupuesto nuevo<a class="headerlink" href="#1-empieza-un-presupuesto-nuevo" title="Permanent link">¶</a></h3>
-<p>Para crear un presupuesto nuevo, accede a <strong><a href="https://app.etendo.ai/sales-quotation" target="_blank">Ventas &gt; Presupuesto</a></strong> y utiliza el botón <strong>+ Nuevo presupuesto</strong> en la esquina superior derecha. Esto abre el formulario en blanco, listo para completar.</p>
+<p>Accede a <strong><a href="https://app.etendo.ai/sales-quotation" target="_blank">Ventas &gt; Presupuesto</a></strong> y haz clic en <strong>+ Nuevo presupuesto</strong>, en la esquina superior derecha. Se abre el formulario en blanco.</p>
 <h3 id="2-completa-el-formulario">2. Completa el formulario<a class="headerlink" href="#2-completa-el-formulario" title="Permanent link">¶</a></h3>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-3.png" data-desc-position="bottom"><img alt="Vista formulario de Presupuesto de venta" src="../assets/crear-y-gestionar-presupuestos-3.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-3.png" data-desc-position="bottom"><img alt="Formulario de Presupuesto de venta con el cliente, las condiciones y tres líneas de productos y servicios" src="../assets/crear-y-gestionar-presupuestos-3.png"></a>
 <br>
 <figcaption>Formulario de creación y edición del Presupuesto de venta.</figcaption>
 </figure>
-<p>El formulario se abre al crear un presupuesto nuevo o al hacer clic en <strong>Editar</strong> desde la vista detalle de un presupuesto existente.</p>
 <p><strong>Cabecera</strong></p>
 <ul>
-<li><strong>Contacto</strong> — cliente al que se dirige la oferta. Al seleccionarlo, el sistema autocompleta automáticamente la Dirección, el Método de pago y las Condiciones de pago con los valores configurados en ese contacto.</li>
-<li><strong>Nº documento</strong> — se genera automáticamente al guardar por primera vez.</li>
-<li><strong>Fecha de presupuesto</strong> — toma por defecto la fecha actual; editable.</li>
-<li><strong>Dirección</strong> — cargada desde el contacto; puede modificarse para este documento sin afectar al contacto.</li>
-<li><strong>Tarifa</strong> — determina a qué precios se cotizarán los productos en este presupuesto (lista de precios asignada al cliente). Normalmente se carga sola al seleccionar el cliente.</li>
-<li><strong>Válido hasta</strong> — fecha límite de vigencia de la oferta. No es obligatorio.</li>
-<li><strong>Método de pago</strong> — heredado del contacto; editable por documento.</li>
-<li><strong>Condiciones de pago</strong> — vienen de la ficha del cliente. Puedes cambiarlas solo para este presupuesto. Puedes elegir cualquiera de las condiciones de pago creadas en tu cuenta, o crear una nueva con <strong>+ Crear condición de pago</strong>. Ver <a href="../../../../sistema/configuracion/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago/">Cómo configurar las condiciones de pago</a>.</li>
-<li><strong>Moneda</strong> — moneda en la que se expresa el presupuesto. Por defecto, la moneda de la organización.</li>
+<li><strong>Contacto</strong> — el cliente al que le haces la oferta. Al elegirlo, la Dirección, la Tarifa, el Método de pago y las Condiciones de pago se completan solos con los datos de su ficha. Si el cliente todavía no existe, créalo sin salir del formulario con <strong>+ Crear contacto</strong>.</li>
+<li><strong>Fecha de presupuesto</strong> — por defecto, la fecha de hoy. Puedes cambiarla.</li>
+<li><strong>Moneda</strong> — la moneda en la que haces la oferta. Por defecto, la moneda de tu empresa.</li>
+<li><strong>Tarifa</strong> — la lista de precios con la que se calculan los precios de los productos. Normalmente es la que tiene asignada el cliente.</li>
+<li><strong>Dirección</strong> — viene de la ficha del cliente. Puedes cambiarla solo para este presupuesto.</li>
+<li><strong>Condiciones de pago</strong> — vienen de la ficha del cliente. Puedes cambiarlas solo para este presupuesto, elegir otras condiciones de tu cuenta o crear unas nuevas con <strong>+ Crear condición de pago</strong>. Ver <a href="../../../../sistema/configuracion/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago/">Cómo configurar las condiciones de pago</a>.</li>
+<li><strong>Nº documento</strong> — Etendo le asigna el número al guardar el presupuesto. En un presupuesto nuevo ves entre <code>&lt; &gt;</code> el número previsto.</li>
+<li><strong>Válido hasta</strong> — hasta qué fecha mantienes la oferta. No es obligatorio.</li>
+<li><strong>Método de pago</strong> — viene de la ficha del cliente. Puedes cambiarlo solo para este presupuesto. Lo ves al hacer clic en <strong>Mostrar más datos</strong>, debajo de la cabecera.</li>
 </ul>
 <div class="admonition tip">
-<p class="admonition-title">Autocompletado al elegir el contacto</p>
-<p>Todos los campos autocompletados son editables solo para este presupuesto, sin afectar la configuración del cliente. Si el contacto no tiene una dirección registrada, el campo queda vacío y debe completarse manualmente.</p>
+<p class="admonition-title">Datos que vienen de la ficha del cliente</p>
+<p>Puedes cambiarlos solo para este presupuesto. La ficha del cliente no cambia. Si el cliente no tiene una dirección registrada, escríbela tú.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Aviso de límite de crédito</p>
+<p>Si el cliente ya superó el límite de crédito de su ficha, al elegirlo ves un aviso en la parte superior del formulario con el importe superado. El aviso es informativo: puedes guardar y confirmar el presupuesto de todos modos.</p>
 </div>
 <p><strong>Pestaña Líneas</strong></p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-4.png" data-desc-position="bottom"><img alt="Pestaña Líneas del Presupuesto de venta" src="../assets/crear-y-gestionar-presupuestos-4.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-4.png" data-desc-position="bottom"><img alt="Pestaña Líneas del Presupuesto de venta con un monitor, un cable de red y un servicio de instalación" src="../assets/crear-y-gestionar-presupuestos-4.png"></a>
 <br>
 <figcaption>Pestaña Líneas con los productos y servicios incluidos en el presupuesto.</figcaption>
 </figure>
-<p>Las líneas representan los productos o servicios incluidos en la oferta. Usa el botón <strong>+ Añadir línea</strong> para incorporar una nueva línea al presupuesto.</p>
+<p>Las líneas son los productos o servicios que incluyes en la oferta. Después de elegir el contacto, haz clic en <strong>+ Añadir líneas</strong> para añadir la primera. Para las siguientes, haz clic en <strong>+ Añadir línea</strong>.</p>
 <ul>
-<li><strong>Producto</strong> — al seleccionarlo autocompleta la descripción y el precio según la tarifa de la cabecera.</li>
-<li><strong>Descripción</strong> — precompletada desde el producto; editable por línea.</li>
-<li><strong>Cant. pedido</strong> — cantidad del producto. Por defecto 1.</li>
-<li><strong>Precio</strong> — precio del producto según la tarifa seleccionada en la cabecera; editable si se necesita ajustar para este presupuesto.</li>
-<li><strong>% de descuento</strong> — descuento aplicado sobre el precio de tarifa de la línea.</li>
-<li><strong>Impuesto</strong> — tipo impositivo aplicable a la línea.</li>
-<li><strong>Importe bruto de línea</strong> — se calcula automáticamente aplicando el descuento al precio unitario multiplicado por la cantidad.</li>
+<li><strong>Producto</strong> — al elegirlo, la descripción y el precio se completan solos según la tarifa de la cabecera.</li>
+<li><strong>Descripción</strong> — viene de la ficha del producto. Puedes cambiarla en cada línea.</li>
+<li><strong>Cant. pedido</strong> — cuántas unidades ofreces. Por defecto, 1.</li>
+<li><strong>Precio</strong> — el precio del producto en la tarifa elegida. Puedes cambiarlo si necesitas ajustarlo para este cliente.</li>
+<li><strong>% de descuento</strong> — el descuento que aplicas sobre el precio de esa línea.</li>
+<li><strong>Impuesto</strong> — el impuesto que corresponde a la línea.</li>
+<li><strong>Importe bruto de línea</strong> — se calcula solo: precio por cantidad, con el descuento aplicado y el impuesto incluido.</li>
 </ul>
-<p>Para guardar una línea pulsa <span class="keys"><kbd class="key-enter">Enter</kbd></span> o haz clic fuera de la fila. Para cancelar sin guardar, pulsa <span class="keys"><kbd class="key-escape">Esc</kbd></span>.</p>
+<p>Para guardar una línea, usa la tecla <span class="keys"><kbd class="key-enter">Enter</kbd></span> o haz clic fuera de la fila. Para descartarla, usa la tecla <span class="keys"><kbd class="key-escape">Esc</kbd></span>.</p>
+<div class="admonition info">
+<p class="admonition-title">El presupuesto se guarda al añadir la primera línea</p>
+<p>Al hacer clic en <strong>+ Añadir líneas</strong>, Etendo guarda el presupuesto como borrador. Si después decides no seguir, puedes eliminarlo con el icono de papelera.</p>
+</div>
 <p><strong>Totales</strong></p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-5.png" data-desc-position="bottom"><img alt="Panel de totales del Presupuesto de venta" src="../assets/crear-y-gestionar-presupuestos-5.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-5.png" data-desc-position="bottom"><img alt="Panel de totales del Presupuesto de venta con subtotal, descuento por producto, impuesto y total" src="../assets/crear-y-gestionar-presupuestos-5.png"></a>
 <br>
 <figcaption>Panel de totales con desglose de subtotal, descuentos, impuesto e importe final.</figcaption>
 </figure>
-<p>El presupuesto admite dos tipos de descuento: uno por línea, aplicado directamente en la Pestaña Líneas sobre cada producto, y uno global que se aplica sobre el total del documento. El panel de totales en la parte inferior derecha muestra:</p>
+<p>Puedes aplicar dos tipos de descuento. El primero va en cada línea, en la columna <strong>% de descuento</strong>. El segundo se aplica sobre el total del presupuesto. El panel de totales, abajo a la derecha, muestra:</p>
 <ul>
-<li><strong>Subtotal sin descuento</strong> — suma del importe bruto de todas las líneas antes de descuentos.</li>
-<li><strong>Descuento por producto</strong> — suma de los descuentos por línea.</li>
-<li><strong>Descuento total</strong> — descuento adicional aplicado al documento completo. Se activa con el enlace <strong>+ Añadir descuento total</strong>.</li>
-<li><strong>Subtotal</strong> — base imponible tras descuentos.</li>
-<li><strong>Impuesto</strong> — importe de impuesto calculado según el tipo seleccionado en cada línea.</li>
-<li><strong>Total</strong> — importe final a pagar.</li>
+<li><strong>Subtotal sin descuento</strong> — precio por cantidad de todas las líneas, sin descuentos ni impuestos.</li>
+<li><strong>Descuento por producto</strong> — la suma de los descuentos de las líneas.</li>
+<li><strong>Descuento total</strong> — un descuento adicional sobre todo el presupuesto. Se añade con el enlace <strong>+ Añadir descuento total</strong>.</li>
+<li><strong>Subtotal</strong> — el importe sin impuestos, con los descuentos ya aplicados.</li>
+<li><strong>Impuesto</strong> — el impuesto de todas las líneas.</li>
+<li><strong>Total</strong> — el importe final que paga el cliente.</li>
 </ul>
 <p><strong>Notas y adjuntos</strong></p>
-<p>El campo <strong>Notas</strong> permite añadir observaciones internas. Este contenido no se incluye en el PDF enviado al cliente. Junto a la pestaña <strong>Líneas</strong>, el formulario incluye también una pestaña <strong>Adjuntos</strong> para vincular archivos al presupuesto.</p>
+<p>Usa el campo <strong>Notas</strong> para añadir observaciones sobre la oferta, como el plazo de entrega o una condición particular. Este texto se imprime en el PDF del presupuesto, en el bloque <strong>Observaciones</strong>, así que el cliente también lo ve.</p>
+<p>La pestaña <strong>Adjuntos</strong>, junto a <strong>Líneas</strong>, sirve para guardar archivos junto al presupuesto. Se activa cuando el presupuesto ya está guardado.</p>
 <h3 id="3-confirma-el-presupuesto-y-envialo-al-cliente">3. Confirma el presupuesto y envíalo al cliente<a class="headerlink" href="#3-confirma-el-presupuesto-y-envialo-al-cliente" title="Permanent link">¶</a></h3>
-<p>Cuando el formulario está completo, haz clic en <strong>Confirmar</strong> en la barra superior — disponible mientras el documento está en estado <strong>Borrador</strong>. El presupuesto pasa a estado <strong>Bajo evaluación</strong>, quedando marcado como pendiente de respuesta del cliente.</p>
-<div class="admonition warning">
-<p class="admonition-title">El presupuesto ya no puede volver a Borrador</p>
-<p>Una vez en <strong>Bajo evaluación</strong>, el presupuesto no puede devolverse a <strong>Borrador</strong> para editarlo. Si necesitas modificarlo, usa <strong>Rechazar</strong> para cerrarlo como <strong>Cerrado - Rechazado</strong> y luego <strong>Copia</strong> para crear un nuevo borrador con los mismos datos; edítalo y envía el nuevo presupuesto al cliente.</p>
-</div>
-<p>Con el presupuesto ya confirmado, tienes tres formas de hacérselo llegar al cliente:</p>
-<ul>
-<li><strong>Envíalo por email</strong> — haz clic en el icono <strong>Enviar</strong> (con forma de sobre) para abrir el panel <strong>Enviar Presupuesto de Venta</strong>, con los campos <strong>Para</strong>, el enlace <strong>Añadir CC</strong> para sumar destinatarios en copia, <strong>Asunto</strong> (autocompletado con el número de documento y nombre del contacto) y <strong>Mensaje</strong>. Pulsa <strong>Enviar</strong> para completar el envío.</li>
-<li><strong>Descarga el PDF para enviarlo por otro medio</strong> — si prefieres compartir el presupuesto por otro canal (por ejemplo WhatsApp), usa el botón <strong>Descargar PDF</strong>. Está disponible tanto desde la vista detalle del presupuesto como dentro del propio panel de envío por email.</li>
-<li><strong>Imprímelo para entregarlo en persona</strong> — si la venta es presencial, usa el icono <strong>Imprimir</strong> en la barra superior para generar una copia física del presupuesto y entregársela directamente al cliente.</li>
-</ul>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-7.png" data-desc-position="bottom"><img alt="Popup de envío por email del Presupuesto de venta" src="../assets/crear-y-gestionar-presupuestos-7.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-7.png" data-desc-position="bottom"><img alt="Panel de envío por email del Presupuesto de venta con la vista previa del PDF y el correo del cliente" src="../assets/crear-y-gestionar-presupuestos-7.png"></a>
 <br>
 <figcaption>Panel de envío por email del Presupuesto de venta.</figcaption>
 </figure>
+<p>Cuando el presupuesto esté completo, haz clic en <strong>Confirmar</strong> en la barra superior. Se abre la ventana <strong>Enviar a evaluación</strong> con un resumen del presupuesto. Haz clic en <strong>Enviar a evaluación</strong>. El presupuesto pasa a <strong>Bajo evaluación</strong>: queda pendiente de la respuesta del cliente.</p>
+<div class="admonition warning">
+<p class="admonition-title">El presupuesto ya no puede volver a Borrador</p>
+<p>En <strong>Bajo evaluación</strong> ya no puedes cambiar los datos del presupuesto. Si necesitas modificarlo:</p>
+<ol>
+<li>Haz clic en <strong>Rechazar</strong>, en el menú de tres puntos. El presupuesto queda <strong>Cerrado - Rechazado</strong>.</li>
+<li>Haz clic en <strong>Copia</strong> para crear un borrador nuevo con los mismos datos.</li>
+<li>Cambia lo que necesites en el borrador nuevo.</li>
+<li>Confírmalo y envíaselo al cliente.</li>
+</ol>
+</div>
+<p>Con el presupuesto ya confirmado, tienes tres formas de hacérselo llegar al cliente:</p>
+<ul>
+<li>
+<p><strong>Envíalo por email</strong> — haz clic en el icono <strong>Enviar / Descargar</strong> (con forma de sobre). Se abre el panel <strong>Enviar Presupuesto de Venta</strong>, con una vista previa del PDF a la izquierda.</p>
+<ul>
+<li><strong>Para</strong> ya viene con el correo del cliente, si su ficha lo tiene. Con <strong>Añadir CC</strong> puedes sumar destinatarios en copia.</li>
+<li><strong>Asunto</strong> ya viene completado con el número del presupuesto y el nombre del cliente.</li>
+<li><strong>Mensaje</strong> trae un saludo que puedes cambiar.</li>
+</ul>
+<p>Haz clic en <strong>Enviar</strong> para mandar el correo.
+- <strong>Descarga el PDF y envíalo por otro medio</strong> — por ejemplo, por WhatsApp. Usa el botón <strong>Descargar PDF</strong>, que está en la vista detalle y en el panel de envío por email.
+- <strong>Imprímelo y entrégalo en persona</strong> — usa el icono <strong>Imprimir</strong> de la barra superior.</p>
+</li>
+</ul>
 <div class="admonition info">
-<p class="admonition-title">Disponibilidad de Enviar e Imprimir</p>
-<p>Estos dos íconos solo aparecen una vez que el presupuesto está <strong>Bajo evaluación</strong> o en alguno de los estados <strong>Cerrado</strong>; no están disponibles mientras el documento sigue en <strong>Borrador</strong>.</p>
+<p class="admonition-title">Cuándo aparecen Enviar / Descargar e Imprimir</p>
+<p>Estos dos iconos aparecen cuando el presupuesto está <strong>Bajo evaluación</strong> o en alguno de los estados <strong>Cerrado</strong>. No están disponibles mientras el presupuesto está en <strong>Borrador</strong>.</p>
 </div>
 <hr>
 <h2 id="gestionar-presupuestos">Gestionar presupuestos<a class="headerlink" href="#gestionar-presupuestos" title="Permanent link">¶</a></h2>
-<p>Cuando el cliente ya recibió el presupuesto, esta sección te muestra cómo localizarlo y avanzar según su respuesta.</p>
+<p>Cuando el cliente ya recibió el presupuesto, esta parte te muestra cómo encontrarlo y qué hacer según su respuesta.</p>
 <h3 id="1-busca-el-presupuesto-pendiente">1. Busca el presupuesto pendiente<a class="headerlink" href="#1-busca-el-presupuesto-pendiente" title="Permanent link">¶</a></h3>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-1.png" data-desc-position="bottom"><img alt="Vista lista de Presupuesto de venta" src="../assets/crear-y-gestionar-presupuestos-1.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-1.png" data-desc-position="bottom"><img alt="Vista lista de Presupuesto de venta con fecha, número, cliente, estado, validez e importe total" src="../assets/crear-y-gestionar-presupuestos-1.png"></a>
 <br>
 <figcaption>Vista lista del Presupuesto de venta con columnas de estado, vigencia e importe total.</figcaption>
 </figure>
-<p>La vista lista muestra todos los presupuestos con las columnas <strong>Fecha de presupuesto</strong>, <strong>Nº documento</strong>, <strong>Contacto</strong>, <strong>Estado doc.</strong> (ver <a href="#estados-del-documento">Estados del Documento</a>), <strong>Válido hasta</strong> e <strong>Imp. total</strong>.</p>
-<p>Para filtrar la lista se dispone de dos selectores en la barra superior: el primero filtra por <strong>estado del documento</strong> y el segundo por <strong>fecha de presupuesto</strong>, con las opciones Hoy, Ayer, Últimos 7 días, Últimos 30 días, Últimos 12 meses, Todo el tiempo y Personalizado. Usa el primer selector para filtrar por <strong>Bajo evaluación</strong> y localizar de un vistazo los presupuestos pendientes de respuesta. El ícono de embudo permite aplicar filtros adicionales, y las columnas son ordenables haciendo clic en su encabezado.</p>
+<p>La vista lista muestra todos tus presupuestos con las columnas <strong>Fecha de presupuesto</strong>, <strong>Nº documento</strong>, <strong>Contacto</strong>, <strong>Estado doc.</strong> (ver <a href="#estados-del-documento">Estados del Documento</a>), <strong>Válido hasta</strong> e <strong>Imp. total</strong>. Para encontrar uno, tienes estas opciones:</p>
+<ul>
+<li><strong>Filtrar por estado</strong> — el primer selector de la barra superior. Elige <strong>Bajo evaluación</strong> para ver de un vistazo los presupuestos que esperan respuesta.</li>
+<li><strong>Filtrar por fecha</strong> — el segundo selector. Opciones: Hoy, Ayer, Últimos 7 días, Últimos 30 días, Últimos 12 meses, Todo el tiempo y Personalizado.</li>
+<li><strong>Filtros</strong> — para añadir más criterios de búsqueda.</li>
+<li><strong>Ordenar</strong> — haz clic en el encabezado de una columna.</li>
+</ul>
+<p>Junto a <strong>+ Nuevo presupuesto</strong> tienes también los botones para ordenar, actualizar e imprimir la lista.</p>
+<p>Al pasar el cursor sobre una fila aparecen accesos rápidos para trabajar con ese presupuesto sin abrirlo: <strong>Editar</strong>, <strong>Clonar</strong>, <strong>Enviar / Descargar</strong> y <strong>Eliminar</strong>.</p>
 <h3 id="2-abre-el-presupuesto">2. Abre el presupuesto<a class="headerlink" href="#2-abre-el-presupuesto" title="Permanent link">¶</a></h3>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-2.png" data-desc-position="bottom"><img alt="Vista detalle de Presupuesto de venta" src="../assets/crear-y-gestionar-presupuestos-2.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-2.png" data-desc-position="bottom"><img alt="Vista detalle de Presupuesto de venta con la vista previa del PDF y el panel lateral con total, estado y pedido relacionado" src="../assets/crear-y-gestionar-presupuestos-2.png"></a>
 <br>
 <figcaption>Vista detalle con la previsualización del PDF y el panel lateral de información clave.</figcaption>
 </figure>
-<p>Al hacer clic sobre un presupuesto en la lista se abre la vista detalle. Esta vista muestra en el centro una previsualización del PDF del presupuesto y en el panel derecho la información clave del documento: total, contacto, fecha y estado.</p>
-<p>Desde este panel se pueden realizar las siguientes acciones sin necesidad de entrar al formulario:</p>
+<p>Haz clic en un presupuesto de la lista para abrir la vista detalle. En el centro ves el PDF del presupuesto, con botones para acercarlo, alejarlo o verlo a pantalla completa. En el panel derecho ves el total, el cliente, la fecha, la validez y el estado.</p>
+<p>Desde este panel puedes hacer lo siguiente sin abrir el formulario:</p>
 <ul>
 <li><strong>Enviar</strong> — abre el panel de envío por email al cliente.</li>
-<li><strong>Descargar PDF</strong> — descarga el presupuesto en formato PDF.</li>
-<li><strong>Editar</strong> — abre el formulario completo para verlo con más detalle. En <strong>Bajo evaluación</strong> los campos ya no son editables, salvo el campo <strong>Notas</strong>; para modificar el resto de los datos hay que rechazar el presupuesto y trabajar sobre una copia (ver aviso en <a href="#crear-un-presupuesto">Crear un presupuesto</a>).</li>
+<li><strong>Descargar PDF</strong> — descarga el presupuesto en PDF.</li>
+<li><strong>Editar</strong> — abre el formulario completo. En <strong>Bajo evaluación</strong> solo puedes cambiar el campo <strong>Notas</strong>. Para cambiar el resto, rechaza el presupuesto y trabaja sobre una copia (ver el aviso en <a href="#3-confirma-el-presupuesto-y-envialo-al-cliente">Confirma el presupuesto y envíalo al cliente</a>).</li>
 </ul>
-<p>El panel también incluye la pestaña <strong>General</strong>, donde se agrupa la información clave del documento ya mencionada (total, contacto, fecha y estado); la sección <strong>Emails</strong>, que registra los correos enviados al cliente; y la sección <strong>Documentos relacionados</strong>, que muestra los pedidos o facturas generados a partir de este presupuesto, con su importe y estado. Esta misma información aparece dentro del formulario completo (sección <strong>Documentos</strong>, accesible desde <strong>Editar</strong>), donde cada documento generado es un enlace navegable.</p>
-<h3 id="3-cierra-el-presupuesto-segun-la-respuesta-del-cliente">3. Cierra el presupuesto según la respuesta del cliente<a class="headerlink" href="#3-cierra-el-presupuesto-segun-la-respuesta-del-cliente" title="Permanent link">¶</a></h3>
-<p>Cuando el cliente contesta al presupuesto, haz clic en <strong>Confirmar</strong> de nuevo — esta segunda confirmación está disponible desde el estado <strong>Bajo evaluación</strong> y ya no vuelve el documento a Borrador. El sistema muestra un popup con dos opciones:</p>
-<figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-8.png" data-desc-position="bottom"><img alt="Popup de confirmación del Presupuesto de venta" src="../assets/crear-y-gestionar-presupuestos-8.png" width="420"></a>
-<br>
-<figcaption>Popup de confirmación del Presupuesto de venta con las opciones para generar documentos derivados.</figcaption>
-</figure>
+<p>Debajo, el panel tiene dos secciones:</p>
 <ul>
-<li><strong>Crear pedido de venta</strong> — recomendado para productos con stock, entregas o pedidos con múltiples envíos. El presupuesto queda <strong>Cerrado - Pedido creado</strong>.</li>
-<li><strong>Facturar directamente</strong> — para servicios o ventas sin entrega física. No genera albarán (documento de entrega de mercadería que se crea al procesar un pedido). El presupuesto queda <strong>Cerrado - Factura creada</strong>.</li>
+<li><strong>Emails</strong> — los correos que le enviaste al cliente. Desde el enlace <strong>Enviar email</strong> puedes mandar uno nuevo.</li>
+<li><strong>Documentos relacionados</strong> — el pedido o la factura que creaste a partir de este presupuesto, con su importe y su estado. En el formulario completo aparece la misma información en la sección <strong>Documentos</strong>, y cada documento es un enlace que puedes abrir.</li>
 </ul>
+<h3 id="3-cierra-el-presupuesto-segun-la-respuesta-del-cliente">3. Cierra el presupuesto según la respuesta del cliente<a class="headerlink" href="#3-cierra-el-presupuesto-segun-la-respuesta-del-cliente" title="Permanent link">¶</a></h3>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-8.png" data-desc-position="bottom"><img alt="Ventana Confirmar presupuesto de venta con las opciones Crear pedido de venta y Facturar directamente" src="../assets/crear-y-gestionar-presupuestos-8.png" width="420"></a>
+<br>
+<figcaption>Ventana de confirmación del Presupuesto de venta con las dos formas de procesar la venta.</figcaption>
+</figure>
+<p>Cuando el cliente acepta, haz clic otra vez en <strong>Confirmar</strong>. Se abre la ventana <strong>Confirmar presupuesto de venta</strong>, con el resumen del presupuesto y la pregunta <strong>¿Cómo quieres procesar la venta?</strong>. Elige una opción y haz clic en <strong>Continuar</strong>:</p>
+<ul>
+<li><strong>Crear pedido de venta</strong> — recomendada si vendes productos con stock, con entrega o con varias entregas. El presupuesto queda <strong>Cerrado - Pedido creado</strong>.</li>
+<li><strong>Facturar directamente</strong> — para servicios o ventas sin entrega. No se crea albarán (el documento que acompaña la entrega de la mercancía). El presupuesto queda <strong>Cerrado - Factura creada</strong>.</li>
+</ul>
+<p>Al terminar, una ventana te confirma el documento creado. Puedes abrirlo directamente o cerrar el aviso y seguir en el presupuesto.</p>
 <div class="admonition info">
-<p class="admonition-title">Datos heredados en el documento derivado</p>
-<p>Tanto el Pedido como la Factura creados desde el presupuesto heredan el contacto, la dirección, la tarifa, las condiciones de pago y todas las líneas. No es necesario volver a introducir ningún dato.</p>
+<p class="admonition-title">Qué datos pasan al pedido o a la factura</p>
+<p>El pedido o la factura llevan el mismo cliente, la misma dirección, la misma tarifa, las mismas condiciones de pago y todas las líneas del presupuesto. No tienes que volver a escribir nada. El documento se crea en <strong>Borrador</strong>, así que puedes revisarlo antes de confirmarlo.</p>
 </div>
-<p>Si el cliente rechaza la oferta, usa la acción <strong>Rechazar</strong>, disponible en el menú de tres puntos. El presupuesto pasa a <strong>Cerrado - Rechazado</strong>, sin generar ningún documento derivado.</p>
+<p>Si el cliente rechaza la oferta, haz clic en <strong>Rechazar</strong>, en el menú de tres puntos. El presupuesto queda <strong>Cerrado - Rechazado</strong> y no se crea ningún pedido ni factura.</p>
 <hr>
 <h2 id="estados-del-documento">Estados del Documento<a class="headerlink" href="#estados-del-documento" title="Permanent link">¶</a></h2>
-<p>El estado actual se muestra como una etiqueta junto al botón <strong>Cancelar</strong> en la barra superior.</p>
+<p>El estado se muestra como una etiqueta junto al botón <strong>Cancelar</strong>, en la barra superior.</p>
 <table>
 <thead>
 <tr>
@@ -4881,34 +4946,34 @@
 <tbody>
 <tr>
 <td><span style="background:#F3F4F6;color:#6B7280;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Borrador</span></td>
-<td>En preparación. El documento es completamente editable.</td>
+<td>En preparación. Puedes cambiar todos sus datos.</td>
 </tr>
 <tr>
 <td><span style="background:#FFF7ED;color:#F59E0B;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Bajo evaluación</span></td>
-<td>Enviado al cliente, pendiente de respuesta. Edición parcialmente restringida.</td>
+<td>Enviado al cliente, pendiente de respuesta. Solo puedes cambiar las notas.</td>
 </tr>
 <tr>
 <td><span style="background:#FEF2F2;color:#EF4444;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Cerrado - Rechazado</span></td>
-<td>El cliente rechazó la propuesta.</td>
+<td>El cliente rechazó la oferta.</td>
 </tr>
 <tr>
 <td><span style="background:#F0FDF4;color:#22C55E;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Cerrado - Pedido creado</span></td>
-<td>Aceptado y convertido en Pedido de venta.</td>
+<td>El cliente aceptó y creaste el pedido de venta.</td>
 </tr>
 <tr>
 <td><span style="background:#F0FDF4;color:#22C55E;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Cerrado - Factura creada</span></td>
-<td>Aceptado y convertido en Factura de venta directa.</td>
+<td>El cliente aceptó y creaste la factura de venta directa.</td>
 </tr>
 </tbody>
 </table>
 <hr>
 <h2 id="acciones-disponibles">Acciones Disponibles<a class="headerlink" href="#acciones-disponibles" title="Permanent link">¶</a></h2>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-6.png" data-desc-position="bottom"><img alt="Barra de acciones del Presupuesto de venta" src="../assets/crear-y-gestionar-presupuestos-6.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-presupuestos-6.png" data-desc-position="bottom"><img alt="Barra de acciones del Presupuesto de venta en Borrador con Cancelar, papelera, Copiar enlace, Copia, Guardar y Confirmar" src="../assets/crear-y-gestionar-presupuestos-6.png"></a>
 <br>
 <figcaption>Barra de acciones del Presupuesto de venta.</figcaption>
 </figure>
-<p>La barra superior del formulario muestra las siguientes acciones:</p>
+<p>La barra superior del formulario muestra estas acciones:</p>
 <table>
 <thead>
 <tr>
@@ -4920,42 +4985,47 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Cancelar</strong></td>
-<td style="text-align: left;">Descarta los cambios no guardados y vuelve a la lista.</td>
-<td style="text-align: left;">Solo en Borrador</td>
+<td style="text-align: left;">Descarta los cambios sin guardar y vuelve a la lista.</td>
+<td style="text-align: left;">Todos los estados</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Guardar</strong></td>
-<td style="text-align: left;">Guarda el documento sin cambiar su estado.</td>
+<td style="text-align: left;">Guarda el presupuesto sin cambiar su estado.</td>
 <td style="text-align: left;">Solo en Borrador</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Confirmar</strong></td>
-<td style="text-align: left;">Envía el presupuesto al estado Bajo evaluación (ver <a href="#crear-un-presupuesto">Crear un presupuesto</a>). Desde Bajo evaluación, una segunda confirmación lo convierte en Pedido de venta o Factura directa (ver <a href="#gestionar-presupuestos">Gestionar presupuestos</a>).</td>
+<td style="text-align: left;">En Borrador, abre la ventana <strong>Enviar a evaluación</strong> y pasa el presupuesto a Bajo evaluación (ver <a href="#crear-un-presupuesto">Crear un presupuesto</a>). En Bajo evaluación, abre la ventana <strong>Confirmar presupuesto de venta</strong> para crear el pedido o la factura (ver <a href="#gestionar-presupuestos">Gestionar presupuestos</a>).</td>
 <td style="text-align: left;">Borrador y Bajo evaluación</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Copia</strong></td>
-<td style="text-align: left;">Clona el presupuesto actual creando un nuevo borrador con los mismos datos.</td>
+<td style="text-align: left;"><strong>Copiar enlace</strong></td>
+<td style="text-align: left;">Copia el enlace directo a este presupuesto, para compartirlo con otra persona de tu equipo.</td>
 <td style="text-align: left;">Todos los estados</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Enviar</strong></td>
-<td style="text-align: left;">Abre el panel de envío por email al cliente.</td>
+<td style="text-align: left;"><strong>Copia</strong></td>
+<td style="text-align: left;">Crea un borrador nuevo con los mismos datos del presupuesto.</td>
+<td style="text-align: left;">Todos los estados</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Enviar / Descargar</strong></td>
+<td style="text-align: left;">Icono con forma de sobre. Abre el panel de envío por email, desde donde también puedes descargar el PDF.</td>
 <td style="text-align: left;">Bajo evaluación y estados Cerrado</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Imprimir</strong></td>
-<td style="text-align: left;">Genera una copia imprimible del presupuesto, útil para entregarla en persona.</td>
+<td style="text-align: left;">Crea una copia para imprimir y entregar en persona.</td>
 <td style="text-align: left;">Bajo evaluación y estados Cerrado</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Rechazar</strong></td>
-<td style="text-align: left;">Disponible en el menú de tres puntos. Marca el presupuesto como <strong>Cerrado - Rechazado</strong>, sin generar ningún documento derivado.</td>
+<td style="text-align: left;">En el menú de tres puntos. Cierra el presupuesto como <strong>Cerrado - Rechazado</strong>, sin crear ningún pedido ni factura.</td>
 <td style="text-align: left;">Solo en Bajo evaluación</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Papelera</strong></td>
-<td style="text-align: left;">Elimina el documento con confirmación previa.</td>
+<td style="text-align: left;">Elimina el presupuesto. Antes te pide confirmación.</td>
 <td style="text-align: left;">Solo en Borrador</td>
 </tr>
 </tbody>
@@ -4990,7 +5060,7 @@
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="13 de noviembre de 2026 14:13:50 UTC">13 de noviembre de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="17 de noviembre de 2026 16:36:33 UTC">17 de noviembre de 2026</span>
   </span>
 
     
@@ -5018,6 +5088,11 @@
     
     <nav>
       
+        <a href="https://github.com/isaiasb-etendo" class="md-author" title="@isaiasb-etendo">
+          
+          <img src="https://avatars.githubusercontent.com/u/106354215?v=4&amp;size=72" alt="isaiasb-etendo">
+        </a>
+      
         <a href="https://github.com/ramirosansebastian" class="md-author" title="@ramirosansebastian">
           
           <img src="https://avatars.githubusercontent.com/u/319142943?v=4&amp;size=72" alt="ramirosansebastian">
@@ -5026,11 +5101,6 @@
         <a href="https://github.com/mapenglishservices" class="md-author" title="@mapenglishservices">
           
           <img src="https://avatars.githubusercontent.com/u/125575495?v=4&amp;size=72" alt="mapenglishservices">
-        </a>
-      
-        <a href="https://github.com/isaiasb-etendo" class="md-author" title="@isaiasb-etendo">
-          
-          <img src="https://avatars.githubusercontent.com/u/106354215?v=4&amp;size=72" alt="isaiasb-etendo">
         </a>
       
       
