@@ -55,7 +55,7 @@ Estado que indica si un movimiento ya quedó vinculado a su documento correspond
 
 ## Condición sobre el concepto
 
-Campo de una regla de matcheo que define cómo se compara su patrón contra la descripción del movimiento: **Contiene**, **Empieza con** o **Regex** (una sintaxis de búsqueda avanzada para patrones de texto complejos; si no estás familiarizado con expresiones regulares, usa **Contiene** o **Empieza con**).
+Campo de una regla de matcheo que define cómo se compara su patrón contra la descripción del movimiento: **Contiene**, **Empieza con** o **Coincide con patrón** (una sintaxis de búsqueda avanzada para patrones de texto complejos; si no estás familiarizado con expresiones regulares, usa **Contiene** o **Empieza con**).
 
 ## Confirmar
 
