@@ -3375,10 +3375,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#estados-de-una-linea-de-conciliacion" class="md-nav__link">
+  <a href="#filtros-de-la-pestana-conciliacion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Estados de una línea de conciliación
+        Filtros de la pestaña Conciliación
       
     </span>
   </a>
@@ -3390,6 +3390,17 @@
     <span class="md-ellipsis">
       
         Conciliar un movimiento contra un documento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conciliar-varias-lineas-con-automatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conciliar varias líneas con Automatch
       
     </span>
   </a>
@@ -4374,10 +4385,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#estados-de-una-linea-de-conciliacion" class="md-nav__link">
+  <a href="#filtros-de-la-pestana-conciliacion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Estados de una línea de conciliación
+        Filtros de la pestaña Conciliación
       
     </span>
   </a>
@@ -4389,6 +4400,17 @@
     <span class="md-ellipsis">
       
         Conciliar un movimiento contra un documento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conciliar-varias-lineas-con-automatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conciliar varias líneas con Automatch
       
     </span>
   </a>
@@ -4536,36 +4558,65 @@
 
 
 <h1 id="conciliar-o-desconciliar-movimientos-contra-documentos">Conciliar o desconciliar movimientos contra documentos<a class="headerlink" href="#conciliar-o-desconciliar-movimientos-contra-documentos" title="Permanent link">¶</a></h1>
-<p>Conciliar vincula una línea de tu extracto con el documento de Etendo que le corresponde (una factura, un cobro o un pago). Puedes hacerlo a mano, línea por línea, o dejar que Etendo proponga las coincidencias con Automatch.</p>
-<h2 id="estados-de-una-linea-de-conciliacion">Estados de una línea de conciliación<a class="headerlink" href="#estados-de-una-linea-de-conciliacion" title="Permanent link">¶</a></h2>
-<p>En la pestaña <strong>Conciliación</strong> de una cuenta, cada línea puede filtrarse por estado: <strong>Todos</strong>, <strong>Pendientes</strong>, <strong>Con sugerencia</strong> (Automatch encontró una coincidencia), <strong>Por regla</strong> (coincide con una <a href="../../como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/">regla de matcheo</a>), <strong>Con diferencia</strong> y <strong>Conciliadas</strong>.</p>
+<p>Conciliar vincula una línea de tu extracto bancario con el documento de Etendo que le corresponde (una factura, un cobro o un pago). Puedes hacerlo a mano, línea por línea, o dejar que Etendo proponga las coincidencias con Automatch.</p>
+<h2 id="filtros-de-la-pestana-conciliacion">Filtros de la pestaña Conciliación<a class="headerlink" href="#filtros-de-la-pestana-conciliacion" title="Permanent link">¶</a></h2>
+<p>En la pestaña <strong>Conciliación</strong> de una cuenta, puedes filtrar las líneas de extracto por estado. Cada filtro muestra entre paréntesis cuántas líneas contiene:</p>
+<ul>
+<li><strong>Todos</strong>: todas las líneas del periodo.</li>
+<li><strong>Pendientes</strong>: líneas sin conciliar. Incluye las que tienen sugerencia o regla.</li>
+<li><strong>Con sugerencia</strong>: Automatch encontró un documento que coincide.</li>
+<li><strong>Por regla</strong>: la línea coincide con una <a href="../../como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/">regla de matcheo</a>.</li>
+<li><strong>Con diferencia</strong>: líneas cuyo importe no cuadra con los documentos vinculados.</li>
+<li><strong>Conciliadas</strong>: líneas ya vinculadas a su documento.</li>
+</ul>
 <h2 id="conciliar-un-movimiento-contra-un-documento">Conciliar un movimiento contra un documento<a class="headerlink" href="#conciliar-un-movimiento-contra-un-documento" title="Permanent link">¶</a></h2>
 <ol>
 <li>Abre la cuenta desde <strong><a href="https://app.etendo.ai/financial-account" target="_blank">Finanzas &gt; Cuentas</a></strong> y ve a la pestaña <strong>Conciliación</strong>.</li>
-<li>Selecciona una línea con estado <strong>Pendiente</strong> en el panel izquierdo.</li>
-<li>En el panel derecho, elige el tipo de documento a buscar: <strong>Facturas de venta</strong>, <strong>Facturas de compra</strong>, <strong>Cobros</strong> o <strong>Pagos</strong>.</li>
-<li>Marca la casilla del documento (o documentos) que corresponden a la línea. Abajo se actualizan <strong>Documentos seleccionados</strong> y <strong>Restante por conciliar</strong>.</li>
-<li>Cuando el restante llega a 0, haz clic en <strong>Conciliar</strong>.</li>
+<li>Filtra por <strong>Pendientes</strong> y selecciona una línea en el panel izquierdo.</li>
+<li>
+<p>En el desplegable de la cabecera del panel derecho, elige el tipo de documento a buscar: <strong>Facturas de venta</strong>, <strong>Facturas de compra</strong>, <strong>Cobros</strong> o <strong>Pagos</strong>. Cada opción indica cuántos documentos hay disponibles.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-conciliar-o-desconciliar-movimientos-contra-documentos-1.png" data-desc-position="bottom"><img alt="Línea pendiente seleccionada y desplegable de tipo de documento abierto con Facturas de venta, Facturas de compra, Cobros y Pagos" src="../assets/como-conciliar-o-desconciliar-movimientos-contra-documentos-1.png"></a></p>
+</li>
+<li>
+<p>Marca la casilla de cada documento que corresponda a la línea. Abajo se actualizan <strong>Documentos seleccionados</strong> y <strong>Restante por conciliar</strong>.</p>
+</li>
+<li>
+<p>Cuando el restante llega a 0, haz clic en <strong>Conciliar</strong>. El número entre paréntesis indica cuántos documentos vas a vincular.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-conciliar-o-desconciliar-movimientos-contra-documentos-2.png" data-desc-position="bottom"><img alt="Factura de venta marcada, Restante por conciliar a 0,00 € y botón Conciliar (1) activo" src="../assets/como-conciliar-o-desconciliar-movimientos-contra-documentos-2.png"></a></p>
+</li>
 </ol>
-<p>Para conciliar varias líneas a la vez, usa <strong>Automatch</strong> (arriba a la derecha): Etendo agrupa las líneas del extracto con sus operaciones correspondientes y muestra cuántos <strong>Grupos encontrados</strong> y <strong>Operaciones a vincular</strong> detectó. Revisa los pares propuestos y confirma con <strong>Conciliar [N] grupo(s)</strong>.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-conciliar-o-desconciliar-movimientos-contra-documentos-1.png" data-desc-position="bottom"><img alt="Modal de Conciliación automática sugerida con 1 grupo encontrado, mostrando la línea del extracto y la operación del sistema listas para vincular" src="../assets/como-conciliar-o-desconciliar-movimientos-contra-documentos-1.png"></a></p>
+<p>Si te equivocas al marcar, haz clic en <strong>Cancelar selección</strong> para empezar de nuevo.</p>
+<h2 id="conciliar-varias-lineas-con-automatch">Conciliar varias líneas con Automatch<a class="headerlink" href="#conciliar-varias-lineas-con-automatch" title="Permanent link">¶</a></h2>
+<p>Haz clic en <strong>Automatch</strong> (arriba a la derecha) para abrir <strong>Conciliación automática sugerida</strong>. Si hay sugerencias, la ventana se abre sola al entrar en la pestaña <strong>Conciliación</strong>.</p>
+<p>Etendo agrupa cada línea del extracto con su operación del sistema y muestra un resumen: <strong>Movimientos pendientes</strong>, <strong>Grupos encontrados</strong>, <strong>Operaciones a vincular</strong> y <strong>A crear</strong>.</p>
+<ul>
+<li>Las líneas <strong>Con sugerencia</strong> se vinculan a un documento existente (por ejemplo, una factura).</li>
+<li>Las líneas <strong>Por regla</strong> no tienen documento: Etendo crea un movimiento nuevo con los datos de la regla, marcado como <strong>Nueva</strong>.</li>
+</ul>
+<p>Desmarca los grupos que no quieras conciliar y confirma con <strong>Conciliar [N] grupo(s)</strong>. Si prefieres revisar una línea a mano, haz clic en <strong>Abrir conciliación</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-conciliar-o-desconciliar-movimientos-contra-documentos-3.png" data-desc-position="bottom"><img alt="Conciliación automática sugerida con un grupo Por regla y dos Con sugerencia, listos para conciliar" src="../assets/como-conciliar-o-desconciliar-movimientos-contra-documentos-3.png"></a></p>
 <h2 id="desconciliar-un-movimiento">Desconciliar un movimiento<a class="headerlink" href="#desconciliar-un-movimiento" title="Permanent link">¶</a></h2>
 <ol>
 <li>En la pestaña <strong>Conciliación</strong>, cambia el filtro a <strong>Conciliadas</strong>.</li>
 <li>Selecciona la línea que quieres desconciliar. El panel derecho muestra el documento vinculado, ya marcado.</li>
 <li>
-<p>Haz clic en <strong>Desconciliar (1)</strong>.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-conciliar-o-desconciliar-movimientos-contra-documentos-2.png" data-desc-position="bottom"><img alt="Filtro Conciliadas con un movimiento conciliado seleccionado y el botón Desconciliar (1) disponible" src="../assets/como-conciliar-o-desconciliar-movimientos-contra-documentos-2.png"></a></p>
+<p>Haz clic en <strong>Desconciliar</strong>. El número entre paréntesis indica cuántos documentos vas a desconciliar.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-conciliar-o-desconciliar-movimientos-contra-documentos-4.png" data-desc-position="bottom"><img alt="Filtro Conciliadas con un movimiento seleccionado, su documento vinculado marcado y el botón Desconciliar (1)" src="../assets/como-conciliar-o-desconciliar-movimientos-contra-documentos-4.png"></a></p>
 </li>
 <li>
-<p>Confirma en el diálogo <strong>¿Desconciliar documento?</strong>: <em>"El documento se desconciliará de la línea de extracto y su importe volverá al saldo por conciliar"</em>. El aviso aclara que la acción <strong>deshará la conciliación del documento</strong>.</p>
+<p>En el diálogo <strong>¿Desconciliar documento?</strong>, haz clic en <strong>Desconciliar</strong> para confirmar. Se rompe el vínculo con la línea de extracto y su importe vuelve al saldo por conciliar.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-conciliar-o-desconciliar-movimientos-contra-documentos-5.png" data-desc-position="bottom"><img alt="Diálogo ¿Desconciliar documento? con el aviso de que la acción deshará la conciliación y los botones Cancelar y Desconciliar" src="../assets/como-conciliar-o-desconciliar-movimientos-contra-documentos-5.png"></a></p>
 </li>
 </ol>
+<p>Una vez desconciliado, ya puedes reactivar el cobro o el pago si necesitas modificarlo.</p>
 <hr>
 <h2 id="articulos-relacionados">Artículos Relacionados<a class="headerlink" href="#articulos-relacionados" title="Permanent link">¶</a></h2>
 <ul>
 <li><a href="../../que-es-la-conciliacion-bancaria-en-etendo/que-es-la-conciliacion-bancaria-en-etendo/">¿Qué es la conciliación bancaria en Etendo?</a></li>
+<li><a href="../../como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario/">Importar o descargar el extracto bancario</a></li>
 <li><a href="../../como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/">Configurar reglas para automatizar la conciliación</a></li>
+<li><a href="../../como-registrar-un-cobro/como-registrar-un-cobro/">Registrar un cobro</a></li>
+<li><a href="../../como-registrar-un-pago/como-registrar-un-pago/">Registrar un pago</a></li>
 <li><a href="../../como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros/">Gestionar pagos y cobros</a></li>
 </ul>
 <hr>
@@ -4592,7 +4643,7 @@
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="29 de septiembre de 2026 17:35:37 UTC">29 de septiembre de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="18 de noviembre de 2026 17:44:59 UTC">18 de noviembre de 2026</span>
   </span>
 
     
@@ -4619,6 +4670,11 @@
 
     
     <nav>
+      
+        <a href="https://github.com/ramirosansebastian" class="md-author" title="@ramirosansebastian">
+          
+          <img src="https://avatars.githubusercontent.com/u/319142943?v=4&amp;size=72" alt="ramirosansebastian">
+        </a>
       
         <a href="https://github.com/isaiasb-etendo" class="md-author" title="@isaiasb-etendo">
           
