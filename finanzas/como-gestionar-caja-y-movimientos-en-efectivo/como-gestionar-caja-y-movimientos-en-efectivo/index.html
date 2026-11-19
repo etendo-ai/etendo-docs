@@ -2938,10 +2938,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-es-una-caja-contable" class="md-nav__link">
+  <a href="#que-es-una-caja" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Qué es una caja contable
+        ¿Qué es una caja?
       
     </span>
   </a>
@@ -2960,10 +2960,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#consultar-el-saldo-de-una-caja" class="md-nav__link">
+  <a href="#consultar-los-movimientos-y-el-saldo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Consultar el saldo de una caja
+        Consultar los movimientos y el saldo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transferir-fondos-entre-la-caja-y-otra-cuenta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transferir fondos entre la caja y otra cuenta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hacer-el-cierre-de-caja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hacer el cierre de caja
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corregir-o-borrar-un-movimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Corregir o borrar un movimiento
       
     </span>
   </a>
@@ -4374,10 +4407,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-es-una-caja-contable" class="md-nav__link">
+  <a href="#que-es-una-caja" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Qué es una caja contable
+        ¿Qué es una caja?
       
     </span>
   </a>
@@ -4396,10 +4429,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#consultar-el-saldo-de-una-caja" class="md-nav__link">
+  <a href="#consultar-los-movimientos-y-el-saldo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Consultar el saldo de una caja
+        Consultar los movimientos y el saldo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transferir-fondos-entre-la-caja-y-otra-cuenta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transferir fondos entre la caja y otra cuenta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hacer-el-cierre-de-caja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hacer el cierre de caja
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corregir-o-borrar-un-movimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Corregir o borrar un movimiento
       
     </span>
   </a>
@@ -4543,32 +4609,91 @@
 
 
 <h1 id="gestionar-caja-y-movimientos-en-efectivo">Gestionar caja y movimientos en efectivo<a class="headerlink" href="#gestionar-caja-y-movimientos-en-efectivo" title="Permanent link">¶</a></h1>
-<p>Una caja es un tipo de cuenta para el efectivo que manejas fuera del banco: la caja chica de la oficina, la caja de un punto de venta, etc.</p>
-<h2 id="que-es-una-caja-contable">Qué es una caja contable<a class="headerlink" href="#que-es-una-caja-contable" title="Permanent link">¶</a></h2>
-<p>Dentro de Cuentas, <strong>Caja</strong> es uno de los tres tipos de cuenta (junto a Banco y Tarjeta). A diferencia de un banco, una caja no se conecta ni importa extractos de una entidad externa: todos sus movimientos se registran a mano, directamente en Etendo. Aun así, la ficha de una caja tiene las mismas pestañas que una cuenta de banco (<strong>Movimientos</strong>, <strong>Conciliación</strong>, <strong>Extractos importados</strong>), aunque en la práctica una caja no suele tener extractos para importar.</p>
+<p>Una caja es un tipo de cuenta para el efectivo que manejas fuera del banco: la caja chica de la oficina, la caja de un punto de venta, etc. En este artículo verás cómo registrar sus entradas y salidas, pasar dinero entre la caja y otra cuenta, hacer el cierre de caja y corregir un movimiento.</p>
+<p>Si todavía no tienes la caja creada, consulta <a href="../../como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja/">Añadir y configurar un banco, tarjeta o caja</a>.</p>
+<h2 id="que-es-una-caja">¿Qué es una caja?<a class="headerlink" href="#que-es-una-caja" title="Permanent link">¶</a></h2>
+<p>Dentro de <strong>Cuentas</strong>, <strong>Caja</strong> es uno de los tres tipos de cuenta, junto a <strong>Banco</strong> y <strong>Tarjeta</strong>. A diferencia de un banco, una caja no se conecta con ninguna entidad ni importa extractos: todos sus movimientos se registran en Etendo.</p>
+<p>Al abrir una caja verás tres pestañas:</p>
+<ul>
+<li><strong>Movimientos</strong>: las entradas y salidas de efectivo, con el saldo.</li>
+<li><strong>Conciliación</strong>: el cierre de caja, donde compruebas que el efectivo que tienes coincide con lo registrado.</li>
+<li><strong>Reconciliaciones</strong>: el historial de cierres de caja confirmados.</li>
+</ul>
 <h2 id="registrar-un-movimiento-en-efectivo">Registrar un movimiento en efectivo<a class="headerlink" href="#registrar-un-movimiento-en-efectivo" title="Permanent link">¶</a></h2>
 <ol>
-<li>Abre la caja desde <strong><a href="https://app.etendo.ai/financial-account" target="_blank">Finanzas &gt; Cuentas</a></strong>.</li>
-<li>En la pestaña <strong>Movimientos</strong>, haz clic en <strong>Nuevo movimiento</strong>.</li>
-<li>Elige el <strong>Tipo</strong>: <strong>Entrada</strong> (dinero que ingresa a la caja) o <strong>Salida</strong> (dinero que sale de la caja).</li>
-<li>Completa <strong>Fecha</strong>, <strong>Concepto contable</strong> (la cuenta contable del movimiento) e <strong>Importe</strong>.</li>
-<li>Opcionalmente, agrega una <strong>Descripción</strong> y, dentro de <strong>Dimensiones contables</strong>, un <strong>Contacto</strong>.</li>
-<li>Haz clic en <strong>Guardar</strong> para dejarlo en borrador, o en <strong>Confirmar</strong> para registrarlo directamente.</li>
-</ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-gestionar-caja-y-movimientos-en-efectivo-1.png" data-desc-position="bottom"><img alt="Formulario Nuevo movimiento de una caja, con Tipo Entrada, Concepto contable, Importe y Descripción completados" src="../assets/como-gestionar-caja-y-movimientos-en-efectivo-1.png"></a></p>
-<p>Cada movimiento queda con dos estados independientes: si está conciliado (<strong>Sin conciliar</strong> / <strong>Conciliado</strong>) y si está contabilizado (<strong>Sin contabilizar</strong> / <strong>Contabilizado</strong>).</p>
-<h2 id="consultar-el-saldo-de-una-caja">Consultar el saldo de una caja<a class="headerlink" href="#consultar-el-saldo-de-una-caja" title="Permanent link">¶</a></h2>
-<ul>
-<li>Dentro de la caja, la pestaña <strong>Movimientos</strong> muestra el <strong>Saldo total</strong> junto con las <strong>Entradas</strong> y <strong>Salidas</strong> del período seleccionado (por ejemplo, últimos 30 días).</li>
-<li>Desde el listado general de <strong>Cuentas</strong>, el panel <strong>Saldo</strong> agrega el total de todas tus cuentas (bancos, tarjetas y cajas) y lo desglosa en <strong>Detalle de saldos por moneda</strong>.</li>
-<li>En el listado de movimientos, la columna <strong>Tipo</strong> no muestra "Entrada" o "Salida": una <strong>Entrada</strong> aparece como <strong>Cobro</strong> y una <strong>Salida</strong> como <strong>Pago</strong>.</li>
+<li>Abre la caja desde <strong><a href="https://app.etendo.ai/financial-account" target="_blank">Finanzas &gt; Cuentas</a></strong> y, en la pestaña <strong>Movimientos</strong>, haz clic en <strong>Nuevo movimiento</strong>. También puedes elegir <strong>Nuevo movimiento</strong> en el menú <strong>⋮</strong> de la caja, en el listado de cuentas.</li>
+<li>Elige el <strong>Tipo</strong>: <strong>Entrada</strong> (dinero que ingresa en la caja) o <strong>Salida</strong> (dinero que sale). Por defecto está marcado <strong>Salida</strong>.</li>
+<li>Completa los campos obligatorios:<ul>
+<li><strong>Fecha</strong>: por defecto, la de hoy.</li>
+<li><strong>Cuenta contable</strong>: la cuenta en la que se registra el movimiento (por ejemplo, otros servicios o material de oficina). Al elegirla, Etendo rellena la <strong>Descripción</strong> con su nombre.</li>
+<li><strong>Importe</strong>: siempre positivo; el <strong>Tipo</strong> ya indica si entra o sale.</li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-gestionar-caja-y-movimientos-en-efectivo-2.png" data-desc-position="bottom"><img alt="Pestaña Movimientos de una caja con Saldo total, Entradas y Salidas, y el movimiento confirmado en el listado" src="../assets/como-gestionar-caja-y-movimientos-en-efectivo-2.png"></a></p>
+</li>
+<li>Si lo necesitas, cambia la <strong>Descripción</strong> y, en <strong>Dimensiones contables</strong>, indica un <strong>Contacto</strong> o un <strong>Producto</strong>.</li>
+<li>
+<p>Elige cómo guardarlo:</p>
+<ul>
+<li><strong>Guardar</strong>: el movimiento queda en <strong>Borrador</strong> para terminarlo más tarde.</li>
+<li><strong>Confirmar</strong>: el movimiento queda registrado.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-gestionar-caja-y-movimientos-en-efectivo-1.png" data-desc-position="bottom"><img alt="Formulario Nuevo movimiento de una caja con Tipo Salida, Cuenta contable Otros servicios, Importe 15,60 € y Descripción, y los botones Cancelar, Guardar y Confirmar" src="../assets/como-gestionar-caja-y-movimientos-en-efectivo-1.png"></a></p>
+</li>
+</ol>
+<h2 id="consultar-los-movimientos-y-el-saldo">Consultar los movimientos y el saldo<a class="headerlink" href="#consultar-los-movimientos-y-el-saldo" title="Permanent link">¶</a></h2>
+<p>En la pestaña <strong>Movimientos</strong> de la caja tienes:</p>
+<ul>
+<li>Arriba, el <strong>Saldo total</strong> y las <strong>Entradas</strong> y <strong>Salidas</strong> del período seleccionado (por defecto, <strong>Últimos 30 días</strong>).</li>
+<li>El listado de movimientos, con estas columnas clave:<ul>
+<li><strong>Estado</strong>: <strong>Borrador</strong>, <strong>Sin conciliar</strong> o <strong>Conciliado</strong>.</li>
+<li><strong>Tipo &amp; Contabilizado</strong>: una entrada aparece como <strong>Cobro</strong> y una salida como <strong>Pago</strong>. Debajo se indica si está <strong>Contabilizado</strong> o <strong>Sin contabilizar</strong>.</li>
+<li><strong>Cuenta contable</strong>: la cuenta en la que se registró el movimiento.</li>
+</ul>
+</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-gestionar-caja-y-movimientos-en-efectivo-2.png" data-desc-position="bottom"><img alt="Pestaña Movimientos de una caja con Saldo total, Entradas y Salidas de los últimos 30 días y tres movimientos, uno de ellos en Borrador" src="../assets/como-gestionar-caja-y-movimientos-en-efectivo-2.png"></a></p>
+<p>Desde el listado general de <strong>Cuentas</strong>, el panel <strong>Saldo</strong> suma todas tus cuentas (bancos, tarjetas y cajas) y lo desglosa en <strong>Detalle de saldos por moneda</strong>.</p>
+<h2 id="transferir-fondos-entre-la-caja-y-otra-cuenta">Transferir fondos entre la caja y otra cuenta<a class="headerlink" href="#transferir-fondos-entre-la-caja-y-otra-cuenta" title="Permanent link">¶</a></h2>
+<p>Usa esta opción para reponer la caja con dinero del banco o para ingresar en el banco el efectivo de la caja.</p>
+<ol>
+<li>En la pestaña <strong>Movimientos</strong> de la cuenta de la que sale el dinero, abre la flecha junto a <strong>Nuevo movimiento</strong> y elige <strong>Transferir fondos</strong>. También está en el menú <strong>⋮</strong> de la cuenta, en el listado de cuentas.</li>
+<li>La cuenta de origen aparece arriba (<strong>Desde · origen</strong>), con su saldo disponible. Elige la cuenta en <strong>Hacia · cuenta destino</strong>.</li>
+<li>Indica el <strong>Importe</strong> y la <strong>Cuenta contable</strong>.</li>
+<li>Si el banco cobra comisión, marca <strong>Aplicar comisión bancaria</strong> e indica la comisión de origen y de destino.</li>
+<li>
+<p>Revisa la <strong>Descripción</strong> (por defecto, "Transferencia de fondos") y haz clic en <strong>Transferir</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-gestionar-caja-y-movimientos-en-efectivo-3.png" data-desc-position="bottom"><img alt="Formulario Transferir fondos desde Caja oficina central hacia Cuenta corriente principal, con importe 200,00 €, cuenta contable y el botón Transferir" src="../assets/como-gestionar-caja-y-movimientos-en-efectivo-3.png"></a></p>
+</li>
+</ol>
+<p>La transferencia se registra con la fecha de hoy y genera un movimiento en cada cuenta.</p>
+<h2 id="hacer-el-cierre-de-caja">Hacer el cierre de caja<a class="headerlink" href="#hacer-el-cierre-de-caja" title="Permanent link">¶</a></h2>
+<p>En la pestaña <strong>Conciliación</strong> de la caja puedes hacer el arqueo: comparar el efectivo que tienes con lo registrado en Etendo.</p>
+<ol>
+<li>Marca los movimientos que entran en este cierre. Con <strong>Ocultar posteriores a la fecha</strong> solo ves los anteriores a la fecha del cierre.</li>
+<li>En <strong>Datos del cierre</strong>, indica la <strong>Fecha de extracto</strong> y el <strong>Saldo declarado</strong>, es decir, el efectivo que has contado.</li>
+<li>Revisa el <strong>Resumen del cierre</strong>: Etendo calcula el saldo a partir del <strong>Saldo inicial</strong> y de las entradas y salidas marcadas, y muestra la <strong>Diferencia</strong> con el saldo declarado. Si coinciden, verás <strong>La caja cuadra</strong>.</li>
+<li>Haz clic en <strong>Confirmar cierre de caja</strong>, o en <strong>Guardar borrador</strong> para terminarlo más tarde. Los movimientos que no marques quedan pendientes para el próximo cierre.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-gestionar-caja-y-movimientos-en-efectivo-4.png" data-desc-position="bottom"><img alt="Pestaña Conciliación de una caja con tres movimientos para marcar, los Datos del cierre (Fecha de extracto y Saldo declarado), el Resumen del cierre y el botón Confirmar cierre de caja" src="../assets/como-gestionar-caja-y-movimientos-en-efectivo-4.png"></a></p>
+<p>Los cierres confirmados aparecen en la pestaña <strong>Reconciliaciones</strong>.</p>
+<h2 id="corregir-o-borrar-un-movimiento">Corregir o borrar un movimiento<a class="headerlink" href="#corregir-o-borrar-un-movimiento" title="Permanent link">¶</a></h2>
+<p>Pasa el cursor sobre la fila del movimiento y abre su menú <strong>⋮</strong>:</p>
+<ul>
+<li>En un movimiento en <strong>Borrador</strong>: <strong>Editar</strong>, <strong>Confirmar</strong> o <strong>Eliminar</strong>.</li>
+<li>En un movimiento confirmado: <strong>Descontabilizar</strong>, <strong>Reactivar</strong> (lo devuelve a borrador para poder corregirlo) o <strong>Eliminar</strong>.</li>
+</ul>
+<p>Para el detalle de cómo borrar uno o varios movimientos, consulta <a href="../../como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario/">Borrar un extracto o un movimiento</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Movimientos de cobros y pagos de facturas</p>
+<p>Si cobras o pagas una factura en efectivo eligiendo la caja como cuenta, el movimiento aparece en la caja con el número del cobro o del pago en la columna <strong>Pago</strong>. Ese movimiento se gestiona desde el cobro o el pago (consulta <a href="../../como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros/">Gestionar pagos y cobros</a>).</p>
+</div>
 <hr>
 <h2 id="articulos-relacionados">Artículos Relacionados<a class="headerlink" href="#articulos-relacionados" title="Permanent link">¶</a></h2>
 <ul>
 <li><a href="../../como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja/">Añadir y configurar un banco, tarjeta o caja</a></li>
+<li><a href="../../como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/">Conectar, desconectar, archivar, desarchivar o eliminar una cuenta</a></li>
+<li><a href="../../como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario/">Borrar un extracto o un movimiento</a></li>
 <li><a href="../../como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros/">Gestionar pagos y cobros</a></li>
+<li><a href="../../glosario-de-finanzas/glosario-de-finanzas/">Glosario de Finanzas</a></li>
 </ul>
 <hr>
 <p>Esta obra está bajo la licencia <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m11.89 10.34-1.34.7c-.14-.3-.31-.51-.52-.63s-.41-.18-.58-.18c-.9 0-1.34.59-1.34 1.77 0 .54.11.97.34 1.29.22.32.55.48 1 .48.58 0 .99-.27 1.23-.86l1.23.63c-.26.49-.62.87-1.09 1.15q-.69.42-1.53.42c-.9 0-1.62-.27-2.17-.82C6.58 13.74 6.3 13 6.3 12c0-.95.28-1.7.83-2.26q.84-.84 2.1-.84c1.24-.01 2.13.48 2.66 1.44m5.77 0-1.32.7c-.14-.3-.34-.51-.53-.63q-.315-.18-.6-.18c-.89 0-1.34.59-1.34 1.77 0 .54.13.97.34 1.29.23.32.56.48 1 .48.59 0 1-.27 1.24-.86l1.25.63c-.28.49-.65.87-1.11 1.15-.47.28-.97.42-1.52.42-.9 0-1.63-.27-2.17-.82S12.09 13 12.09 12c0-.95.28-1.7.83-2.26S14.17 8.9 15 8.9c1.26-.01 2.14.48 2.66 1.44M12 3.5a8.5 8.5 0 0 1 8.5 8.5 8.5 8.5 0 0 1-8.5 8.5A8.5 8.5 0 0 1 3.5 12 8.5 8.5 0 0 1 12 3.5M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M322.9 194.4v101.4h-28.3v120.5h-77.1V295.9h-28.3V194.4c0-4.4 1.6-8.2 4.6-11.3 3.1-3.1 6.9-4.7 11.3-4.7H307c4.1 0 7.8 1.6 11.1 4.7 3.1 3.2 4.8 6.9 4.8 11.3m-32.5-64.5a34.5 34.5 0 1 1-69 .8 34.5 34.5 0 1 1 69-.8M255.6 8C397.4 8 504 118.1 504 256c0 147.1-118.5 248-248.4 248C121.6 504 8 394.5 8 256 8 123.1 112.7 8 255.6 8m.8 44.7C138.2 52.7 52.7 150.6 52.7 256c0 109.8 91.2 202.8 203.7 202.8 103.2 0 202.8-81.1 202.8-202.8.1-113.8-90.2-203.3-202.8-203.3"></path></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M255.6 8C397.4 8 504 118.1 504 256c0 147.1-118.5 248-248.4 248C121.6 504 8 394.5 8 256 8 123.1 112.7 8 255.6 8m.8 44.7C138.2 52.7 52.7 150.6 52.7 256c0 109.8 91.2 202.8 203.7 202.8 103.2 0 202.8-81.1 202.8-202.8.1-113.8-90.2-203.3-202.8-203.3M145.7 221c13-83.9 80.5-95.7 108.9-95.7 99.8 0 127.5 82.5 127.5 134.2 0 63.6-41 132.9-128.9 132.9-38.9 0-99.1-20-109.4-97h62.5c1.5 30.1 19.6 45.2 54.5 45.2 23.3 0 58-18.2 58-82.8 0-82.5-49.1-80.6-56.7-80.6q-49.65 0-55.8 43.8h18.2l-49.2 49.2-49-49.2z"></path></svg></span> <a href="https://creativecommons.org/licenses/by-sa/2.5/es/" target="_blank">CC BY-SA 2.5 ES</a> de <a href="https://etendo.software" target="_blank">Futit Services S.L</a>.</p>
@@ -4594,7 +4719,7 @@
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="21 de septiembre de 2026 11:35:21 UTC">21 de septiembre de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="19 de noviembre de 2026 14:27:53 UTC">19 de noviembre de 2026</span>
   </span>
 
     
@@ -4621,6 +4746,11 @@
 
     
     <nav>
+      
+        <a href="https://github.com/ramirosansebastian" class="md-author" title="@ramirosansebastian">
+          
+          <img src="https://avatars.githubusercontent.com/u/319142943?v=4&amp;size=72" alt="ramirosansebastian">
+        </a>
       
         <a href="https://github.com/isaiasb-etendo" class="md-author" title="@isaiasb-etendo">
           
