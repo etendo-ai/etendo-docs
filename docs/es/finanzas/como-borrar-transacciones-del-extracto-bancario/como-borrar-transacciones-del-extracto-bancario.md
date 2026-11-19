@@ -6,42 +6,63 @@ tags:
     - Etendo
 ---
 
-# Borrar movimientos del extracto bancario
+# Borrar un extracto o un movimiento
 
-Si una importación generó movimientos duplicados o incorrectos, o cargaste algo a mano por error, puedes borrarlos directamente desde la pestaña **Movimientos** de la cuenta. Esta acción elimina el movimiento dentro de Etendo; no modifica el archivo de extracto original de tu banco.
+En una cuenta puedes borrar dos cosas distintas:
 
-!!! warning "Revertir una conciliación"
-    Si el movimiento que borras ya estaba **Conciliado**, la conciliación se revierte junto con él: el documento que tenía vinculado (una factura, un cobro o un pago) vuelve a quedar pendiente de conciliar. Revisa el estado de la columna **Conciliación** antes de borrar para evitar sorpresas.
+- Un **extracto importado**, con todas sus líneas de extracto. Es lo que necesitas si subiste un archivo equivocado o dos veces el mismo.
+- Un **movimiento** de la pestaña **Movimientos**, por ejemplo uno que registraste a mano por error.
 
-## Borrar un movimiento individual
+Importar un extracto no crea movimientos: crea un extracto con sus líneas, que no cambian el saldo de la cuenta hasta que las concilias. Por eso, para deshacer una importación, borra el extracto, no movimientos.
 
-1. Abre la cuenta desde **[Finanzas > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}** y ve a la pestaña **Movimientos**.
-2. Marca la casilla de la fila que quieres borrar. Al seleccionar al menos un movimiento aparece la barra **X Seleccionados** con el botón **Eliminar seleccionados (X)**.
+En ambos casos el borrado solo afecta a Etendo; el archivo original de tu banco no se modifica.
 
-![Movimiento seleccionado en la pestaña Movimientos, con la barra 1 Seleccionados y el botón Eliminar seleccionados (1)](assets/como-borrar-transacciones-del-extracto-bancario-1.png)
+## Borrar un extracto importado
 
-3. Haz clic en **Eliminar seleccionados (1)**.
-4. Confirma en el diálogo **Eliminar registros**: *"¿Estás seguro de que deseas eliminar 1 registro(s)? Esta acción no se puede deshacer."*
+1. Abre la cuenta desde **[Finanzas > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}** y ve a la pestaña **Extractos importados**.
+2. Localiza el extracto por su **N.º Documento**, **Nombre** o **Nombre Archivo**. Si tienes dudas, haz clic en la flecha de la izquierda para ver sus líneas y comprobar que es el que quieres borrar.
+3. Pasa el cursor sobre la fila, abre el menú de acciones (**⋮**) y elige **Eliminar**.
 
-![Diálogo de confirmación Eliminar registros, con el aviso de que la acción no se puede deshacer](assets/como-borrar-transacciones-del-extracto-bancario-2.png)
+    ![Pestaña Extractos importados con el menú de acciones de un extracto abierto y las opciones Procesar, Reactivar y Eliminar](assets/como-borrar-transacciones-del-extracto-bancario-1.png)
 
-## Borrar varios movimientos a la vez
+4. Confirma en el diálogo **Eliminar extracto**, que indica que se eliminará el extracto con todas sus líneas y que la acción no se puede deshacer.
 
-1. En la pestaña **Movimientos**, marca la casilla de cada fila que quieras borrar, o usa la casilla del encabezado de la tabla para seleccionar todas las visibles.
-2. Haz clic en **Eliminar seleccionados (X)** y confirma en el mismo diálogo.
+    ![Diálogo Eliminar extracto con el nombre del extracto, el aviso de que se eliminarán todas sus líneas y los botones Cancelar y Eliminar](assets/como-borrar-transacciones-del-extracto-bancario-2.png)
 
-Esto es útil sobre todo después de una importación duplicada: en vez de revisar movimiento por movimiento, filtra por fecha o por el extracto recién importado, selecciona todo el lote y elimínalo de una sola vez.
+También puedes marcar la casilla de uno o varios extractos y hacer clic en el icono de papelera de la barra **Seleccionados** que aparece abajo.
 
-## Qué hacer si necesitas volver a importar el extracto
+!!! warning "Revisa el estado antes de borrar"
+    Etendo no avisa al borrar un extracto que ya tiene líneas conciliadas. Si su **Estado** es **Parcial** o **Conciliado**, desconcilia antes esas líneas desde la pestaña **Conciliación** (consulta [Conciliar o desconciliar movimientos contra documentos](../como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md)) para no dejar conciliaciones a medias.
 
-Borrar los movimientos no elimina el registro del extracto importado en la pestaña **Extractos importados**; si necesitas reintentar la importación completa, borra también ese extracto antes de subir el archivo de nuevo, para no terminar con movimientos mezclados de dos intentos distintos. Consulta [Importar o descargar el extracto bancario](../como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario.md) para el detalle del proceso de importación.
+!!! info "No se pueden borrar líneas sueltas"
+    Las líneas de un extracto no se borran una a una. Si solo algunas están mal, borra el extracto completo y vuelve a importarlo con el archivo corregido.
+
+## Borrar un movimiento
+
+1. En la cuenta, ve a la pestaña **Movimientos**. La columna **Estado** indica si cada movimiento está **Sin conciliar** o **Conciliado**.
+2. Marca la casilla del movimiento que quieres borrar. Para seleccionar varios, marca cada fila o usa la casilla del encabezado, que selecciona todas las filas visibles con los filtros aplicados.
+3. En la barra **Seleccionados** que aparece abajo, haz clic en el icono de papelera. También puedes abrir el menú **⋮** de la fila y elegir **Eliminar**.
+
+    ![Pestaña Movimientos con un movimiento conciliado seleccionado y la barra 1 Seleccionados con el icono de papelera](assets/como-borrar-transacciones-del-extracto-bancario-3.png)
+
+4. Confirma en el diálogo:
+    - Si el movimiento está **Sin conciliar**, el diálogo **Eliminar registros** te pide confirmar que quieres eliminarlo, porque la acción no se puede deshacer. Haz clic en **Eliminar**.
+    - Si está **Conciliado**, el diálogo **Eliminar movimiento** te avisa de que se romperá el vínculo con la línea de extracto y se eliminará el asiento contable generado. Si estás seguro, haz clic en **Eliminar de todos modos**.
+
+    ![Diálogo Eliminar movimiento para un movimiento conciliado, con los avisos de conciliación bancaria y asiento contable y el botón Eliminar de todos modos](assets/como-borrar-transacciones-del-extracto-bancario-4.png)
+
+## Volver a importar el extracto
+
+Una vez borrado el extracto incorrecto, sube el archivo de nuevo siguiendo [Importar o descargar el extracto bancario](../como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario.md). Borra siempre el extracto duplicado antes de reimportar; si no, la pestaña **Conciliación** mostrará cada operación dos veces como pendiente.
 
 ---
 
 ## Artículos Relacionados
 
 - [Importar o descargar el extracto bancario](../como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario.md)
+- [Conciliar o desconciliar movimientos contra documentos](../como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md)
 - [¿Qué es la conciliación bancaria en Etendo?](../que-es-la-conciliacion-bancaria-en-etendo/que-es-la-conciliacion-bancaria-en-etendo.md)
+- [Gestionar pagos y cobros](../como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

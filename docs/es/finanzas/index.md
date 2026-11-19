@@ -88,11 +88,11 @@ Todo lo que necesitas para gestionar las finanzas de tu empresa en Etendo: cuent
 
     [:octicons-arrow-right-24: Leer más](como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario.md)
 
--   :material-delete-outline:{ .lg .middle } **Borrar transacciones del extracto bancario**
+-   :material-delete-outline:{ .lg .middle } **Borrar un extracto o un movimiento**
 
     ---
 
-    Elimina transacciones importadas por error o duplicadas.
+    Elimina un extracto importado por error o duplicado, o un movimiento de la cuenta.
 
     [:octicons-arrow-right-24: Leer más](como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario.md)
 

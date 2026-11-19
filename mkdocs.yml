@@ -136,7 +136,7 @@ plugins:
                     - Registrar un pago: finanzas/como-registrar-un-pago/como-registrar-un-pago.md
                 - Extracto bancario:
                     - Importar o descargar el extracto bancario: finanzas/como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario.md
-                    - Borrar movimientos del extracto bancario: finanzas/como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario.md
+                    - Borrar un extracto o un movimiento: finanzas/como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario.md
                 - Conciliación bancaria:
                     - ¿Qué es la conciliación bancaria en Etendo?: finanzas/que-es-la-conciliacion-bancaria-en-etendo/que-es-la-conciliacion-bancaria-en-etendo.md
                     - Conciliar o desconciliar movimientos contra documentos: finanzas/como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md
