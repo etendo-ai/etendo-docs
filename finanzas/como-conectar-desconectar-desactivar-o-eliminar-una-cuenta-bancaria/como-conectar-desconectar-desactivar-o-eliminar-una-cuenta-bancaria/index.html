@@ -2910,10 +2910,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#conectar-una-cuenta-bancaria" class="md-nav__link">
+  <a href="#conectar-una-cuenta-con-tu-banco" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Conectar una cuenta bancaria
+        Conectar una cuenta con tu banco
       
     </span>
   </a>
@@ -2921,10 +2921,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#desconectar-una-cuenta-bancaria" class="md-nav__link">
+  <a href="#desconectar-una-cuenta-de-tu-banco" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Desconectar una cuenta bancaria
+        Desconectar una cuenta de tu banco
       
     </span>
   </a>
@@ -4396,10 +4396,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#conectar-una-cuenta-bancaria" class="md-nav__link">
+  <a href="#conectar-una-cuenta-con-tu-banco" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Conectar una cuenta bancaria
+        Conectar una cuenta con tu banco
       
     </span>
   </a>
@@ -4407,10 +4407,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#desconectar-una-cuenta-bancaria" class="md-nav__link">
+  <a href="#desconectar-una-cuenta-de-tu-banco" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Desconectar una cuenta bancaria
+        Desconectar una cuenta de tu banco
       
     </span>
   </a>
@@ -4548,6 +4548,13 @@
       
       
       
+        <span class="md-tag">Bancos</span>
+      
+    
+      
+      
+      
+      
         <span class="md-tag">Cuentas</span>
       
     
@@ -4573,53 +4580,64 @@
 
 
 <h1 id="conectar-desconectar-archivar-desarchivar-o-eliminar-una-cuenta">Conectar, desconectar, archivar, desarchivar o eliminar una cuenta<a class="headerlink" href="#conectar-desconectar-archivar-desarchivar-o-eliminar-una-cuenta" title="Permanent link">¶</a></h1>
-<p>Una vez que tienes una cuenta creada en Cuentas, puedes cambiar su estado de conexión con el banco o dejar de usarla sin borrar su historial.</p>
-<p>Todas las acciones de esta página se disparan desde el mismo menú: en el listado de <strong>Cuentas</strong>, pasa el cursor sobre la fila de la cuenta y haz clic en el icono ⋮ de la derecha.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria-1.png" data-desc-position="bottom"><img alt="Menú de acciones de una cuenta con saldo, mostrando las opciones Abrir cuenta, Editar cuenta, Nuevo movimiento, Transferir fondos, Conectar banco y Archivar cuenta" src="../assets/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria-1.png"></a></p>
-<h2 id="conectar-una-cuenta-bancaria">Conectar una cuenta bancaria<a class="headerlink" href="#conectar-una-cuenta-bancaria" title="Permanent link">¶</a></h2>
-<p>Aplica a cuentas de tipo Banco o Tarjeta creadas como <strong>Sin conexión</strong>.</p>
+<p>Una vez que tienes una cuenta creada en <strong>Cuentas</strong>, puedes conectarla con tu banco para recibir sus movimientos automáticamente, desconectarla, dejar de usarla sin perder su historial o eliminarla.</p>
+<p>Todas las acciones de esta página están en el menú de la cuenta: ve a <strong><a href="https://app.etendo.ai/financial-account" target="_blank">Finanzas &gt; Cuentas</a></strong>, pasa el cursor sobre la fila de la cuenta y haz clic en el icono <strong>⋮</strong> de la derecha. Las opciones dependen del tipo de cuenta y de si está conectada.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria-1.png" data-desc-position="bottom"><img alt="Menú ⋮ de una cuenta sin conexión con las opciones Abrir cuenta, Editar cuenta, Nuevo movimiento, Transferir fondos, Conectar banco, Archivar cuenta y Eliminar cuenta" src="../assets/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria-1.png"></a></p>
+<h2 id="conectar-una-cuenta-con-tu-banco">Conectar una cuenta con tu banco<a class="headerlink" href="#conectar-una-cuenta-con-tu-banco" title="Permanent link">¶</a></h2>
+<p>Aplica a cuentas de tipo <strong>Banco</strong> o <strong>Tarjeta</strong> que están <strong>Sin conexión</strong>. Una <strong>Caja</strong> no se conecta con ningún banco: sus movimientos se registran a mano.</p>
 <ol>
-<li>Ve a <strong><a href="https://app.etendo.ai/financial-account" target="_blank">Finanzas &gt; Cuentas</a></strong>.</li>
-<li>En la fila de la cuenta, haz clic en <strong>Conectar banco</strong> (o abre <strong>Acciones de la fila &gt; Conectar banco</strong>).</li>
-<li>Busca y selecciona tu banco en el listado.</li>
-<li>Completa la autenticación en la ventana que abre el banco. Se cierra sola al finalizar y la cuenta pasa a mostrar el estado <strong>Sincronizado</strong>.</li>
+<li>Haz clic en el enlace <strong>Conectar banco</strong> que aparece bajo el nombre de la cuenta, o elige <strong>Conectar banco</strong> en su menú <strong>⋮</strong>. También lo tienes en <strong>Editar cuenta</strong>, en la sección <strong>Conexión bancaria</strong>.</li>
+<li>Etendo muestra el aviso <strong>Conectando con tu banco…</strong> y abre una ventana aparte, <strong>Conectar Cuenta</strong>.</li>
+<li>En <strong>Elige tu banco</strong>, busca tu banco por su nombre y selecciónalo.</li>
+<li>Completa la autenticación con tu banco. La ventana se cierra sola al terminar.</li>
 </ol>
-<h2 id="desconectar-una-cuenta-bancaria">Desconectar una cuenta bancaria<a class="headerlink" href="#desconectar-una-cuenta-bancaria" title="Permanent link">¶</a></h2>
-<p>Aplica solo a cuentas ya conectadas (estado <strong>Sincronizado</strong>). Detiene la sincronización automática; la cuenta y su historial de movimientos no se eliminan.</p>
+<p>Cuando la conexión está activa, la cuenta muestra en el listado <strong>Sincronizado hace…</strong> con el tiempo transcurrido desde la última sincronización. Mientras esté conectada, sus extractos llegan desde tu banco, y también puedes traerlos cuando quieras con <strong>Traer extractos</strong>, en su menú <strong>⋮</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria-2.png" data-desc-position="bottom"><img alt="Menú ⋮ de una cuenta conectada, con el estado Sincronizado hace 2 horas y las opciones Traer extractos, Desconectar banco, Borrar conexión bancaria, Archivar cuenta y Eliminar cuenta" src="../assets/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria-2.png"></a></p>
+<h2 id="desconectar-una-cuenta-de-tu-banco">Desconectar una cuenta de tu banco<a class="headerlink" href="#desconectar-una-cuenta-de-tu-banco" title="Permanent link">¶</a></h2>
+<p>Aplica solo a cuentas conectadas. Al desconectar se detiene la sincronización automática; la cuenta no se elimina.</p>
 <ol>
-<li>En el listado de <strong>Cuentas</strong>, abre <strong>Acciones de la fila</strong> sobre la cuenta conectada.</li>
-<li>Selecciona <strong>Desconectar banco</strong>.</li>
-<li>Confirma en el diálogo <strong>¿Desconectar esta conexión bancaria?</strong>: <em>"La conexión quedará desactivada. Dejarán de sincronizarse los extractos, pero se conserva el vínculo para poder reconectar más adelante sin perder el historial."</em></li>
+<li>En el menú <strong>⋮</strong> de la cuenta conectada, selecciona <strong>Desconectar banco</strong>. También está al pie de <strong>Editar cuenta</strong>.</li>
+<li>
+<p>Confirma con <strong>Desconectar</strong> en el diálogo <strong>¿Desconectar esta conexión bancaria?</strong>, que avisa de que dejarán de sincronizarse los extractos, pero se conserva el vínculo para poder reconectar más adelante sin perder el historial.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria-3.png" data-desc-position="bottom"><img alt="Diálogo ¿Desconectar esta conexión bancaria? con los botones Cancelar y Desconectar" src="../assets/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria-3.png"></a></p>
+</li>
 </ol>
-<p>La cuenta vuelve a mostrarse como <strong>Sin conexión</strong> en el listado, con el enlace <strong>Conectar banco</strong> disponible para reconectarla. Conserva su saldo y el estado de conciliación de los movimientos ya sincronizados.</p>
+<div class="admonition warning">
+<p class="admonition-title">Desconectar no es lo mismo que Borrar conexión bancaria</p>
+<p>El menú de una cuenta conectada también ofrece <strong>Borrar conexión bancaria</strong>. Esta opción elimina la conexión con el proveedor bancario de forma permanente: no se puede restaurar y, si vuelves a conectar, se empieza de cero y los movimientos que ya tenías pueden volver a traerse. Si solo quieres pausar la sincronización, usa <strong>Desconectar banco</strong>.</p>
+</div>
 <h2 id="archivar-una-cuenta">Archivar una cuenta<a class="headerlink" href="#archivar-una-cuenta" title="Permanent link">¶</a></h2>
-<p>En Etendo, "desactivar" una cuenta corresponde a la acción <strong>Archivar cuenta</strong>.</p>
+<p>Archivar es la forma de <strong>desactivar</strong> una cuenta que ya no usas: deja de aparecer en el listado, pero conserva su historial y puedes recuperarla en cualquier momento.</p>
 <ol>
-<li>En el listado de <strong>Cuentas</strong>, abre <strong>Acciones de la fila</strong> (o <strong>Editar cuenta</strong>) sobre la cuenta.</li>
-<li>Selecciona <strong>Archivar cuenta</strong>.</li>
-<li>Confirma en el diálogo <strong>¿Seguro que quieres archivar esta cuenta?</strong>. La cuenta deja de aparecer en el listado de <strong>Todas las cuentas</strong> y pasa al filtro <strong>Inactivas</strong>.</li>
+<li>En el menú <strong>⋮</strong> de la cuenta, selecciona <strong>Archivar cuenta</strong>. También tienes el botón <strong>Archivar cuenta</strong> al pie de <a href="../../como-editar-una-cuenta/como-editar-una-cuenta/">Editar cuenta</a>.</li>
+<li>
+<p>Confirma con <strong>Archivar</strong> en el diálogo <strong>Archivar cuenta</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria-4.png" data-desc-position="bottom"><img alt="Diálogo Archivar cuenta con el aviso de que la cuenta dejará de aparecer en el listado y los botones Cancelar y Archivar" src="../assets/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria-4.png"></a></p>
+</li>
 </ol>
+<p>La cuenta deja de aparecer en el listado. Para verla, abre el desplegable <strong>Todas las cuentas</strong> y elige <strong>Inactivas</strong>.</p>
 <h2 id="desarchivar-una-cuenta">Desarchivar una cuenta<a class="headerlink" href="#desarchivar-una-cuenta" title="Permanent link">¶</a></h2>
 <ol>
-<li>En el listado de <strong>Cuentas</strong>, cambia el filtro a <strong>Inactivas</strong>.</li>
-<li>Sobre la cuenta que quieras reactivar, abre <strong>Acciones de la fila</strong> (o <strong>Editar cuenta</strong>) y selecciona <strong>Desarchivar cuenta</strong>.</li>
-<li>Confirma en el diálogo correspondiente. La cuenta vuelve a aparecer en el listado de <strong>Todas las cuentas</strong>, con su saldo e historial intactos.</li>
+<li>En el listado de <strong>Cuentas</strong>, abre el desplegable <strong>Todas las cuentas</strong> y elige <strong>Inactivas</strong>.</li>
+<li>En el menú <strong>⋮</strong> de la cuenta, selecciona <strong>Desarchivar cuenta</strong>.</li>
+<li>Confirma con <strong>Desarchivar</strong> en el diálogo <strong>Desarchivar cuenta</strong>. La cuenta vuelve a aparecer en el listado y puedes operar con ella con normalidad.</li>
 </ol>
 <h2 id="eliminar-una-cuenta">Eliminar una cuenta<a class="headerlink" href="#eliminar-una-cuenta" title="Permanent link">¶</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Acción irreversible</p>
-<p>A diferencia de <strong>Archivar cuenta</strong>, <strong>Eliminar cuenta</strong> no se puede deshacer. Si no estás seguro, usa Archivar en su lugar.</p>
+<p>A diferencia de <strong>Archivar cuenta</strong>, <strong>Eliminar cuenta</strong> no se puede deshacer. Si no estás seguro, archívala.</p>
 </div>
 <ol>
-<li>En el listado de <strong>Cuentas</strong>, abre <strong>Acciones de la fila</strong> sobre la cuenta.</li>
-<li>Selecciona <strong>Eliminar cuenta</strong>.</li>
-<li>Confirma en el diálogo <strong>Eliminar cuenta</strong>: <em>"¿Seguro que quieres eliminar esta cuenta? Esta acción no se puede deshacer."</em></li>
+<li>En el menú <strong>⋮</strong> de la cuenta, selecciona <strong>Eliminar cuenta</strong>.</li>
+<li>Confirma con <strong>Eliminar</strong> en el diálogo <strong>Eliminar cuenta</strong>: <em>"¿Seguro que quieres eliminar esta cuenta? Esta acción no se puede deshacer."</em></li>
 </ol>
 <hr>
 <h2 id="articulos-relacionados">Artículos Relacionados<a class="headerlink" href="#articulos-relacionados" title="Permanent link">¶</a></h2>
 <ul>
 <li><a href="../../como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja/">Añadir y configurar un banco, tarjeta o caja</a></li>
+<li><a href="../../como-editar-una-cuenta/como-editar-una-cuenta/">Cómo editar una cuenta</a></li>
 <li><a href="../../como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario/">Importar o descargar el extracto bancario</a></li>
+<li><a href="../../como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario/">Borrar un extracto o un movimiento</a></li>
 <li><a href="../../que-es-la-conciliacion-bancaria-en-etendo/que-es-la-conciliacion-bancaria-en-etendo/">¿Qué es la conciliación bancaria en Etendo?</a></li>
 </ul>
 <hr>
@@ -4646,7 +4664,7 @@
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="29 de septiembre de 2026 17:35:37 UTC">29 de septiembre de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="19 de noviembre de 2026 14:03:49 UTC">19 de noviembre de 2026</span>
   </span>
 
     
@@ -4673,6 +4691,11 @@
 
     
     <nav>
+      
+        <a href="https://github.com/ramirosansebastian" class="md-author" title="@ramirosansebastian">
+          
+          <img src="https://avatars.githubusercontent.com/u/319142943?v=4&amp;size=72" alt="ramirosansebastian">
+        </a>
       
         <a href="https://github.com/isaiasb-etendo" class="md-author" title="@isaiasb-etendo">
           
