@@ -12,18 +12,18 @@ Un cobro registra el dinero que recibes de un cliente por una o más facturas de
 ## Crear el cobro desde una factura de venta
 
 1. Abre la factura de venta a la que quieres registrar el cobro.
-2. Haz clic en **Añadir pago**.
+2. Haz clic en **Añadir cobro**.
 3. Se abre el modal **Nuevo cobro**. Completa los campos:
 
     | Campo | Qué introducir |
     |---|---|
     | **Importe** | Se autocompleta con el importe pendiente de la factura. Puedes ajustarlo si el cliente paga parcialmente. |
     | **Fecha** | Fecha del cobro. |
-    | **Método de pago** | Efectivo, Transferencia bancaria u otro método configurado. |
+    | **Método de pago** | Efectivo, Recibo, Tarjeta o Transferencia bancaria. |
     | **Cuenta** | Cuenta bancaria o caja donde se depositará el cobro. Las opciones dependen del método elegido. |
 
-4. Si el cliente tiene saldo a favor o crédito de otras facturas, puedes aplicarlo desde la sección **Saldo a favor / Crédito** del mismo modal.
-5. Revisa el bloque **Total factura / Dinero / Aplicado / Diferencia** para asegurarte de que la diferencia es 0,00 €.
+4. Si el cliente tiene saldo a favor o crédito de otras facturas, aparece la sección **Saldo a favor y crédito disponible**: marca la casilla de cada uno que quieras aplicar, total o parcialmente.
+5. Revisa el bloque **Total factura / Dinero / Aplicado / Diferencia** para asegurarte de que la diferencia es 0,00 €. Si no lo es, el botón **Igualar** ajusta el importe.
 6. Haz clic en:
     - **Guardar** — el cobro queda en estado **Borrador** (sin impacto en caja ni en el saldo de la factura).
     - **Confirmar** — el cobro pasa a estado **Cobro depositado** y reduce el saldo pendiente de la factura.
@@ -35,13 +35,13 @@ Si guardaste un cobro en borrador y quieres confirmarlo más tarde:
 1. Ve a **Finanzas > Cobro**.
 2. Busca el cobro por número de documento, fecha o contacto. Puedes filtrar por **Borrador** en el desplegable de estados.
 3. Haz clic sobre la fila para abrir el detalle.
-4. Revisa los campos. El banner amarillo indica: *«Borrador — sin impacto en caja. Al confirmar, el cobro se registra y reduce el saldo de la factura.»*
+4. Revisa los campos. El aviso de la parte superior indica: *«Borrador — sin impacto en caja. Al confirmar, el cobro se registra y reduce el saldo de la factura.»*
 
-    ![Cobro en estado Borrador](assets/como-registrar-un-cobro-1.png)
+    ![Detalle de un cobro en estado Borrador, con el aviso Borrador — sin impacto en caja, los datos del cobro, las líneas de cobro y el botón Confirmar](assets/como-registrar-un-cobro-1.png)
 
 5. Haz clic en **Confirmar**. El estado pasa a **Cobro depositado**.
 
-![Cobro en estado Cobro depositado](assets/como-registrar-un-cobro-2.png)
+![Detalle de un cobro en dólares en estado Cobro depositado, con el tipo de cambio y el equivalente en euros bajo el importe y el botón Reactivar](assets/como-registrar-un-cobro-2.png)
 
 ## Reactivar un cobro
 

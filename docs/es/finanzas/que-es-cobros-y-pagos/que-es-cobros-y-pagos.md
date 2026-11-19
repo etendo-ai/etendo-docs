@@ -15,7 +15,7 @@ Las vistas **Cobro** y **Pago** son los paneles globales donde Etendo centraliza
 
 Los cobros y pagos se crean desde las facturas (ver [Gestionar pagos y cobros](../como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md)), pero desde estas vistas puedes consultar su estado, filtrar por período o método, y realizar acciones como confirmar o reactivar.
 
-![Vista global de la ventana Cobro en Etendo](assets/que-es-cobros-y-pagos-1.png)
+![Vista Finanzas > Cobro con el panel Cobrado, Pendiente, Por confirmar, Por método de pago y Detalle por moneda, y la lista de cobros con su estado](assets/que-es-cobros-y-pagos-1.png)
 
 ## El panel de resumen
 
@@ -24,11 +24,11 @@ Cada vista tiene un panel lateral izquierdo que resume los movimientos del perí
 | Bloque | Descripción |
 |---|---|
 | **Cobrado** / **Pagado** | Total del período en la moneda de la organización |
-| Período | Número de cobros o pagos incluidos en el filtro activo |
-| **Pendiente** | Importe en borrador pendiente de confirmar |
+| Período | Debajo del título, el período del filtro y el número de cobros o pagos (por ejemplo, *Últimos 30 días · 5 cobros*) |
+| **Pendiente** | Importe en borrador pendiente de confirmar, con el número de documentos por vencer |
 | **Por confirmar** | Número de documentos en estado Borrador |
 | **Por método de pago** | Desglose del total por cada método (Efectivo, Transferencia bancaria, etc.) |
-| **Detalle por moneda** | Subtotal de cada moneda en su moneda original — aparece cuando hay transacciones en más de una moneda |
+| **Detalle por moneda** | Subtotal de cada moneda en su moneda original |
 
 Cuando el total suma importes de distintas monedas, Etendo muestra el símbolo **≈** delante de la cifra para indicar que es una aproximación convertida al tipo de cambio vigente.
 
@@ -44,7 +44,7 @@ La tabla principal muestra todas las transacciones del período con estas column
 | **Estado** | Estado actual del documento (ver sección siguiente) |
 | **Importe** | Importe en la moneda original de la transacción |
 
-![Vista global de la ventana Pago en Etendo](assets/que-es-cobros-y-pagos-2.png)
+![Vista Finanzas > Pago con el panel Pagado y la lista de pagos con su estado](assets/que-es-cobros-y-pagos-2.png)
 
 ## Estados de un cobro o pago
 
@@ -58,7 +58,7 @@ Los documentos pasan por los siguientes estados:
 
 ## Filtros disponibles
 
-**Por estado:** selecciona uno o varios estados para limitar la lista. Las opciones son: *Borrador*, *Cobro/Pago depositado* y *Conciliado*.
+**Por estado:** elige un estado en el desplegable **Todos los estados** para limitar la lista. Solo aparecen los estados que tienen documentos: *Borrador*, *Cobro/Pago depositado* y *Conciliado*.
 
 **Por período:**
 
@@ -68,7 +68,7 @@ Los documentos pasan por los siguientes estados:
 | Ayer | Solo el día anterior |
 | Últimos 7 días | Los 7 días anteriores al actual |
 | Últimos 30 días | Los 30 días anteriores (vista por defecto) |
-| Últimos 12 meses | El año en curso y el anterior |
+| Últimos 12 meses | Los 12 meses anteriores al día actual |
 | Todo el tiempo | Sin filtro de fecha |
 | Personalizado | Rango de fechas a elección |
 

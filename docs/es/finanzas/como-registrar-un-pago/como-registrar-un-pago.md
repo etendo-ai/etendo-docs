@@ -19,10 +19,10 @@ Un pago registra el dinero que entregas a un proveedor por una o más facturas d
     |---|---|
     | **Importe** | Se autocompleta con el importe pendiente de la factura. Puedes ajustarlo si realizas un pago parcial. |
     | **Fecha** | Fecha del pago. |
-    | **Método de pago** | Transferencia bancaria, Recibo u otro método configurado. |
+    | **Método de pago** | Efectivo, Recibo, Tarjeta o Transferencia bancaria. |
     | **Cuenta** | Cuenta bancaria o caja desde la que se realiza el pago. Las opciones dependen del método elegido. |
 
-4. Si el proveedor tiene saldo a favor o crédito disponible, puedes aplicarlo desde la sección **Saldo a favor / Crédito** del mismo modal.
+4. Si el proveedor tiene saldo a favor o crédito disponible, aparece la sección **Saldo a favor y crédito disponible**: marca la casilla de cada uno que quieras aplicar, total o parcialmente.
 5. Haz clic en **Igualar** (si aparece) para ajustar el importe y que la diferencia quede en 0,00 €. Revisa el bloque **Total factura / Dinero / Aplicado / Diferencia** para verificarlo.
 6. Haz clic en:
     - **Guardar** — el pago queda en estado **Borrador** (sin impacto en caja ni en el saldo de la factura).
@@ -49,7 +49,7 @@ Si guardaste un pago en borrador y quieres confirmarlo más tarde:
 
 5. Haz clic en **Confirmar**. El estado pasa a **Pago depositado**.
 
-![Pago en estado Pago depositado](assets/como-registrar-un-pago-1.png)
+![Detalle de un pago en estado Pago depositado, con los datos del pago, las líneas del pago, la actividad y el botón Reactivar](assets/como-registrar-un-pago-1.png)
 
 ## Reactivar un pago
 
@@ -64,12 +64,9 @@ Si necesitas corregir un pago ya confirmado, puedes revertirlo siempre que no es
 
 ## Pagos en moneda extranjera
 
-Si la factura está en una moneda distinta a la de tu organización (por ejemplo, USD), el pago se registra en esa misma moneda. En el detalle del pago, el panel izquierdo muestra:
+Si la factura está en una moneda distinta a la de tu organización (por ejemplo, USD), el pago se registra en esa misma moneda. En el detalle del pago, el panel izquierdo muestra el importe en esa moneda:
 
 - El importe en la moneda original (p. ej. `$460,00`).
-- El tipo de cambio aplicado y el equivalente en euros entre paréntesis.
-
-El tipo de cambio se toma del **Rango de conversión** configurado para esa moneda en la fecha del pago.
 
 ---
 
