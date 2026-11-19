@@ -22,7 +22,7 @@ Un cobro registra el dinero que recibes de un cliente por una factura de venta; 
 3. Si el cliente tiene **Saldo a favor** o **Crédito** disponible de otras facturas, puedes marcarlo para aplicarlo total o parcialmente en lugar de (o además de) un cobro nuevo.
 4. Haz clic en **Guardar** para dejarlo en borrador, o en **Confirmar** para registrarlo.
 
-![Modal Nuevo cobro con Importe, Fecha, Método de pago Transferencia bancaria y Cuenta completados, y el bloque Total factura/Dinero/Aplicado con Diferencia en 0,00 €](assets/como-gestionar-pagos-y-cobros-1.png)
+![Modal Nuevo cobro con Importe, Fecha, Método de pago Transferencia bancaria y Cuenta completados, la sección Saldo a favor y crédito disponible y el bloque Total factura/Dinero/Aplicado con Diferencia en 0,00 €](assets/como-gestionar-pagos-y-cobros-1.png)
 
 ## Registrar un pago
 
@@ -34,7 +34,7 @@ El flujo es igual al de un cobro, pero desde una factura de compra:
 4. Aplica **Saldo a favor** o **Crédito** del proveedor si corresponde.
 5. Haz clic en **Guardar** o en **Confirmar**.
 
-![Modal Nuevo pago con Método de pago Efectivo, Cuenta Caja Chica Oficina Central, y el bloque Total factura/Dinero/Aplicado/Diferencia con el botón Igualar](assets/como-gestionar-pagos-y-cobros-2.png)
+![Modal Nuevo pago con Método de pago Recibo, Cuenta corriente principal y el bloque Total factura/Dinero/Aplicado/Diferencia con el botón Igualar](assets/como-gestionar-pagos-y-cobros-2.png)
 
 ## Conciliar pagos y cobros
 
@@ -42,7 +42,7 @@ Un cobro o pago recién confirmado queda registrado con su actividad (por ejempl
 
 ![Panel lateral en Finanzas > Cobro — el panel en Finanzas > Pago es simétrico](assets/como-gestionar-pagos-y-cobros-3.png)
 
-- Ver el estado de cada uno (por ejemplo, **Cobro depositado**, **Pago depositado**) y el total del período en el panel lateral. El total **Cobrado** o **Pagado** corresponde al filtro de fechas activo (no siempre al mes en curso) y se desglosa en **Pendiente**, **Por método de pago** y **Detalle por moneda**. Si operas con más de una moneda, el total aparece con **≈** (importe aproximado convertido a la moneda de tu empresa).
+- Ver el estado de cada uno (por ejemplo, **Cobro depositado**, **Pago depositado**) y el total del período en el panel lateral. El total **Cobrado** o **Pagado** corresponde al filtro de fechas activo (no siempre al mes en curso) y se desglosa en **Pendiente**, **Por confirmar**, **Por método de pago** y **Detalle por moneda**. Si operas con más de una moneda, el total aparece con **≈** (importe aproximado convertido a la moneda de tu empresa).
 - Abrir cualquier cobro o pago para **Reactivar** (revertir su confirmación) o eliminarlo, si todavía no fue conciliado.
 
 Una vez que el cobro o pago aparece en el extracto de tu cuenta, conciliarlo es igual que conciliar cualquier otro movimiento: ver [Conciliar o desconciliar movimientos contra documentos](../como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md).
