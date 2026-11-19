@@ -16,7 +16,7 @@ Desde la sección **Cuentas** puedes actualizar en cualquier momento el nombre, 
 2. Localiza la cuenta que quieres modificar.
 3. Haz clic en **Editar cuenta** al final de la fila.
 
-![Ventana de edición de cuenta bancaria — pestaña General](assets/banco_general.png)
+![Ventana de edición de cuenta bancaria — pestaña General](assets/como-editar-una-cuenta-1.png)
 
 La ventana de edición muestra en su encabezado el **Tipo de cuenta** (Banco, Caja o Tarjeta) y la **Moneda** de esa cuenta. Los campos disponibles varían según el tipo. Las pestañas **General** y **Contabilidad** organizan la configuración.
 
@@ -76,7 +76,7 @@ La pestaña **General** reúne los datos de identificación de la cuenta y la co
 
 ## Pestaña Contabilidad
 
-![Ventana de edición de cuenta bancaria — pestaña Contabilidad](assets/banco_contabilidad.png)
+![Ventana de edición de cuenta bancaria — pestaña Contabilidad](assets/como-editar-una-cuenta-2.png)
 
 La pestaña **Contabilidad** define qué cuentas de tu plan de cuentas se usan al registrar los movimientos de cobro y pago de esta cuenta.
 
@@ -133,8 +133,11 @@ Cuando hayas terminado, haz clic en **Guardar cambios**. Si prefieres cancelar s
 
 ---
 
-**Artículos relacionados**
+## Artículos Relacionados
 
 - [Cómo añadir y configurar un banco, tarjeta o caja](../como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja.md)
 - [Cómo conectar, desconectar, archivar o eliminar una cuenta](../como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria.md)
 - [Cómo conciliar movimientos](../como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md)
+
+---
+Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.
