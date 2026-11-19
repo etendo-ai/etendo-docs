@@ -27,7 +27,7 @@ Acción que deja de mostrar una cuenta en el listado de **Todas las cuentas** si
 
 ## Asiento contable
 
-Registro en la contabilidad que refleja el gasto de amortización de un período. Se genera de forma definitiva al confirmar una Amortización.
+Registro en tu contabilidad que refleja una operación de tu empresa: una venta, una compra, un cobro, un pago o el gasto de amortización de un período. Se genera al contabilizar el documento; hasta entonces, el documento aparece como **Sin contabilizar**.
 
 ## Automatch
 
