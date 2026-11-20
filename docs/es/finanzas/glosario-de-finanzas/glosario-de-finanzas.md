@@ -41,6 +41,10 @@ Estado inicial y editable de una Amortización. En Borrador se pueden añadir, m
 
 Tipo de cuenta para el efectivo que se maneja fuera del banco (por ejemplo, la caja chica de una oficina o la caja de un punto de venta). A diferencia de un Banco o una Tarjeta, una Caja no se conecta ni importa extractos de una entidad externa: todos sus movimientos se registran a mano. Ver [Gestionar cajas contables y movimientos en efectivo](../como-gestionar-caja-y-movimientos-en-efectivo/como-gestionar-caja-y-movimientos-en-efectivo.md).
 
+## Categoría de activo
+
+Tipo de bien al que pertenece un activo, por ejemplo *Equipos informáticos* o *Vehículos*. Propone la forma de amortizar al registrar el activo y define las cuentas contables de su amortización. Ver [Cómo configurar las categorías de activo](../como-configurar-las-categorias-de-activo/como-configurar-las-categorias-de-activo.md).
+
 ## Cobro
 
 Registro del dinero que recibes de un cliente. Normalmente se crea desde una factura de venta, pero también puede originarse en una Entrada registrada a mano en una caja. En ambos casos queda disponible en la vista global **Finanzas > Cobro**. Ver [Gestionar pagos y cobros](../como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md) y [Gestionar cajas contables y movimientos en efectivo](../como-gestionar-caja-y-movimientos-en-efectivo/como-gestionar-caja-y-movimientos-en-efectivo.md).
@@ -92,10 +96,6 @@ Archivo con el detalle de los movimientos de una cuenta bancaria en un período.
 ## Factura Rectificativa
 
 Factura que corrige el importe de otra factura ya confirmada, por ejemplo por un precio mal facturado, un descuento o bonificación, o una devolución de mercancía. Es de las llamadas «por diferencias»: no sustituye a la factura original, solo recoge la diferencia, en negativo si el importe baja o en positivo si sube. Existe tanto en ventas como en compras. Para poder confirmarla tiene que indicar, en su pestaña **Rectificaciones**, la factura o facturas que corrige. Ver [Crear una factura rectificativa](../../comercial/ventas/crear-una-factura-rectificativa/crear-una-factura-rectificativa.md) para ventas y [Registrar una factura rectificativa](../../operaciones/compras/registrar-una-factura-rectificativa/registrar-una-factura-rectificativa.md) para compras.
-
-## Grupo activo
-
-Categoría contable de un activo. Determina las cuentas contables usadas en sus asientos.
 
 ## Movimiento
 

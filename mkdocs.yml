@@ -148,6 +148,7 @@ plugins:
                     - Cómo registrar un asiento manual: finanzas/como-registrar-un-asiento-manual/como-registrar-un-asiento-manual.md
                     - Cómo revisar los documentos no contabilizados: finanzas/como-revisar-los-documentos-no-contabilizados/como-revisar-los-documentos-no-contabilizados.md
                 - Activos y amortización:
+                    - Cómo configurar las categorías de activo: finanzas/como-configurar-las-categorias-de-activo/como-configurar-las-categorias-de-activo.md
                     - Apuntar un activo: finanzas/como-apuntar-un-activo/como-apuntar-un-activo.md
                     - "Activos: referencia de campos": finanzas/referencia-de-campos-de-activo/referencia-de-campos-de-activo.md
                     - Crear y ejecutar un plan de amortización: finanzas/como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion.md

@@ -178,6 +178,14 @@ Todo lo que necesitas para gestionar las finanzas de tu empresa en Etendo: cuent
 
 <div class="grid cards" markdown>
 
+-   :material-shape-outline:{ .lg .middle } **Cómo configurar las categorías de activo**
+
+    ---
+
+    Crea una categoría por tipo de bien con su forma de amortizar y sus cuentas contables.
+
+    [:octicons-arrow-right-24: Leer más](como-configurar-las-categorias-de-activo/como-configurar-las-categorias-de-activo.md)
+
 -   :material-plus-box-outline:{ .lg .middle } **Apuntar un activo**
 
     ---
