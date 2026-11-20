@@ -148,6 +148,14 @@ Todo lo que necesitas para gestionar las finanzas de tu empresa en Etendo: cuent
 
     [:octicons-arrow-right-24: Leer más](como-configurar-los-centros-de-costos/como-configurar-los-centros-de-costos.md)
 
+-   :material-calendar-month-outline:{ .lg .middle } **Cómo gestionar el calendario contable**
+
+    ---
+
+    Abre o cierra los meses en los que puedes registrar contabilidad y crea los períodos del año siguiente.
+
+    [:octicons-arrow-right-24: Leer más](como-gestionar-el-calendario-contable/como-gestionar-el-calendario-contable.md)
+
 </div>
 
 ## Activos y amortización
