@@ -156,6 +156,14 @@ Todo lo que necesitas para gestionar las finanzas de tu empresa en Etendo: cuent
 
     [:octicons-arrow-right-24: Leer más](como-gestionar-el-calendario-contable/como-gestionar-el-calendario-contable.md)
 
+-   :material-book-edit-outline:{ .lg .middle } **Cómo registrar un asiento manual**
+
+    ---
+
+    Registra en tu contabilidad gastos o ajustes que no vienen de una factura, un cobro o un pago, como las comisiones del banco.
+
+    [:octicons-arrow-right-24: Leer más](como-registrar-un-asiento-manual/como-registrar-un-asiento-manual.md)
+
 </div>
 
 ## Activos y amortización
