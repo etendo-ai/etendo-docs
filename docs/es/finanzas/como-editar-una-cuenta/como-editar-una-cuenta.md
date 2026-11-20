@@ -33,7 +33,7 @@ La pestaña **General** reúne los datos de identificación de la cuenta y la co
 
     **Conexión bancaria**
 
-    Haz clic en **Conectar banco** para activar la sincronización automática de movimientos con el banco. Si la cuenta ya está conectada, aquí puedes gestionarla.
+    Haz clic en **Conectar banco** para activar la sincronización automática de movimientos con el banco. Si la cuenta ya está conectada, aquí ves su estado (**Conectada**), el banco, cuándo fue la **Última sincronización**, la opción **Traer extractos** y cuántos días quedan para que expire la autorización bancaria, con el enlace **Re-autorizar** para renovarla.
 
     **Configuración de conciliación**
 

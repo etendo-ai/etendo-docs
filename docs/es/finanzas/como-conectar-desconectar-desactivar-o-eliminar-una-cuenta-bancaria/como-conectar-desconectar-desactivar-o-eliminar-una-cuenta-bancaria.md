@@ -27,6 +27,9 @@ Cuando la conexión está activa, la cuenta muestra en el listado **Sincronizado
 
 ![Menú ⋮ de una cuenta conectada, con el estado Sincronizado hace 2 horas y las opciones Traer extractos, Desconectar banco, Borrar conexión bancaria, Archivar cuenta y Eliminar cuenta](assets/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria-2.png)
 
+!!! tip "Comprueba que tus extractos están al día"
+    **Sincronizado hace…**, bajo el nombre de la cuenta, indica cuándo se trajeron los últimos extractos; pasa el cursor por encima para ver la fecha y la hora exactas. El mismo dato aparece en **Editar cuenta**, sección **Conexión bancaria** (**Última sincronización**), junto con los días que faltan para que expire la autorización de tu banco. Si la fecha deja de avanzar o la autorización está a punto de caducar, haz clic en **Re-autorizar** para no interrumpir la sincronización. Las cuentas sin conexión no muestran este dato.
+
 ## Desconectar una cuenta de tu banco
 
 Aplica solo a cuentas conectadas. Al desconectar se detiene la sincronización automática; la cuenta no se elimina.
