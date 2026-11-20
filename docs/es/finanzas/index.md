@@ -164,6 +164,14 @@ Todo lo que necesitas para gestionar las finanzas de tu empresa en Etendo: cuent
 
     [:octicons-arrow-right-24: Leer más](como-registrar-un-asiento-manual/como-registrar-un-asiento-manual.md)
 
+-   :material-file-alert-outline:{ .lg .middle } **Cómo revisar los documentos no contabilizados**
+
+    ---
+
+    Encuentra los documentos que todavía no están en tu contabilidad y contabilízalos desde una sola lista.
+
+    [:octicons-arrow-right-24: Leer más](como-revisar-los-documentos-no-contabilizados/como-revisar-los-documentos-no-contabilizados.md)
+
 </div>
 
 ## Activos y amortización
