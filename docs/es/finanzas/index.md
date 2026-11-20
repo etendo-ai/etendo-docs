@@ -140,6 +140,14 @@ Todo lo que necesitas para gestionar las finanzas de tu empresa en Etendo: cuent
 
     [:octicons-arrow-right-24: Leer más](gestionar-tu-plan-de-cuentas/gestionar-tu-plan-de-cuentas.md)
 
+-   :material-chart-donut:{ .lg .middle } **Cómo configurar los centros de costos**
+
+    ---
+
+    Crea un centro de costos por tienda, departamento o línea de negocio para analizar sus ingresos y gastos por separado.
+
+    [:octicons-arrow-right-24: Leer más](como-configurar-los-centros-de-costos/como-configurar-los-centros-de-costos.md)
+
 </div>
 
 ## Activos y amortización
