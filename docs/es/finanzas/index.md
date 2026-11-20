@@ -128,6 +128,20 @@ Todo lo que necesitas para gestionar las finanzas de tu empresa en Etendo: cuent
 
 </div>
 
+## Contabilidad
+
+<div class="grid cards" markdown>
+
+-   :material-file-tree-outline:{ .lg .middle } **Gestionar tu plan de cuentas**
+
+    ---
+
+    Consulta las cuentas donde Etendo anota cada operación y crea subcuentas, por ejemplo para la caja de una tienda.
+
+    [:octicons-arrow-right-24: Leer más](gestionar-tu-plan-de-cuentas/gestionar-tu-plan-de-cuentas.md)
+
+</div>
+
 ## Activos y amortización
 
 <div class="grid cards" markdown>
