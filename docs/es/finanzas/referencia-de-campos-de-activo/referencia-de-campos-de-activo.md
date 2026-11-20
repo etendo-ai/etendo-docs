@@ -1,4 +1,6 @@
 ---
+title: "Activos: referencia de campos"
+description: Consulta qué significa cada campo del formulario de Activo en Etendo, cómo se calcula la amortización y qué muestran su resumen y sus pestañas.
 tags:
     - Activos
     - Amortización
@@ -9,119 +11,136 @@ tags:
 
 # Activos: referencia de campos
 
-Detalle de los campos del formulario de Activo, agrupados por sección, y de la información que se agrega automáticamente una vez que generas el plan de amortización. Para los pasos de creación, consulta [Apuntar un activo](../como-apuntar-un-activo/como-apuntar-un-activo.md).
+Aquí tienes el detalle de la lista de activos, de cada campo del formulario y de lo que muestra un activo una vez que generas su plan de amortización. Los ejemplos usan un portátil que se amortiza por meses, un vehículo que se amortiza por porcentaje y el mobiliario de una oficina que se amortiza por años. Para los pasos de alta, consulta [Apuntar un activo](../como-apuntar-un-activo/como-apuntar-un-activo.md).
 
-## Datos del activo
-
-Los campos de identificación aparecen siempre en la parte superior del formulario.
-
-- **Identificador** — Código único del activo dentro de la organización (ej: número de inventario). Lo ingresa el usuario; no se genera automáticamente. Requerido.
-- **Nombre** — Nombre descriptivo del activo (ej: *Servidor Dell PowerEdge R740*). Requerido.
-- **Grupo activo** — Categoría contable del activo. Valor por defecto: *Otros*. Determina las cuentas contables de los asientos. Requerido.
-- **Valor del activo** — Importe de adquisición. Base bruta antes de descontar el valor residual.
-- **Descripción** — Información adicional: número de serie, ubicación, proveedor, etc.
-
-## Configuración de amortización
+## Lista de activos
 
 <figure markdown="span">
-  ![Configuración de amortización](assets/referencia-de-campos-de-activo-3.png)
-  <figcaption>Sección de configuración de amortización con el interruptor Amortizar y sus opciones.</figcaption>
+  ![Lista de Activos con equipos, vehículos y mobiliario](assets/referencia-de-campos-de-activo-1.png)
+  <figcaption>Lista de Activos con bienes de varias categorías y su estado de amortización.</figcaption>
 </figure>
 
-Esta sección controla si el activo se amortiza y qué método se usa.
+En **[Finanzas > Activos](https://app.etendo.ai/assets){target="_blank"}** ves todos los bienes que tienes registrados. Para cada uno, la lista muestra:
 
-- **Amortizar** — interruptor que habilita o deshabilita la amortización para este activo. Cuando está desactivado, aparece el mensaje *"La amortización está desactivada. Actívala para configurar el método, el cálculo y la vida útil."*
-- **Cada mes tiene 30 días** — interruptor que aparece al activar **Amortizar** (activo por defecto). Normaliza los meses a 30 días para obtener cuotas uniformes.
+- **Identificador** y **Nombre** — para reconocer el bien.
+- **Categoría de activo** — el tipo de bien.
+- **Fecha de compra** y **Fecha de inicio de amortización**.
+- **Amortizar** — *Sí* si el bien se amortiza.
+- **Valor a amortizar** y **Valor del activo**.
+- **Amortizado real** — el importe ya amortizado, contando solo las cuotas confirmadas.
+- **Estado de amortización** — el mismo avance, como barra con el porcentaje.
+
+Al pie de la lista verás la suma de **Valor a amortizar**, **Valor del activo** y **Amortizado real**. Usa **Filtros** para añadir condiciones, por ejemplo ver solo los activos de una categoría. Para registrar uno nuevo, haz clic en **+ Nuevo activo**.
+
+## Datos del activo y configuración de amortización
+
+<figure markdown="span">
+  ![Datos y configuración de amortización de un vehículo](assets/referencia-de-campos-de-activo-2.png)
+  <figcaption>Vehículo VH-001: sus datos, la amortización activada y el resumen a la derecha.</figcaption>
+</figure>
+
+La parte de arriba del formulario sirve para identificar el bien y saber cuánto pagaste por él:
+
+- **Identificador** *(obligatorio)* — código único del bien dentro de tu empresa, por ejemplo tu número de inventario: `VH-001`. Lo eliges tú; Etendo no lo genera.
+- **Nombre** *(obligatorio)* — qué es el bien: *Furgoneta de reparto*.
+- **Categoría de activo** *(obligatorio)* — el tipo de bien: *Vehículos*, *Equipos informáticos*, *Mobiliario*… Al elegirla, Etendo propone la forma de amortizar que tiene configurada esa categoría. La categoría también decide en qué cuentas de tu contabilidad se anota la amortización.
+- **Producto** — producto de tu catálogo con el que se relaciona el bien, si lo hay.
+- **Valor del activo** — lo que pagaste por el bien: `24.000`.
+- **Descripción** — número de serie, ubicación, quién lo usa o cualquier otro dato útil.
+
+Debajo, la sección **Configuración de amortización** (*"Configura el método, el calendario y los importes de amortización para este activo."*) tiene el interruptor **Amortizar**; al activarlo aparece también **Cada mes tiene 30 días**:
+
+- **Amortizar** — *"Habilitar la amortización para este activo."* Actívalo para que Etendo calcule las cuotas. Mientras está desactivado, el formulario muestra *"La amortización está desactivada. Actívala para configurar el método, el cálculo y la vida útil."*
+- **Cada mes tiene 30 días** — *"Usar meses de 30 días para el cálculo de amortización."* Viene activado y hace que todas las cuotas mensuales sean iguales, aunque el mes tenga 28 o 31 días.
 
 ## Información financiera
 
-<figure markdown="span">
-  ![Información financiera](assets/referencia-de-campos-de-activo-4.png)
-  <figcaption>Sección de información financiera con los valores del activo y el método de amortización.</figcaption>
-</figure>
+Esta sección aparece al activar **Amortizar**. Aquí defines cuánto se amortiza y a qué ritmo.
 
-- **Moneda** — Valor fijo, no editable: *EUR*.
-- **Valor residual** — Valor estimado al final de la vida útil. Debe ser menor o igual al valor del activo.
-- **Valor a amortizar** — Se autocompleta restando el valor residual al valor del activo, pero es un campo editable: puedes sobrescribirlo si lo necesitas. Requerido.
-- **Amortizado anterior** — Importe ya amortizado antes de registrar el activo en Etendo. Útil al migrar activos con amortización acumulada en otro sistema. Por defecto: *0*.
-- **Tipo de amortización** — Método de cálculo. Opción disponible: *Lineal*. Requerido.
-- **Tipo de cálculo** — Define cómo se expresa la vida útil del activo. Opciones: *Porcentaje* o *Tiempo*. Requerido.
+- **Moneda** — la moneda de tu empresa. No se puede cambiar.
+- **Valor residual** — lo que calculas que valdrá el bien cuando dejes de usarlo: `4.000`.
+- **Valor a amortizar** *(obligatorio)* — el importe que se reparte entre los años de uso. Se completa solo con el valor del activo menos el valor residual (24.000 − 4.000 = `20.000`). Puedes cambiarlo si tu asesor te indica otro importe.
+- **Valor amortizado previamente** — lo que ya se había amortizado antes de registrar el bien en Etendo, por ejemplo si lo traes de otro programa. Viene en `0`.
+- **Contacto** — contacto con el que quieras relacionar el bien.
+- **Tipo de amortización** *(obligatorio)* — *Lineal*: el valor a amortizar se reparte en cuotas iguales.
+- **Tipo de cálculo** *(obligatorio)* — cómo indicas el ritmo de amortización: *Porcentaje* o *Tiempo*.
 
-Según el **Tipo de cálculo** seleccionado, aparecen campos adicionales:
+Según el **Tipo de cálculo**, el formulario muestra campos distintos:
 
-- Si eliges *Porcentaje*: **% Amortización anual** — porcentaje anual a amortizar. Ej: *25 %* amortiza el activo en 4 años. Con un activo de 10.000 € y 25 % anual en periodicidad mensual, cada cuota es de 208,33 €/mes.
-- Si eliges *Tiempo*: aparecen otros dos campos, ambos llamados **Amortizar** y **Vida útil**, no confundir con el interruptor de la sección anterior:
-    - **Amortizar** — periodicidad del plan: *Mensual* (una línea por mes) o *Anual* (una línea por año). Por defecto: *Mensual*.
-    - **Vida útil** — duración total del activo. La etiqueta y la unidad cambian según la periodicidad elegida: *Vida útil - Meses* si es *Mensual*, *Vida útil - Años* si es *Anual*. Ej: *48* meses equivale a 4 años. Con un activo de 10.000 € a 48 meses, cada cuota es de 208,33 €/mes.
+=== "Porcentaje"
+
+    <figure markdown="span">
+      ![Información financiera de un vehículo con cálculo por porcentaje y su plan anual](assets/referencia-de-campos-de-activo-4.png)
+      <figcaption>Vehículo VH-001: 16 % anual sobre 20.000 € a amortizar, con una línea por año fechada el 31 de diciembre.</figcaption>
+    </figure>
+
+    - **% Amortización anual** *(obligatorio)* — qué parte del valor a amortizar se anota cada año.
+
+    El plan tiene **una línea por año**, fechada el 31 de diciembre. Con el vehículo: 16 % de 20.000 € = 3.200 € al año durante seis años, y una última línea de 800 € para completar el total.
+
+=== "Tiempo"
+
+    <figure markdown="span">
+      ![Información financiera del mobiliario con cálculo por tiempo, anual a 10 años](assets/referencia-de-campos-de-activo-6.png)
+      <figcaption>Mobiliario MB-001: 6.000 € repartidos en 10 cuotas anuales de 600 €.</figcaption>
+    </figure>
+
+    - **Amortizar** *(obligatorio)* — cada cuánto se anota la amortización: *Mensual* o *Anual*. No lo confundas con el interruptor del mismo nombre de la sección anterior.
+    - **Vida útil - Meses** o **Vida útil - Años** *(obligatorio)* — durante cuánto tiempo vas a usar el bien. El nombre cambia según la periodicidad elegida.
+
+    Ejemplos:
+
+    - Portátil `EQ-001`: 1.200 €, mensual, 48 meses → 25 € al mes.
+    - Mobiliario `MB-001`: 6.000 €, anual, 10 años → 600 € al año.
 
 ## Fechas
 
-<figure markdown="span">
-  ![Fechas](assets/referencia-de-campos-de-activo-5.png)
-  <figcaption>Sección de fechas con los campos de compra, inicio, cancelación y fin del activo.</figcaption>
-</figure>
+- **Fecha de compra** — la fecha de la factura de compra.
+- **Fecha de cancelación** — la fecha en que el bien deja de ser tuyo, por ejemplo porque lo vendes. Déjala vacía mientras lo sigas usando.
+- **Fecha de inicio de amortización** *(obligatorio)* — desde cuándo usas el bien. Es el punto de partida de la primera cuota.
+- **Fecha de fin de amortización** — cuándo termina de amortizarse el bien. Se completa sola si amortizas por *Tiempo* con periodicidad *Mensual*; en los demás casos queda vacía.
 
-- **Fecha compra** — Informativa. Fecha de adquisición del activo; no interviene en el cálculo.
-- **Fecha de cancelación** — Informativa. Fecha en que el activo se da de baja del patrimonio. Atención: ingresar esta fecha no detiene automáticamente los cálculos de amortización; **debes gestionar la baja contable por separado**.
-- **Fecha inicio** — Inicio de la vida útil contable del activo. Es el punto de partida para generar el plan de amortización; sin esta fecha el plan no puede crearse. **Requerido para generar el plan**.
-- **Fecha fin** — Informativa. Se calcula automáticamente cuando el Tipo de cálculo es *Tiempo*; debe completarse manualmente si es *Porcentaje*.
+## Resumen de amortización
 
-## Dimensiones contables
+El panel de la derecha del activo (lo ves en la captura de [Datos del activo y configuración de amortización](#datos-del-activo-y-configuracion-de-amortizacion)) resume la situación del activo:
 
-<figure markdown="span">
-  ![Dimensiones contables](assets/referencia-de-campos-de-activo-10.png)
-  <figcaption>Sección de dimensiones contables, sin completar.</figcaption>
-</figure>
+- **Valor actual** — *"Valor contable del activo"*.
+- **Pendiente de Amortizar** — lo que queda por amortizar. En el portátil, con 10 cuotas de 25 € ya confirmadas: 1.200 − 250 = 950 €.
+- **Amortización planificada** — *"Monto total programado"*: el importe total que reparte el plan.
+- **Amortizado** — porcentaje ya amortizado. Solo cuenta las cuotas en estado **Confirmado**, aunque la fecha de otras ya haya pasado. Debajo aparece *En progreso* mientras quedan cuotas por amortizar.
 
-Campos opcionales para asociar el activo a dimensiones de análisis contable. Se propagan automáticamente a cada línea del plan al generarlo o recalcularlo.
+Después de generar el plan, el botón **Crear amortización** pasa a ser **Recalcular amortización**. Úsalo si cambias el valor, el ritmo o las fechas del bien.
 
-- **Proyecto** — úsalo cuando el activo está vinculado a un proyecto concreto y su amortización forma parte del costo de ese proyecto.
-- **Centro de coste** — úsalo cuando la amortización debe imputarse a un área o departamento específico (ej: Tecnología, Operaciones).
-- **Contacto** — úsalo cuando el activo está asignado a un contacto (proveedor, cliente o entidad relacionada) relevante para la contabilidad.
-- **Producto** — vincula el activo a un producto del catálogo cuando corresponda, por ejemplo para relacionarlo con un ítem de inventario concreto.
+## Pestañas del activo
 
-## Qué ves después de generar el plan de amortización
+El activo tiene tres pestañas: **Plan de amortización**, **Adjuntos** y **Contabilidad**.
 
-Al pulsar **Crear amortización**, el formulario se completa con información que genera el sistema.
+### Plan de amortización
 
-**Resumen de amortización** — panel lateral que muestra el estado del activo de forma permanente mientras trabajas en el formulario:
+Muestra las cuotas que genera **Crear amortización**, una por período, con las columnas **Período**, **Porcentaje**, **Importe** y **Estado**:
 
-<figure markdown="span">
-  ![Resumen de Amortización](assets/referencia-de-campos-de-activo-7.png)
-  <figcaption>Panel lateral de Resumen de amortización con el estado actual del activo.</figcaption>
-</figure>
+- **Pendiente** — la cuota todavía no se ha confirmado.
+- **Confirmado** — la cuota ya se ha procesado y cuenta para el **Amortizado**.
 
-- **Valor actual** — Valor contable del activo a la fecha (euros).
-- **Valor residual del activo** — Valor estimado al final de la vida útil.
-- **Amortización planificada** — Monto total programado en el plan vigente.
-- **Amortizado** — Porcentaje ya amortizado, calculado solo sobre los períodos en estado **Confirmado** del plan (no se cuentan los períodos **Pendientes**, aunque su fecha ya haya pasado). Subtítulo *En progreso* mientras hay períodos pendientes; cambia a *Totalmente amortizado* al llegar al 100 %. En la **Vista Lista** de Activos, este mismo valor se muestra en euros en la columna **Amortizado real**, junto a una barra con el porcentaje.
+Haz clic en un período para abrir el registro de **Amortización** que lo agrupa. Para confirmar y llevar cada cuota a tu contabilidad, consulta [Crear y ejecutar un plan de amortización](../como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion.md).
 
-**Plan de amortización y Contabilidad** — dos pestañas adicionales en el activo ya creado:
+### Adjuntos
 
-- **Plan de amortización** — muestra las líneas por período que produce **Crear amortización**. Consulta [Crear y ejecutar un plan de amortización](../como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion.md) para ver cómo generarlas y procesarlas.
+Aquí guardas los documentos del bien: la factura de compra, la garantía, el contrato de mantenimiento… Puedes arrastrar el archivo o seleccionarlo; se admiten PDF, Word, Excel, PowerPoint, imágenes, XML, ZIP y RTF. La pestaña se activa después de guardar el activo.
+
+### Contabilidad
 
 <figure markdown="span">
-  ![Pestaña Plan de amortización con las líneas generadas](assets/referencia-de-campos-de-activo-8.png)
-  <figcaption>Pestaña Plan de amortización con las líneas generadas por período.</figcaption>
+  ![Pestaña Contabilidad de un vehículo con sus cuentas de amortización](assets/referencia-de-campos-de-activo-9.png)
+  <figcaption>Pestaña Contabilidad del vehículo VH-001, con las cuentas que vienen de la categoría Vehículos.</figcaption>
 </figure>
 
-- **Contabilidad** — muestra las cuentas de **Amortización acumulada** y **Amortización** usadas al generar los asientos de este activo. Usa **Añadir Contabilidad** para asociar un esquema adicional.
+Muestra en qué cuentas de tu contabilidad se anota la amortización de este bien.
 
-<figure markdown="span">
-  ![Pestaña Contabilidad con las cuentas de amortización](assets/referencia-de-campos-de-activo-9.png)
-  <figcaption>Pestaña Contabilidad con las cuentas de amortización acumulada y amortización por esquema contable.</figcaption>
-</figure>
-
-## Vista Lista
-
-<figure markdown="span">
-  ![Vista lista de Activos filtrada por Grupo activo](assets/referencia-de-campos-de-activo-1.png)
-  <figcaption>Vista lista de Activos filtrada por Grupo activo "Equipos Informáticos", con columnas de identificador, grupo, fechas, valores y estado de amortización.</figcaption>
-</figure>
-
-Desde **[Finanzas > Activos](https://app.etendo.ai/assets){target="_blank"}** encuentras todos los activos ya registrados, con columnas de identificador, grupo, fechas y valores, además de **Amortizado real** (el importe ya amortizado, ver más arriba) y **Estado de amortización** (el mismo porcentaje, como barra de progreso). Usa **Filtros** para acotar la lista (por ejemplo, por **Grupo activo**, como en la captura) o **+ Nuevo activo** para crear uno.
-
-*[EUR]: Euro — moneda oficial de la zona euro
+!!! info "Para tu asesor"
+    - Cada fila corresponde a un **Esquema contable** e indica la cuenta de **Amortización acumulada** y la de **Amortización**. Estas cuentas salen de la **Categoría de activo**, que se configura en **[Finanzas > Categoría de activo](https://app.etendo.ai/asset-group){target="_blank"}**.
+    - Al crear una categoría, Etendo le asigna unas cuentas por defecto que conviene revisar.
+    - Con **+ Añadir Contabilidad** puedes añadir las cuentas de otro esquema contable.
 
 ---
 
