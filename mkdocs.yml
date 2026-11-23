@@ -86,6 +86,8 @@ plugins:
                         - Añadir cobros a tu factura de venta: comercial/ventas/anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md
                         - Crear y gestionar devoluciones: comercial/ventas/crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md
                         - Crear una factura rectificativa: comercial/ventas/crear-una-factura-rectificativa/crear-una-factura-rectificativa.md
+                    - Avanzado:
+                        - Facturar en otra moneda: comercial/ventas/facturar-en-otra-moneda/facturar-en-otra-moneda.md
                     - Ventas - Preguntas frecuentes: comercial/ventas/documentos-de-venta-preguntas-frecuentes/documentos-de-venta-preguntas-frecuentes.md
             - Operaciones:
                 - operaciones/index.md

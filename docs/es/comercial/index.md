@@ -124,6 +124,14 @@ Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etend
 
     [:octicons-arrow-right-24: Leer más](ventas/crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md)
 
+-   :material-receipt-text-minus-outline:{ .lg .middle } **Crear una factura rectificativa**
+
+    ---
+
+    Corrige el importe de una factura ya confirmada por un precio mal facturado, un descuento o una devolución.
+
+    [:octicons-arrow-right-24: Leer más](ventas/crear-una-factura-rectificativa/crear-una-factura-rectificativa.md)
+
 -   :material-help-circle-outline:{ .lg .middle } **Documentos de venta: preguntas frecuentes**
 
     ---
@@ -131,5 +139,19 @@ Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etend
     Respuestas a las dudas más comunes sobre presupuestos, pedidos, albaranes, facturas y devoluciones.
 
     [:octicons-arrow-right-24: Leer más](ventas/documentos-de-venta-preguntas-frecuentes/documentos-de-venta-preguntas-frecuentes.md)
+
+</div>
+
+## Ventas: casos avanzados
+
+<div class="grid cards" markdown>
+
+-   :material-currency-usd:{ .lg .middle } **Facturar en otra moneda**
+
+    ---
+
+    Emite presupuestos, pedidos y facturas en la moneda de tu cliente, revisa el tipo de cambio y registra sus cobros.
+
+    [:octicons-arrow-right-24: Leer más](ventas/facturar-en-otra-moneda/facturar-en-otra-moneda.md)
 
 </div>
