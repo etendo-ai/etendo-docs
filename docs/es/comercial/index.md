@@ -154,4 +154,12 @@ Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etend
 
     [:octicons-arrow-right-24: Leer más](ventas/facturar-en-otra-moneda/facturar-en-otra-moneda.md)
 
+-   :material-file-multiple-outline:{ .lg .middle } **Facturación agrupada y cobros parciales**
+
+    ---
+
+    Reúne varios pedidos o albaranes del mismo cliente en una sola factura, factura solo una parte y cóbrala en varios pagos.
+
+    [:octicons-arrow-right-24: Leer más](ventas/facturacion-agrupada-y-cobros-parciales/facturacion-agrupada-y-cobros-parciales.md)
+
 </div>

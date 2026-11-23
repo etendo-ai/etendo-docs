@@ -88,6 +88,7 @@ plugins:
                         - Crear una factura rectificativa: comercial/ventas/crear-una-factura-rectificativa/crear-una-factura-rectificativa.md
                     - Avanzado:
                         - Facturar en otra moneda: comercial/ventas/facturar-en-otra-moneda/facturar-en-otra-moneda.md
+                        - Facturación agrupada y cobros parciales: comercial/ventas/facturacion-agrupada-y-cobros-parciales/facturacion-agrupada-y-cobros-parciales.md
                     - Ventas - Preguntas frecuentes: comercial/ventas/documentos-de-venta-preguntas-frecuentes/documentos-de-venta-preguntas-frecuentes.md
             - Operaciones:
                 - operaciones/index.md
