@@ -89,6 +89,7 @@ plugins:
                     - Avanzado:
                         - Facturar en otra moneda: comercial/ventas/facturar-en-otra-moneda/facturar-en-otra-moneda.md
                         - Facturación agrupada y cobros parciales: comercial/ventas/facturacion-agrupada-y-cobros-parciales/facturacion-agrupada-y-cobros-parciales.md
+                        - Ventas intracomunitarias y exportaciones: comercial/ventas/ventas-intracomunitarias-y-exportaciones/ventas-intracomunitarias-y-exportaciones.md
                     - Ventas - Preguntas frecuentes: comercial/ventas/documentos-de-venta-preguntas-frecuentes/documentos-de-venta-preguntas-frecuentes.md
             - Operaciones:
                 - operaciones/index.md

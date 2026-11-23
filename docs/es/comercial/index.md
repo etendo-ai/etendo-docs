@@ -162,4 +162,12 @@ Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etend
 
     [:octicons-arrow-right-24: Leer más](ventas/facturacion-agrupada-y-cobros-parciales/facturacion-agrupada-y-cobros-parciales.md)
 
+-   :material-earth:{ .lg .middle } **Ventas intracomunitarias y exportaciones**
+
+    ---
+
+    Factura a clientes de otros países: prepara su ficha, revisa el impuesto de cada línea y añade la mención legal.
+
+    [:octicons-arrow-right-24: Leer más](ventas/ventas-intracomunitarias-y-exportaciones/ventas-intracomunitarias-y-exportaciones.md)
+
 </div>
