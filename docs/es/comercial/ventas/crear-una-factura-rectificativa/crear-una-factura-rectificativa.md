@@ -37,33 +37,32 @@ La factura original no desaparece y conserva su número. Así queda constancia d
 
 <figure markdown="span">
   ![Ventana Seleccionar factura a rectificar](assets/seleccionar-factura-a-rectificar.png)
-  <figcaption>Pestaña Rectificaciones: al pulsar + Añadir rectificación se abre el buscador para elegir la factura original.</figcaption>
+  <figcaption>Pestaña Rectificaciones: al hacer clic en + Añadir rectificación se abre el buscador para elegir la factura original.</figcaption>
 </figure>
 
 Sigue estos pasos para crear la rectificativa desde la factura. Sirven para cualquier motivo: un precio mal facturado, un descuento, una bonificación o una devolución de mercancía.
 
-1. Entra en **[Ventas > Factura](https://app.etendo.ai/sales-invoice){target="_blank"}** y pulsa **+ Nueva factura**.
+1. Entra en **[Ventas > Factura](https://app.etendo.ai/sales-invoice){target="_blank"}** y haz clic en **+ Nueva factura**.
 2. En **Tipo de documento**, elige *Factura rectificativa*. Una vez guardada, este dato ya no se puede cambiar.
-3. Elige el cliente en **Contacto** y rellena el resto de datos igual que en una [factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md).
-4. En la pestaña **Rectificaciones**, pulsa **+ Añadir rectificación**, elige en **Factura original** *(obligatorio)* la factura o facturas que corriges y pulsa **Confirmar**.
+3. Elige el cliente en **Contacto** y completa el resto de datos igual que en una [factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md).
+4. En la pestaña **Rectificaciones**, haz clic en **+ Añadir rectificación**, elige en **Factura original** *(obligatorio)* la factura o facturas que corriges y haz clic en **Confirmar**.
 5. Añade las líneas de la corrección de una de estas formas:
     - A mano, con **+ Añadir líneas**.
     - Con **Importar desde factura origen**, que trae las líneas de la factura original. Es lo más cómodo para corregir un precio o aplicar un descuento sobre lo ya facturado.
     - Con **Importar desde devolución**, que trae las líneas de un albarán de devolución, cuando la rectificativa corresponde a una devolución.
 
     Al importar, puedes indicar en cada línea cuántas unidades traer.
-6. Revisa los importes y pulsa **Confirmar**.
+6. Revisa los importes y haz clic en **Confirmar**.
 
 !!! warning "Indica siempre qué factura corriges"
     Si no indicas en **Rectificaciones** qué factura corrige, la rectificativa no se puede confirmar.
 
 ## Si hay devolución de mercancía
 
-Si el cliente te devuelve productos, tienes tres formas de crear la rectificativa:
+Si el cliente te devuelve productos, tienes dos formas de crear la rectificativa:
 
-- **Al confirmar el albarán de devolución.** Se genera ya rellena con los productos devueltos y los precios de la factura original. Se crea en Borrador: revísala y pulsa **Confirmar**. Consulta [Confirmar el albarán de devolución](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md#confirmar-el-albaran-de-devolucion).
-- **Desde el albarán de devolución ya Completado.** Si no la has generado al confirmarlo, pulsa **Crear Factura Rectificativa** en el albarán. Consulta la misma sección, [Confirmar el albarán de devolución](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md#confirmar-el-albaran-de-devolucion).
-- **Desde la factura**, siguiendo los [pasos de arriba](#crear-la-rectificativa) e importando las líneas del albarán de devolución.
+- **Al confirmar el albarán de devolución.** Es la forma más rápida. Se crea ya confirmada, con los productos devueltos y los precios de la factura origen, así que repasa las cantidades antes de confirmar la devolución. Consulta [Confirma y genera la factura rectificativa](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md#4-confirma-y-genera-la-factura-rectificativa).
+- **Desde la factura**, si ya confirmaste la devolución sin generarla. El albarán de devolución ya Completado no ofrece crearla, así que sigue los [pasos de arriba](#crear-la-rectificativa) e importa las líneas de esa devolución.
 
 ## Qué pasa después
 

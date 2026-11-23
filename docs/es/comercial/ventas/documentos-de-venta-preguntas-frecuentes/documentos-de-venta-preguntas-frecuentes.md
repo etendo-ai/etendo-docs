@@ -1,48 +1,72 @@
 ---
 title: "Documentos de venta: preguntas frecuentes"
 description: >-
-  Respuestas a las preguntas más frecuentes sobre presupuestos, pedidos,
+  Respuestas a las dudas más habituales sobre presupuestos, pedidos, albaranes,
   facturas y devoluciones de venta en Etendo, y cómo se relacionan entre sí.
 tags:
     - Ventas
     - Comercial
+    - Factura de Venta
+    - Gestión Documental
     - Etendo
 ---
 
 # Documentos de venta: preguntas frecuentes
 
-## ¿Es obligatorio crear un presupuesto antes de vender?
+## ¿Tengo que hacer presupuesto y pedido, o puedo facturar directamente?
 
-No. El presupuesto de venta es opcional. Puedes crear un pedido de venta o una factura directamente, sin pasar por un presupuesto previo.
+Puedes facturar directamente: los dos son opcionales. El pedido te conviene para dejar constancia de lo que te han encargado, porque desde él generas el [albarán](../crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md) —el documento que acompaña a la entrega— y la factura, siempre sobre lo que falta.
 
-## ¿Cuándo conviene generar un pedido y cuándo facturar directamente?
+Los servicios también pueden llevar albarán, para registrar que el trabajo se hizo aunque no salga nada del almacén.
 
-El pedido de venta es la opción recomendada cuando hay stock o entrega física de por medio, porque permite generar el albarán correspondiente. La factura directa es la opción habitual para servicios o ventas sin entrega física, ya que no genera albarán.
+## Creé la factura desde el pedido y ya no puedo cambiarla, ¿por qué?
 
-## ¿Puedo editar un documento después de confirmarlo?
+Porque lo que ibas a facturar ya lo decidiste al crear el pedido o el albarán: la factura nace en **Completado**, sin pasar por borrador. Revísalos antes de generarla, porque después solo podrás corregirla con una [factura rectificativa](../crear-una-factura-rectificativa/crear-una-factura-rectificativa.md).
 
-No directamente. Pedidos y facturas quedan bloqueados al confirmarse, pero en algunos casos puedes reabrirlos con la opción **Reactivar** del menú de tres puntos de la barra superior, que devuelve el documento a estado Borrador y lo vuelve a hacer editable.
+## ¿Puedo cambiar un pedido o una factura después de confirmarlos?
 
-- En un **pedido**, **Reactivar** solo aparece en el menú cuando el pedido no tiene ningún albarán ni factura relacionados, ni siquiera en estado Borrador; si tiene alguno, la opción no se ofrece.
-- En una **factura**, **Reactivar** aparece en el menú, pero falla si la factura tiene pagos registrados, si ya se ha enviado a Hacienda (SII o VERI*FACTU) o si incluye mercancía ya entregada. En ese caso, consulta [Crear una factura rectificativa](../crear-una-factura-rectificativa/crear-una-factura-rectificativa.md).
+Solo si antes los devuelves a **Borrador** con **Reactivar**, en el menú de tres puntos, y no siempre se puede: en el pedido la opción desaparece en cuanto tiene un albarán o una factura, y en la factura depende de los cobros, del envío a la administración tributaria y de lo que ya hayas entregado. Tienes las condiciones exactas en [Gestionar tus facturas de venta](../gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md#acciones-disponibles) y en [Crear y gestionar pedidos](../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md#acciones-disponibles).
 
-Como alternativa, siempre puedes crear un documento nuevo — por ejemplo, clonando el original con la acción **Copia**.
+## ¿Y si lo que quiero cambiar es un presupuesto o un albarán?
 
-## ¿Qué pasa si el pedido está parcialmente entregado o facturado?
+Esos dos no se reactivan. El presupuesto se cierra con **Rechazar**, y el [albarán](../crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md) en **Completado** se deshace con **Crear Devolución**.
 
-Las acciones de creación de documentos derivados —**Crear albarán**, **Crear Factura**, **Gestionar envío y factura**— siempre operan sobre las cantidades o importes pendientes, nunca sobre el total del documento de origen. La acción desaparece automáticamente cuando el pedido queda procesado al 100 % en esa dimensión.
+## ¿Puedo anular o borrar una factura confirmada?
 
-## ¿Necesito un tipo de factura distinto si no hay devolución física de mercancía?
+No. Una vez confirmada no se anula ni se borra: la corriges con una [factura rectificativa](../crear-una-factura-rectificativa/crear-una-factura-rectificativa.md), o empiezas otra desde cero con **Clonar**.
 
-No. Etendo usa un único tipo de documento, la **factura rectificativa**, tanto si hay devolución física como si no — no hay un tipo separado para cada caso. Lo que cambia es cómo se generan sus líneas: vinculadas a un albarán de devolución cuando el cliente ha devuelto mercancía, o añadidas a mano o importadas desde la factura original cuando es un ajuste financiero sin retorno de mercancía (error de precio, descuento o bonificación). Consulta [Crear una factura rectificativa](../crear-una-factura-rectificativa/crear-una-factura-rectificativa.md) para el caso sin devolución y [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md) para el caso con devolución.
+## ¿Qué pasa si el pedido está entregado o facturado a medias?
 
-## ¿Puedo registrar cobros parciales en una factura?
+Lo que crees a partir de él sale con lo que queda pendiente, nunca con el total: si ya has entregado la mitad, el albarán se genera con la otra mitad. El botón **Gestionar envío y factura** sigue disponible mientras te quede algo por hacer, y dentro de la ventana solo verás lo que aún puedas hacer: entregado todo, te dejará únicamente facturar.
 
-Sí. Puedes registrar tantos cobros parciales como necesites hasta cubrir el total de la factura. La columna **Saldo pendiente** y el indicador de la barra superior se actualizan con cada cobro. Ver [Añadir cobros a tu factura de venta](../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md).
+## ¿Por qué no me deja confirmar el albarán?
 
-## ¿Puedo reenviar una factura ya enviada por email?
+Lo más habitual es que te falte stock. La ventana avisa con «No hay suficiente en stock» y el albarán se queda sin confirmar. Registra antes la entrada de esa mercancía, por ejemplo con un [albarán de compra](../../../operaciones/compras/crear-y-gestionar-albaranes-de-compra/crear-y-gestionar-albaranes-de-compra.md).
 
-Sí. Puedes reenviar el mismo documento las veces que necesites; cada envío queda registrado en el historial de la sección **EMAILS**, sin afectar el estado del documento.
+## ¿Qué significa que una factura esté contabilizada?
+
+Que ya ha pasado a tu contabilidad. Hasta entonces la verás como **Sin contabilizar**, y eso no impide cobrarla ni enviarla.
+
+!!! info "Para tu asesor"
+    Las acciones para contabilizar una factura y para deshacerlo están en [Gestionar tus facturas de venta](../gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md#acciones-disponibles), y los términos, en el [Glosario de Finanzas](../../../finanzas/glosario-de-finanzas/glosario-de-finanzas.md). Si tienes dudas, consúltalo con tu asesor.
+
+## Me he equivocado en el precio de una factura, ¿cómo la corrijo si el cliente no me devuelve nada?
+
+Con una **factura rectificativa**, la misma que se usa cuando sí hay devolución: no hay un tipo distinto para cada caso, solo cambia de dónde salen sus líneas. Tienes cada uno en [Crear una factura rectificativa](../crear-una-factura-rectificativa/crear-una-factura-rectificativa.md) y en [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md).
+
+## El cliente tiene una rectificativa a su favor, ¿por qué no se descuenta sola?
+
+Porque el importe queda disponible para ese cliente, no atado a una factura concreta. En la lista la ves con el importe en negativo y la columna **Saldo pendiente** la marca como **A favor**.
+
+Para usarlo, aplícalo al cobrar cualquier factura suya, como se explica en [Aplicar saldo a favor o crédito disponible](../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md#aplicar-saldo-a-favor-o-credito-disponible).
+
+## ¿Puedo cobrar una factura en varias veces?
+
+Sí, tantas como necesites. El indicador de la barra muestra **Pendiente** mientras quede saldo, **Vencido** si se pasa la fecha y **Pagado** al cobrarla entera. Ver [Añadir cobros a tu factura de venta](../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md).
+
+## ¿Puedo volver a enviar un documento que ya mandé por email?
+
+Sí, las veces que haga falta, y funciona igual en presupuestos, pedidos, albaranes y facturas. Ver [Enviar documentos por email](../enviar-documentos-por-email/enviar-documentos-por-email.md).
 
 ## Artículos Relacionados
 
