@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Aprende cómo Etendo separa el evento físico y financiero de una devolución de venta, y cómo generar la factura rectificativa correspondiente.">
+        <meta name="description" content="Aprende a registrar la mercancía que te devuelve un cliente en Etendo, generar la factura rectificativa y seguir el estado del albarán de devolución.">
       
       
       
@@ -61,7 +61,7 @@
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="Crear y gestionar devoluciones - Etendo Academy">
-<meta property="og:description" content="Aprende cómo Etendo separa el evento físico y financiero de una devolución de venta, y cómo generar la factura rectificativa correspondiente.">
+<meta property="og:description" content="Aprende a registrar la mercancía que te devuelve un cliente en Etendo, generar la factura rectificativa y seguir el estado del albarán de devolución.">
 <meta property="og:image" content="https://help.etendo.ai/assets/images/social/comercial/ventas/crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
@@ -69,7 +69,7 @@
 <meta property="og:url" content="https://help.etendo.ai/comercial/ventas/crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones/">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:title" content="Crear y gestionar devoluciones - Etendo Academy">
-<meta property="twitter:description" content="Aprende cómo Etendo separa el evento físico y financiero de una devolución de venta, y cómo generar la factura rectificativa correspondiente.">
+<meta property="twitter:description" content="Aprende a registrar la mercancía que te devuelve un cliente en Etendo, generar la factura rectificativa y seguir el estado del albarán de devolución.">
 <meta property="twitter:image" content="https://help.etendo.ai/assets/images/social/comercial/ventas/crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.png">
 <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
@@ -906,6 +906,8 @@
       
         
       
+        
+      
     
     
     
@@ -1394,22 +1396,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#crear-un-albaran-de-devolucion" class="md-nav__link">
+  <a href="#crear-una-devolucion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Crear un albarán de devolución
+        Crear una devolución
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Crear un albarán de devolución">
+    <nav class="md-nav" aria-label="Crear una devolución">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#desde-un-albaran-de-venta-ya-completado" class="md-nav__link">
+  <a href="#1-abre-el-albaran-de-la-entrega" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Desde un albarán de venta ya completado
+        1. Abre el albarán de la entrega
       
     </span>
   </a>
@@ -1417,10 +1419,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#desde-ventas-albaran-de-devolucion" class="md-nav__link">
+  <a href="#2-indica-que-te-devuelven" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Desde Ventas &gt; Albarán de devolución
+        2. Indica qué te devuelven
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-revisa-el-albaran-de-devolucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Revisa el albarán de devolución
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-confirma-y-genera-la-factura-rectificativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Confirma y genera la factura rectificativa
       
     </span>
   </a>
@@ -1433,22 +1457,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#el-albaran-de-devolucion" class="md-nav__link">
+  <a href="#gestionar-devoluciones" class="md-nav__link">
     <span class="md-ellipsis">
       
-        El albarán de devolución
+        Gestionar devoluciones
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="El albarán de devolución">
+    <nav class="md-nav" aria-label="Gestionar devoluciones">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cabecera-del-documento" class="md-nav__link">
+  <a href="#1-busca-la-devolucion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cabecera del documento
+        1. Busca la devolución
       
     </span>
   </a>
@@ -1456,10 +1480,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#pestana-lineas" class="md-nav__link">
+  <a href="#2-abre-la-devolucion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Pestaña Líneas
+        2. Abre la devolución
       
     </span>
   </a>
@@ -1467,10 +1491,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vista-detalle" class="md-nav__link">
+  <a href="#3-imprime-o-comparte-la-devolucion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vista Detalle
+        3. Imprime o comparte la devolución
       
     </span>
   </a>
@@ -1478,6 +1502,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#4-comprueba-que-el-importe-esta-corregido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Comprueba que el importe está corregido
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#estados-del-documento" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1487,28 +1527,12 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#confirmar-el-albaran-de-devolucion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Confirmar el albarán de devolución
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
-  <a href="#factura-rectificativa" class="md-nav__link">
+  <a href="#acciones-disponibles" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Factura rectificativa
+        Acciones Disponibles
       
     </span>
   </a>
@@ -1550,6 +1574,158 @@
     
   
     Crear una factura rectificativa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_3" id="__nav_3_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avanzado
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Avanzado
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../facturar-en-otra-moneda/facturar-en-otra-moneda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Facturar en otra moneda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../facturacion-agrupada-y-cobros-parciales/facturacion-agrupada-y-cobros-parciales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Facturación agrupada y cobros parciales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ventas-intracomunitarias-y-exportaciones/ventas-intracomunitarias-y-exportaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ventas intracomunitarias y exportaciones
   
 
     
@@ -4726,22 +4902,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#crear-un-albaran-de-devolucion" class="md-nav__link">
+  <a href="#crear-una-devolucion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Crear un albarán de devolución
+        Crear una devolución
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Crear un albarán de devolución">
+    <nav class="md-nav" aria-label="Crear una devolución">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#desde-un-albaran-de-venta-ya-completado" class="md-nav__link">
+  <a href="#1-abre-el-albaran-de-la-entrega" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Desde un albarán de venta ya completado
+        1. Abre el albarán de la entrega
       
     </span>
   </a>
@@ -4749,10 +4925,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#desde-ventas-albaran-de-devolucion" class="md-nav__link">
+  <a href="#2-indica-que-te-devuelven" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Desde Ventas &gt; Albarán de devolución
+        2. Indica qué te devuelven
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-revisa-el-albaran-de-devolucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Revisa el albarán de devolución
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-confirma-y-genera-la-factura-rectificativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Confirma y genera la factura rectificativa
       
     </span>
   </a>
@@ -4765,22 +4963,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#el-albaran-de-devolucion" class="md-nav__link">
+  <a href="#gestionar-devoluciones" class="md-nav__link">
     <span class="md-ellipsis">
       
-        El albarán de devolución
+        Gestionar devoluciones
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="El albarán de devolución">
+    <nav class="md-nav" aria-label="Gestionar devoluciones">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cabecera-del-documento" class="md-nav__link">
+  <a href="#1-busca-la-devolucion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cabecera del documento
+        1. Busca la devolución
       
     </span>
   </a>
@@ -4788,10 +4986,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#pestana-lineas" class="md-nav__link">
+  <a href="#2-abre-la-devolucion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Pestaña Líneas
+        2. Abre la devolución
       
     </span>
   </a>
@@ -4799,10 +4997,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vista-detalle" class="md-nav__link">
+  <a href="#3-imprime-o-comparte-la-devolucion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vista Detalle
+        3. Imprime o comparte la devolución
       
     </span>
   </a>
@@ -4810,6 +5008,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#4-comprueba-que-el-importe-esta-corregido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Comprueba que el importe está corregido
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#estados-del-documento" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4819,28 +5033,12 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#confirmar-el-albaran-de-devolucion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Confirmar el albarán de devolución
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
-  <a href="#factura-rectificativa" class="md-nav__link">
+  <a href="#acciones-disponibles" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Factura rectificativa
+        Acciones Disponibles
       
     </span>
   </a>
@@ -4971,6 +5169,13 @@
       
       
       
+        <span class="md-tag">Albarán de devolución</span>
+      
+    
+      
+      
+      
+      
         <span class="md-tag">Comercial</span>
       
     
@@ -4992,13 +5197,6 @@
       
       
       
-        <span class="md-tag">Gestión Documental</span>
-      
-    
-      
-      
-      
-      
         <span class="md-tag">Ventas</span>
       
     
@@ -5011,65 +5209,106 @@
 
 <h1 id="crear-y-gestionar-devoluciones">Crear y gestionar devoluciones<a class="headerlink" href="#crear-y-gestionar-devoluciones" title="Permanent link">¶</a></h1>
 <h2 id="descripcion-general">Descripción general<a class="headerlink" href="#descripcion-general" title="Permanent link">¶</a></h2>
-<p>Cuando un cliente te devuelve mercancía, en Etendo registras dos cosas por separado:</p>
-<ol>
-<li><strong>La mercancía que vuelve a tu almacén</strong> — se registra en el <strong>albarán de devolución</strong>, disponible en <strong><a href="https://app.etendo.ai/return-material-receipt" target="_blank">Ventas &gt; Albarán de devolución</a></strong>.</li>
-<li><strong>El importe que corriges al cliente</strong> — se registra con una <strong><a href="#factura-rectificativa">factura rectificativa</a></strong>. Lo habitual es generarla al confirmar el albarán de devolución.</li>
-</ol>
+<p>Cuando un cliente te devuelve mercancía, tienes que resolver dos cosas: que los productos vuelvan a tu almacén y que el cliente deje de deberte ese dinero. En Etendo cada una es un documento: el <strong>albarán de devolución</strong> registra la entrada de la mercancía, y la <strong>factura rectificativa</strong> corrige el importe.</p>
+<p>Puedes generar los dos de una vez. Al confirmar el albarán de devolución, Etendo te ofrece crear también la rectificativa, y viene activado por defecto.</p>
 <pre class="mermaid"><code>flowchart LR
-  A[Albarán de venta Completado] --&gt;|Crear Devolución| B[Albarán de devolución Borrador]
-  F[Ventas &gt; Albarán de devolución +Nuevo] --&gt; B
-  B --&gt;|Confirmar| C[Albarán de devolución Completado]
-  C --&gt;|Crear Factura Rectificativa| D[Factura rectificativa]
-  E[Ventas &gt; Factura +Nueva factura] --&gt;|Tipo de documento: Factura rectificativa| D</code></pre>
-<h2 id="crear-un-albaran-de-devolucion">Crear un albarán de devolución<a class="headerlink" href="#crear-un-albaran-de-devolucion" title="Permanent link">¶</a></h2>
-<p>Etendo ofrece dos caminos para crear un albarán de devolución.</p>
-<h3 id="desde-un-albaran-de-venta-ya-completado">Desde un albarán de venta ya completado<a class="headerlink" href="#desde-un-albaran-de-venta-ya-completado" title="Permanent link">¶</a></h3>
-<p>La forma habitual de crear una devolución es desde el <a href="../../crear-y-gestionar-albaranes/crear-y-gestionar-albaranes/">albarán de venta</a> ya completado, con el botón <strong>Crear Devolución</strong>. Esto abre un asistente de 2 pasos:</p>
-<ol>
-<li>
-<p><strong>Paso 1 — Cantidades a devolver.</strong></p>
-<p></p><figure markdown="span">
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-devoluciones-1.png" data-desc-position="bottom"><img alt="Paso 1 del asistente Crear Devolución" src="../assets/crear-y-gestionar-devoluciones-1.png"></a>
-  <figcaption>Paso 1: cantidades a devolver por producto.</figcaption>
-</figure><p></p>
-<p>Muestra cada producto del envío con su cantidad <strong>Entregado</strong> y un campo editable <strong>Cant. devolución</strong> (por defecto, la cantidad total entregada; se puede reducir para devoluciones parciales, y destildar los productos que no se devuelven). Incluye un campo opcional <strong>Motivo de devolución</strong>.</p>
-</li>
-<li>
-<p><strong>Paso 2 — Confirmación.</strong></p>
-<p></p><figure markdown="span">
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-devoluciones-2.png" data-desc-position="bottom"><img alt="Paso 2 del asistente Crear Devolución" src="../assets/crear-y-gestionar-devoluciones-2.png"></a>
-  <figcaption>Paso 2: confirmación de la Recepción de Devolución a crear.</figcaption>
-</figure><p></p>
-<p>Muestra el documento que se va a crear — llamado aquí <strong>Recepción de Devolución</strong> (es el mismo albarán de devolución; esta pantalla y el popup de confirmación se refieren a él por el nombre del movimiento físico) — junto con el detalle de productos, cantidades e importes y el total. Al hacer clic en <strong>Crear Devolución</strong> se genera el albarán de devolución en estado Borrador.</p>
-</li>
-</ol>
-<h3 id="desde-ventas-albaran-de-devolucion">Desde Ventas &gt; Albarán de devolución<a class="headerlink" href="#desde-ventas-albaran-de-devolucion" title="Permanent link">¶</a></h3>
-<p>También es posible crear un albarán de devolución directamente desde <strong><a href="https://app.etendo.ai/return-material-receipt" target="_blank">Ventas &gt; Albarán de devolución</a></strong> con el botón <strong>+ Nuevo albarán de devolución</strong>.</p>
-<div class="admonition info">
-<p class="admonition-title">Este paso solo mueve stock</p>
-<p>Sea cual sea el camino que uses para crear el albarán de devolución, la factura rectificativa se genera en un paso posterior. Puedes generarla al confirmar este albarán, con el botón <strong>Crear Factura Rectificativa</strong> del albarán ya Completado o desde la factura, importando las líneas del albarán. Consulta <a href="../../crear-una-factura-rectificativa/crear-una-factura-rectificativa/#si-hay-devolucion-de-mercancia">Crear una factura rectificativa</a>.</p>
+  S[Albarán de venta] --&gt;|Crear Devolución| A[Borrador]
+  N[Nueva devolución] --&gt; A
+  A --&gt;|Confirmar| B[Completado]
+  B --&gt;|Crear Factura Rectificativa| F[Factura rectificativa]</code></pre>
+<p>Abajo tienes primero cómo crear la devolución y después cómo gestionarla.</p>
+<hr>
+<h2 id="crear-una-devolucion">Crear una devolución<a class="headerlink" href="#crear-una-devolucion" title="Permanent link">¶</a></h2>
+<h3 id="1-abre-el-albaran-de-la-entrega">1. Abre el albarán de la entrega<a class="headerlink" href="#1-abre-el-albaran-de-la-entrega" title="Permanent link">¶</a></h3>
+<p>Parte del <a href="../../crear-y-gestionar-albaranes/crear-y-gestionar-albaranes/">albarán de venta</a> con el que entregaste la mercancía. Ábrelo desde <strong><a href="https://app.etendo.ai/goods-shipment" target="_blank">Ventas &gt; Albarán</a></strong>: tiene que estar en <strong>Completado</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Si la entrega no está en Etendo</p>
+<p>También puedes crear la devolución desde cero en <strong><a href="https://app.etendo.ai/return-material-receipt" target="_blank">Ventas &gt; Albarán de devolución</a></strong> con <strong>+ Nuevo albarán de devolución</strong>. En ese caso eliges tú el cliente, la dirección, el almacén y las líneas, en vez de que vengan del albarán de venta. A partir de ahí el recorrido es el mismo: revisa el documento y confirma.</p>
 </div>
-<h2 id="el-albaran-de-devolucion">El albarán de devolución<a class="headerlink" href="#el-albaran-de-devolucion" title="Permanent link">¶</a></h2>
-<h3 id="cabecera-del-documento">Cabecera del documento<a class="headerlink" href="#cabecera-del-documento" title="Permanent link">¶</a></h3>
-<ul>
-<li><strong>Contacto</strong> — prellenado desde el albarán de venta origen; editable.</li>
-<li><strong>Nº documento</strong> — se genera automáticamente al guardar.</li>
-<li><strong>Fecha del movimiento</strong> — por defecto, la fecha actual.</li>
-<li><strong>Almacén</strong> — almacén al que ingresa la mercadería devuelta.</li>
-<li><strong>Dirección</strong> — dirección de origen de la devolución.</li>
-<li><strong>Albarán origen</strong> — referencia de solo lectura al albarán de venta del que proviene la devolución (si aplica).</li>
-</ul>
-<h3 id="pestana-lineas">Pestaña Líneas<a class="headerlink" href="#pestana-lineas" title="Permanent link">¶</a></h3>
-<p>Las líneas muestran, por producto, la <strong>Cant. movida</strong> (cantidad devuelta) y la <strong>Cant. pedido</strong> (cantidad del albarán de venta origen), a modo de referencia.</p>
-<h3 id="vista-detalle">Vista Detalle<a class="headerlink" href="#vista-detalle" title="Permanent link">¶</a></h3>
+<h3 id="2-indica-que-te-devuelven">2. Indica qué te devuelven<a class="headerlink" href="#2-indica-que-te-devuelven" title="Permanent link">¶</a></h3>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-devoluciones-3.png" data-desc-position="bottom"><img alt="Vista detalle del Albarán de devolución" src="../assets/crear-y-gestionar-devoluciones-3.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-devoluciones-1.png" data-desc-position="bottom"><img alt="Ventana Crear Devolución desde Albarán con el producto, la cantidad disponible para devolver, el campo de cantidad a devolver y el campo de motivo" src="../assets/crear-y-gestionar-devoluciones-1.png"></a>
 <br>
-<figcaption>Vista detalle del Albarán de devolución, con el área "Sube tu documento" y el panel lateral de información clave.</figcaption>
+<figcaption>La ventana propone devolver todo lo entregado; aquí se han dejado 2 de las 5 unidades.</figcaption>
 </figure>
-<p>A diferencia de los demás documentos de venta, la vista detalle del albarán de devolución no genera un PDF automático: en su lugar muestra un área <strong>Sube tu documento</strong>, para adjuntar manualmente un comprobante (PDF, JPG, PNG, WebP o GIF) si lo necesitas. El panel lateral muestra el <strong>Nº documento</strong>, <strong>Contacto</strong>, <strong>Almacén</strong>, <strong>Fecha movimiento</strong>, <strong>Estado</strong>, <strong>Facturado</strong> (% del importe ya cubierto por una factura rectificativa) y la sección <strong>DOCUMENTOS RELACIONADOS</strong>, con el envío de origen y la factura rectificativa vinculada, si ya existe.</p>
-<h3 id="estados-del-documento">Estados del Documento<a class="headerlink" href="#estados-del-documento" title="Permanent link">¶</a></h3>
+<p>Haz clic en <strong>Crear Devolución</strong>. Se abre la ventana <strong>Crear Devolución desde Albarán</strong> con los productos de ese albarán:</p>
+<ul>
+<li><strong>Casilla de cada línea</strong> — desmarca los productos que el cliente no te devuelve.</li>
+<li><strong>Disponible para devolver</strong> — cuánto queda sin devolver de esa entrega.</li>
+<li><strong>Cant. devolución</strong> — viene con todo lo disponible. Cámbialo si solo te devuelven una parte.</li>
+<li><strong>Motivo de devolución</strong> — opcional. Lo que escribas aquí queda guardado en las notas del documento.</li>
+</ul>
+<p>Haz clic en <strong>Crear Devolución</strong>. Etendo crea el albarán de devolución en <strong>Borrador</strong> y te ofrece abrirlo.</p>
+<h3 id="3-revisa-el-albaran-de-devolucion">3. Revisa el albarán de devolución<a class="headerlink" href="#3-revisa-el-albaran-de-devolucion" title="Permanent link">¶</a></h3>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-devoluciones-2.png" data-desc-position="bottom"><img alt="Albarán de devolución en Borrador con el contacto, el albarán origen, la línea con la cantidad movida y el motivo guardado en Notas" src="../assets/crear-y-gestionar-devoluciones-2.png"></a>
+<br>
+<figcaption>El albarán de devolución en Borrador, con el albarán de origen y el motivo ya recogido en Notas.</figcaption>
+</figure>
+<ul>
+<li><strong>Contacto</strong>, <strong>Dirección</strong> y <strong>Almacén</strong> — vienen del albarán de venta. El almacén es donde entra la mercancía devuelta.</li>
+<li><strong>Fecha del movimiento</strong> — cuándo recibes la devolución.</li>
+<li><strong>Albarán origen</strong> — la entrega de la que procede.</li>
+<li><strong>Líneas</strong> — cada producto con la <strong>Cant. movida</strong>, que es lo que te devuelven, y la <strong>Cant. pedido</strong> de la entrega original.</li>
+</ul>
+<p>Si el cliente te devuelve cosas de varios envíos a la vez, con <strong>Importar desde albarán</strong> traes las líneas de otra entrega suya al mismo documento.</p>
+<p>En <strong>Borrador</strong> todavía no ha entrado nada en el almacén y puedes cambiar lo que necesites.</p>
+<h3 id="4-confirma-y-genera-la-factura-rectificativa">4. Confirma y genera la factura rectificativa<a class="headerlink" href="#4-confirma-y-genera-la-factura-rectificativa" title="Permanent link">¶</a></h3>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-devoluciones-3.png" data-desc-position="bottom"><img alt="Ventana Confirmar recepción de devolución con el interruptor Crear Factura Rectificativa activado y la factura a rectificar seleccionada" src="../assets/crear-y-gestionar-devoluciones-3.png" width="420"></a>
+<br>
+<figcaption>Al confirmar, Etendo propone crear también la factura rectificativa y te muestra a qué factura se va a aplicar.</figcaption>
+</figure>
+<p>Haz clic en <strong>Confirmar</strong>. Se abre la ventana <strong>Confirmar recepción de devolución</strong>, donde eliges entre dos caminos:</p>
+<ul>
+<li><strong>Con rectificativa</strong> — deja activado el interruptor <strong>Crear Factura Rectificativa</strong>. En <strong>Factura a rectificar</strong>, Etendo ya ha elegido la factura de esa entrega; con <strong>Cambiar selección</strong> puedes usar otra. El botón es <strong>Confirmar y crear factura</strong>.</li>
+<li><strong>Solo la entrada de mercancía</strong> — desactiva el interruptor. Desaparece la selección de factura y el botón pasa a ser <strong>Confirmar</strong>. La rectificativa la harás más tarde, por tu cuenta.</li>
+</ul>
+<p>En los dos casos la mercancía entra en tu almacén y el albarán de devolución pasa a <strong>Completado</strong>. Si has elegido el primero, además se crea la factura rectificativa con los productos devueltos y los precios de la factura origen.</p>
+<div class="admonition warning">
+<p class="admonition-title">La rectificativa no pasa por borrador</p>
+<p>Se crea ya confirmada. Repasa las cantidades y los precios <strong>antes</strong> de confirmar la devolución.</p>
+</div>
+<hr>
+<h2 id="gestionar-devoluciones">Gestionar devoluciones<a class="headerlink" href="#gestionar-devoluciones" title="Permanent link">¶</a></h2>
+<p>Cuando la devolución ya está confirmada, esta parte te muestra cómo encontrarla, imprimirla y comprobar que el importe quedó corregido.</p>
+<h3 id="1-busca-la-devolucion">1. Busca la devolución<a class="headerlink" href="#1-busca-la-devolucion" title="Permanent link">¶</a></h3>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-devoluciones-5.png" data-desc-position="bottom"><img alt="Vista lista de Albarán de devolución con las columnas Nº documento, Contacto, Estado doc., Almacén, Albarán origen, Estado de factura y Contabilizado" src="../assets/crear-y-gestionar-devoluciones-5.png"></a>
+<br>
+<figcaption>La lista de devoluciones, con el albarán de origen y el porcentaje ya rectificado de cada una.</figcaption>
+</figure>
+<p>En <strong><a href="https://app.etendo.ai/return-material-receipt" target="_blank">Ventas &gt; Albarán de devolución</a></strong> las tienes todas. Cada fila trae:</p>
+<ul>
+<li><strong>Nº documento</strong>, <strong>Contacto</strong> y <strong>Estado doc.</strong></li>
+<li><strong>Almacén</strong> donde entró la mercancía y <strong>Albarán origen</strong> del que procede.</li>
+<li><strong>Estado de factura</strong>, el porcentaje que ya está rectificado, y <strong>Contabilizado</strong>.</li>
+</ul>
+<p>Arriba tienes los selectores de estado y fecha, y el botón <strong>Filtros</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Para tu asesor</p>
+<p>La columna <strong>Contabilizado</strong> muestra si la devolución ya está registrada en tu contabilidad: <strong>Contabilizado</strong> cuando lo está y <strong>Sin contabilizar</strong> mientras no lo esté. Al confirmarla se registra sola en unos segundos, así que no tienes que hacer nada. Si tu asesor necesita deshacer ese registro, lo hace con <strong>Descontabilizar</strong> (ver <a href="#acciones-disponibles">Acciones Disponibles</a>).</p>
+</div>
+<h3 id="2-abre-la-devolucion">2. Abre la devolución<a class="headerlink" href="#2-abre-la-devolucion" title="Permanent link">¶</a></h3>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-devoluciones-4.png" data-desc-position="bottom"><img alt="Vista detalle del albarán de devolución completada, con el albarán origen, la línea devuelta, los documentos relacionados y las notas" src="../assets/crear-y-gestionar-devoluciones-4.png"></a>
+<br>
+<figcaption>La devolución ya completada, con el albarán de origen y la factura rectificativa en Documentos.</figcaption>
+</figure>
+<p>Haz clic en una fila para abrirla. Arriba verás el estado del documento, si está contabilizado y el indicador <strong>Facturado</strong>. Debajo, los datos del cliente y el <strong>Albarán origen</strong>, y en <strong>Líneas</strong> cada producto con la <strong>Cant. movida</strong>.</p>
+<p>En <strong>Documentos</strong> tienes el albarán de origen y la factura rectificativa, con su importe en negativo. En <strong>Notas</strong>, el motivo que escribiste al crearla.</p>
+<h3 id="3-imprime-o-comparte-la-devolucion">3. Imprime o comparte la devolución<a class="headerlink" href="#3-imprime-o-comparte-la-devolucion" title="Permanent link">¶</a></h3>
+<p>Con <strong>Imprimir</strong> sacas el PDF del albarán de devolución. El PDF incluye un espacio para la <strong>Firma del receptor</strong> y la <strong>Fecha de recepción</strong>, por si quieres que el cliente te lo firme. Con el icono de enlace copias la dirección de esta devolución para pasársela a alguien de tu equipo.</p>
+<p>Esta ventana no envía emails al cliente. Si necesitas mandarle algo, hazlo desde la factura rectificativa: ver <a href="../../enviar-documentos-por-email/enviar-documentos-por-email/">Enviar documentos por email</a>.</p>
+<h3 id="4-comprueba-que-el-importe-esta-corregido">4. Comprueba que el importe está corregido<a class="headerlink" href="#4-comprueba-que-el-importe-esta-corregido" title="Permanent link">¶</a></h3>
+<p>El indicador <strong>Facturado</strong> te dice qué parte de la devolución tiene ya su rectificativa. Si confirmaste sin generarla, créala desde <a href="../../crear-una-factura-rectificativa/crear-una-factura-rectificativa/">Crear una factura rectificativa</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">El importe queda a favor del cliente</p>
+<p>La rectificativa no descuenta sola de la factura original: deja un importe disponible para ese cliente, que aplicas tú al cobrar cualquier factura suya. Ver <a href="../../anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta/#aplicar-saldo-a-favor-o-credito-disponible">Añadir cobros a tu factura de venta</a>.</p>
+</div>
+<hr>
+<h2 id="estados-del-documento">Estados del Documento<a class="headerlink" href="#estados-del-documento" title="Permanent link">¶</a></h2>
+<p>El estado se muestra como una etiqueta junto al botón <strong>Cancelar</strong>, en la barra superior.</p>
 <table>
 <thead>
 <tr>
@@ -5080,30 +5319,81 @@
 <tbody>
 <tr>
 <td><span style="background:#F3F4F6;color:#6B7280;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Borrador</span></td>
-<td>Sin efecto sobre el stock.</td>
+<td>En preparación. Todavía no ha entrado nada en el almacén y puedes cambiar las líneas.</td>
 </tr>
 <tr>
 <td><span style="background:#F0FDF4;color:#22C55E;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Completado</span></td>
-<td>Registra el ingreso de la mercadería devuelta al almacén.</td>
+<td>La mercancía ha entrado en el almacén.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="confirmar-el-albaran-de-devolucion">Confirmar el albarán de devolución<a class="headerlink" href="#confirmar-el-albaran-de-devolucion" title="Permanent link">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Confirmar no se deshace</p>
+<p>En <strong>Completado</strong> ya no puedes cambiar el cliente, el almacén ni las líneas. Repasa las cantidades mientras la devolución está en <strong>Borrador</strong>.</p>
+</div>
+<hr>
+<h2 id="acciones-disponibles">Acciones Disponibles<a class="headerlink" href="#acciones-disponibles" title="Permanent link">¶</a></h2>
+<p>Las acciones están en la barra superior del documento, y cambian según el estado.</p>
 <figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-devoluciones-4.png" data-desc-position="bottom"><img alt="Popup Confirmar recepción de devolución" src="../assets/crear-y-gestionar-devoluciones-4.png"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/crear-y-gestionar-devoluciones-6.png" data-desc-position="bottom"><img alt="Barra superior de una devolución completada con Cancelar, los indicadores de estado, Imprimir, copiar enlace y el menú con Descontabilizar" src="../assets/crear-y-gestionar-devoluciones-6.png"></a>
 <br>
-<figcaption>Popup Confirmar recepción de devolución, con el interruptor Crear Factura Rectificativa.</figcaption>
+<figcaption>La barra de una devolución ya completada y contabilizada.</figcaption>
 </figure>
-<p>Al hacer clic en <strong>Confirmar</strong> sobre el albarán de devolución en Borrador, se abre el popup <strong>Confirmar recepción de devolución</strong>, con un interruptor <strong>Crear Factura Rectificativa</strong> (activado por defecto): "Se crea en borrador, prellenada con los productos devueltos y los precios de la factura origen." Puedes dejarlo activado para generar ambos documentos a la vez, o desactivarlo y confirmar solo la recepción.</p>
-<p>Si no generaste la factura rectificativa al confirmar, el albarán de devolución ya Completado muestra un botón <strong>Crear Factura Rectificativa</strong> en la barra superior. Al hacer clic se abre el popup <strong>Gestionar documentos</strong>, con la opción <strong>Crear factura</strong> para generarla en ese momento.</p>
-<h2 id="factura-rectificativa">Factura rectificativa<a class="headerlink" href="#factura-rectificativa" title="Permanent link">¶</a></h2>
-<p>El ajuste financiero de una devolución se gestiona siempre con la <strong>Factura rectificativa</strong> — el único tipo de documento para este caso dentro de <strong><a href="https://app.etendo.ai/sales-invoice" target="_blank">Ventas &gt; Factura</a></strong>, que eliges en el campo <strong>Tipo de documento</strong> de ese formulario (junto a <strong>Factura</strong>). Se muestra con importe en negativo en el listado de facturas. Al confirmarse, queda como un importe a favor del cliente, que no se descuenta automáticamente de la factura original.</p>
-<p>Lo habitual es generarla al confirmar el albarán de devolución, porque el interruptor <strong>Crear Factura Rectificativa</strong> viene activado por defecto (ver <a href="#confirmar-el-albaran-de-devolucion">Confirmar el albarán de devolución</a> más arriba). Si no la has generado entonces, puedes hacerlo con el botón <strong>Crear Factura Rectificativa</strong> del albarán de devolución ya Completado. En los dos casos, sus líneas ya vienen rellenas desde ese albarán.</p>
-<p>Para crear la rectificativa desde la factura, tanto si hay devolución de mercancía como si no (por ejemplo, un error de precio, un descuento o una bonificación), consulta <a href="../../crear-una-factura-rectificativa/crear-una-factura-rectificativa/">Crear una factura rectificativa</a>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Acción</th>
+<th style="text-align: left;">Descripción</th>
+<th style="text-align: left;">Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Cancelar</strong></td>
+<td style="text-align: left;">Descarta los cambios sin guardar y vuelve a la lista.</td>
+<td style="text-align: left;">Todos los estados</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Guardar</strong></td>
+<td style="text-align: left;">Guarda los cambios sin confirmar.</td>
+<td style="text-align: left;">Solo en Borrador</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Confirmar</strong></td>
+<td style="text-align: left;">Registra la entrada en el almacén y, si lo dejas activado, crea la factura rectificativa (ver <a href="#4-confirma-y-genera-la-factura-rectificativa">Confirma y genera la factura rectificativa</a>).</td>
+<td style="text-align: left;">Solo en Borrador</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Importar desde albarán</strong></td>
+<td style="text-align: left;">Trae líneas de otra entrega del mismo cliente (ver <a href="#3-revisa-el-albaran-de-devolucion">Revisa el albarán de devolución</a>).</td>
+<td style="text-align: left;">Solo en Borrador</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Copiar enlace</strong></td>
+<td style="text-align: left;">Copia el enlace directo a esta devolución, para compartirlo con otra persona de tu equipo.</td>
+<td style="text-align: left;">Todos los estados</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Imprimir</strong></td>
+<td style="text-align: left;">Saca el PDF para imprimirlo o archivarlo (ver <a href="#3-imprime-o-comparte-la-devolucion">Imprime o comparte la devolución</a>).</td>
+<td style="text-align: left;">Solo en Completado</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descontabilizar</strong></td>
+<td style="text-align: left;">En el menú de tres puntos. Deshace el registro en tu contabilidad y devuelve la devolución a Sin contabilizar. Si tienes dudas, consúltalo con tu asesor.</td>
+<td style="text-align: left;">Completado, contabilizado</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Papelera</strong></td>
+<td style="text-align: left;">Elimina la devolución. Antes te pide confirmación.</td>
+<td style="text-align: left;">Solo en Borrador</td>
+</tr>
+</tbody>
+</table>
 <h2 id="articulos-relacionados">Artículos Relacionados<a class="headerlink" href="#articulos-relacionados" title="Permanent link">¶</a></h2>
 <ul>
 <li><a href="../../crear-y-gestionar-albaranes/crear-y-gestionar-albaranes/">Crear y gestionar albaranes</a></li>
-<li><a href="../../gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta/">Gestionar tus facturas de venta</a></li>
+<li><a href="../../crear-una-factura-rectificativa/crear-una-factura-rectificativa/">Crear una factura rectificativa</a></li>
 <li><a href="../../documentos-de-venta-preguntas-frecuentes/documentos-de-venta-preguntas-frecuentes/">Documentos de venta: preguntas frecuentes</a></li>
 </ul>
 <hr>
@@ -5130,7 +5420,7 @@
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 de noviembre de 2026 12:57:02 UTC">6 de noviembre de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="23 de noviembre de 2026 19:10:54 UTC">23 de noviembre de 2026</span>
   </span>
 
     
@@ -5158,6 +5448,11 @@
     
     <nav>
       
+        <a href="https://github.com/isaiasb-etendo" class="md-author" title="@isaiasb-etendo">
+          
+          <img src="https://avatars.githubusercontent.com/u/106354215?v=4&amp;size=72" alt="isaiasb-etendo">
+        </a>
+      
         <a href="https://github.com/valeg-etendo" class="md-author" title="@valeg-etendo">
           
           <img src="https://avatars.githubusercontent.com/u/95085326?v=4&amp;size=72" alt="valeg-etendo">
@@ -5166,11 +5461,6 @@
         <a href="https://github.com/mapenglishservices" class="md-author" title="@mapenglishservices">
           
           <img src="https://avatars.githubusercontent.com/u/125575495?v=4&amp;size=72" alt="mapenglishservices">
-        </a>
-      
-        <a href="https://github.com/isaiasb-etendo" class="md-author" title="@isaiasb-etendo">
-          
-          <img src="https://avatars.githubusercontent.com/u/106354215?v=4&amp;size=72" alt="isaiasb-etendo">
         </a>
       
       
