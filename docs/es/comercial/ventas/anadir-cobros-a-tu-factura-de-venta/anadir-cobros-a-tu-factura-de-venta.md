@@ -65,7 +65,7 @@ Cuando un cliente te paga una factura, registras ese dinero como un cobro. Puede
 Cuando lo aplicado supera el total de la factura, la ventana avisa **Sobran X € — ¿qué hacer con el resto?** y te pide que elijas qué hacer con la diferencia. Hasta que elijas una opción no puedes confirmar el cobro:
 
 <figure markdown="span">
-  ![Ventana Nuevo cobro con un sobrante de 98,29 euros y las opciones Dejar a crédito y Dar vuelto, con el botón Confirmar desactivado](assets/anadir-cobros-a-tu-factura-de-venta-3.png)
+  ![Ventana Nuevo cobro con un sobrante de 29,00 euros y las opciones Dejar a crédito y Dar vuelto, con el botón Confirmar desactivado](assets/anadir-cobros-a-tu-factura-de-venta-3.png)
   <figcaption>Con un cobro de más, hay que elegir entre dejar el sobrante a crédito o devolverlo antes de confirmar.</figcaption>
 </figure>
 

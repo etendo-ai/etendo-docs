@@ -98,6 +98,7 @@ La barra superior del formulario muestra estas acciones:
 | **Gestionar envío** | Crea el [albarán](../crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md) en Borrador con las líneas pendientes de entregar. | Completado, mientras quede algo por entregar |
 | **Reactivar** | En el menú de tres puntos. Devuelve la factura a Borrador para corregirla. Solo funciona si no tiene cobros registrados, si todavía no se ha enviado a la administración tributaria y, si incluye mercancía, si aún no la has entregado. Si ya no puedes reactivarla, corrígela con una [factura rectificativa](../crear-una-factura-rectificativa/crear-una-factura-rectificativa.md). | Solo en Completado |
 | **Contabilizar** | En el menú de tres puntos. Registra la factura en tu contabilidad. Si tienes dudas, consúltalo con tu asesor. | Completado, sin contabilizar |
+| **Descontabilizar** | En el menú de tres puntos. Deshace ese registro y devuelve la factura a **Sin contabilizar**. Consúltalo con tu asesor antes de usarlo. | Completado, contabilizado |
 | **Papelera** | Elimina la factura. Antes te pide confirmación. | Solo en Borrador |
 
 ## Artículos Relacionados

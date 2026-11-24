@@ -87,7 +87,7 @@ Escribe como le hablarías a alguien que lleva su propio negocio, no como un con
 - **Una idea por frase**: nada de paréntesis dentro de paréntesis ni de punto y coma encadenados.
 - **El detalle contable o técnico, al final**: fechas contables, tipos de cambio, numeraciones internas y similares van en una nota aparte, titulada `!!! info "Para tu asesor"`, no en mitad del paso a paso.
 - **Español neutro**: tuteo (nunca voseo, "vosotros" ni "usted"). Si una palabra solo se usa en una región, elegir otra que se entienda en todas (por ejemplo, "teléfono" en vez de "móvil" o "celular"). Cuando hay dos formas igual de comprensibles, usar la de la tabla.
-- **Nunca nombrar países ni regiones**: la documentación no menciona países ni compara cómo se dice algo en cada lugar. La única excepción son las opciones que aparecen literalmente en la interfaz (por ejemplo, los territorios fiscales que se eligen al configurar los impuestos).
+- **Nunca nombrar países ni regiones**: la documentación no menciona países ni compara cómo se dice algo en cada lugar. La única excepción son las opciones que aparecen literalmente en la interfaz (por ejemplo, los territorios fiscales que se eligen al configurar los impuestos). Esta regla es sobre el texto que escribimos, no sobre los datos de ejemplo que se ven en una captura: un documento como una factura o un albarán lleva siempre una dirección y una identificación fiscal, y no se puede mostrar sin ellas. Lo que sí se cuida en las capturas es que esos datos sean de la organización y los contactos de prueba, nunca de un cliente real (aclarado 2026-11-23).
 - **Obligaciones fiscales concretas** (SII, VERI*FACTU, TicketBAI, modelos de Hacienda y similares) se mencionan solo en los artículos que tratan de ellas. En artículos generales se habla de "la administración tributaria" o "tu identificación fiscal".
 - **Los nombres de la interfaz no se tocan**: botones, campos, pestañas y documentos (por ejemplo, **Albarán**) se escriben exactamente como aparecen en pantalla, en negrita, aunque no sigan esta tabla. Si un nombre de la interfaz puede no entenderse, se explica en el glosario con un sinónimo (por ejemplo, albarán: documento que acompaña la entrega de la mercancía, también llamado remito), sin nombrar países. Si un nombre suena mal, se avisa al equipo de producto; no se cambia en la documentación.
 
@@ -378,7 +378,9 @@ Cada artículo debe tener los siguientes metadatos completos:
 | Artículo de tarea | 300-600 palabras |
 | Crear y gestionar [documento] | Hasta 2.500 palabras (si crece más, dividir en tarea + referencia de ventana) |
 | Referencia / Glosario | Variable (definición por término) |
-| Preguntas frecuentes | 200-500 palabras (suma de Q&A) |
+| Preguntas frecuentes | Hasta 1.000 palabras (suma de Q&A) |
+
+El techo de Preguntas frecuentes se subió de 500 a 1.000 palabras (actualizado 2026-11-23): un FAQ se entra por buscador, pregunta a pregunta, así que crecer en número de preguntas no le cuesta al lector lo que le costaría a un artículo que se lee seguido. Lo que no cambia es que cada respuesta sea corta.
 
 Más corto es mejor. Si un artículo supera estos rangos, evaluar dividirlo en dos artículos enlazados — pero no es una regla absoluta: cuando el contenido cubre variantes estrechamente relacionadas de un mismo flujo (por ejemplo, distintas formas de completar el mismo popup o pantalla), mantenerlo en un solo artículo puede ser preferible a fragmentar la navegación, aunque supere el rango objetivo (actualizado 2026-08-24, caso de referencia: `anadir-cobros-a-tu-factura-de-venta.md`).
 
