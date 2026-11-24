@@ -4,6 +4,7 @@ tags:
     - Finanzas
     - Bancos
     - Etendo
+features: [psd2-statement-import-settings]
 ---
 
 # Conectar, desconectar, archivar, desarchivar o eliminar una cuenta
