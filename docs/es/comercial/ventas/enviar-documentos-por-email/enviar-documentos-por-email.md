@@ -49,6 +49,9 @@ La factura de compra no se envía desde aquí: esa la recibes tú del proveedor.
 
 5. Haz clic en **Enviar**.
 
+!!! tip "Tu cliente también puede verlo en el portal (beta)"
+    Si tu cuenta tiene activado el portal del cliente, en los documentos de venta el email incluye el botón **Ver documento en el portal**. Con ese enlace tu cliente consulta y descarga sus documentos durante 48 horas, y puede aceptar o rechazar tus presupuestos sin escribirte. Más información en [Portal del cliente](../portal-del-cliente/portal-del-cliente.md).
+
 ## Consultar los envíos
 
 Cada envío queda guardado en la sección **EMAILS** del panel derecho, con la fecha, la hora, el destinatario y si salió correctamente:
@@ -68,6 +71,7 @@ Desde el enlace **Enviar email** de esa misma sección abres la ventana de enví
 
 ## Artículos Relacionados
 
+- [Portal del cliente](../portal-del-cliente/portal-del-cliente.md)
 - [Gestionar tus facturas de venta](../gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md)
 - [Crear y gestionar presupuestos](../crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md)
 - [Gestionar tus pedidos de compra](../../../operaciones/compras/gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md)

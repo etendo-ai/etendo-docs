@@ -83,6 +83,7 @@ plugins:
                         - Crear una factura de venta: comercial/ventas/crear-una-factura-de-venta/crear-una-factura-de-venta.md
                         - Gestionar tus facturas de venta: comercial/ventas/gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md
                         - Enviar documentos por email: comercial/ventas/enviar-documentos-por-email/enviar-documentos-por-email.md
+                        - Portal del cliente: comercial/ventas/portal-del-cliente/portal-del-cliente.md
                         - Añadir cobros a tu factura de venta: comercial/ventas/anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md
                         - Crear y gestionar devoluciones: comercial/ventas/crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md
                         - Crear una factura rectificativa: comercial/ventas/crear-una-factura-rectificativa/crear-una-factura-rectificativa.md
@@ -193,6 +194,8 @@ plugins:
         es/comercial/ventas/enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md: es/comercial/ventas/enviar-documentos-por-email/enviar-documentos-por-email.md
 
 extra:
+  status:
+    beta: En beta · aún no disponible en todas las cuentas
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/etendosoftware
