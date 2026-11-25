@@ -145,6 +145,12 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://help.etendo.ai/finanzas/como-configurar-los-centros-de-costos/como-configurar-los-centros-de-costos/"/>
     </url>
     <url>
+        <loc>https://help.etendo.ai/finanzas/como-crear-un-proyecto/como-crear-un-proyecto/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://help.etendo.ai/finanzas/como-crear-un-proyecto/como-crear-un-proyecto/"/>
+    </url>
+    <url>
         <loc>https://help.etendo.ai/finanzas/como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion/</loc>
         <lastmod>2026-11-25</lastmod>
         <changefreq>daily</changefreq>
@@ -161,6 +167,12 @@
         <lastmod>2026-11-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://help.etendo.ai/finanzas/como-registrar-un-asiento-manual/como-registrar-un-asiento-manual/"/>
+    </url>
+    <url>
+        <loc>https://help.etendo.ai/finanzas/como-revisar-el-esquema-contable/como-revisar-el-esquema-contable/</loc>
+        <lastmod>2026-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://help.etendo.ai/finanzas/como-revisar-el-esquema-contable/como-revisar-el-esquema-contable/"/>
     </url>
     <url>
         <loc>https://help.etendo.ai/finanzas/como-revisar-los-documentos-no-contabilizados/como-revisar-los-documentos-no-contabilizados/</loc>
