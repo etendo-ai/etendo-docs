@@ -1,7 +1,7 @@
 ---
 tags:
     - Cuentas
-    - Finanzas
+    - Tesorería
     - Bancos
     - Etendo
 ---
@@ -12,7 +12,7 @@ Antes de registrar movimientos, importar extractos o conciliar, necesitas dar de
 
 ## Elegir el tipo de cuenta
 
-1. Ve a **[Finanzas > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}**.
+1. Ve a **[Tesorería > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}**.
 2. Haz clic en **Nueva cuenta**.
 3. Elige el tipo de cuenta:
     - **Banco**: cuentas corrientes, depósitos, préstamos y líneas de crédito.
@@ -82,7 +82,7 @@ El detalle de cada campo está en [Cómo editar una cuenta](../como-editar-una-c
 
 ## Artículos Relacionados
 
-- [¿Qué es la sección Finanzas?](../que-es-finanzas/que-es-finanzas.md)
+- [¿Qué es la sección Tesorería?](../que-es-tesoreria/que-es-tesoreria.md)
 - [Cómo editar una cuenta](../como-editar-una-cuenta/como-editar-una-cuenta.md)
 - [Conectar, desconectar, archivar, desarchivar o eliminar una cuenta](../como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria.md)
 - [Gestionar caja y movimientos en efectivo](../como-gestionar-caja-y-movimientos-en-efectivo/como-gestionar-caja-y-movimientos-en-efectivo.md)

@@ -7,8 +7,7 @@ tags:
     - Condiciones de pago
     - Vencimientos
     - Contactos
-    - Sistema
-    - Configuración
+    - Tesorería
     - Etendo
 ---
 
@@ -16,7 +15,7 @@ tags:
 
 Las **condiciones de pago** son el plazo que das a tus clientes para pagarte, o el que te dan tus proveedores, y con ellas Etendo calcula cuándo vence cada factura.
 
-- Para crear, editar o eliminar condiciones de pago necesitas el rol **Administrador** o **Finanzas**. Con **Ventas** o **Compras** solo puedes consultarlas. Consulta [Acceso por rol](../glosario-de-roles-y-usuarios/glosario-de-roles-y-usuarios.md#acceso-por-rol).
+- Para crear, editar o eliminar condiciones de pago necesitas el rol **Administrador** o **Finanzas**. Con **Ventas** o **Compras** solo puedes consultarlas. Consulta [Acceso por rol](../../sistema/configuracion/glosario-de-roles-y-usuarios/glosario-de-roles-y-usuarios.md#acceso-por-rol).
 
 ## Consultar tus condiciones de pago
 
@@ -25,7 +24,7 @@ Las **condiciones de pago** son el plazo que das a tus clientes para pagarte, o 
   <figcaption>Lista de condiciones de pago que vienen creadas en Etendo.</figcaption>
 </figure>
 
-1. En el menú lateral, dentro de **Sistema > Configuración**, haz clic en **[Condiciones de pago](https://app.etendo.ai/payment-term){target="_blank"}**.
+1. En el menú lateral, dentro de **Tesorería**, haz clic en **[Condiciones de pago](https://app.etendo.ai/payment-term){target="_blank"}**.
 2. Revisa la lista. Para cada condición ves:
     - **Nombre** — el que eliges en tus contactos y documentos.
     - **Días** — el plazo, contado desde la fecha de la factura.
@@ -53,10 +52,10 @@ Si acuerdas con un cliente o proveedor un plazo que no está en la lista, por ej
 5. Revisa la casilla **Siguiente día hábil**. Viene marcada: si el vencimiento cae en un día no hábil, por ejemplo un domingo, pasa al siguiente día hábil. Desmárcala si quieres que la factura venza justo el día que resulta del plazo.
 6. Haz clic en **Guardar**. Para salir sin crear nada, haz clic en **Cancelar**.
 
-Para que un cliente o proveedor use esta condición, asígnasela en su ficha, como se explica en [Cómo crear un contacto](../../../comercial/contactos/como-crear-un-contacto/como-crear-un-contacto.md#completar-las-preferencias-de-facturacion).
+Para que un cliente o proveedor use esta condición, asígnasela en su ficha, como se explica en [Cómo crear un contacto](../../comercial/contactos/como-crear-un-contacto/como-crear-un-contacto.md#completar-las-preferencias-de-facturacion).
 
 !!! tip "Créala sin salir del contacto o del documento"
-    Si estás completando la ficha de un contacto, un presupuesto o un pedido de venta y el plazo no aparece en el campo **Condiciones de pago**, elige **+ Crear condición de pago** en el mismo desplegable. Lo explica [Gestionar tus contactos](../../../comercial/contactos/gestionar-tus-contactos/gestionar-tus-contactos.md#solapa-financiero).
+    Si estás completando la ficha de un contacto, un presupuesto o un pedido de venta y el plazo no aparece en el campo **Condiciones de pago**, elige **+ Crear condición de pago** en el mismo desplegable. Lo explica [Gestionar tus contactos](../../comercial/contactos/gestionar-tus-contactos/gestionar-tus-contactos.md#solapa-financiero).
 
 ## Editar o eliminar una condición de pago
 
@@ -73,9 +72,9 @@ Para que un cliente o proveedor use esta condición, asígnasela en su ficha, co
 
 ## Artículos Relacionados
 
-- [Cómo crear un contacto](../../../comercial/contactos/como-crear-un-contacto/como-crear-un-contacto.md) — asigna a cada cliente o proveedor sus condiciones de pago.
-- [Crear una factura de venta](../../../comercial/ventas/crear-una-factura-de-venta/crear-una-factura-de-venta.md) — las condiciones de pago del cliente se completan solas en la factura.
-- [Registrar una factura de compra](../../../operaciones/compras/crear-una-factura-de-compra/crear-una-factura-de-compra.md) — Etendo calcula cuándo tienes que pagarle al proveedor.
+- [Cómo crear un contacto](../../comercial/contactos/como-crear-un-contacto/como-crear-un-contacto.md) — asigna a cada cliente o proveedor sus condiciones de pago.
+- [Crear una factura de venta](../../comercial/ventas/crear-una-factura-de-venta/crear-una-factura-de-venta.md) — las condiciones de pago del cliente se completan solas en la factura.
+- [Registrar una factura de compra](../../operaciones/compras/crear-una-factura-de-compra/crear-una-factura-de-compra.md) — Etendo calcula cuándo tienes que pagarle al proveedor.
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

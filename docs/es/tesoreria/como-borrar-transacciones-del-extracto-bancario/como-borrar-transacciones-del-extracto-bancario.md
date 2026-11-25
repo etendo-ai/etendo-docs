@@ -1,7 +1,7 @@
 ---
 tags:
     - Cuentas
-    - Finanzas
+    - Tesorería
     - Extracto Bancario
     - Etendo
 ---
@@ -19,7 +19,7 @@ En ambos casos el borrado solo afecta a Etendo; el archivo original de tu banco 
 
 ## Borrar un extracto importado
 
-1. Abre la cuenta desde **[Finanzas > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}** y ve a la pestaña **Extractos importados**.
+1. Abre la cuenta desde **[Tesorería > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}** y ve a la pestaña **Extractos importados**.
 2. Localiza el extracto por su **N.º Documento**, **Nombre** o **Nombre Archivo**. Si tienes dudas, haz clic en la flecha de la izquierda para ver sus líneas y comprobar que es el que quieres borrar.
 3. Pasa el cursor sobre la fila, abre el menú de acciones (**⋮**) y elige **Eliminar**.
 

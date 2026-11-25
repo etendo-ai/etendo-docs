@@ -1,7 +1,7 @@
 ---
 tags:
     - Cuentas
-    - Finanzas
+    - Tesorería
     - Caja
     - Efectivo
     - Etendo
@@ -25,7 +25,7 @@ Al abrir una caja verás tres pestañas:
 
 ## Registrar un movimiento en efectivo
 
-1. Abre la caja desde **[Finanzas > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}** y, en la pestaña **Movimientos**, haz clic en **Nuevo movimiento**. También puedes elegir **Nuevo movimiento** en el menú **⋮** de la caja, en el listado de cuentas.
+1. Abre la caja desde **[Tesorería > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}** y, en la pestaña **Movimientos**, haz clic en **Nuevo movimiento**. También puedes elegir **Nuevo movimiento** en el menú **⋮** de la caja, en el listado de cuentas.
 2. Elige el **Tipo**: **Entrada** (dinero que ingresa en la caja) o **Salida** (dinero que sale). Por defecto está marcado **Salida**.
 3. Completa los campos obligatorios:
     - **Fecha**: por defecto, la de hoy.
@@ -99,7 +99,7 @@ Para el detalle de cómo borrar uno o varios movimientos, consulta [Borrar un ex
 - [Conectar, desconectar, archivar, desarchivar o eliminar una cuenta](../como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria.md)
 - [Borrar un extracto o un movimiento](../como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario.md)
 - [Gestionar pagos y cobros](../como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md)
-- [Glosario de Finanzas](../glosario-de-finanzas/glosario-de-finanzas.md)
+- [Glosario de Tesorería](../glosario-de-tesoreria/glosario-de-tesoreria.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

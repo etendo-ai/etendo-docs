@@ -60,7 +60,7 @@ Si el cliente aceptó un presupuesto, crea el pedido desde ese presupuesto. En e
 - **Dirección** *(obligatorio)* — viene de la ficha del cliente. Puedes cambiarla solo para este pedido.
 - **Moneda** *(obligatorio)* — la moneda en la que haces la venta. Por defecto, la moneda de tu empresa.
 - **Tarifa** *(obligatorio)* — la lista de precios con la que se calculan los precios de los productos. Normalmente es la que tiene asignada el cliente.
-- **Condiciones de pago** *(obligatorio)* — vienen de la ficha del cliente. Puedes cambiarlas solo para este pedido, elegir otras condiciones de tu cuenta o crear unas nuevas con **+ Crear condición de pago**. Ver [Cómo configurar las condiciones de pago](../../../sistema/configuracion/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago.md).
+- **Condiciones de pago** *(obligatorio)* — vienen de la ficha del cliente. Puedes cambiarlas solo para este pedido, elegir otras condiciones de tu cuenta o crear unas nuevas con **+ Crear condición de pago**. Ver [Cómo configurar las condiciones de pago](../../../tesoreria/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago.md).
 - **Almacén** *(obligatorio)* — el almacén del que sale la mercancía de este pedido.
 - **Nº documento** — Etendo le asigna el número al guardar el pedido.
 - **Método de pago** — viene de la ficha del cliente. Puedes cambiarlo solo para este pedido. Lo ves al hacer clic en **Mostrar más datos**, debajo de la cabecera.

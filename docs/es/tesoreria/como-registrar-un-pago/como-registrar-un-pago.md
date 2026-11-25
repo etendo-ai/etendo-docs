@@ -1,13 +1,13 @@
 ---
 tags:
-    - Finanzas
+    - Tesorería
     - Pagos
     - Etendo
 ---
 
 # Registrar un pago
 
-Un pago registra el dinero que entregas a un proveedor por una o más facturas de compra. En Etendo, el pago siempre se crea desde la factura — Etendo lo asocia automáticamente al documento de origen — y queda visible tanto en el detalle de esa factura como en la vista global **[Finanzas > Pago](https://app.etendo.ai/payment-out){target="_blank"}**.
+Un pago registra el dinero que entregas a un proveedor por una o más facturas de compra. En Etendo, el pago siempre se crea desde la factura — Etendo lo asocia automáticamente al documento de origen — y queda visible tanto en el detalle de esa factura como en la vista global **[Tesorería > Pago](https://app.etendo.ai/payment-out){target="_blank"}**.
 
 ## Crear el pago desde una factura de compra
 
@@ -32,7 +32,7 @@ Un pago registra el dinero que entregas a un proveedor por una o más facturas d
 
 Si guardaste un pago en borrador y quieres confirmarlo más tarde:
 
-1. Ve a **Finanzas > Pago**.
+1. Ve a **Tesorería > Pago**.
 2. Busca el pago por número de documento, fecha o proveedor. Puedes filtrar por **Borrador** en el desplegable de estados.
 3. Haz clic sobre la fila para abrir el detalle.
 4. Revisa los campos del pago:
@@ -55,7 +55,7 @@ Si guardaste un pago en borrador y quieres confirmarlo más tarde:
 
 Si necesitas corregir un pago ya confirmado, puedes revertirlo siempre que no esté conciliado:
 
-1. Abre el pago desde **Finanzas > Pago**.
+1. Abre el pago desde **Tesorería > Pago**.
 2. Haz clic en **Reactivar**. El pago vuelve a estado **Borrador**.
 3. Realiza los cambios necesarios y vuelve a confirmar.
 

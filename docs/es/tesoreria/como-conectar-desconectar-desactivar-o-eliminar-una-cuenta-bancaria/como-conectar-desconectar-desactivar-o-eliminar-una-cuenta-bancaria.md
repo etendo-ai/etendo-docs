@@ -1,7 +1,7 @@
 ---
 tags:
     - Cuentas
-    - Finanzas
+    - Tesorería
     - Bancos
     - Etendo
 ---
@@ -10,7 +10,7 @@ tags:
 
 Una vez que tienes una cuenta creada en **Cuentas**, puedes conectarla con tu banco para recibir sus movimientos automáticamente, desconectarla, dejar de usarla sin perder su historial o eliminarla.
 
-Todas las acciones de esta página están en el menú de la cuenta: ve a **[Finanzas > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}**, pasa el cursor sobre la fila de la cuenta y haz clic en el icono **⋮** de la derecha. Las opciones dependen del tipo de cuenta y de si está conectada.
+Todas las acciones de esta página están en el menú de la cuenta: ve a **[Tesorería > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}**, pasa el cursor sobre la fila de la cuenta y haz clic en el icono **⋮** de la derecha. Las opciones dependen del tipo de cuenta y de si está conectada.
 
 ![Menú ⋮ de una cuenta sin conexión con las opciones Abrir cuenta, Editar cuenta, Nuevo movimiento, Transferir fondos, Conectar banco, Archivar cuenta y Eliminar cuenta](assets/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria-1.png)
 

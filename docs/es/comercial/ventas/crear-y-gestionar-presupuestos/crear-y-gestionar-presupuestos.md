@@ -53,7 +53,7 @@ Accede a **[Ventas > Presupuesto](https://app.etendo.ai/sales-quotation){target=
 - **Moneda** — la moneda en la que haces la oferta. Por defecto, la moneda de tu empresa.
 - **Tarifa** — la lista de precios con la que se calculan los precios de los productos. Normalmente es la que tiene asignada el cliente.
 - **Dirección** — viene de la ficha del cliente. Puedes cambiarla solo para este presupuesto.
-- **Condiciones de pago** — vienen de la ficha del cliente. Puedes cambiarlas solo para este presupuesto, elegir otras condiciones de tu cuenta o crear unas nuevas con **+ Crear condición de pago**. Ver [Cómo configurar las condiciones de pago](../../../sistema/configuracion/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago.md).
+- **Condiciones de pago** — vienen de la ficha del cliente. Puedes cambiarlas solo para este presupuesto, elegir otras condiciones de tu cuenta o crear unas nuevas con **+ Crear condición de pago**. Ver [Cómo configurar las condiciones de pago](../../../tesoreria/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago.md).
 - **Nº documento** — Etendo le asigna el número al guardar el presupuesto. En un presupuesto nuevo ves entre `< >` el número previsto.
 - **Válido hasta** — hasta qué fecha mantienes la oferta. No es obligatorio.
 - **Método de pago** — viene de la ficha del cliente. Puedes cambiarlo solo para este presupuesto. Lo ves al hacer clic en **Mostrar más datos**, debajo de la cabecera.

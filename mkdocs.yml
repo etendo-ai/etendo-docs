@@ -124,27 +124,33 @@ plugins:
                         - ¿Qué es la sección Inventario físico?: operaciones/inventario/inventario-fisico/inventario-fisico.md
                         - ¿Qué es la sección Consumo interno?: operaciones/inventario/consumo-interno/consumo-interno.md
                         - ¿Qué es la sección Movimiento entre almacenes?: operaciones/inventario/movimiento-de-almacenes/movimiento-de-almacenes.md
+            - Tesorería:
+                - tesoreria/index.md
+                - ¿Qué es la sección Tesorería?: tesoreria/que-es-tesoreria/que-es-tesoreria.md
+                - Glosario de Tesorería: tesoreria/glosario-de-tesoreria/glosario-de-tesoreria.md
+                - Pagos y cobros:
+                    - Gestionar pagos y cobros: tesoreria/como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md
+                    - "¿Qué son las vistas Cobro y Pago?": tesoreria/que-es-cobros-y-pagos/que-es-cobros-y-pagos.md
+                    - Registrar un cobro: tesoreria/como-registrar-un-cobro/como-registrar-un-cobro.md
+                    - Registrar un pago: tesoreria/como-registrar-un-pago/como-registrar-un-pago.md
+                - Cuentas:
+                    - Añadir y configurar un banco, tarjeta o caja: tesoreria/como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja.md
+                    - Editar una cuenta: tesoreria/como-editar-una-cuenta/como-editar-una-cuenta.md
+                    - Conectar, desconectar, archivar, desarchivar o eliminar una cuenta: tesoreria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria.md
+                    - Gestionar caja y movimientos en efectivo: tesoreria/como-gestionar-caja-y-movimientos-en-efectivo/como-gestionar-caja-y-movimientos-en-efectivo.md
+                - Extracto bancario:
+                    - Importar o descargar el extracto bancario: tesoreria/como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario.md
+                    - Borrar un extracto o un movimiento: tesoreria/como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario.md
+                - Conciliación bancaria:
+                    - ¿Qué es la conciliación bancaria en Etendo?: tesoreria/que-es-la-conciliacion-bancaria-en-etendo/que-es-la-conciliacion-bancaria-en-etendo.md
+                    - Conciliar o desconciliar movimientos contra documentos: tesoreria/como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md
+                    - Configurar reglas para automatizar la conciliación: tesoreria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria.md
+                - Condiciones de pago:
+                    - Cómo configurar las condiciones de pago: tesoreria/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago.md
             - Finanzas:
                 - finanzas/index.md
                 - ¿Qué es la sección Finanzas?: finanzas/que-es-finanzas/que-es-finanzas.md
                 - Glosario de Finanzas: finanzas/glosario-de-finanzas/glosario-de-finanzas.md
-                - Cuentas:
-                    - Añadir y configurar un banco, tarjeta o caja: finanzas/como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja.md
-                    - Editar una cuenta: finanzas/como-editar-una-cuenta/como-editar-una-cuenta.md
-                    - Conectar, desconectar, archivar, desarchivar o eliminar una cuenta: finanzas/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria.md
-                    - Gestionar caja y movimientos en efectivo: finanzas/como-gestionar-caja-y-movimientos-en-efectivo/como-gestionar-caja-y-movimientos-en-efectivo.md
-                - Pagos y cobros:
-                    - Gestionar pagos y cobros: finanzas/como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md
-                    - "¿Qué son las vistas Cobro y Pago?": finanzas/que-es-cobros-y-pagos/que-es-cobros-y-pagos.md
-                    - Registrar un cobro: finanzas/como-registrar-un-cobro/como-registrar-un-cobro.md
-                    - Registrar un pago: finanzas/como-registrar-un-pago/como-registrar-un-pago.md
-                - Extracto bancario:
-                    - Importar o descargar el extracto bancario: finanzas/como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario.md
-                    - Borrar un extracto o un movimiento: finanzas/como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario.md
-                - Conciliación bancaria:
-                    - ¿Qué es la conciliación bancaria en Etendo?: finanzas/que-es-la-conciliacion-bancaria-en-etendo/que-es-la-conciliacion-bancaria-en-etendo.md
-                    - Conciliar o desconciliar movimientos contra documentos: finanzas/como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md
-                    - Configurar reglas para automatizar la conciliación: finanzas/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria.md
                 - Contabilidad:
                     - Gestionar tu plan de cuentas: finanzas/gestionar-tu-plan-de-cuentas/gestionar-tu-plan-de-cuentas.md
                     - Cómo configurar los centros de costos: finanzas/como-configurar-los-centros-de-costos/como-configurar-los-centros-de-costos.md
@@ -173,7 +179,6 @@ plugins:
                 - Configuración:
                     - Cómo gestionar tu organización: sistema/configuracion/como-gestionar-tu-organizacion/como-gestionar-tu-organizacion.md
                     - Cómo configurar las categorías de contacto: sistema/configuracion/como-configurar-las-categorias-de-contacto/como-configurar-las-categorias-de-contacto.md
-                    - Cómo configurar las condiciones de pago: sistema/configuracion/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago.md
                     - ¿Qué es la sección Roles y usuarios?: sistema/configuracion/que-es-roles-y-usuarios/que-es-roles-y-usuarios.md
                     - Cómo invitar a un usuario: sistema/configuracion/como-invitar-a-un-usuario/como-invitar-a-un-usuario.md
                     - Gestionar tus usuarios: sistema/configuracion/gestionar-tus-usuarios/gestionar-tus-usuarios.md
@@ -195,6 +200,21 @@ plugins:
         es/comercial/ventas/anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md: es/comercial/ventas/anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md
         # Generalizado en ETP-6115: la ventana de envio es la misma en todos los documentos
         es/comercial/ventas/enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md: es/comercial/ventas/enviar-documentos-por-email/enviar-documentos-por-email.md
+        # Movidos a Tesorería en ETP-5532: el menú de la app separa Tesorería de Finanzas
+        finanzas/como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md: https://help.etendo.ai/tesoreria/como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros/
+        finanzas/que-es-cobros-y-pagos/que-es-cobros-y-pagos.md: https://help.etendo.ai/tesoreria/que-es-cobros-y-pagos/que-es-cobros-y-pagos/
+        finanzas/como-registrar-un-cobro/como-registrar-un-cobro.md: https://help.etendo.ai/tesoreria/como-registrar-un-cobro/como-registrar-un-cobro/
+        finanzas/como-registrar-un-pago/como-registrar-un-pago.md: https://help.etendo.ai/tesoreria/como-registrar-un-pago/como-registrar-un-pago/
+        finanzas/como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja.md: https://help.etendo.ai/tesoreria/como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja/
+        finanzas/como-editar-una-cuenta/como-editar-una-cuenta.md: https://help.etendo.ai/tesoreria/como-editar-una-cuenta/como-editar-una-cuenta/
+        finanzas/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria.md: https://help.etendo.ai/tesoreria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/
+        finanzas/como-gestionar-caja-y-movimientos-en-efectivo/como-gestionar-caja-y-movimientos-en-efectivo.md: https://help.etendo.ai/tesoreria/como-gestionar-caja-y-movimientos-en-efectivo/como-gestionar-caja-y-movimientos-en-efectivo/
+        finanzas/como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario.md: https://help.etendo.ai/tesoreria/como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario/
+        finanzas/como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario.md: https://help.etendo.ai/tesoreria/como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario/
+        finanzas/que-es-la-conciliacion-bancaria-en-etendo/que-es-la-conciliacion-bancaria-en-etendo.md: https://help.etendo.ai/tesoreria/que-es-la-conciliacion-bancaria-en-etendo/que-es-la-conciliacion-bancaria-en-etendo/
+        finanzas/como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md: https://help.etendo.ai/tesoreria/como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos/
+        finanzas/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria.md: https://help.etendo.ai/tesoreria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/
+        sistema/configuracion/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago.md: https://help.etendo.ai/tesoreria/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago/
 
 extra:
   social:

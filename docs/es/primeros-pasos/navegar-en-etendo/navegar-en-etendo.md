@@ -17,7 +17,7 @@ Estos son los elementos de navegación de alto nivel que vas a encontrar en la p
 
 ### Menú lateral
 
-La barra vertical ubicada a la izquierda de la pantalla agrupa el acceso a todos los módulos de Etendo, organizados en secciones con etiquetas: **General**, **Comercial**, **Operaciones**, **Finanzas** y **Sistema**. Haz clic en cualquier ícono para desplegar sus secciones.
+La barra vertical ubicada a la izquierda de la pantalla agrupa el acceso a todos los módulos de Etendo, organizados en secciones con etiquetas: **General**, **Comercial**, **Operaciones**, **Tesorería**, **Finanzas** y **Sistema**. Haz clic en cualquier ícono para desplegar sus secciones.
 
 ![Menú lateral de Etendo](assets/navegar-en-etendo-1.png)
 

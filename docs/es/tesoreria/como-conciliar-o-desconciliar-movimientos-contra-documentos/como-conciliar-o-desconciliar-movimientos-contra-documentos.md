@@ -1,7 +1,7 @@
 ---
 tags:
     - Cuentas
-    - Finanzas
+    - Tesorería
     - Conciliación Bancaria
     - Etendo
 ---
@@ -23,7 +23,7 @@ En la pestaña **Conciliación** de una cuenta, puedes filtrar las líneas de ex
 
 ## Conciliar un movimiento contra un documento
 
-1. Abre la cuenta desde **[Finanzas > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}** y ve a la pestaña **Conciliación**.
+1. Abre la cuenta desde **[Tesorería > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}** y ve a la pestaña **Conciliación**.
 2. Filtra por **Pendientes** y selecciona una línea en el panel izquierdo.
 3. En el desplegable de la cabecera del panel derecho, elige el tipo de documento a buscar: **Facturas de venta**, **Facturas de compra**, **Cobros** o **Pagos**. Cada opción indica cuántos documentos hay disponibles.
 

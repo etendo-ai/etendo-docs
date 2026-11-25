@@ -1,7 +1,7 @@
 ---
 tags:
     - Cuentas
-    - Finanzas
+    - Tesorería
     - Extracto Bancario
     - Etendo
 ---
@@ -12,7 +12,7 @@ Si tu cuenta no está conectada con tu banco, puedes importar el extracto bancar
 
 ## Importar el extracto bancario
 
-1. Abre la cuenta desde **[Finanzas > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}** y ve a la pestaña **Extractos importados**.
+1. Abre la cuenta desde **[Tesorería > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}** y ve a la pestaña **Extractos importados**.
 2. Haz clic en **Importar extracto**. Se abre el asistente **Importar extracto bancario**.
 3. En el paso **1. Subir archivo**, arrastra el archivo o selecciónalo desde tu equipo y haz clic en **Continuar**. Formatos compatibles: **CSV**, **TXT** o **Excel (.xlsx)**, de hasta 10 MB. Etendo detecta el formato automáticamente.
 
