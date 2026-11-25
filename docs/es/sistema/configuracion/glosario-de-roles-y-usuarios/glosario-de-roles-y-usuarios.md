@@ -28,12 +28,12 @@ Conjunto fijo de permisos que determina qué ventanas puede ver un usuario y con
 
 **Administrador** es excluyente: un usuario con este rol no puede tener ningún otro a la vez. Los cuatro roles restantes — **Ventas**, **Compras**, **Finanzas** e **Inventario** — sí se pueden combinar entre sí en un mismo usuario (por ejemplo, un usuario con Ventas y Finanzas a la vez).
 
-Solo el rol **Administrador** puede ver **[Organización](https://app.etendo.ai/organization){target="_blank"}**, **[Usuarios](https://app.etendo.ai/user){target="_blank"}** y **[Secuencias de documentos](https://app.etendo.ai/document-sequence){target="_blank"}** — ningún otro rol accede a esas ventanas, ni siquiera en modo solo lectura. **[Configuración Fiscal](https://app.etendo.ai/fiscal-config){target="_blank"}** la ven el rol **Administrador** y el rol **Finanzas**. Otros catálogos que también viven dentro de Configuración, como [Tarifa](https://app.etendo.ai/price-list){target="_blank"} o [Condiciones de pago](https://app.etendo.ai/payment-term){target="_blank"}, sí son accesibles para algunos de los demás roles: consulta el detalle completo en [Acceso por rol](#acceso-por-rol).
+Solo el rol **Administrador** puede ver **[Organización](https://app.etendo.ai/organization){target="_blank"}**, **[Usuarios](https://app.etendo.ai/user){target="_blank"}** y **[Secuencias de documentos](https://app.etendo.ai/document-sequence){target="_blank"}** — ningún otro rol accede a esas ventanas, ni siquiera en modo solo lectura. **[Configuración Fiscal](https://app.etendo.ai/fiscal-config){target="_blank"}** la ven el rol **Administrador** y el rol **Finanzas**. Otras ventanas que también viven dentro de Configuración, como [Categoría de Contacto](https://app.etendo.ai/business-partner-category){target="_blank"}, sí son accesibles para algunos de los demás roles: consulta el detalle completo en [Acceso por rol](#acceso-por-rol).
 
 !!! info "No lo confundas con el rol de Cliente o Proveedor"
     En la sección [Contactos](../../../comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md), "rol" también se usa para indicar si un contacto es Cliente o Proveedor de tu empresa. Es un concepto distinto: no tiene relación con los roles de usuario que se explican aquí.
 
-En el menú de tu perfil de usuario (abajo a la izquierda), Etendo muestra el nombre técnico completo de tu rol — combina el nombre de tu organización con el rol, por ejemplo **AMEcompany Admin** — que es el mismo rol que en Usuarios y en este glosario aparece simplificado como **Administrador**.
+En el menú de tu perfil de usuario (abajo a la izquierda), Etendo muestra tu **Rol** y tu **Organización**, por ejemplo *Rol: Administrador*.
 
 ## Nivel de acceso
 
@@ -49,7 +49,7 @@ Estado de un usuario recién creado, mientras no acepta el correo de invitación
 
 ## Acceso por rol
 
-Cada rol combina los tres niveles de acceso anteriores de forma distinta según la ventana. Puedes consultar el detalle completo y siempre actualizado en **[Configuración > Roles](https://app.etendo.ai/roles){target="_blank"}**, donde se muestra, para cada rol, qué ventanas ve y con qué nivel de acceso — la misma información que consultas en vivo desde la ficha de cualquier usuario, en el campo **Roles asignados**.
+Cada rol combina los tres niveles de acceso anteriores de forma distinta según la ventana. Puedes consultar el detalle completo y siempre actualizado en **[Configuración > Roles](https://app.etendo.ai/roles){target="_blank"}**, donde se muestra, para cada rol, qué ventanas ve y con qué nivel de acceso — la misma información que consultas desde la ficha de cualquier usuario, en la pestaña **Roles del usuario**.
 
 ## Artículos relacionados
 
