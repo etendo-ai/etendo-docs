@@ -54,6 +54,22 @@ Tus cuentas de banco, tarjeta y caja, los cobros, los pagos, la conciliación ba
 
     [:octicons-arrow-right-24: Leer más](como-configurar-los-centros-de-costos/como-configurar-los-centros-de-costos.md)
 
+-   :material-briefcase-outline:{ .lg .middle } **Cómo crear un proyecto**
+
+    ---
+
+    Crea un proyecto por cada trabajo que quieras seguir por separado, por ejemplo una implantación para un cliente.
+
+    [:octicons-arrow-right-24: Leer más](como-crear-un-proyecto/como-crear-un-proyecto.md)
+
+-   :material-cog-outline:{ .lg .middle } **Cómo revisar el esquema contable**
+
+    ---
+
+    Consulta el calendario fiscal, la moneda principal, las cuentas por defecto y las dimensiones de tu contabilidad.
+
+    [:octicons-arrow-right-24: Leer más](como-revisar-el-esquema-contable/como-revisar-el-esquema-contable.md)
+
 -   :material-calendar-month-outline:{ .lg .middle } **Cómo gestionar el calendario contable**
 
     ---
