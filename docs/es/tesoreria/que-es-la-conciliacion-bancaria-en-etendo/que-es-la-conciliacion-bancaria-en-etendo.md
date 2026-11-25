@@ -1,7 +1,7 @@
 ---
 tags:
     - Cuentas
-    - Finanzas
+    - Tesorería
     - Conciliación Bancaria
     - Etendo
 ---

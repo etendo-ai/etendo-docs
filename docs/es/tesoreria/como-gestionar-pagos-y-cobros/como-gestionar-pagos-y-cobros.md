@@ -1,7 +1,7 @@
 ---
 tags:
     - Cuentas
-    - Finanzas
+    - Tesorería
     - Pagos
     - Cobros
     - Etendo
@@ -38,9 +38,9 @@ El flujo es igual al de un cobro, pero desde una factura de compra:
 
 ## Conciliar pagos y cobros
 
-Un cobro o pago recién confirmado queda registrado con su actividad (por ejemplo, *"Cobro creado"* → *"Cobro confirmado · depositado"*), visible en el detalle del documento. Desde las vistas globales **[Finanzas > Cobro](https://app.etendo.ai/payment-in){target="_blank"}** y **[Finanzas > Pago](https://app.etendo.ai/payment-out){target="_blank"}** puedes:
+Un cobro o pago recién confirmado queda registrado con su actividad (por ejemplo, *"Cobro creado"* → *"Cobro confirmado · depositado"*), visible en el detalle del documento. Desde las vistas globales **[Tesorería > Cobro](https://app.etendo.ai/payment-in){target="_blank"}** y **[Tesorería > Pago](https://app.etendo.ai/payment-out){target="_blank"}** puedes:
 
-![Panel lateral en Finanzas > Cobro — el panel en Finanzas > Pago es simétrico](assets/como-gestionar-pagos-y-cobros-3.png)
+![Panel lateral en Tesorería > Cobro — el panel en Tesorería > Pago es simétrico](assets/como-gestionar-pagos-y-cobros-3.png)
 
 - Ver el estado de cada uno (por ejemplo, **Cobro depositado**, **Pago depositado**) y el total del período en el panel lateral. El total **Cobrado** o **Pagado** corresponde al filtro de fechas activo (no siempre al mes en curso) y se desglosa en **Pendiente**, **Por confirmar**, **Por método de pago** y **Detalle por moneda**. Si operas con más de una moneda, el total aparece con **≈** (importe aproximado convertido a la moneda de tu empresa).
 - Abrir cualquier cobro o pago para **Reactivar** (revertir su confirmación) o eliminarlo, si todavía no fue conciliado.

@@ -1,6 +1,5 @@
 ---
 tags:
-    - Cuentas
     - Finanzas
     - Activos
     - Glosario
@@ -8,6 +7,9 @@ tags:
 ---
 
 # Glosario de Finanzas
+
+!!! info
+    Los términos de cuentas, cobros, pagos, extractos y conciliación bancaria están en el [Glosario de Tesorería](../../tesoreria/glosario-de-tesoreria/glosario-de-tesoreria.md).
 
 ## Activo
 
@@ -21,45 +23,17 @@ Distribución del valor de un activo a lo largo de su vida útil, calculada seg�
 
 Porcentaje o importe ya amortizado de un activo, calculado solo sobre los períodos de su plan que están en estado **Confirmado** (los **Pendientes** no cuentan, aunque su fecha ya haya pasado). Se muestra como porcentaje en el panel **Resumen de amortización** del activo, y como importe en euros en la columna **Amortizado real** de la vista de lista de **[Finanzas > Activos](https://app.etendo.ai/assets){target="_blank"}**. Ver [Activos: referencia de campos](../referencia-de-campos-de-activo/referencia-de-campos-de-activo.md).
 
-## Archivar
-
-Acción que deja de mostrar una cuenta en el listado de **Todas las cuentas** sin borrar su saldo ni su historial: la cuenta pasa al filtro **Inactivas**. Su opuesto es **Desarchivar**. No debe confundirse con **Eliminar cuenta**, una acción independiente que borra la cuenta de forma permanente y no se puede deshacer — a diferencia de Archivar, que es reversible. Ver [Conectar, desconectar, archivar, desarchivar o eliminar una cuenta](../como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria.md).
-
 ## Asiento contable
 
 Registro en tu contabilidad que refleja una operación de tu empresa: una venta, una compra, un cobro, un pago o el gasto de amortización de un período. Se genera al contabilizar el documento; hasta entonces, el documento aparece como **Sin contabilizar**.
-
-## Automatch
-
-El motor de sugerencias automáticas de conciliación de Etendo. Compara las líneas pendientes de tu extracto bancario contra tus facturas, cobros y pagos por fecha e importe, y te propone las coincidencias para que las confirmes con un clic.
 
 ## Borrador
 
 Estado inicial y editable de una Amortización. En Borrador se pueden añadir, modificar o eliminar líneas y cambiar los datos generales.
 
-## Caja
-
-Tipo de cuenta para el efectivo que se maneja fuera del banco (por ejemplo, la caja chica de una oficina o la caja de un punto de venta). A diferencia de un Banco o una Tarjeta, una Caja no se conecta ni importa extractos de una entidad externa: todos sus movimientos se registran a mano. Ver [Gestionar cajas contables y movimientos en efectivo](../como-gestionar-caja-y-movimientos-en-efectivo/como-gestionar-caja-y-movimientos-en-efectivo.md).
-
 ## Categoría de activo
 
 Tipo de bien al que pertenece un activo, por ejemplo *Equipos informáticos* o *Vehículos*. Propone la forma de amortizar al registrar el activo y define las cuentas contables de su amortización. Ver [Cómo configurar las categorías de activo](../como-configurar-las-categorias-de-activo/como-configurar-las-categorias-de-activo.md).
-
-## Cobro
-
-Registro del dinero que recibes de un cliente. Normalmente se crea desde una factura de venta, pero también puede originarse en una Entrada registrada a mano en una caja. En ambos casos queda disponible en la vista global **Finanzas > Cobro**. Ver [Gestionar pagos y cobros](../como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md) y [Gestionar cajas contables y movimientos en efectivo](../como-gestionar-caja-y-movimientos-en-efectivo/como-gestionar-caja-y-movimientos-en-efectivo.md).
-
-## Concepto contable
-
-La cuenta contable que se asigna a un movimiento, un cobro, un pago o una regla de matcheo. Determina en qué cuenta del plan contable queda registrada esa operación.
-
-## Conciliado / Sin conciliar
-
-Estado que indica si un movimiento ya quedó vinculado a su documento correspondiente (una factura, un cobro o un pago) durante la conciliación bancaria.
-
-## Condición sobre el concepto
-
-Campo de una regla de matcheo que define cómo se compara su patrón contra la descripción del movimiento: **Contiene**, **Empieza con** o **Coincide con patrón** (una sintaxis de búsqueda avanzada para patrones de texto complejos; si no estás familiarizado con expresiones regulares, usa **Contiene** o **Empieza con**).
 
 ## Confirmar
 
@@ -73,14 +47,6 @@ Indicador independiente de otros estados (como Borrador/Procesado en una Amortiz
 
 Acción que genera los asientos contables de un documento ya Procesado y lo pasa a **Contabilizado**.
 
-## Cuenta
-
-Cuenta de banco, tarjeta o caja que registras en Etendo para llevar el control de tu dinero. Mantiene su propio saldo y su propio historial de movimientos, y puede conectarse por Open Banking o gestionarse sin conexión. Ver [Añadir y configurar un banco, tarjeta o caja](../como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja.md).
-
-## Cuenta transitoria
-
-Cuenta contable opcional que puedes asociar a una cuenta desde **Editar cuenta > Contabilidad**. Sirve para registrar de forma temporal operaciones cuyo concepto contable definitivo todavía no está claro, sin afectar directamente a la cuenta contable principal.
-
 ## Descontabilizar
 
 Acción que revierte la contabilización de un documento ya **Contabilizado**. Disponible en el menú ⋮ de los documentos que ya están contabilizados.
@@ -89,21 +55,9 @@ Acción que revierte la contabilización de un documento ya **Contabilizado**. D
 
 Campos opcionales para asociar un registro a un eje de análisis: **Proyecto**, **Centro de costo**, **Contacto** o **Producto**. Se usan en activos, líneas de amortización, movimientos, pagos y cobros. No afectan el saldo ni la conciliación, solo permiten filtrar y analizar tus registros por ese eje. Qué dimensiones están disponibles depende de cada formulario.
 
-## Extracto bancario
-
-Archivo con el detalle de los movimientos de una cuenta bancaria en un período. Se importa a Etendo (en formato, CSV o Excel) para generar sus movimientos automáticamente, o se descarga para tu propio registro. Ver [Importar o descargar el extracto bancario](../como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario.md).
-
 ## Factura Rectificativa
 
 Factura que corrige el importe de otra factura ya confirmada, por ejemplo por un precio mal facturado, un descuento o bonificación, o una devolución de mercancía. Es de las llamadas «por diferencias»: no sustituye a la factura original, solo recoge la diferencia, en negativo si el importe baja o en positivo si sube. Existe tanto en ventas como en compras. Para poder confirmarla tiene que indicar, en su pestaña **Rectificaciones**, la factura o facturas que corrige. Ver [Crear una factura rectificativa](../../comercial/ventas/crear-una-factura-rectificativa/crear-una-factura-rectificativa.md) para ventas y [Registrar una factura rectificativa](../../operaciones/compras/registrar-una-factura-rectificativa/registrar-una-factura-rectificativa.md) para compras.
-
-## Movimiento
-
-Cada entrada o salida de dinero dentro de una cuenta (transferencias, pagos, cobros, retiradas de efectivo). Tiene dos estados independientes: uno de conciliación (Sin conciliar / Conciliado) y uno de contabilización (Sin contabilizar / Contabilizado).
-
-## Pago
-
-Registro del dinero que entregas a un proveedor. Normalmente se crea desde una factura de compra, pero también puede originarse en una Salida registrada a mano en una caja. En ambos casos queda disponible en la vista global **Finanzas > Pago**. Ver [Gestionar pagos y cobros](../como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md) y [Gestionar cajas contables y movimientos en efectivo](../como-gestionar-caja-y-movimientos-en-efectivo/como-gestionar-caja-y-movimientos-en-efectivo.md).
 
 ## Plan de amortización
 
@@ -115,15 +69,7 @@ Estado de una Amortización ya confirmada. Ya no se pueden editar sus líneas ni
 
 ## Reactivar
 
-Acción que revierte el estado de un registro ya confirmado. Su efecto exacto depende del tipo de registro: en una **Amortización**, devuelve el registro a Borrador y Sin contabilizar en un solo paso, deshaciendo tanto Confirmar como Contabilizar; en un **Cobro** o **Pago**, revierte su confirmación (ver [Gestionar pagos y cobros](../como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md)). No debe confundirse con **Desarchivar**, la acción que reactiva una cuenta archivada (ver [Conectar, desconectar, desactivar o reactivar una cuenta](../como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria.md)).
-
-## Regla de matcheo
-
-Regla configurable que concilia automáticamente líneas de extracto recurrentes sin factura asociada —por ejemplo, una comisión bancaria mensual— sin que tengas que buscarlas a mano cada vez. Ver [Configurar reglas para automatizar la conciliación](../como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria.md).
-
-## Tolerancia de conciliación
-
-Margen configurable por cuenta, desde **Editar cuenta > General**, que le indica a Automatch y a las reglas de matcheo cuánta diferencia de fecha (en días) o de importe (en %) pueden aceptar para sugerir una coincidencia.
+Acción que revierte el estado de un registro ya confirmado. Su efecto exacto depende del tipo de registro: en una **Amortización**, devuelve el registro a Borrador y Sin contabilizar en un solo paso, deshaciendo tanto Confirmar como Contabilizar; en un **Cobro** o **Pago**, revierte su confirmación (ver [Gestionar pagos y cobros](../../tesoreria/como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md)). No debe confundirse con **Desarchivar**, la acción que reactiva una cuenta archivada (ver [Conectar, desconectar, desactivar o reactivar una cuenta](../../tesoreria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria.md)).
 
 ## Valor a amortizar
 

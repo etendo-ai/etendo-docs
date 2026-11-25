@@ -124,7 +124,7 @@ Crea una subcuenta cuando quieras ver por separado algo que hoy se anota junto. 
 5. Revisa el **Tipo de cuenta** *(obligatorio)*. Se completa según la cuenta padre; para una caja o un banco, **Activo**.
 6. Haz clic en **Guardar**. Para salir sin crear nada, haz clic en **Cancelar**.
 
-La subcuenta aparece en el árbol bajo su desglose. Si es la subcuenta de un banco o de una caja, asígnala después en la pestaña **Contabilidad** de esa cuenta, como se explica en [Cómo editar una cuenta](../como-editar-una-cuenta/como-editar-una-cuenta.md#pestana-contabilidad).
+La subcuenta aparece en el árbol bajo su desglose. Si es la subcuenta de un banco o de una caja, asígnala después en la pestaña **Contabilidad** de esa cuenta, como se explica en [Cómo editar una cuenta](../../tesoreria/como-editar-una-cuenta/como-editar-una-cuenta.md#pestana-contabilidad).
 
 !!! info "Para tu asesor"
     - El árbol sigue el orden del balance y de la cuenta de pérdidas y ganancias. Los **Epígrafes** son sus apartados, y de ellos cuelgan las cuentas de 3 cifras, los desgloses de 4 y las subcuentas de 8.
@@ -134,8 +134,8 @@ La subcuenta aparece en el árbol bajo su desglose. Si es la subcuenta de un ban
 
 ## Artículos Relacionados
 
-- [Cómo editar una cuenta](../como-editar-una-cuenta/como-editar-una-cuenta.md)
-- [Añadir y configurar un banco, tarjeta o caja](../como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja.md)
+- [Cómo editar una cuenta](../../tesoreria/como-editar-una-cuenta/como-editar-una-cuenta.md)
+- [Añadir y configurar un banco, tarjeta o caja](../../tesoreria/como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja.md)
 - [Glosario de Finanzas](../glosario-de-finanzas/glosario-de-finanzas.md)
 
 ---

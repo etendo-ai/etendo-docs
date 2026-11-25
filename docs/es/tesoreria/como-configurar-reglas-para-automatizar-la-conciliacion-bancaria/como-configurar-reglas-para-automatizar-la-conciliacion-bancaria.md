@@ -1,7 +1,7 @@
 ---
 tags:
     - Cuentas
-    - Finanzas
+    - Tesorería
     - Conciliación Bancaria
     - Automatización
     - Etendo
@@ -16,7 +16,7 @@ Algunos movimientos de tu banco se repiten con el mismo texto y no tienen una fa
 
 ## Crear una regla de matcheo
 
-1. Ve a **[Finanzas > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}** y haz clic en **[Reglas de matcheo](https://app.etendo.ai/match-rule){target="_blank"}**.
+1. Ve a **[Tesorería > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}** y haz clic en **[Reglas de matcheo](https://app.etendo.ai/match-rule){target="_blank"}**.
 2. Haz clic en **Nueva regla**. Se abre el formulario **Nueva regla de matcheo**.
 3. Completa los campos obligatorios:
     - **Nombre**: cómo identificas la regla, por ejemplo "Comisión de mantenimiento". Es el nombre que verás después en la etiqueta **Por regla** de la conciliación.
@@ -66,7 +66,7 @@ La columna **Conciliaciones** indica cuántas veces se ha usado la regla para co
 - [Conciliar o desconciliar movimientos contra documentos](../como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md)
 - [Importar o descargar el extracto bancario](../como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario.md)
 - [Cómo editar una cuenta](../como-editar-una-cuenta/como-editar-una-cuenta.md)
-- [Glosario de Finanzas](../glosario-de-finanzas/glosario-de-finanzas.md)
+- [Glosario de Tesorería](../glosario-de-tesoreria/glosario-de-tesoreria.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

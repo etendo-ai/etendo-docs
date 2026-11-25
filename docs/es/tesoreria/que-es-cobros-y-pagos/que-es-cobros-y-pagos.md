@@ -1,6 +1,6 @@
 ---
 tags:
-    - Finanzas
+    - Tesorería
     - Cobros
     - Pagos
     - Etendo
@@ -10,12 +10,12 @@ tags:
 
 Las vistas **Cobro** y **Pago** son los paneles globales donde Etendo centraliza todas las transacciones de dinero que entran y salen de tu organización:
 
-- **[Finanzas > Cobro](https://app.etendo.ai/payment-in){target="_blank"}** — lista todos los cobros registrados, es decir, el dinero que recibes de tus clientes.
-- **[Finanzas > Pago](https://app.etendo.ai/payment-out){target="_blank"}** — lista todos los pagos registrados, es decir, el dinero que entregas a tus proveedores.
+- **[Tesorería > Cobro](https://app.etendo.ai/payment-in){target="_blank"}** — lista todos los cobros registrados, es decir, el dinero que recibes de tus clientes.
+- **[Tesorería > Pago](https://app.etendo.ai/payment-out){target="_blank"}** — lista todos los pagos registrados, es decir, el dinero que entregas a tus proveedores.
 
 Los cobros y pagos se crean desde las facturas (ver [Gestionar pagos y cobros](../como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md)), pero desde estas vistas puedes consultar su estado, filtrar por período o método, y realizar acciones como confirmar o reactivar.
 
-![Vista Finanzas > Cobro con el panel Cobrado, Pendiente, Por confirmar, Por método de pago y Detalle por moneda, y la lista de cobros con su estado](assets/que-es-cobros-y-pagos-1.png)
+![Vista Tesorería > Cobro con el panel Cobrado, Pendiente, Por confirmar, Por método de pago y Detalle por moneda, y la lista de cobros con su estado](assets/que-es-cobros-y-pagos-1.png)
 
 ## El panel de resumen
 
@@ -44,7 +44,7 @@ La tabla principal muestra todas las transacciones del período con estas column
 | **Estado** | Estado actual del documento (ver sección siguiente) |
 | **Importe** | Importe en la moneda original de la transacción |
 
-![Vista Finanzas > Pago con el panel Pagado y la lista de pagos con su estado](assets/que-es-cobros-y-pagos-2.png)
+![Vista Tesorería > Pago con el panel Pagado y la lista de pagos con su estado](assets/que-es-cobros-y-pagos-2.png)
 
 ## Estados de un cobro o pago
 

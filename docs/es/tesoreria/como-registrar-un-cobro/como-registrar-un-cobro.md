@@ -1,13 +1,13 @@
 ---
 tags:
-    - Finanzas
+    - Tesorería
     - Cobros
     - Etendo
 ---
 
 # Registrar un cobro
 
-Un cobro registra el dinero que recibes de un cliente por una o más facturas de venta. En Etendo, el cobro siempre se crea desde la factura — Etendo lo asocia automáticamente al documento de origen — y queda visible tanto en el detalle de esa factura como en la vista global **[Finanzas > Cobro](https://app.etendo.ai/payment-in){target="_blank"}**.
+Un cobro registra el dinero que recibes de un cliente por una o más facturas de venta. En Etendo, el cobro siempre se crea desde la factura — Etendo lo asocia automáticamente al documento de origen — y queda visible tanto en el detalle de esa factura como en la vista global **[Tesorería > Cobro](https://app.etendo.ai/payment-in){target="_blank"}**.
 
 ## Crear el cobro desde una factura de venta
 
@@ -32,7 +32,7 @@ Un cobro registra el dinero que recibes de un cliente por una o más facturas de
 
 Si guardaste un cobro en borrador y quieres confirmarlo más tarde:
 
-1. Ve a **Finanzas > Cobro**.
+1. Ve a **Tesorería > Cobro**.
 2. Busca el cobro por número de documento, fecha o contacto. Puedes filtrar por **Borrador** en el desplegable de estados.
 3. Haz clic sobre la fila para abrir el detalle.
 4. Revisa los campos. El aviso de la parte superior indica: *«Borrador — sin impacto en caja. Al confirmar, el cobro se registra y reduce el saldo de la factura.»*
@@ -47,7 +47,7 @@ Si guardaste un cobro en borrador y quieres confirmarlo más tarde:
 
 Si necesitas corregir un cobro ya confirmado, puedes revertirlo siempre que no esté conciliado:
 
-1. Abre el cobro desde **Finanzas > Cobro**.
+1. Abre el cobro desde **Tesorería > Cobro**.
 2. Haz clic en **Reactivar**. El cobro vuelve a estado **Borrador**.
 3. Realiza los cambios necesarios y vuelve a confirmar.
 

@@ -8,7 +8,9 @@ hide:
 
 # Finanzas
 
-Todo lo que necesitas para gestionar las finanzas de tu empresa en Etendo: cuentas, extractos bancarios, conciliación, pagos y cobros, y la contabilidad de tus activos y su amortización.
+Todo lo que necesitas para gestionar las finanzas de tu empresa en Etendo: plan de cuentas, centros de costos, calendario contable, asientos manuales y documentos pendientes de contabilizar, y tus activos y su amortización.
+
+Tus cuentas de banco, tarjeta y caja, los cobros, los pagos, la conciliación bancaria y las condiciones de pago están en [Tesorería](../tesoreria/index.md).
 
 ## Introducción
 
@@ -18,7 +20,7 @@ Todo lo que necesitas para gestionar las finanzas de tu empresa en Etendo: cuent
 
     ---
 
-    Descubre qué gestiona la sección Finanzas: cuentas, extractos, conciliación, pagos y cobros, y activos y amortización.
+    Descubre qué gestiona la sección Finanzas: plan de cuentas, centros de costos, calendario contable, asientos manuales, y activos y amortización.
 
     [:octicons-arrow-right-24: Leer más](que-es-finanzas/que-es-finanzas.md)
 
@@ -26,105 +28,9 @@ Todo lo que necesitas para gestionar las finanzas de tu empresa en Etendo: cuent
 
     ---
 
-    Consulta las definiciones de los términos que vas a encontrar en Cuentas, Cobro, Pago, Activos y Amortización.
+    Consulta las definiciones de los términos que vas a encontrar en Finanzas, Activos y Amortización.
 
     [:octicons-arrow-right-24: Leer más](glosario-de-finanzas/glosario-de-finanzas.md)
-
-</div>
-
-## Gestión de cuentas
-
-<div class="grid cards" markdown>
-
--   :material-bank-plus:{ .lg .middle } **Añadir y configurar un banco, tarjeta o caja**
-
-    ---
-
-    Da de alta una cuenta (banco, tarjeta o caja) con o sin conexión automática, y completa su configuración.
-
-    [:octicons-arrow-right-24: Leer más](como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja.md)
-
--   :material-bank-transfer:{ .lg .middle } **Conectar, desconectar, desactivar o reactivar una cuenta**
-
-    ---
-
-    Gestiona el ciclo de vida completo de una cuenta bancaria dentro de Etendo.
-
-    [:octicons-arrow-right-24: Leer más](como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria.md)
-
--   :material-cash-register:{ .lg .middle } **Gestionar caja y movimientos en efectivo**
-
-    ---
-
-    Registra y consulta los movimientos en efectivo asociados a tus cajas.
-
-    [:octicons-arrow-right-24: Leer más](como-gestionar-caja-y-movimientos-en-efectivo/como-gestionar-caja-y-movimientos-en-efectivo.md)
-
-</div>
-
-## Pagos y cobros
-
-<div class="grid cards" markdown>
-
--   :material-cash-multiple:{ .lg .middle } **Gestionar pagos y cobros**
-
-    ---
-
-    Registra, ejecuta y da seguimiento a los pagos a proveedores y los cobros de clientes.
-
-    [:octicons-arrow-right-24: Leer más](como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md)
-
-</div>
-
-## Extracto bancario
-
-<div class="grid cards" markdown>
-
--   :material-file-download-outline:{ .lg .middle } **Importar o descargar el extracto bancario**
-
-    ---
-
-    Incorpora el extracto de tu banco a Etendo o descárgalo para tu propio registro.
-
-    [:octicons-arrow-right-24: Leer más](como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario.md)
-
--   :material-delete-outline:{ .lg .middle } **Borrar un extracto o un movimiento**
-
-    ---
-
-    Elimina un extracto importado por error o duplicado, o un movimiento de la cuenta.
-
-    [:octicons-arrow-right-24: Leer más](como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario.md)
-
-</div>
-
-## Conciliación bancaria
-
-<div class="grid cards" markdown>
-
--   :material-swap-horizontal:{ .lg .middle } **¿Qué es la conciliación bancaria en Etendo ?**
-
-    ---
-
-    Entiende para qué sirve conciliar tus cuentas y qué documentos intervienen en el proceso.
-
-    [:octicons-arrow-right-24: Leer más](que-es-la-conciliacion-bancaria-en-etendo/que-es-la-conciliacion-bancaria-en-etendo.md)
-
--   :material-check-decagram-outline:{ .lg .middle } **Conciliar o desconciliar movimientos contra documentos**
-
-    ---
-
-    Vincula cada movimiento bancario con el documento que le corresponde, o revierte esa vinculación.
-
-    [:octicons-arrow-right-24: Leer más](como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md)
-
--   :material-cog-sync-outline:{ .lg .middle } **Configurar reglas para automatizar la conciliación**
-
-    ---
-
-    Define reglas de coincidencia para que Etendo proponga conciliaciones automáticamente.
-
-    [:octicons-arrow-right-24: Leer más](como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria.md)
 
 </div>
 

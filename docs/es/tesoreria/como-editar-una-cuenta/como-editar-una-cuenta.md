@@ -1,7 +1,7 @@
 ---
 tags:
     - Cuentas
-    - Finanzas
+    - Tesorería
     - Editar cuenta
 description: Aprende a modificar el nombre, los datos bancarios y la configuración de conciliación de cualquier cuenta desde la sección Cuentas de Etendo.
 ---
@@ -12,7 +12,7 @@ Desde la sección **Cuentas** puedes actualizar en cualquier momento el nombre, 
 
 ## Abrir la ventana de edición
 
-1. Ve a **[Finanzas > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}**.
+1. Ve a **[Tesorería > Cuentas](https://app.etendo.ai/financial-account){target="_blank"}**.
 2. Localiza la cuenta que quieres modificar.
 3. Haz clic en **Editar cuenta** al final de la fila.
 
