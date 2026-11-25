@@ -1,4 +1,8 @@
 ---
+title: Crear y ejecutar un plan de amortización
+description: >-
+    Genera en Etendo el plan de amortización de un activo y lleva a tu
+    contabilidad la amortización de cada mes o de cada año.
 tags:
     - Activos
     - Amortización
@@ -8,73 +12,65 @@ tags:
 
 # Crear y ejecutar un plan de amortización
 
-Al pulsar **Crear amortización** en un activo, Etendo genera su **plan de amortización**: una línea por período. Cada línea, a su vez, queda agrupada en un registro de **Amortización** junto con las de los demás activos que comparten esa misma fecha — por mes si la periodicidad es *Mensual*, por año si es *Anual* o *Porcentaje* (que siempre amortiza por año). Por eso **[Finanzas > Amortización](https://app.etendo.ai/amortization){target="_blank"}** lista un registro por período, no uno por activo, y estos registros no se crean a mano: solo se generan desde el activo.
+El **plan de amortización** reparte el valor de un activo en cuotas, una por mes o por año. Etendo agrupa las cuotas de todos tus activos con la misma fecha en un registro de **Amortización**: ese registro es el que confirmas para que el gasto entre en tu contabilidad.
 
-Este artículo cubre ambos pasos: generar el plan de amortización desde un activo, y ejecutar, confirmar y contabilizar el registro de Amortización que agrupa sus períodos.
+- El activo tiene que tener activado **Amortizar** y completa la **Fecha de inicio de amortización**. Consulta [Apuntar un activo](../como-apuntar-un-activo/como-apuntar-un-activo.md).
 
-## Generar el plan de amortización
-
-!!! info "Prerrequisitos"
-    Antes de generar el plan, el activo debe tener:
-
-    - El interruptor **Amortizar** activado.
-    - El **Tipo de amortización** y el **Tipo de cálculo** completos.
-    - La **Fecha inicio** definida — sin esta fecha el plan no puede crearse.
-
-    Consulta [Apuntar un activo](../como-apuntar-un-activo/como-apuntar-un-activo.md) para el detalle de estos campos o si todavía no registraste el activo.
-
-1. Ve a **[Finanzas > Activos](https://app.etendo.ai/assets){target="_blank"}** y abre el activo para el que quieres generar el plan.
-2. Verifica que el interruptor **Amortizar** esté activado y que **Fecha inicio** esté completa.
-3. Confirma el **Tipo de cálculo**:
-    - Si es *Porcentaje*, revisa el **% Amortización anual**.
-    - Si es *Tiempo*, revisa **Amortizar** (Mensual o Anual) y **Vida útil**.
-4. Pulsa **Guardar** si hiciste cambios.
-5. Pulsa **Crear amortización**.
-
-    <figure markdown="span">
-    ![Formulario de Activo con el botón Crear amortización disponible](assets/como-crear-y-ejecutar-un-plan-de-amortizacion-3.png)
-    <figcaption>El botón Crear amortización aparece en la barra de acciones una vez que Amortizar está activado y Fecha inicio está completa.</figcaption>
-    </figure>
-
-6. El sistema genera las líneas del plan en la pestaña **Plan de amortización**, una por período, y las agrupa en su registro de Amortización correspondiente.
-
-    <figure markdown="span">
-    ![Plan de amortización generado en el activo](assets/como-crear-y-ejecutar-un-plan-de-amortizacion-4.png)
-    <figcaption>Pestaña Plan de amortización del activo, con una línea por período.</figcaption>
-    </figure>
-
-    !!! tip "Revisar el plan generado"
-        Cada línea del plan muestra el **Período**, el **Porcentaje**, el **Importe** y el **Estado**: **Pendiente** o **Confirmado**. Un clic en el período abre su registro de Amortización.
-
-## Ejecutar una amortización
-
-Abre el registro desde el período correspondiente en el **Plan de amortización** del activo, o búscalo en **[Finanzas > Amortización](https://app.etendo.ai/amortization){target="_blank"}**.
+## Generar el plan desde el activo
 
 <figure markdown="span">
-  ![Vista lista de Amortización](assets/como-crear-y-ejecutar-un-plan-de-amortizacion-1.png)
-  <figcaption>Vista lista de Amortización, con un registro por período. Nombre en formato MM-YYYY o YYYY según periodicidad.</figcaption>
+  ![Ficha del activo Portátil del equipo comercial con el botón Recalcular amortización resaltado y la pestaña Plan de amortización debajo](assets/como-crear-y-ejecutar-un-plan-de-amortizacion-3.png)
+  <figcaption>Activo con su plan de amortización generado.</figcaption>
 </figure>
 
-El filtro **Todos los estados** distingue **Procesado** de **Borrador**; **Contabilizado** es una columna aparte, independiente de ese estado. Usa **Filtros** para acotar la lista por cualquier campo.
+1. En el menú lateral, dentro de **Finanzas**, haz clic en **[Activos](https://app.etendo.ai/assets){target="_blank"}** y abre el activo.
+2. Revisa el **Tipo de cálculo**:
+    - Con **Tiempo**: revisa **Amortizar** (**Mensual** o **Anual**) y la vida útil.
+    - Con **Porcentaje**: revisa **% Amortización anual**. Con este cálculo se genera una cuota al año.
+3. Si cambiaste algo, haz clic en **Guardar**.
+4. Haz clic en **Crear amortización**. Etendo genera las cuotas en la pestaña **Plan de amortización**, con las columnas **Período**, **Porcentaje**, **Importe** y **Estado**.
+
+    <figure markdown="span">
+      ![Pestaña Plan de amortización con las cuotas de octubre en estado Confirmado y las de noviembre en adelante en estado Pendiente](assets/como-crear-y-ejecutar-un-plan-de-amortizacion-4.png)
+      <figcaption>Cuotas confirmadas hasta octubre y pendientes desde noviembre.</figcaption>
+    </figure>
+
+Cada cuota está **Pendiente** hasta que confirmas su registro de Amortización, y pasa a **Confirmado** después. A partir de ahora el botón se llama **Recalcular amortización**: úsalo si cambias el valor, el ritmo o las fechas del activo.
+
+## Ejecutar la amortización de un período
 
 <figure markdown="span">
-  ![Registro de Amortización en Borrador, con el botón Confirmar disponible](assets/como-crear-y-ejecutar-un-plan-de-amortizacion-2.png)
-  <figcaption>Registro de Amortización en Borrador. Nombre, Fecha contable y Moneda los completa el sistema.</figcaption>
+  ![Lista de la ventana Amortización con registros mensuales como 31-10-2026 en estado Procesado y Contabilizado, y 30-11-2026 y 2026 en Borrador y Sin contabilizar](assets/como-crear-y-ejecutar-un-plan-de-amortizacion-1.png)
+  <figcaption>Lista de amortizaciones: un registro por mes o por año.</figcaption>
 </figure>
 
-1. **Revisa las líneas**: cada una es un activo del grupo, con su **% Amortización** e **Importe amortización**. Las dimensiones contables se propagan automáticamente desde el activo, pero puedes sobrescribirlas con **+ Añadir dimensiones**.
-2. **Confirma**: pulsa **Confirmar**. El registro pasa a **Procesado** (requiere que el período contable esté abierto) y las líneas de plan de cada activo pasan a **Confirmado**.
-3. **Contabiliza**: usa **Contabilizar** (⋮) para generar los asientos. El registro pasa a **Contabilizado**.
-4. **Corrige si hace falta**: **Reactivar** (⋮) devuelve el registro a Borrador y Sin contabilizar en un solo paso.
+Los registros de **Amortización** no se crean desde la lista: salen del plan de cada activo. Los mensuales se llaman con la fecha del período, por ejemplo `31-10-2026`, y los anuales con el año, por ejemplo `2026`.
 
-Consulta el [Glosario de Finanzas](../glosario-de-finanzas/glosario-de-finanzas.md) para el detalle de cada estado.
+1. En el menú lateral, dentro de **Finanzas**, haz clic en **[Amortización](https://app.etendo.ai/amortization){target="_blank"}**.
+2. Abre el registro del período. Muestra las etiquetas **Borrador** y **Sin contabilizar**.
 
----
+    <figure markdown="span">
+      ![Registro de Amortización 30-11-2026 en Borrador y Sin contabilizar, con dos líneas y el botón Confirmar resaltado](assets/como-crear-y-ejecutar-un-plan-de-amortizacion-2.png)
+      <figcaption>Registro en borrador, listo para confirmar.</figcaption>
+    </figure>
+
+3. Revisa la pestaña **Líneas**: hay una por activo, con su **% Amortización** y su **Importe amortización**, y abajo la **Amortización total**.
+4. Haz clic en **Confirmar**. El registro pasa a **Procesado** y las cuotas de cada activo pasan a **Confirmado**.
+
+El registro tiene que contabilizarse para que el gasto llegue a tu contabilidad, y entonces muestra **Contabilizado**. Si sigue como **Sin contabilizar**, puedes contabilizarlo desde **[Finanzas > Documentos no contabilizados](../como-revisar-los-documentos-no-contabilizados/como-revisar-los-documentos-no-contabilizados.md)**.
+
+## Corregir una amortización
+
+En un registro **Procesado**, el menú **⋮** ofrece **Reactivar**: haz clic en él para volver a editar el registro. Cuando termines, vuelve a confirmarlo.
+
+!!! info "Para tu asesor"
+    - Las cuentas de la amortización salen de la pestaña **Contabilidad** de la [categoría de activo](../como-configurar-las-categorias-de-activo/como-configurar-las-categorias-de-activo.md): **Amortización** (por ejemplo, `68100000`) y **Amortización acumulada** (por ejemplo, `28170000`).
+    - Para confirmar el registro, su período tiene que estar abierto en el calendario contable.
 
 ## Artículos Relacionados
 
 - [Apuntar un activo](../como-apuntar-un-activo/como-apuntar-un-activo.md)
-- [Activos: referencia de campos](../referencia-de-campos-de-activo/referencia-de-campos-de-activo.md)
+- [Cómo configurar las categorías de activo](../como-configurar-las-categorias-de-activo/como-configurar-las-categorias-de-activo.md)
 - [Glosario de Finanzas](../glosario-de-finanzas/glosario-de-finanzas.md)
 
 ---
