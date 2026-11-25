@@ -150,6 +150,8 @@ plugins:
                 - Contabilidad:
                     - Gestionar tu plan de cuentas: finanzas/gestionar-tu-plan-de-cuentas/gestionar-tu-plan-de-cuentas.md
                     - Cómo configurar los centros de costos: finanzas/como-configurar-los-centros-de-costos/como-configurar-los-centros-de-costos.md
+                    - Cómo crear un proyecto: finanzas/como-crear-un-proyecto/como-crear-un-proyecto.md
+                    - Cómo revisar el esquema contable: finanzas/como-revisar-el-esquema-contable/como-revisar-el-esquema-contable.md
                     - Cómo gestionar el calendario contable: finanzas/como-gestionar-el-calendario-contable/como-gestionar-el-calendario-contable.md
                     - Cómo registrar un asiento manual: finanzas/como-registrar-un-asiento-manual/como-registrar-un-asiento-manual.md
                     - Cómo revisar los documentos no contabilizados: finanzas/como-revisar-los-documentos-no-contabilizados/como-revisar-los-documentos-no-contabilizados.md
