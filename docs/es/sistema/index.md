@@ -30,6 +30,14 @@ Todo lo que necesitas para configurar y mantener al día los datos generales de 
 
     [:octicons-arrow-right-24: Leer más](configuracion/como-configurar-las-categorias-de-contacto/como-configurar-las-categorias-de-contacto.md)
 
+-   :material-cog-sync-outline:{ .lg .middle } **Cómo revisar el proceso contable**
+
+    ---
+
+    Consulta cuándo se contabilizaron tus documentos por última vez y lanza la contabilización al momento.
+
+    [:octicons-arrow-right-24: Leer más](configuracion/como-revisar-el-proceso-contable/como-revisar-el-proceso-contable.md)
+
 </div>
 
 ## Roles y usuarios
