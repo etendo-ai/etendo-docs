@@ -6,7 +6,6 @@ description: >-
 tags:
   - Ventas
   - Comercial
-  - Gestión Documental
   - Etendo
 ---
 

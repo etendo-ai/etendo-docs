@@ -7,7 +7,6 @@ tags:
   - Factura de Venta
   - Ventas
   - Comercial
-  - Gestión Documental
   - Etendo
 ---
 

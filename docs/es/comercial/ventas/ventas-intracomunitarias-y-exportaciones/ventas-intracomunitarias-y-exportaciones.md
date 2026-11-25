@@ -1,5 +1,6 @@
 ---
 title: Ventas intracomunitarias y exportaciones
+status: new
 description: >-
   Aprende a facturar a clientes de otros países: cómo preparar su ficha,
   qué impuesto aplica Etendo a cada línea y qué añadir en la factura.

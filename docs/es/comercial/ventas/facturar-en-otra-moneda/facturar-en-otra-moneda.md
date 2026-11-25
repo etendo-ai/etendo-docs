@@ -1,5 +1,6 @@
 ---
 title: Facturar en otra moneda
+status: new
 description: >-
   Aprende a emitir presupuestos, pedidos y facturas de venta en una moneda
   distinta de la de tu empresa, revisar el tipo de cambio y cobrarlas.

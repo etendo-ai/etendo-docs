@@ -7,7 +7,6 @@ tags:
     - Albarán de Venta
     - Ventas
     - Comercial
-    - Gestión Documental
     - Etendo
 ---
 

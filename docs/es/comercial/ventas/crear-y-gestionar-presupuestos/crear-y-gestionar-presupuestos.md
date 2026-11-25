@@ -7,7 +7,6 @@ tags:
     - Presupuesto de Venta
     - Ventas
     - Comercial
-    - Gestión Documental
     - Etendo
 ---
 

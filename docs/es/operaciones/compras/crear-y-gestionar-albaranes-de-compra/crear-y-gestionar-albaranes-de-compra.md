@@ -7,7 +7,6 @@ tags:
   - Albarán de Compra
   - Compras
   - Operaciones
-  - Gestión Documental
   - Etendo
 ---
 

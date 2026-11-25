@@ -7,7 +7,6 @@ tags:
     - Pedido de Venta
     - Ventas
     - Comercial
-    - Gestión Documental
     - Etendo
 ---
 
