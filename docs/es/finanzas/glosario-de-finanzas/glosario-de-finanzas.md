@@ -53,7 +53,7 @@ Acción que revierte la contabilización de un documento ya **Contabilizado**. D
 
 ## Dimensiones contables
 
-Campos opcionales para asociar un registro a un eje de análisis: **Proyecto**, **Centro de costo**, **Contacto** o **Producto**. Se usan en activos, líneas de amortización, movimientos, pagos y cobros. No afectan el saldo ni la conciliación, solo permiten filtrar y analizar tus registros por ese eje. Qué dimensiones están disponibles depende de cada formulario.
+Campos opcionales para asociar un registro a un eje de análisis: **Proyecto**, **Centro de costos**, **Contacto** o **Producto**. Se usan en activos, líneas de amortización, movimientos, pagos y cobros. No afectan el saldo ni la conciliación, solo permiten filtrar y analizar tus registros por ese eje. Qué dimensiones están disponibles depende de cada formulario. Las dimensiones **Proyecto** y **Centro de costos** se activan en **Finanzas > Esquema contable**, pestaña **Dimensiones**. Ver [Cómo revisar el esquema contable](../como-revisar-el-esquema-contable/como-revisar-el-esquema-contable.md).
 
 ## Factura Rectificativa
 
@@ -61,7 +61,7 @@ Factura que corrige el importe de otra factura ya confirmada, por ejemplo por un
 
 ## Plan de amortización
 
-Conjunto de líneas generadas al pulsar **Crear amortización** desde un activo, una por período, con su porcentaje e importe. Vive en la pestaña **Plan de amortización** del formulario de Activo.
+Conjunto de líneas generadas al hacer clic en **Crear amortización** desde un activo, una por período, con su porcentaje e importe. Vive en la pestaña **Plan de amortización** del formulario de Activo. Después de generarlo, el botón pasa a llamarse **Recalcular amortización**. Ver [Crear y ejecutar un plan de amortización](../como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion.md).
 
 ## Procesado
 
