@@ -31,6 +31,12 @@ A medida que tu equipo crece, esto te permite delegar tareas sin exponer informa
   <figcaption>Ventana Roles (Configuración > Roles), con el detalle de acceso de cada rol.</figcaption>
 </figure>
 
+En la ventana **[Roles](https://app.etendo.ai/roles){target="_blank"}**, las tarjetas de arriba muestran cuántos usuarios tiene cada rol. Debajo, la tabla indica qué puede hacer cada rol en cada ventana:
+
+- **✓** — acceso completo: puede ver y editar.
+- **Solo lectura** — puede ver la ventana, pero no editarla.
+- **—** — no ve esa ventana.
+
 - **Rol** — agrupa un conjunto de permisos: qué secciones ve un usuario y con qué nivel de acceso cuenta en cada una.
 - **Roles predefinidos** — Etendo ofrece cinco: Administrador, Ventas, Compras, Finanzas e Inventario, cada uno con acceso a un conjunto distinto de ventanas. Consulta el detalle completo en el [Glosario de Roles y usuarios](../glosario-de-roles-y-usuarios/glosario-de-roles-y-usuarios.md#acceso-por-rol).
 - **Combinar roles** — Administrador es excluyente: un usuario con ese rol no puede tener ningún otro a la vez. Los otros cuatro sí se pueden combinar entre sí en un mismo usuario, por ejemplo Ventas y Finanzas juntos, para reflejar a alguien que cumple ambas funciones en tu equipo.
