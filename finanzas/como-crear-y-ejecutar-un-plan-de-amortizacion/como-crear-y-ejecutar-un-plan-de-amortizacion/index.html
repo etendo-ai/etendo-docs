@@ -3,6 +3,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Genera en Etendo el plan de amortización de un activo y lleva a tu contabilidad la amortización de cada mes o de cada año.">
+      
       
       
         <link rel="canonical" href="https://help.etendo.ai/finanzas/como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion/">
@@ -59,6 +61,7 @@
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="Crear y ejecutar un plan de amortización - Etendo Academy">
+<meta property="og:description" content="Genera en Etendo el plan de amortización de un activo y lleva a tu contabilidad la amortización de cada mes o de cada año.">
 <meta property="og:image" content="https://help.etendo.ai/assets/images/social/finanzas/como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
@@ -66,6 +69,7 @@
 <meta property="og:url" content="https://help.etendo.ai/finanzas/como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion/">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:title" content="Crear y ejecutar un plan de amortización - Etendo Academy">
+<meta property="twitter:description" content="Genera en Etendo el plan de amortización de un activo y lleva a tu contabilidad la amortización de cada mes o de cada año.">
 <meta property="twitter:image" content="https://help.etendo.ai/assets/images/social/finanzas/como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion.png">
 <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
@@ -4257,10 +4261,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#generar-el-plan-de-amortizacion" class="md-nav__link">
+  <a href="#generar-el-plan-desde-el-activo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Generar el plan de amortización
+        Generar el plan desde el activo
       
     </span>
   </a>
@@ -4268,10 +4272,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejecutar-una-amortizacion" class="md-nav__link">
+  <a href="#ejecutar-la-amortizacion-de-un-periodo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ejecutar una amortización
+        Ejecutar la amortización de un período
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corregir-una-amortizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Corregir una amortización
       
     </span>
   </a>
@@ -5032,10 +5047,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#generar-el-plan-de-amortizacion" class="md-nav__link">
+  <a href="#generar-el-plan-desde-el-activo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Generar el plan de amortización
+        Generar el plan desde el activo
       
     </span>
   </a>
@@ -5043,10 +5058,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejecutar-una-amortizacion" class="md-nav__link">
+  <a href="#ejecutar-la-amortizacion-de-un-periodo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ejecutar una amortización
+        Ejecutar la amortización de un período
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corregir-una-amortizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Corregir una amortización
       
     </span>
   </a>
@@ -5183,72 +5209,68 @@
 
 
 <h1 id="crear-y-ejecutar-un-plan-de-amortizacion">Crear y ejecutar un plan de amortización<a class="headerlink" href="#crear-y-ejecutar-un-plan-de-amortizacion" title="Permanent link">¶</a></h1>
-<p>Al pulsar <strong>Crear amortización</strong> en un activo, Etendo genera su <strong>plan de amortización</strong>: una línea por período. Cada línea, a su vez, queda agrupada en un registro de <strong>Amortización</strong> junto con las de los demás activos que comparten esa misma fecha — por mes si la periodicidad es <em>Mensual</em>, por año si es <em>Anual</em> o <em>Porcentaje</em> (que siempre amortiza por año). Por eso <strong><a href="https://app.etendo.ai/amortization" target="_blank">Finanzas &gt; Amortización</a></strong> lista un registro por período, no uno por activo, y estos registros no se crean a mano: solo se generan desde el activo.</p>
-<p>Este artículo cubre ambos pasos: generar el plan de amortización desde un activo, y ejecutar, confirmar y contabilizar el registro de Amortización que agrupa sus períodos.</p>
-<h2 id="generar-el-plan-de-amortizacion">Generar el plan de amortización<a class="headerlink" href="#generar-el-plan-de-amortizacion" title="Permanent link">¶</a></h2>
-<div class="admonition info">
-<p class="admonition-title">Prerrequisitos</p>
-<p>Antes de generar el plan, el activo debe tener:</p>
+<p>El <strong>plan de amortización</strong> reparte el valor de un activo en cuotas, una por mes o por año. Etendo agrupa las cuotas de todos tus activos con la misma fecha en un registro de <strong>Amortización</strong>: ese registro es el que confirmas para que el gasto entre en tu contabilidad.</p>
 <ul>
-<li>El interruptor <strong>Amortizar</strong> activado.</li>
-<li>El <strong>Tipo de amortización</strong> y el <strong>Tipo de cálculo</strong> completos.</li>
-<li>La <strong>Fecha inicio</strong> definida — sin esta fecha el plan no puede crearse.</li>
+<li>El activo tiene que tener activado <strong>Amortizar</strong> y completa la <strong>Fecha de inicio de amortización</strong>. Consulta <a href="../../como-apuntar-un-activo/como-apuntar-un-activo/">Apuntar un activo</a>.</li>
 </ul>
-<p>Consulta <a href="../../como-apuntar-un-activo/como-apuntar-un-activo/">Apuntar un activo</a> para el detalle de estos campos o si todavía no registraste el activo.</p>
-</div>
+<h2 id="generar-el-plan-desde-el-activo">Generar el plan desde el activo<a class="headerlink" href="#generar-el-plan-desde-el-activo" title="Permanent link">¶</a></h2>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-3.png" data-desc-position="bottom"><img alt="Ficha del activo Portátil del equipo comercial con el botón Recalcular amortización resaltado y la pestaña Plan de amortización debajo" src="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-3.png"></a>
+<br>
+<figcaption>Activo con su plan de amortización generado.</figcaption>
+</figure>
 <ol>
-<li>Ve a <strong><a href="https://app.etendo.ai/assets" target="_blank">Finanzas &gt; Activos</a></strong> y abre el activo para el que quieres generar el plan.</li>
-<li>Verifica que el interruptor <strong>Amortizar</strong> esté activado y que <strong>Fecha inicio</strong> esté completa.</li>
-<li>Confirma el <strong>Tipo de cálculo</strong>:<ul>
-<li>Si es <em>Porcentaje</em>, revisa el <strong>% Amortización anual</strong>.</li>
-<li>Si es <em>Tiempo</em>, revisa <strong>Amortizar</strong> (Mensual o Anual) y <strong>Vida útil</strong>.</li>
+<li>En el menú lateral, dentro de <strong>Finanzas</strong>, haz clic en <strong><a href="https://app.etendo.ai/assets" target="_blank">Activos</a></strong> y abre el activo.</li>
+<li>Revisa el <strong>Tipo de cálculo</strong>:<ul>
+<li>Con <strong>Tiempo</strong>: revisa <strong>Amortizar</strong> (<strong>Mensual</strong> o <strong>Anual</strong>) y la vida útil.</li>
+<li>Con <strong>Porcentaje</strong>: revisa <strong>% Amortización anual</strong>. Con este cálculo se genera una cuota al año.</li>
 </ul>
 </li>
-<li>Pulsa <strong>Guardar</strong> si hiciste cambios.</li>
+<li>Si cambiaste algo, haz clic en <strong>Guardar</strong>.</li>
 <li>
-<p>Pulsa <strong>Crear amortización</strong>.</p>
+<p>Haz clic en <strong>Crear amortización</strong>. Etendo genera las cuotas en la pestaña <strong>Plan de amortización</strong>, con las columnas <strong>Período</strong>, <strong>Porcentaje</strong>, <strong>Importe</strong> y <strong>Estado</strong>.</p>
 <p></p><figure markdown="span">
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-3.png" data-desc-position="bottom"><img alt="Formulario de Activo con el botón Crear amortización disponible" src="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-3.png"></a>
-<figcaption>El botón Crear amortización aparece en la barra de acciones una vez que Amortizar está activado y Fecha inicio está completa.</figcaption>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-4.png" data-desc-position="bottom"><img alt="Pestaña Plan de amortización con las cuotas de octubre en estado Confirmado y las de noviembre en adelante en estado Pendiente" src="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-4.png"></a>
+  <figcaption>Cuotas confirmadas hasta octubre y pendientes desde noviembre.</figcaption>
+</figure><p></p>
+</li>
+</ol>
+<p>Cada cuota está <strong>Pendiente</strong> hasta que confirmas su registro de Amortización, y pasa a <strong>Confirmado</strong> después. A partir de ahora el botón se llama <strong>Recalcular amortización</strong>: úsalo si cambias el valor, el ritmo o las fechas del activo.</p>
+<h2 id="ejecutar-la-amortizacion-de-un-periodo">Ejecutar la amortización de un período<a class="headerlink" href="#ejecutar-la-amortizacion-de-un-periodo" title="Permanent link">¶</a></h2>
+<figure>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-1.png" data-desc-position="bottom"><img alt="Lista de la ventana Amortización con registros mensuales como 31-10-2026 en estado Procesado y Contabilizado, y 30-11-2026 y 2026 en Borrador y Sin contabilizar" src="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-1.png"></a>
+<br>
+<figcaption>Lista de amortizaciones: un registro por mes o por año.</figcaption>
+</figure>
+<p>Los registros de <strong>Amortización</strong> no se crean desde la lista: salen del plan de cada activo. Los mensuales se llaman con la fecha del período, por ejemplo <code>31-10-2026</code>, y los anuales con el año, por ejemplo <code>2026</code>.</p>
+<ol>
+<li>En el menú lateral, dentro de <strong>Finanzas</strong>, haz clic en <strong><a href="https://app.etendo.ai/amortization" target="_blank">Amortización</a></strong>.</li>
+<li>
+<p>Abre el registro del período. Muestra las etiquetas <strong>Borrador</strong> y <strong>Sin contabilizar</strong>.</p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-2.png" data-desc-position="bottom"><img alt="Registro de Amortización 30-11-2026 en Borrador y Sin contabilizar, con dos líneas y el botón Confirmar resaltado" src="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-2.png"></a>
+  <figcaption>Registro en borrador, listo para confirmar.</figcaption>
 </figure><p></p>
 </li>
 <li>
-<p>El sistema genera las líneas del plan en la pestaña <strong>Plan de amortización</strong>, una por período, y las agrupa en su registro de Amortización correspondiente.</p>
-<p></p><figure markdown="span">
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-4.png" data-desc-position="bottom"><img alt="Plan de amortización generado en el activo" src="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-4.png"></a>
-<figcaption>Pestaña Plan de amortización del activo, con una línea por período.</figcaption>
-</figure><p></p>
-<div class="admonition tip">
-<p class="admonition-title">Revisar el plan generado</p>
-<p>Cada línea del plan muestra el <strong>Período</strong>, el <strong>Porcentaje</strong>, el <strong>Importe</strong> y el <strong>Estado</strong>: <strong>Pendiente</strong> o <strong>Confirmado</strong>. Un clic en el período abre su registro de Amortización.</p>
-</div>
+<p>Revisa la pestaña <strong>Líneas</strong>: hay una por activo, con su <strong>% Amortización</strong> y su <strong>Importe amortización</strong>, y abajo la <strong>Amortización total</strong>.</p>
 </li>
+<li>Haz clic en <strong>Confirmar</strong>. El registro pasa a <strong>Procesado</strong> y las cuotas de cada activo pasan a <strong>Confirmado</strong>.</li>
 </ol>
-<h2 id="ejecutar-una-amortizacion">Ejecutar una amortización<a class="headerlink" href="#ejecutar-una-amortizacion" title="Permanent link">¶</a></h2>
-<p>Abre el registro desde el período correspondiente en el <strong>Plan de amortización</strong> del activo, o búscalo en <strong><a href="https://app.etendo.ai/amortization" target="_blank">Finanzas &gt; Amortización</a></strong>.</p>
-<figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-1.png" data-desc-position="bottom"><img alt="Vista lista de Amortización" src="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-1.png"></a>
-<br>
-<figcaption>Vista lista de Amortización, con un registro por período. Nombre en formato MM-YYYY o YYYY según periodicidad.</figcaption>
-</figure>
-<p>El filtro <strong>Todos los estados</strong> distingue <strong>Procesado</strong> de <strong>Borrador</strong>; <strong>Contabilizado</strong> es una columna aparte, independiente de ese estado. Usa <strong>Filtros</strong> para acotar la lista por cualquier campo.</p>
-<figure>
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-2.png" data-desc-position="bottom"><img alt="Registro de Amortización en Borrador, con el botón Confirmar disponible" src="../assets/como-crear-y-ejecutar-un-plan-de-amortizacion-2.png"></a>
-<br>
-<figcaption>Registro de Amortización en Borrador. Nombre, Fecha contable y Moneda los completa el sistema.</figcaption>
-</figure>
-<ol>
-<li><strong>Revisa las líneas</strong>: cada una es un activo del grupo, con su <strong>% Amortización</strong> e <strong>Importe amortización</strong>. Las dimensiones contables se propagan automáticamente desde el activo, pero puedes sobrescribirlas con <strong>+ Añadir dimensiones</strong>.</li>
-<li><strong>Confirma</strong>: pulsa <strong>Confirmar</strong>. El registro pasa a <strong>Procesado</strong> (requiere que el período contable esté abierto) y las líneas de plan de cada activo pasan a <strong>Confirmado</strong>.</li>
-<li><strong>Contabiliza</strong>: usa <strong>Contabilizar</strong> (⋮) para generar los asientos. El registro pasa a <strong>Contabilizado</strong>.</li>
-<li><strong>Corrige si hace falta</strong>: <strong>Reactivar</strong> (⋮) devuelve el registro a Borrador y Sin contabilizar en un solo paso.</li>
-</ol>
-<p>Consulta el <a href="../../glosario-de-finanzas/glosario-de-finanzas/">Glosario de Finanzas</a> para el detalle de cada estado.</p>
-<hr>
+<p>El registro tiene que contabilizarse para que el gasto llegue a tu contabilidad, y entonces muestra <strong>Contabilizado</strong>. Si sigue como <strong>Sin contabilizar</strong>, puedes contabilizarlo desde <strong><a href="../../como-revisar-los-documentos-no-contabilizados/como-revisar-los-documentos-no-contabilizados/">Finanzas &gt; Documentos no contabilizados</a></strong>.</p>
+<h2 id="corregir-una-amortizacion">Corregir una amortización<a class="headerlink" href="#corregir-una-amortizacion" title="Permanent link">¶</a></h2>
+<p>En un registro <strong>Procesado</strong>, el menú <strong>⋮</strong> ofrece <strong>Reactivar</strong>: haz clic en él para volver a editar el registro. Cuando termines, vuelve a confirmarlo.</p>
+<div class="admonition info">
+<p class="admonition-title">Para tu asesor</p>
+<ul>
+<li>Las cuentas de la amortización salen de la pestaña <strong>Contabilidad</strong> de la <a href="../../como-configurar-las-categorias-de-activo/como-configurar-las-categorias-de-activo/">categoría de activo</a>: <strong>Amortización</strong> (por ejemplo, <code>68100000</code>) y <strong>Amortización acumulada</strong> (por ejemplo, <code>28170000</code>).</li>
+<li>Para confirmar el registro, su período tiene que estar abierto en el calendario contable.</li>
+</ul>
+</div>
 <h2 id="articulos-relacionados">Artículos Relacionados<a class="headerlink" href="#articulos-relacionados" title="Permanent link">¶</a></h2>
 <ul>
 <li><a href="../../como-apuntar-un-activo/como-apuntar-un-activo/">Apuntar un activo</a></li>
-<li><a href="../../referencia-de-campos-de-activo/referencia-de-campos-de-activo/">Activos: referencia de campos</a></li>
+<li><a href="../../como-configurar-las-categorias-de-activo/como-configurar-las-categorias-de-activo/">Cómo configurar las categorías de activo</a></li>
 <li><a href="../../glosario-de-finanzas/glosario-de-finanzas/">Glosario de Finanzas</a></li>
 </ul>
 <hr>
@@ -5275,7 +5297,7 @@
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="29 de septiembre de 2026 17:35:37 UTC">29 de septiembre de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="25 de noviembre de 2026 17:13:15 UTC">25 de noviembre de 2026</span>
   </span>
 
     
@@ -5302,6 +5324,11 @@
 
     
     <nav>
+      
+        <a href="https://github.com/ramirosansebastian" class="md-author" title="@ramirosansebastian">
+          
+          <img src="https://avatars.githubusercontent.com/u/319142943?v=4&amp;size=72" alt="ramirosansebastian">
+        </a>
       
         <a href="https://github.com/isaiasb-etendo" class="md-author" title="@isaiasb-etendo">
           
