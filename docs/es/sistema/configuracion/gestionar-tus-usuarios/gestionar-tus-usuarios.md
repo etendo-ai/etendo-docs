@@ -28,15 +28,15 @@ La ventana **[Usuarios](https://app.etendo.ai/user){target="_blank"}** (Configur
 - **Nombre** y **Correo electrónico** — identifican al usuario.
 - **Activo** — interruptor que habilita o deshabilita el acceso del usuario sin eliminarlo.
 - **Invitación** — muestra **Pendiente** mientras el usuario no aceptó su invitación por correo, o **Aceptada** una vez que la aceptó.
-- **Roles** — rol asignado al usuario. Queda vacío ("—") mientras la invitación está pendiente.
+- **Roles** — rol o roles asignados al usuario. Queda vacío mientras no le asignes ninguno; puedes asignárselos aunque la invitación siga pendiente.
 - Filtro **Todos los roles**, para acotar la lista a un rol específico.
 - Botón **+ Nuevo usuario**, para invitar a alguien nuevo.
 
 ## Vista Detalle
 
 <figure markdown="span">
-  ![Ficha de un usuario con los campos Nombre, Correo electrónico y Roles asignados, y la pestaña Roles del usuario con la vista previa de permisos](assets/gestionar-tus-usuarios-2.png)
-  <figcaption>Ficha de detalle de un usuario, con sus roles y la vista previa de permisos.</figcaption>
+  ![Ficha del usuario propietario con los campos Nombre, Correo electrónico y Roles asignados, y la pestaña Roles del usuario con sus permisos de Administrador](assets/gestionar-tus-usuarios-2.png)
+  <figcaption>Ficha del usuario propietario, con el rol Administrador y su detalle de permisos.</figcaption>
 </figure>
 
 Al abrir un usuario desde la lista, accedes a su ficha con:
@@ -105,7 +105,7 @@ Para darle uno de los otros cuatro roles:
 
 #### Si el usuario ya tiene Ventas, Compras, Finanzas y/o Inventario
 
-Para ajustar la combinación:
+Para ajustar la combinación (o asignar roles a un usuario nuevo, que empieza con *Sin roles asignados*):
 
 1. En el desplegable **Roles asignados**, marca o desmarca las casillas que necesites.
 2. Revisa la vista previa de permisos en la pestaña **Roles del usuario**.
