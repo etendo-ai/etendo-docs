@@ -18,14 +18,14 @@ Desde **[Configuración > Usuarios](https://app.etendo.ai/user){target="_blank"}
 - Necesitas el rol **Administrador**: es el único que puede gestionar usuarios.
 
 <figure markdown="span">
-  ![Formulario de creación de usuario con los campos Nombre y Correo electrónico completados con datos de ejemplo](assets/como-invitar-a-un-usuario-1.png)
+  ![Formulario de un nuevo usuario con Nombre y Correo electrónico completados con datos de ejemplo y el botón Guardar resaltado](assets/como-invitar-a-un-usuario-1.png)
   <figcaption>Formulario de un nuevo usuario, con Nombre y Correo electrónico completados antes de guardar.</figcaption>
 </figure>
 
 1. En el menú lateral, abre **Configuración** y haz clic en **[Usuarios](https://app.etendo.ai/user){target="_blank"}**.
 2. Haz clic en **+ Nuevo usuario**.
-3. Completa **Nombre** y **Correo electrónico** (ambos obligatorios).
-4. Haz clic en **Guardar**.
+3. Completa **Nombre** *(obligatorio)* y **Correo electrónico** *(obligatorio)*.
+4. Haz clic en **Guardar**. Los roles se asignan después de guardar: hasta entonces, en **Roles asignados** aparece *"Guarda el usuario primero para asignar roles"*.
 
 Al guardar, Etendo crea el usuario y le envía automáticamente una invitación por correo electrónico — no hay un paso separado para "enviar la invitación". El usuario queda con la etiqueta **Invitación pendiente** hasta que la acepta, y en la lista de Usuarios su columna **Roles** aparece vacía ("—") hasta que le asignas un rol; puedes asignárselo aunque la invitación siga pendiente.
 
