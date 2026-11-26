@@ -7,6 +7,7 @@ tags:
     - Proveedores
     - Contabilidad
     - Etendo
+features: [contact-category-type]
 ---
 
 # Cómo configurar las categorías de contacto
