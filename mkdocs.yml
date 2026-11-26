@@ -140,7 +140,7 @@ plugins:
                 - Conciliación bancaria:
                     - ¿Qué es la conciliación bancaria en Etendo?: tesoreria/que-es-la-conciliacion-bancaria-en-etendo/que-es-la-conciliacion-bancaria-en-etendo.md
                     - Conciliar o desconciliar movimientos contra documentos: tesoreria/como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md
-                    - Configurar reglas para automatizar la conciliación: tesoreria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria.md
+                    - Configurar reglas de matcheo: tesoreria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria.md
                 - Condiciones de pago:
                     - Cómo configurar las condiciones de pago: tesoreria/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago.md
             - Finanzas:
