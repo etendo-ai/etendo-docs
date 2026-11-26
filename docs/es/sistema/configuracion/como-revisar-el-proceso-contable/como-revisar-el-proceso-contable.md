@@ -9,6 +9,7 @@ tags:
     - Contabilizar
     - Configuración
     - Etendo
+features: [acct-process-monitor]
 ---
 
 # Cómo revisar el proceso contable
