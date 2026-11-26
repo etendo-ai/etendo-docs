@@ -17,13 +17,29 @@ Ve a **[Inventario > Almacén](https://app.etendo.ai/warehouse){target="_blank"}
 
 - **Nombre** *(obligatorio)* — Nombre descriptivo del almacén.
 - **Identificador** *(obligatorio)* — Código único. Ej. `ALM-01`.
-- **Dirección** *(obligatorio)* — Al hacer clic se abre el modal **Ubicación**, donde completas **Primera línea**, **Segunda línea**, **Código postal**, **Ciudad**, **País** y **Región** para dar de alta la dirección del almacén.
+- **Dirección** *(obligatorio)* — Al hacer clic se abre la ventana **Dirección**. Consulta [Completa la dirección del almacén](#completa-la-direccion-del-almacen).
 - **Descripción** *(opcional)* — Observaciones internas.
 
 <figure markdown="span">
   ![Formulario de un almacén nuevo](assets/como-crear-un-almacen-1.png)
   <figcaption>Formulario de un almacén nuevo, todavía sin datos de stock.</figcaption>
 </figure>
+
+## Completa la dirección del almacén
+
+<figure markdown="span">
+  ![Ventana Dirección de un almacén con Calle, Número, Nombre del edificio, la Vista previa de la dirección, Código postal, Ciudad, País y Región](assets/como-crear-un-almacen-direccion.png)
+  <figcaption>Ventana Dirección del almacén, con la Vista previa de la dirección completada.</figcaption>
+</figure>
+
+1. Escribe la **Calle** sin el número (ej. *Calle de San Vicente Mártir*) y el **Número** en su propio campo. Si la dirección no tiene número, deja **Número** vacío: se guarda como *s/n*.
+2. Si el almacén está en un edificio o una nave con nombre, escríbelo en **Nombre del edificio** (ej. *Nave 3*).
+3. Revisa la **Vista previa de la dirección**: Etendo compone la **Primera línea** y la **Segunda línea** a partir de esos tres campos, y no se editan a mano.
+4. Completa **Código postal**, **Ciudad**, **País** y **Región**, y haz clic en **Guardar** para volver al formulario del almacén.
+
+Para el detalle de cada campo, consulta [Añadir una dirección](../../../../comercial/contactos/como-crear-un-contacto/como-crear-un-contacto.md#anadir-una-direccion).
+
+## Guarda el almacén
 
 Cuando termines de completar el formulario, haz clic en **Guardar**.
 
@@ -35,7 +51,7 @@ Cuando termines de completar el formulario, haz clic en **Guardar**.
   <figcaption>Ficha de un almacén recién guardado, todavía sin movimientos de stock.</figcaption>
 </figure>
 
-Al guardar, el almacén queda disponible para cargarle stock. Podés hacerlo de dos formas: con un recuento desde la ventana **Inventario físico**, o registrando compras a proveedores — el stock se suma al completar el albarán de compra correspondiente.
+Al guardar, el almacén queda disponible para registrar su stock. Puedes hacerlo de dos formas: con un recuento desde la ventana **Inventario físico**, o registrando compras a proveedores — el stock se suma al completar el albarán de compra correspondiente.
 
 ---
 

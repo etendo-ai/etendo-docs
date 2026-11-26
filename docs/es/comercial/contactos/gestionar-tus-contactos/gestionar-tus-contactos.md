@@ -78,11 +78,11 @@ Almacena las cuentas bancarias del contacto. Cada cuenta tiene un **Nombre**, un
 #### Dirección
 
 <figure markdown="span">
-  ![Ventana Dirección con calle, número, código postal, ciudad, país y región completados](assets/gestionar-tus-contactos-5.png)
+  ![Ventana Dirección con Calle, Número, Nombre del edificio, la Vista previa de la dirección, Código postal, Ciudad, País y Región completados](assets/gestionar-tus-contactos-5.png)
   <figcaption>Ventana Dirección de un contacto.</figcaption>
 </figure>
 
-Lista las direcciones del contacto e indica, en las columnas **Dir.envíos** y **Dir.factura**, para qué se usa cada una. Al añadir o editar una dirección se abre la ventana **Dirección**, donde completas **Calle**, **Número**, **Nombre del edificio**, **Código postal**, **Ciudad**, **País** y **Región**, y marcas si se usa para **Envíos**, para **Facturación** o para ambas. La **Vista previa de la dirección** te muestra cómo quedará escrita en los documentos.
+Lista las direcciones del contacto e indica, en las columnas **Dir.envíos** y **Dir.factura**, para qué se usa cada una. Al añadir o editar una dirección se abre la ventana **Dirección**, donde completas **Calle**, **Número**, **Nombre del edificio**, **Código postal**, **Ciudad**, **País** y **Región**, y marcas si se usa para **Envíos**, para **Facturación** o para ambas. La **Vista previa de la dirección** te muestra cómo queda escrita en los documentos. Para el detalle de cada campo, consulta [Añadir una dirección](../como-crear-un-contacto/como-crear-un-contacto.md#anadir-una-direccion).
 
 #### Contabilidad cliente y Contabilidad proveedor
 

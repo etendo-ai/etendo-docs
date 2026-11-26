@@ -38,7 +38,7 @@ Define cómo se llama y se ve tu organización dentro de Etendo y en los documen
 Es la identificación tributaria de tu organización: se imprime en cada factura y determina el sistema fiscal aplicado.
 
 !!! info "Mismos datos, otro nombre"
-    **NIF** y **Nombre comercial** son los mismos datos que completaste al [crear tu cuenta](../../../primeros-pasos/como-crear-tu-cuenta/como-crear-tu-cuenta.md#introduce-los-datos-de-tu-empresa), donde el formulario los llama **Identificación fiscal (NIF)** y **Nombre de la empresa**.
+    **NIF** y **Nombre comercial** son los mismos datos que completaste al [crear tu cuenta](../../../primeros-pasos/como-crear-tu-cuenta/como-crear-tu-cuenta.md#completa-los-datos-para-empezar-a-facturar), donde el formulario los llama **Identificación fiscal (NIF)** y **Nombre de la empresa**.
 
 ![Sección Datos fiscales de la ventana Organización](assets/como-gestionar-tu-organizacion-2.png)
 
@@ -53,10 +53,10 @@ Es la identificación tributaria de tu organización: se imprime en cada factura
 ### Editar la dirección fiscal
 
 1. Haz clic en el ícono de lápiz, junto a la dirección.
-2. Completa **Primera línea**, **Segunda línea**, **Código postal**, **Ciudad**, **País** y **Región**.
+2. Completa **Calle**, **Número**, **Nombre del edificio**, **Código postal**, **Ciudad**, **País** y **Región**. **Calle**, **Ciudad** y **País** son obligatorios; si dejas vacío el **Número**, se guarda como *s/n*. La **Vista previa de la dirección** te muestra cómo queda escrita la dirección en tus facturas. Para el detalle de cada campo, consulta [Añadir una dirección](../../../comercial/contactos/como-crear-un-contacto/como-crear-un-contacto.md#anadir-una-direccion).
 3. Haz clic en **Guardar** para confirmar la dirección y cerrar la ventana.
 
-![Formulario para editar la dirección fiscal](assets/como-gestionar-tu-organizacion-3.png)
+![Ventana Dirección de la organización con Calle, Número, Nombre del edificio, la Vista previa de la dirección, Código postal, Ciudad, País y Región](assets/como-gestionar-tu-organizacion-3.png)
 
 ## Datos de contacto
 

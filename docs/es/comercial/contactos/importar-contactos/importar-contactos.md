@@ -50,18 +50,18 @@ Si necesitas cargar varios contactos a la vez, en vez de crearlos uno por uno de
 | **Categoría de contacto** | No | Ej. *Cliente*, *Proveedor*. Define también el rol del contacto (ver [Antes de empezar](#antes-de-empezar)). Si la dejas vacía, se asigna **Cliente**. Si no existe, se crea automáticamente. |
 | **Correo electrónico**, **Teléfono**, **Página web** | No | Datos de contacto generales. |
 | Columnas **(Contacto)**: correo, nombre, apellido, teléfono y posición | No | Una persona de contacto vinculada (solapa **Persona**). |
-| Columnas **(Dirección)**: dirección, ciudad, código postal, país y región | No | Una dirección, que queda marcada como dirección de envíos y de facturación (solapa **Dirección**). |
+| Columnas **(Dirección)**: calle, número, ciudad, código postal, país y región | No | Una dirección, que queda marcada como dirección de envíos y de facturación (solapa **Dirección**). Escribe la **Calle** sin el número y el **Número** en su propia columna (ej. *Calle Mayor* y *12*). La plantilla no incluye el nombre del edificio: si lo necesitas, añádelo después desde la solapa **Dirección** del contacto. |
 
 ## Revisa la correspondencia de columnas
 
-1. Comprueba que cada columna de tu archivo esté emparejada con su campo (por ejemplo, la columna **NIF** con el campo **NIF**). Encima de la lista aparece cuántos campos se asignaron, por ejemplo "20/20 campos asignados".
+1. Comprueba que cada columna de tu archivo esté emparejada con su campo (por ejemplo, la columna **NIF** con el campo **NIF**). Encima de la lista aparece cuántos campos se asignaron, por ejemplo "21/21 campos asignados".
 2. Si alguna columna no se asignó bien, haz clic en **Editar correspondencia** y corrígela.
 
 ## Revisa las filas correctas y con errores
 
 <figure markdown="span">
-  ![Ventana Importar con la correspondencia de 20 campos y la pestaña Correctas con cuatro filas listas para importar](assets/importar-contactos-3.jpg)
-  <figcaption>Pestaña Correctas: filas validadas, listas para importar.</figcaption>
+  ![Ventana Importar con la correspondencia de 21 campos y la pestaña Correctas con cuatro filas listas para importar, desplazada hasta las columnas de dirección](assets/importar-contactos-3.jpg)
+  <figcaption>Pestaña Correctas: filas validadas, listas para importar, con las columnas Calle y Número de la dirección.</figcaption>
 </figure>
 
 <figure markdown="span">
@@ -75,7 +75,7 @@ Para cada fila de la pestaña **Errores**, elige una opción:
 
 - **Corregirla en la tabla:** escribe el dato en la celda resaltada. Al salir de la celda, la fila pasa a **Correctas**.
 - **Corregirla en tu archivo:** haz clic en **Descargar errores**, corrige esas filas y vuelve a importarlas después.
-- **Dejarla fuera:** haz clic en el icono **Omitir** (⊘) de la fila.
+- **Dejarla fuera:** haz clic en **Omitir** en la fila.
 
 !!! info "Importar solo lo que está correcto"
     No hace falta que corrijas los errores para avanzar: el botón **Importar** solo carga las filas de la pestaña **Correctas**.
