@@ -16,6 +16,28 @@ tags:
 
 El **calendario contable** organiza cada año de tu empresa en **períodos**, uno por mes. Los períodos deciden en qué meses puedes registrar contabilidad: una factura, un cobro o un pago entra en tu contabilidad solo si su fecha cae en un período abierto. Cuando cierras un mes que ya revisaste, ya no se puede registrar nada con fecha de ese mes.
 
+## Revisar el calendario en una cuenta nueva
+
+Cuando creas tu entorno productivo, Etendo te propone un calendario de enero a diciembre del año en curso, con todos los períodos en estado **Nunca abierto**. Hasta que abras alguno, no puedes completar ni contabilizar ningún documento. Revísalo desde la tarea **Revisar calendario contable** del panel **Primeros pasos**.
+
+<figure markdown="span">
+  ![Tarea Revisar calendario contable del panel Primeros pasos, con el ejercicio propuesto, los botones Confirmar, Modificar y Ver guía resaltados y el selector del inicio del ejercicio](assets/como-gestionar-el-calendario-contable-5.png)
+  <figcaption>Tarea Revisar calendario contable, con las opciones de Modificar desplegadas.</figcaption>
+</figure>
+
+1. En el panel **Primeros pasos**, haz clic en **Revisar calendario contable**. Ves el ejercicio propuesto, por ejemplo *"Ejercicio 2026: del 01/01/2026 al 31/12/2026, 12 periodos."*
+2. Elige una opción:
+    - **Confirmar** — si tu ejercicio va de enero a diciembre.
+    - **Modificar** — si tu ejercicio empieza en otro mes. Elige **Enero - Diciembre**, **Abril - Marzo**, **Julio - Junio** u **Octubre - Septiembre** y haz clic en **Aplicar**. Etendo sustituye el calendario por un único ejercicio que incluye el día de hoy.
+
+    En los dos casos la tarea queda completada y los períodos siguen sin abrir.
+
+3. Abre los períodos en los que vas a trabajar, como se explica en [Abrir o cerrar un período](#abrir-o-cerrar-un-periodo).
+
+Si quieres que Etendo te muestre la ventana **Calendario** paso a paso, haz clic en **Ver guía**. La guía sigue disponible después de completar la tarea.
+
+Si intentas contabilizar un documento con fecha en un período sin abrir, Etendo muestra *"El período contable de la fecha del documento no está abierto."* y un botón para ir a revisarlo.
+
 ## Consultar el calendario
 
 <figure markdown="span">
