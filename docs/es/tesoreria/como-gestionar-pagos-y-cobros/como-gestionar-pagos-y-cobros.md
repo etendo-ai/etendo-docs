@@ -9,7 +9,7 @@ tags:
 
 # Gestionar pagos y cobros
 
-Un cobro registra el dinero que recibes de un cliente por una factura de venta; un pago registra el dinero que entregas a un proveedor por una factura de compra. Ambos se crean desde la propia factura y quedan disponibles también en las vistas globales **Cobro** y **Pago** dentro de Finanzas.
+Un cobro registra el dinero que recibes de un cliente por una factura de venta; un pago registra el dinero que entregas a un proveedor por una factura de compra. Ambos se crean desde la propia factura y quedan disponibles también en las vistas globales **Cobro** y **Pago** dentro de Tesorería.
 
 ## Registrar un cobro
 
@@ -24,6 +24,8 @@ Un cobro registra el dinero que recibes de un cliente por una factura de venta; 
 
 ![Modal Nuevo cobro con Importe, Fecha, Método de pago Transferencia bancaria y Cuenta completados, la sección Saldo a favor y crédito disponible y el bloque Total factura/Dinero/Aplicado con Diferencia en 0,00 €](assets/como-gestionar-pagos-y-cobros-1.png)
 
+Para el detalle completo desde la factura, consulta [Añadir cobros a tu factura de venta](../../comercial/ventas/anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md).
+
 ## Registrar un pago
 
 El flujo es igual al de un cobro, pero desde una factura de compra:
@@ -35,6 +37,8 @@ El flujo es igual al de un cobro, pero desde una factura de compra:
 5. Haz clic en **Guardar** o en **Confirmar**.
 
 ![Modal Nuevo pago con Método de pago Recibo, Cuenta corriente principal y el bloque Total factura/Dinero/Aplicado/Diferencia con el botón Igualar](assets/como-gestionar-pagos-y-cobros-2.png)
+
+Para el detalle completo desde la factura, consulta [Añadir pagos a tu factura de compra](../../operaciones/compras/anadir-pagos-a-tu-factura-de-compra/anadir-pagos-a-tu-factura-de-compra.md).
 
 ## Conciliar pagos y cobros
 
@@ -53,6 +57,8 @@ Esto aplica sin importar el método de pago: tanto con **Efectivo**, **Recibo**,
 
 ## Artículos Relacionados
 
+- [Añadir cobros a tu factura de venta](../../comercial/ventas/anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md)
+- [Añadir pagos a tu factura de compra](../../operaciones/compras/anadir-pagos-a-tu-factura-de-compra/anadir-pagos-a-tu-factura-de-compra.md)
 - [Gestionar tus facturas de venta](../../comercial/ventas/gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md)
 - [Gestionar tus facturas de compra](../../operaciones/compras/gestionar-tus-facturas-de-compra/gestionar-tus-facturas-de-compra.md)
 - [Gestionar cajas contables y movimientos en efectivo](../como-gestionar-caja-y-movimientos-en-efectivo/como-gestionar-caja-y-movimientos-en-efectivo.md)

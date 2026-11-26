@@ -28,6 +28,9 @@ Un cobro registra el dinero que recibes de un cliente por una o más facturas de
     - **Guardar** — el cobro queda en estado **Borrador** (sin impacto en caja ni en el saldo de la factura).
     - **Confirmar** — el cobro pasa a estado **Cobro depositado** y reduce el saldo pendiente de la factura.
 
+!!! tip "Paso a paso desde la factura"
+    Para ver cómo llegar a **Añadir cobro** desde la factura, registrar cobros parciales o resolver un cobro de más, consulta [Añadir cobros a tu factura de venta](../../comercial/ventas/anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md).
+
 ## Confirmar un cobro desde la vista global
 
 Si guardaste un cobro en borrador y quieres confirmarlo más tarde:
@@ -67,6 +70,7 @@ El tipo de cambio se toma del **Rango de conversión** configurado para esa mone
 
 ## Artículos Relacionados
 
+- [Añadir cobros a tu factura de venta](../../comercial/ventas/anadir-cobros-a-tu-factura-de-venta/anadir-cobros-a-tu-factura-de-venta.md)
 - [¿Qué son las vistas Cobro y Pago?](../que-es-cobros-y-pagos/que-es-cobros-y-pagos.md)
 - [Registrar un pago](../como-registrar-un-pago/como-registrar-un-pago.md)
 - [Gestionar pagos y cobros](../como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md)

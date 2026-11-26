@@ -28,6 +28,9 @@ Un pago registra el dinero que entregas a un proveedor por una o más facturas d
     - **Guardar** — el pago queda en estado **Borrador** (sin impacto en caja ni en el saldo de la factura).
     - **Confirmar** — el pago pasa a estado **Pago depositado** y reduce el saldo pendiente de la factura.
 
+!!! tip "Paso a paso desde la factura"
+    Para ver cómo llegar a **Añadir pago** desde la factura, registrar pagos parciales o pagar por transferencia desde una cuenta con conexión bancaria, consulta [Añadir pagos a tu factura de compra](../../operaciones/compras/anadir-pagos-a-tu-factura-de-compra/anadir-pagos-a-tu-factura-de-compra.md).
+
 ## Confirmar un pago desde la vista global
 
 Si guardaste un pago en borrador y quieres confirmarlo más tarde:
@@ -72,6 +75,7 @@ Si la factura está en una moneda distinta a la de tu organización (por ejemplo
 
 ## Artículos Relacionados
 
+- [Añadir pagos a tu factura de compra](../../operaciones/compras/anadir-pagos-a-tu-factura-de-compra/anadir-pagos-a-tu-factura-de-compra.md)
 - [¿Qué son las vistas Cobro y Pago?](../que-es-cobros-y-pagos/que-es-cobros-y-pagos.md)
 - [Registrar un cobro](../como-registrar-un-cobro/como-registrar-un-cobro.md)
 - [Gestionar pagos y cobros](../como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md)
