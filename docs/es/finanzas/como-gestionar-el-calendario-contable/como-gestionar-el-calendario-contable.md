@@ -30,7 +30,7 @@ Cuando creas tu entorno productivo, Etendo te propone un calendario de enero a d
     - **Confirmar** — si tu ejercicio va de enero a diciembre.
     - **Modificar** — si tu ejercicio empieza en otro mes. Elige **Enero - Diciembre**, **Abril - Marzo**, **Julio - Junio** u **Octubre - Septiembre** y haz clic en **Aplicar**. Etendo sustituye el calendario por un único ejercicio que incluye el día de hoy.
 
-    En los dos casos la tarea queda completada y los períodos siguen sin abrir.
+    En los dos casos la tarea queda completada y los períodos siguen sin abrir. Al confirmar, Etendo muestra *"Calendario revisado. Ahora abre los periodos en los que vayas a trabajar."* y te lleva a **Calendario**.
 
 3. Abre los períodos en los que vas a trabajar, como se explica en [Abrir o cerrar un período](#abrir-o-cerrar-un-periodo).
 
