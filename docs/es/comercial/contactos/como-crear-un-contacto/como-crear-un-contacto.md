@@ -51,12 +51,37 @@ Para poder emitir un documento de venta o de compra, primero necesitas tener el 
 
     - **Persona** — personas de contacto vinculadas (nombre, apellido, correo, teléfono y posición). Tiene sentido completarla cuando hablas con distintas personas dentro de la misma empresa, por ejemplo, si las facturas se envían a un responsable y los albaranes a otro.
     - **Cuenta Bancaria** — cuentas bancarias del contacto (por ejemplo, su IBAN).
-    - **Dirección** — calle, número, código postal, ciudad, país y región, marcando si se usa para **Envíos**, para **Facturación** o para ambas.
+    - **Dirección** — calle, número, nombre del edificio, código postal, ciudad, país y región, marcando si se usa para **Envíos**, para **Facturación** o para ambas. Consulta [Añadir una dirección](#anadir-una-direccion).
     - **Contabilidad cliente** y **Contabilidad proveedor** — cuentas contables asociadas al contacto según su rol.
     - **Adjuntos** — archivos vinculados al contacto. Se habilita una vez guardado el contacto.
 
     !!! warning "Dirección obligatoria para facturar"
         Para poder emitir facturas a este contacto, necesitas al menos una dirección marcada para **Facturación** en la solapa **Dirección**. Te recomendamos cargarla aunque dejes el resto de las solapas para más adelante. Si trabajas con TicketBAI, incluye también el código postal.
+
+## Añadir una dirección
+
+1. En la solapa **Dirección**, haz clic en **Añadir dirección**. Se abre la ventana **Dirección**.
+2. Completa los campos:
+
+    <figure markdown="span">
+      ![Ventana Dirección con Calle, Número, Nombre del edificio, la Vista previa de la dirección, Código postal, Ciudad, País, Región y las casillas Envíos y Facturación](assets/como-crear-un-contacto-direccion.png)
+      <figcaption>Ventana Dirección de un contacto, con la Vista previa de la dirección completada.</figcaption>
+    </figure>
+
+    - **Calle** *(obligatorio)* — nombre de la vía, sin el número (ej. *Avenida de la Puebla*). Admite hasta 60 caracteres; el contador de la derecha te indica cuántos llevas.
+    - **Número** — número del portal, en texto libre (ej. *42*, *12B*). Si lo dejas vacío, la dirección se guarda como *s/n*.
+    - **Nombre del edificio** — opcional (ej. *Edificio Bierzo*, *Nave 3*).
+    - **Código postal**, **Ciudad** *(obligatorio)*, **País** *(obligatorio)* y **Región**.
+    - **Usar esta dirección para** — marca **Envíos**, **Facturación** o ambas.
+
+3. Revisa la **Vista previa de la dirección**. Muestra la **Primera línea** y la **Segunda línea** tal como aparecen en tus documentos (ej. *Avenida de la Puebla, 42 - Edificio Bierzo*). Estas líneas no se editan a mano.
+4. Haz clic en **Guardar**. El botón se activa cuando completas **Calle**, **Ciudad** y **País**. También puedes guardar con ++enter++, o cerrar la ventana sin guardar con ++esc++.
+
+!!! info "Código postal y TicketBAI"
+    Si trabajas con TicketBAI y el contacto no tiene activado **Factura Simplificada**, la ventana te avisa cuando el **Código postal** está vacío: sin él, las facturas de ese contacto no se pueden completar.
+
+!!! info "Cómo se forman la Primera y la Segunda línea"
+    Etendo las compone a partir de **Calle**, **Número** y **Nombre del edificio**. Si los tres datos no caben en la primera línea, el que sobra pasa entero a la segunda, sin cortarse a la mitad.
 
 ## Crédito límite (opcional)
 
@@ -99,7 +124,7 @@ Para poder emitir un documento de venta o de compra, primero necesitas tener el 
 También puedes crear un contacto sin salir de un pedido, una factura o un albarán.
 
 1. En el campo **Contacto** del documento, escribe el nombre del contacto. Si no existe, elige **+ Crear contacto**.
-2. Se abre la ventana **Nuevo contacto**, con el mismo formulario que en la ventana Contactos y el nombre que has escrito ya cargado. Completa los datos y haz clic en **Guardar**.
+2. Se abre la ventana **Nuevo contacto**, con el mismo formulario que en la ventana Contactos y el nombre que has escrito ya completado. Completa los datos y haz clic en **Guardar**. La dirección se añade desde la solapa **Dirección**, igual que en [Añadir una dirección](#anadir-una-direccion).
 3. Haz clic en **Completado**: vuelves al documento con el nuevo contacto ya seleccionado.
 
 !!! info "Completar el resto de los datos"
