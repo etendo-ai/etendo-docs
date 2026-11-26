@@ -140,13 +140,14 @@ La demo sigue disponible: puedes cambiar entre la demo y el entorno productivo d
 
 ## 4. Completa las tareas del panel Primeros pasos
 
-![Panel Primeros pasos con las 8 tareas, 2 de ellas completadas y Datos de tu empresa desplegada](assets/primeros-pasos.png)
+![Panel Primeros pasos con las 9 tareas, 2 de ellas completadas y Datos de tu empresa desplegada](assets/primeros-pasos.png)
 
-El panel **Primeros pasos** te guía por la configuración básica de tu cuenta. Se abre con el título *"Vamos a preparar tu cuenta"* y un contador de progreso (ej. *2/8 Completados*). Cada tarea se despliega al pulsarla; las que no se completan solas tienen la casilla **Marcar como completado**.
+El panel **Primeros pasos** te guía por la configuración básica de tu cuenta. Se abre con el título *"Vamos a preparar tu cuenta"* y un contador de progreso (ej. *2/9 Completados*). Cada tarea se despliega al pulsarla; las que no se completan solas tienen la casilla **Marcar como completado**.
 
 - **Crear cuenta** — se completa sola al terminar el registro.
 - **Datos de tu empresa** — muestra un resumen de los datos que introdujiste al registrarte (nombre de la empresa, nombre comercial, NIF y dirección). Revísalos y, si alguno es incorrecto o falta, corrígelo: **Configurar** te lleva a [**Configuración > Organización**](https://app.etendo.ai/organization){target="_blank"}. Cuando estén bien, márcala como completada.
-- **Configuración fiscal** — pregunta *"¿Debe informar las facturas a algún Sistema de Facturación (SIF), como SII, Verifactu o TicketBai?"*. Si respondes **Sí**, **Configurar** te lleva a elegir tu territorio fiscal y el sistema que te corresponde (SII, TicketBAI o VERI\*FACTU). Si no sabes cuál te corresponde, consúltalo con tu asesoría. Más información en [Configuración fiscal](../../sistema/configuracion/configuracion-fiscal/configuracion-fiscal.md).
+- **Configuración Fiscal** — pregunta *"¿Debe informar las facturas a algún Sistema de Información Fiscal (SIF) como SII, TicketBai o Verifactu?"*. Si respondes **Sí**, **Configurar** te lleva a elegir tu territorio fiscal y el sistema que te corresponde (SII, TicketBAI o VERI\*FACTU). Si no sabes cuál te corresponde, consúltalo con tu asesoría. Más información en [Configuración fiscal](../../sistema/configuracion/configuracion-fiscal/configuracion-fiscal.md).
+- **Revisar calendario contable** — muestra el ejercicio que Etendo te propone, por ejemplo de enero a diciembre, con todos los períodos sin abrir: hasta que abras alguno no puedes completar ni contabilizar documentos. Haz clic en **Confirmar** si es tu ejercicio, o en **Modificar** para elegir otro inicio. Después, abre los períodos en los que vas a trabajar. Para el detalle, consulta [Revisar el calendario en una cuenta nueva](../../finanzas/como-gestionar-el-calendario-contable/como-gestionar-el-calendario-contable.md#revisar-el-calendario-en-una-cuenta-nueva).
 - **Transferir datos de su demo** — muestra el estado de la transferencia de productos y contactos que elegiste al crear el entorno productivo. Se completa sola.
 - **Carga masiva de productos** — importa tu catálogo desde una hoja de cálculo. **Importar** abre una ventana para arrastrar o seleccionar un archivo CSV, TXT o XLSX, con plantillas descargables listas para completar. Para el detalle, consulta [Importar productos](../../operaciones/inventario/productos/importar-productos/importar-productos.md).
 
@@ -168,10 +169,10 @@ El panel **Primeros pasos** te guía por la configuración básica de tu cuenta.
 
 ![Panel Primeros pasos completado, con el mensaje Ya lo tienes todo listo y los botones Crear una factura y Finalizar configuración inicial](assets/primeros-pasos-completado.png)
 
-Cuando completas las 8 tareas, el panel muestra *"Ya lo tienes todo listo"*, el texto *"Tu cuenta está configurada. Crea tu primera factura y empieza a trabajar."* y el contador *8/8 Completados*. Aparecen dos botones:
+Cuando completas las 9 tareas, el panel muestra *"Ya lo tienes todo listo"*, el texto *"Tu cuenta está configurada. Crea tu primera factura y empieza a trabajar."* y el contador *9/9 Completados*. Aparecen dos botones:
 
 - **Crear una factura** — abre directamente una nueva factura de venta. Para completarla, sigue [Crear una factura de venta](../../comercial/ventas/crear-una-factura-de-venta/crear-una-factura-de-venta.md).
-- **Finalizar configuración inicial** — oculta **Primeros pasos** del menú. A partir de ahí, cualquier ajuste lo haces desde la ventana correspondiente en **Configuración**.
+- **Finalizar configuración inicial** — oculta **Primeros pasos** del menú y te lleva al **Inicio**. A partir de ahí, cualquier ajuste lo haces desde la ventana correspondiente en **Configuración**.
 
 ## Artículos Relacionados
 
