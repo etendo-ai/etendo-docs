@@ -895,6 +895,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#anadir-una-direccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Añadir una dirección
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#credito-limite-opcional" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5106,6 +5117,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#anadir-una-direccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Añadir una dirección
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#credito-limite-opcional" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5330,7 +5352,7 @@
 <ul>
 <li><strong>Persona</strong> — personas de contacto vinculadas (nombre, apellido, correo, teléfono y posición). Tiene sentido completarla cuando hablas con distintas personas dentro de la misma empresa, por ejemplo, si las facturas se envían a un responsable y los albaranes a otro.</li>
 <li><strong>Cuenta Bancaria</strong> — cuentas bancarias del contacto (por ejemplo, su IBAN).</li>
-<li><strong>Dirección</strong> — calle, número, código postal, ciudad, país y región, marcando si se usa para <strong>Envíos</strong>, para <strong>Facturación</strong> o para ambas.</li>
+<li><strong>Dirección</strong> — calle, número, nombre del edificio, código postal, ciudad, país y región, marcando si se usa para <strong>Envíos</strong>, para <strong>Facturación</strong> o para ambas. Consulta <a href="#anadir-una-direccion">Añadir una dirección</a>.</li>
 <li><strong>Contabilidad cliente</strong> y <strong>Contabilidad proveedor</strong> — cuentas contables asociadas al contacto según su rol.</li>
 <li><strong>Adjuntos</strong> — archivos vinculados al contacto. Se habilita una vez guardado el contacto.</li>
 </ul>
@@ -5340,6 +5362,36 @@
 </div>
 </li>
 </ol>
+<h2 id="anadir-una-direccion">Añadir una dirección<a class="headerlink" href="#anadir-una-direccion" title="Permanent link">¶</a></h2>
+<ol>
+<li>En la solapa <strong>Dirección</strong>, haz clic en <strong>Añadir dirección</strong>. Se abre la ventana <strong>Dirección</strong>.</li>
+<li>
+<p>Completa los campos:</p>
+<p></p><figure markdown="span">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/como-crear-un-contacto-direccion.png" data-desc-position="bottom"><img alt="Ventana Dirección con Calle, Número, Nombre del edificio, la Vista previa de la dirección, Código postal, Ciudad, País, Región y las casillas Envíos y Facturación" src="../assets/como-crear-un-contacto-direccion.png"></a>
+  <figcaption>Ventana Dirección de un contacto, con la Vista previa de la dirección completada.</figcaption>
+</figure><p></p>
+<ul>
+<li><strong>Calle</strong> <em>(obligatorio)</em> — nombre de la vía, sin el número (ej. <em>Avenida de la Puebla</em>). Admite hasta 60 caracteres; el contador de la derecha te indica cuántos llevas.</li>
+<li><strong>Número</strong> — número del portal, en texto libre (ej. <em>42</em>, <em>12B</em>). Si lo dejas vacío, la dirección se guarda como <em>s/n</em>.</li>
+<li><strong>Nombre del edificio</strong> — opcional (ej. <em>Edificio Bierzo</em>, <em>Nave 3</em>).</li>
+<li><strong>Código postal</strong>, <strong>Ciudad</strong> <em>(obligatorio)</em>, <strong>País</strong> <em>(obligatorio)</em> y <strong>Región</strong>.</li>
+<li><strong>Usar esta dirección para</strong> — marca <strong>Envíos</strong>, <strong>Facturación</strong> o ambas.</li>
+</ul>
+</li>
+<li>
+<p>Revisa la <strong>Vista previa de la dirección</strong>. Muestra la <strong>Primera línea</strong> y la <strong>Segunda línea</strong> tal como aparecen en tus documentos (ej. <em>Avenida de la Puebla, 42 - Edificio Bierzo</em>). Estas líneas no se editan a mano.</p>
+</li>
+<li>Haz clic en <strong>Guardar</strong>. El botón se activa cuando completas <strong>Calle</strong>, <strong>Ciudad</strong> y <strong>País</strong>. También puedes guardar con <span class="keys"><kbd class="key-enter">Enter</kbd></span>, o cerrar la ventana sin guardar con <span class="keys"><kbd class="key-escape">Esc</kbd></span>.</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Código postal y TicketBAI</p>
+<p>Si trabajas con TicketBAI y el contacto no tiene activado <strong>Factura Simplificada</strong>, la ventana te avisa cuando el <strong>Código postal</strong> está vacío: sin él, las facturas de ese contacto no se pueden completar.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Cómo se forman la Primera y la Segunda línea</p>
+<p>Etendo las compone a partir de <strong>Calle</strong>, <strong>Número</strong> y <strong>Nombre del edificio</strong>. Si los tres datos no caben en la primera línea, el que sobra pasa entero a la segunda, sin cortarse a la mitad.</p>
+</div>
 <h2 id="credito-limite-opcional">Crédito límite (opcional)<a class="headerlink" href="#credito-limite-opcional" title="Permanent link">¶</a></h2>
 <ol>
 <li>
@@ -5387,7 +5439,7 @@
 <p>También puedes crear un contacto sin salir de un pedido, una factura o un albarán.</p>
 <ol>
 <li>En el campo <strong>Contacto</strong> del documento, escribe el nombre del contacto. Si no existe, elige <strong>+ Crear contacto</strong>.</li>
-<li>Se abre la ventana <strong>Nuevo contacto</strong>, con el mismo formulario que en la ventana Contactos y el nombre que has escrito ya cargado. Completa los datos y haz clic en <strong>Guardar</strong>.</li>
+<li>Se abre la ventana <strong>Nuevo contacto</strong>, con el mismo formulario que en la ventana Contactos y el nombre que has escrito ya completado. Completa los datos y haz clic en <strong>Guardar</strong>. La dirección se añade desde la solapa <strong>Dirección</strong>, igual que en <a href="#anadir-una-direccion">Añadir una dirección</a>.</li>
 <li>Haz clic en <strong>Completado</strong>: vuelves al documento con el nuevo contacto ya seleccionado.</li>
 </ol>
 <div class="admonition info">
@@ -5424,7 +5476,7 @@
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="12 de noviembre de 2026 17:26:05 UTC">12 de noviembre de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="26 de noviembre de 2026 17:25:22 UTC">26 de noviembre de 2026</span>
   </span>
 
     
