@@ -6,6 +6,7 @@ tags:
   - Clientes
   - Proveedores
   - Etendo
+features: [contact-category-type]
 ---
 
 # Gestionar tus contactos
