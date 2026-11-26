@@ -7,7 +7,7 @@ tags:
     - Etendo
 ---
 
-# Configurar reglas para automatizar la conciliación
+# Configurar reglas de matcheo
 
 Algunos movimientos de tu banco se repiten con el mismo texto y no tienen una factura detrás, como la comisión mensual de mantenimiento. Con una regla de matcheo, Etendo reconoce esas líneas del extracto por su concepto y te propone crear el movimiento que les corresponde, con la cuenta contable ya asignada. Así no tienes que registrarlo y conciliarlo a mano cada vez.
 

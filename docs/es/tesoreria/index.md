@@ -118,7 +118,7 @@ Todo lo que necesitas para gestionar el dinero de tu empresa en Etendo: cobros y
 
     [:octicons-arrow-right-24: Leer más](como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md)
 
--   :material-cog-sync-outline:{ .lg .middle } **Configurar reglas para automatizar la conciliación**
+-   :material-cog-sync-outline:{ .lg .middle } **Configurar reglas de matcheo**
 
     ---
 
