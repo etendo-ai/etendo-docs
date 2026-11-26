@@ -6,6 +6,7 @@ tags:
   - Clientes
   - Proveedores
   - Etendo
+features: [contact-category-type]
 ---
 
 # Cómo crear un contacto
