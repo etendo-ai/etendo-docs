@@ -17,7 +17,7 @@ Estos son los elementos de navegación de alto nivel que vas a encontrar en la p
 
 ### Menú lateral
 
-La barra vertical ubicada a la izquierda de la pantalla agrupa el acceso a todos los módulos de Etendo, organizados en secciones con etiquetas: **General**, **Comercial**, **Operaciones**, **Tesorería**, **Finanzas** y **Sistema**. Haz clic en cualquier ícono para desplegar sus secciones.
+La barra vertical ubicada a la izquierda de la pantalla agrupa el acceso a todos los módulos de Etendo, organizados en secciones con etiquetas: **General**, **Comercial**, **Operaciones**, **Tesorería**, **Finanzas** (que incluye **Impuestos**) y **Sistema**. Haz clic en cualquier ícono para desplegar sus secciones.
 
 ![Menú lateral de Etendo](assets/navegar-en-etendo-1.png)
 
@@ -27,33 +27,38 @@ Dentro del menú lateral, la sección **Favoritos** (identificada con un ícono 
 
 ### Selector de empresa
 
-Junto al logo, en la esquina superior izquierda, hay un menú desplegable con el nombre de la organización activa (por ejemplo, "GOOrg") y una flecha. Al hacer clic se abre un menú titulado **Cambiar empresa** que lista las organizaciones disponibles para tu cuenta.
+Junto al logo, en la esquina superior izquierda, hay un menú desplegable con el nombre de la organización activa (por ejemplo, "Distribuciones Arenal S.L.") y una flecha. Al hacer clic se abre un menú titulado **Cambiar empresa** que lista las organizaciones disponibles para tu cuenta.
 
 ![Menú para cambiar de empresa](assets/navegar-en-etendo-4.png)
 
 
 ### Acciones rápidas
 
-En la parte superior de la pantalla encuentras una barra de búsqueda grande y prominente, ubicada en el centro superior, con la descripción "Buscar clientes, pedidos, facturas..." A su vez, en el extremo superior derecho encuentras tres accesos directos:
+En la parte superior de la pantalla encuentras una barra de búsqueda grande y prominente, ubicada en el centro superior, con la descripción "Buscar clientes, pedidos, facturas..." A su vez, en el extremo superior derecho encuentras dos accesos directos:
 
+- **Tutoriales guiados** — abre una lista de tutoriales paso a paso, como crear un contacto, crear un producto o crear un pedido de venta. Un punto sobre el ícono indica que tienes tutoriales pendientes.
 - **Copilot** — abre el agente de IA integrado en la interfaz de Etendo, que te ayuda a consultar información y a ejecutar acciones sin salir del sistema.
-- **Crear** — genera un nuevo registro sin salir de la pantalla en la que estás.
-- **Notificaciones** — avisos sobre tareas pendientes y novedades de tu cuenta.
 
-![Acciones rápidas: Copilot, crear y notificaciones](assets/navegar-en-etendo-2.png)
+![Acciones rápidas: tutoriales guiados y Copilot](assets/navegar-en-etendo-2.png)
 
 !!! tip "Búsqueda global"
     Desde la barra de búsqueda central puedes encontrar contactos, documentos y pantallas de configuración sin necesidad de navegar manualmente por el menú lateral.
+
+### Ayuda y soporte
+
+Justo encima de tu nombre de usuario, en la parte inferior del menú lateral, la opción **Ayuda y soporte** te da acceso al **Panel de soporte** y a **Habla con nosotros**, para contactar con el equipo de Etendo.
 
 ### Menú de perfil de usuario
 
 Ubicado en la parte inferior del menú lateral, al hacer clic en tu nombre de usuario se abre un panel con la siguiente información:
 
 - **Nombre de usuario** — identifica la cuenta con la que iniciaste sesión.
-- **Rol** — el rol asignado dentro de la organización (por ejemplo, GOClient Admin), que determina qué acciones puedes realizar.
-- **Organización** — la organización activa (por ejemplo, GOOrg).
+- **Rol** — el rol asignado dentro de la organización (por ejemplo, Administrador), que determina qué acciones puedes realizar.
+- **Organización** — la organización activa (por ejemplo, Distribuciones Arenal S.L.).
 - **Idioma** — selector para cambiar el idioma de la interfaz (English/Español).
-- **Cambiar contraseña** — abre el formulario para actualizar tu contraseña de acceso.
+- **Crear entorno productivo** — inicia la creación de tu entorno productivo a partir del entorno de prueba.
+- **Cuenta** — accede a los datos de tu cuenta.
+- **Configuración de cookies** — revisa y cambia tus preferencias de cookies.
 - **Cerrar sesión** — finaliza tu sesión actual.
 
 ![Menú de perfil de usuario](assets/navegar-en-etendo-3.png)
@@ -64,11 +69,11 @@ Estos componentes se repiten en la mayoría de los listados y pantallas de detal
 
 ### Filtros rápidos
 
-Además del panel de condicionales, la barra del listado ofrece accesos directos para los filtros más comunes de esa ventana. Su cantidad y tipo varían según la ventana en la que estés trabajando. Por ejemplo, en la ventana **Factura de Venta** encuentras estos tres:
+Además del panel de condicionales, la barra del listado ofrece accesos directos para los filtros más comunes de esa ventana. Su cantidad y tipo varían según la ventana en la que estés trabajando. Por ejemplo, en la ventana **Factura de Venta** encuentras estos:
 
-- **Todos**, **Factura**, **Nota de crédito** y **Factura de devolución** — pestañas que filtran el listado por tipo de documento; al seleccionar una (por ejemplo, "Factura"), el listado muestra solo los registros de ese tipo y oculta el resto, hasta que vuelvas a "Todos".
+- **Todos**, **Factura** y **Factura rectificativa** — pestañas que filtran el listado por tipo de documento; al seleccionar una (por ejemplo, "Factura"), el listado muestra solo los registros de ese tipo y oculta el resto, hasta que vuelvas a "Todos".
 - **Todos los estados** — un desplegable con buscador que lista los estados disponibles (por ejemplo, Completado, Borrador) para filtrar por uno a la vez, o volver a "Todos los estados".
-- **Cualquier fecha** — un desplegable con rangos predefinidos (Hoy, Ayer, Últimos 7 días, Últimos 30 días, Últimos 12 meses, Todo el tiempo) y un calendario de dos meses para elegir un día puntual o un rango a medida.
+- **Cualquier fecha** — un desplegable con rangos predefinidos (Hoy, Ayer, Últimos 7 días, Últimos 30 días, Últimos 12 meses, Todo el tiempo, Personalizado) y un calendario de dos meses para elegir un día puntual o un rango a medida.
 
 ![Filtros rápidos de tipo de documento, estado y fecha en la ventana Factura de Venta](assets/navegar-en-etendo-11.png)
 
@@ -82,8 +87,8 @@ Al hacer clic en **Filtros** se abre un armador de condiciones personalizadas: e
 
 Junto a los filtros rápidos, en el extremo derecho de la barra de herramientas del listado, encuentras dos accesos adicionales:
 
-- **Ordenamiento** — el ícono de las flechas verticales abre un menú para elegir por qué campo ordenar el listado (por ejemplo, "Fecha de la factura" o "Nº documento").
-- **Recargar** — el ícono de las flechas circulares actualiza la pantalla y trae los registros más recientes, útil si dejaste la ventana abierta un rato y el listado podría estar desactualizado.
+- **Ordenar por** — el ícono de las flechas verticales abre un menú para elegir por qué campo ordenar el listado (por ejemplo, "Fecha de la factura" o "Nº documento").
+- **Actualizar** — el ícono de las flechas circulares actualiza la pantalla y trae los registros más recientes, útil si dejaste la ventana abierta un rato y el listado podría estar desactualizado.
 
 Junto a estos dos íconos encontrarás también **Imprimir**, que abre el panel para exportar el listado completo — lo explicamos en detalle en [Exportar un listado](#exportar-un-listado).
 
@@ -97,9 +102,13 @@ En un listado con registros, haz clic en el botón **Imprimir** de la barra de h
 
 ### Barra de acciones masivas
 
-Al seleccionar uno o más registros de un listado, aparece una barra con las acciones disponibles para aplicarlas a todos los elementos seleccionados a la vez: **Vista Previa**, **Imprimir**, **Clonar** y **Confirmar**. Los botones **Imprimir**, **Clonar** y **Confirmar** muestran la cantidad de registros seleccionados entre paréntesis (por ejemplo, "Imprimir (3)"); **Vista Previa** no lleva ese contador.
+Al seleccionar uno o más registros de un listado, aparece en la parte inferior una barra que indica cuántos tienes marcados (por ejemplo, "2 Seleccionados") y las acciones que puedes aplicar a todos a la vez. Varían según la ventana y los registros elegidos; por ejemplo, en **Factura de Venta** encuentras **Imprimir**, **Clonar**, **Eliminar**, **Procesar** y **Descontabilizar**. Para cerrar la barra y quitar la selección, pulsa la **X**.
 
 ![Barra de acciones masivas](assets/navegar-en-etendo-7.png)
+
+### Acciones de cada registro
+
+Al pasar el cursor sobre una fila del listado aparecen, a la derecha, accesos para trabajar con ese registro sin abrirlo: **Editar**, **Clonar**, **Enviar / Descargar**, **Más acciones** y **Eliminar**. Según la ventana y el estado del documento pueden aparecer otras; por ejemplo, **Añadir cobro** en una factura de venta pendiente de cobro.
 
 ### Menú de opciones adicionales
 
