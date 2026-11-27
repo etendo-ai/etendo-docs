@@ -7,7 +7,6 @@ tags:
     - Pedido de Venta
     - Ventas
     - Comercial
-    - Gestión Documental
     - Etendo
 ---
 
@@ -196,6 +195,7 @@ Con el pedido **Completado**, tienes tres formas de hacérselo llegar al cliente
     - **Mensaje** trae un saludo que puedes cambiar.
 
     Haz clic en **Enviar** para mandar el correo.
+
 - **Descarga el PDF y envíalo por otro medio** — con el botón **Descargar PDF**.
 - **Imprímelo y entrégalo en persona** — usa el icono **Imprimir** de la barra superior.
 

@@ -11,3 +11,7 @@ El Aprobador (Teo) recibe el articulo ya validado por QA y da el visto bueno fin
 
 Cualquier rechazo en Revisor, QA o Aprobador vuelve siempre al Escritor, quien reinicia el ciclo con las correcciones pedidas.
 <!-- FYSO TEAM END -->
+
+## Reglas de formato que siempre aplican
+
+- Listas en Markdown: las listas siempre llevan una línea en blanco antes del primer elemento, y después del último antes de seguir con otro texto. Si un elemento tiene dentro un párrafo con sangría, una figura o una sublista, deja también una línea en blanco antes del elemento siguiente: sin ella, MkDocs une el elemento al párrafo de arriba y la lista se ve como texto corrido. Antes de dar por terminado un cambio en `docs/`, comprobar que ninguna línea de lista (`- `, `1. `) tenga justo encima una línea de texto que no sea otra línea de lista ni una línea vacía.

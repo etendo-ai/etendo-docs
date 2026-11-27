@@ -131,7 +131,7 @@ La factura se crea y se confirma sola, y queda en estado Completado. Ya viene co
 
 ## Artículos Relacionados
 
-Cuando guardas la factura, - [Escanear facturas de compra con Copilot](../escanear-facturas-de-compra-con-copilot/escanear-facturas-de-compra-con-copilot.md)
+- [Escanear facturas de compra con Copilot](../escanear-facturas-de-compra-con-copilot/escanear-facturas-de-compra-con-copilot.md)
 - [Añadir pagos a tu factura de compra](../anadir-pagos-a-tu-factura-de-compra/anadir-pagos-a-tu-factura-de-compra.md)
 - [Gestionar tus facturas de compra](../gestionar-tus-facturas-de-compra/gestionar-tus-facturas-de-compra.md)
 

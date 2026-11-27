@@ -1,5 +1,6 @@
 ---
 title: Facturación agrupada y cobros parciales
+status: new
 description: >-
   Aprende a emitir una sola factura de venta con varios pedidos o albaranes
   del mismo cliente, facturar solo una parte y cobrarla en varios pagos.

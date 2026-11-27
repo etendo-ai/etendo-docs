@@ -7,7 +7,6 @@ tags:
     - Presupuesto de Venta
     - Ventas
     - Comercial
-    - Gestión Documental
     - Etendo
 ---
 
@@ -19,7 +18,7 @@ El **presupuesto de venta** es la oferta que le envías a un cliente antes de qu
 
 Es un documento opcional. Cuando el cliente lo acepta, lo conviertes en un [pedido de venta](../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md) o directamente en una [factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md), sin volver a escribir los datos. El pedido es la opción habitual cuando vendes productos que tienes que entregar. La factura directa es para servicios o ventas sin entrega.
 
-El siguiente diagrama muestra los estados por los que pasa un presupuesto, incluidos los tres estados de cierre posibles:
+El siguiente diagrama muestra los estados por los que pasa un presupuesto, incluidos los tres estados de cierre posibles. Las flechas discontinuas son las respuestas que el cliente da desde el [portal del cliente](../que-es-el-portal-del-cliente/que-es-el-portal-del-cliente.md) (en beta):
 
 ```mermaid
 flowchart LR
@@ -27,6 +26,10 @@ flowchart LR
   B -->|Rechazar| R[Cerrado - Rechazado]
   B -->|Crear pedido de venta| C[Cerrado - Pedido creado]
   B -->|Facturar directamente| D[Cerrado - Factura creada]
+  B -.->|El cliente acepta en el portal| AC[Aceptado]
+  B -.->|El cliente rechaza en el portal| R
+  AC -->|Crear pedido de venta| C
+  AC -->|Facturar directamente| D
 ```
 
 Este artículo se organiza en dos partes: primero cómo **crear un presupuesto** y enviarlo al cliente, y luego cómo **gestionarlo** cuando el cliente responde.
@@ -132,12 +135,13 @@ Con el presupuesto ya confirmado, tienes tres formas de hacérselo llegar al cli
     - **Asunto** ya viene completado con el número del presupuesto y el nombre del cliente.
     - **Mensaje** trae un saludo que puedes cambiar.
 
-    Haz clic en **Enviar** para mandar el correo.
+    Haz clic en **Enviar** para mandar el correo. Si tu cuenta tiene activado el [portal del cliente](../que-es-el-portal-del-cliente/que-es-el-portal-del-cliente.md) (en beta), el email incluye además el botón **Ver documento en el portal**, desde el que tu cliente puede aceptar o rechazar el presupuesto sin escribirte.
+
 - **Descarga el PDF y envíalo por otro medio** — por ejemplo, por WhatsApp. Usa el botón **Descargar PDF**, que está en la vista detalle y en el panel de envío por email.
 - **Imprímelo y entrégalo en persona** — usa el icono **Imprimir** de la barra superior.
 
 !!! info "Cuándo aparecen Enviar / Descargar e Imprimir"
-    Estos dos iconos aparecen cuando el presupuesto está **Bajo evaluación** o en alguno de los estados **Cerrado**. No están disponibles mientras el presupuesto está en **Borrador**.
+    Estos dos iconos aparecen cuando el presupuesto está **Bajo evaluación**, **Aceptado** o en alguno de los estados **Cerrado**. No están disponibles mientras el presupuesto está en **Borrador**.
 
 ---
 
@@ -154,7 +158,7 @@ Cuando el cliente ya recibió el presupuesto, esta parte te muestra cómo encont
 
 La vista lista muestra todos tus presupuestos con las columnas **Fecha de presupuesto**, **Nº documento**, **Contacto**, **Estado doc.** (ver [Estados del Documento](#estados-del-documento)), **Válido hasta** e **Imp. total**. Para encontrar uno, tienes estas opciones:
 
-- **Filtrar por estado** — el primer selector de la barra superior. Elige **Bajo evaluación** para ver de un vistazo los presupuestos que esperan respuesta.
+- **Filtrar por estado** — el primer selector de la barra superior. Elige **Bajo evaluación** para ver de un vistazo los presupuestos que esperan respuesta, o **Aceptado** para ver los que el cliente ya aceptó desde el portal y tienes que convertir en pedido o factura.
 - **Filtrar por fecha** — el segundo selector. Opciones: Hoy, Ayer, Últimos 7 días, Últimos 30 días, Últimos 12 meses, Todo el tiempo y Personalizado.
 - **Filtros** — para añadir más criterios de búsqueda.
 - **Ordenar** — haz clic en el encabezado de una columna.
@@ -185,12 +189,64 @@ Debajo, el panel tiene dos secciones:
 
 ### 3. Cierra el presupuesto según la respuesta del cliente
 
+El cliente puede darte su respuesta de dos formas: desde el portal del cliente, si tu cuenta lo tiene, o por cualquier otro medio. Según cuál use, el paso que te toca es distinto.
+
+#### Si responde desde el portal del cliente (beta)
+
+!!! experimental "Funcionalidad en beta"
+    El portal del cliente está en beta y todavía no está activado en todas las cuentas. Si en tu cuenta no está activo, sigue en [Si te responde por otro medio](#si-te-responde-por-otro-medio).
+
+<figure markdown="span">
+  ![Ventana Rechazar presupuesto en el portal del cliente con la lista de motivos y el botón Continuar](assets/crear-y-gestionar-presupuestos-10.png)
+  <figcaption>Desde el portal, tu cliente acepta o rechaza el presupuesto sin escribirte.</figcaption>
+</figure>
+
+Con el [portal del cliente](../que-es-el-portal-del-cliente/que-es-el-portal-del-cliente.md), tu cliente responde al presupuesto desde el enlace que le llega en el email. Puede hacerlo si se cumplen estas condiciones:
+
+- El presupuesto está **Bajo evaluación**.
+- No ha pasado su fecha **Válido hasta**. Si no tiene, siempre está vigente. Si ya pasó, el portal muestra **Este presupuesto ha caducado**.
+- Tu cliente entra con el enlace del email en el que le enviaste ese presupuesto. Con el enlace de otro documento lo ve, pero no puede responderlo.
+
+Así responde tu cliente:
+
+1. **Elige su respuesta en el portal.** Con **Aceptar**, se abre la ventana **¿Deseas aceptar este presupuesto?**. Con **Rechazar**, tiene que elegir un motivo: **Precio**, **Plazo de entrega**, **Condiciones de pago**, **He elegido otro proveedor**, **Ya no lo necesito** u **Otros**. Con **Otros**, también escribe una descripción.
+2. **Confirma su decisión desde un email.** Le llega **Confirma la aceptación del presupuesto …** o **Confirma el rechazo del presupuesto …**, en el mismo hilo que el presupuesto. Va a las direcciones que pusiste en **Para** al enviarlo, no a las de copia.
+
+    <figure markdown="span">
+      ![Email Confirma la aceptación de tu presupuesto con la etiqueta Confirmación pendiente, los datos del presupuesto y el botón Confirmar aceptación](assets/crear-y-gestionar-presupuestos-11.png){ width=420 }
+      <figcaption>La respuesta solo se aplica cuando tu cliente hace clic en el botón del email.</figcaption>
+    </figure>
+
+3. **Ve el resultado.** Al hacer clic en **Confirmar aceptación** o **Confirmar rechazo**, el portal le muestra **¡Presupuesto aceptado!** o **¡Presupuesto rechazado!**. El botón sirve una sola vez.
+
+!!! warning "Hasta que tu cliente no confirma, el presupuesto sigue pendiente"
+    Responder en el portal no cambia nada todavía. El presupuesto sigue **Bajo evaluación** hasta que tu cliente hace clic en el botón del email.
+
+Cuando confirma, el usuario de tu empresa que envió el presupuesto recibe un email con la respuesta, y el presupuesto cambia de estado solo. No tienes que registrarla tú:
+
+- **Si lo acepta**, pasa a **Aceptado**. Etendo no crea ningún pedido ni factura por su cuenta: conviértelo tú, como se explica en [Convertir el presupuesto aceptado en pedido o factura](#convertir-el-presupuesto-aceptado-en-pedido-o-factura).
+- **Si lo rechaza**, pasa a **Cerrado - Rechazado**. El motivo del cliente queda en las **Notas**, con el texto **Rechazado por el cliente desde el portal. Motivo: …**. Para guardar un motivo interno, elígelo en el campo **Razón de rechazo**, dentro de **Mostrar más datos**. Tu cliente no lo ve.
+
+<figure markdown="span">
+  ![Presupuesto de venta en estado Aceptado después de que el cliente lo aceptara desde el portal](assets/crear-y-gestionar-presupuestos-9.png)
+  <figcaption>Presupuesto aceptado por el cliente desde el portal, listo para convertir en pedido o factura.</figcaption>
+</figure>
+
+#### Si te responde por otro medio
+
+Si el cliente te contesta por teléfono, por correo o en persona, o tu cuenta no tiene el portal activado, registra tú la respuesta en el presupuesto, que sigue **Bajo evaluación**:
+
+- **Si acepta**, conviértelo en pedido o en factura, como se explica a continuación.
+- **Si rechaza**, haz clic en **Rechazar**, en el menú de tres puntos. El presupuesto queda **Cerrado - Rechazado** y no se crea ningún pedido ni factura.
+
+#### Convertir el presupuesto aceptado en pedido o factura
+
 <figure markdown="span">
   ![Ventana Confirmar presupuesto de venta con las opciones Crear pedido de venta y Facturar directamente](assets/crear-y-gestionar-presupuestos-8.png){ width=420 }
   <figcaption>Ventana de confirmación del Presupuesto de venta con las dos formas de procesar la venta.</figcaption>
 </figure>
 
-Cuando el cliente acepta, haz clic otra vez en **Confirmar**. Se abre la ventana **Confirmar presupuesto de venta**, con el resumen del presupuesto y la pregunta **¿Cómo quieres procesar la venta?**. Elige una opción y haz clic en **Continuar**:
+Cuando el cliente acepta, ya sea desde el portal (el presupuesto está en **Aceptado**) o por otro medio (sigue en **Bajo evaluación**), haz clic en **Confirmar**. Se abre la ventana **Confirmar presupuesto de venta**, con el resumen del presupuesto y la pregunta **¿Cómo quieres procesar la venta?**. Elige una opción y haz clic en **Continuar**:
 
 - **Crear pedido de venta** — recomendada si vendes productos con stock, con entrega o con varias entregas. El presupuesto queda **Cerrado - Pedido creado**.
 - **Facturar directamente** — para servicios o ventas sin entrega. No se crea albarán (el documento que acompaña la entrega de la mercancía). El presupuesto queda **Cerrado - Factura creada**.
@@ -199,8 +255,6 @@ Al terminar, una ventana te confirma el documento creado. Puedes abrirlo directa
 
 !!! info "Qué datos pasan al pedido o a la factura"
     El pedido o la factura llevan el mismo cliente, la misma dirección, la misma tarifa, las mismas condiciones de pago y todas las líneas del presupuesto. No tienes que volver a escribir nada. El documento se crea en **Borrador**, así que puedes revisarlo antes de confirmarlo.
-
-Si el cliente rechaza la oferta, haz clic en **Rechazar**, en el menú de tres puntos. El presupuesto queda **Cerrado - Rechazado** y no se crea ningún pedido ni factura.
 
 ---
 
@@ -212,7 +266,8 @@ El estado se muestra como una etiqueta junto al botón **Cancelar**, en la barra
 |---|---|
 | <span style="background:#F3F4F6;color:#6B7280;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Borrador</span> | En preparación. Puedes cambiar todos sus datos. |
 | <span style="background:#FFF7ED;color:#F59E0B;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Bajo evaluación</span> | Enviado al cliente, pendiente de respuesta. Solo puedes cambiar las notas. |
-| <span style="background:#FEF2F2;color:#EF4444;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Cerrado - Rechazado</span> | El cliente rechazó la oferta. |
+| <span style="background:#EFF6FF;color:#3B82F6;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Aceptado</span> | El cliente lo aceptó desde el portal del cliente (beta). Falta que lo conviertas en pedido o factura. |
+| <span style="background:#FEF2F2;color:#EF4444;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Cerrado - Rechazado</span> | El cliente rechazó la oferta, desde el portal o por otro medio. Si lo rechazó desde el portal, su motivo queda en las notas. |
 | <span style="background:#F0FDF4;color:#22C55E;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Cerrado - Pedido creado</span> | El cliente aceptó y creaste el pedido de venta. |
 | <span style="background:#F0FDF4;color:#22C55E;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Cerrado - Factura creada</span> | El cliente aceptó y creaste la factura de venta directa. |
 
@@ -231,19 +286,19 @@ La barra superior del formulario muestra estas acciones:
 | :--- | :--- | :--- |
 | **Cancelar** | Descarta los cambios sin guardar y vuelve a la lista. | Todos los estados |
 | **Guardar** | Guarda el presupuesto sin cambiar su estado. | Solo en Borrador |
-| **Confirmar** | En Borrador, abre la ventana **Enviar a evaluación** y pasa el presupuesto a Bajo evaluación (ver [Crear un presupuesto](#crear-un-presupuesto)). En Bajo evaluación, abre la ventana **Confirmar presupuesto de venta** para crear el pedido o la factura (ver [Gestionar presupuestos](#gestionar-presupuestos)). | Borrador y Bajo evaluación |
+| **Confirmar** | En Borrador, abre la ventana **Enviar a evaluación** y pasa el presupuesto a Bajo evaluación (ver [Crear un presupuesto](#crear-un-presupuesto)). En Bajo evaluación y en Aceptado, abre la ventana **Confirmar presupuesto de venta** para crear el pedido o la factura (ver [Gestionar presupuestos](#gestionar-presupuestos)). | Borrador, Bajo evaluación y Aceptado |
 | **Copiar enlace** | Copia el enlace directo a este presupuesto, para compartirlo con otra persona de tu equipo. | Todos los estados |
 | **Copia** | Crea un borrador nuevo con los mismos datos del presupuesto. | Todos los estados |
-| **Enviar / Descargar** | Icono con forma de sobre. Abre el panel de envío por email, desde donde también puedes descargar el PDF. | Bajo evaluación y estados Cerrado |
-| **Imprimir** | Crea una copia para imprimir y entregar en persona. | Bajo evaluación y estados Cerrado |
+| **Enviar / Descargar** | Icono con forma de sobre. Abre el panel de envío por email, desde donde también puedes descargar el PDF. | Bajo evaluación, Aceptado y estados Cerrado |
+| **Imprimir** | Crea una copia para imprimir y entregar en persona. | Bajo evaluación, Aceptado y estados Cerrado |
 | **Rechazar** | En el menú de tres puntos. Cierra el presupuesto como **Cerrado - Rechazado**, sin crear ningún pedido ni factura. | Solo en Bajo evaluación |
 | **Papelera** | Elimina el presupuesto. Antes te pide confirmación. | Solo en Borrador |
 
 ## Artículos Relacionados
 
+- [¿Qué es el portal del cliente?](../que-es-el-portal-del-cliente/que-es-el-portal-del-cliente.md)
 - [Crear y gestionar pedidos](../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md)
 - [Crear una factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md)
-- [Cómo crear un contacto](../../contactos/como-crear-un-contacto/como-crear-un-contacto.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

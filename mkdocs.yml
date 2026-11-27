@@ -76,6 +76,7 @@ plugins:
                 - Ventas:
                     - Introducción:
                         - ¿Qué es la sección Ventas?: comercial/ventas/que-es-la-seccion-ventas/que-es-la-seccion-ventas.md
+                        - ¿Qué es el portal del cliente?: comercial/ventas/que-es-el-portal-del-cliente/que-es-el-portal-del-cliente.md
                     - Gestión de ventas:
                         - Crear y gestionar presupuestos: comercial/ventas/crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md
                         - Crear y gestionar pedidos: comercial/ventas/crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md
@@ -90,7 +91,7 @@ plugins:
                         - Facturar en otra moneda: comercial/ventas/facturar-en-otra-moneda/facturar-en-otra-moneda.md
                         - Facturación agrupada y cobros parciales: comercial/ventas/facturacion-agrupada-y-cobros-parciales/facturacion-agrupada-y-cobros-parciales.md
                         - Ventas intracomunitarias y exportaciones: comercial/ventas/ventas-intracomunitarias-y-exportaciones/ventas-intracomunitarias-y-exportaciones.md
-                    - Ventas - Preguntas frecuentes: comercial/ventas/documentos-de-venta-preguntas-frecuentes/documentos-de-venta-preguntas-frecuentes.md
+                    - Preguntas frecuentes: comercial/ventas/documentos-de-venta-preguntas-frecuentes/documentos-de-venta-preguntas-frecuentes.md
             - Operaciones:
                 - operaciones/index.md
                 - Compras:
@@ -220,6 +221,9 @@ plugins:
         sistema/configuracion/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago.md: https://help.etendo.ai/tesoreria/como-configurar-las-condiciones-de-pago/como-configurar-las-condiciones-de-pago/
 
 extra:
+  status:
+    new: Nuevo
+    beta: En beta · aún no disponible en todas las cuentas
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/etendosoftware

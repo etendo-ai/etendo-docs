@@ -4,7 +4,6 @@ tags:
   - Factura de Compra
   - Compras
   - Operaciones
-  - Gestión Documental
   - Etendo
 ---
 

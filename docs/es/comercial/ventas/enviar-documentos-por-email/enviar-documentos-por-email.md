@@ -13,7 +13,7 @@ tags:
 
 # Enviar documentos por email
 
-Puedes mandarle un documento a tu cliente o a tu proveedor por correo sin salir de Etendo, con el PDF ya adjunto. La ventana de envío es la misma en todas las ventanas, así que lo que aprendas aquí te sirve para cualquiera de ellas.
+Puedes mandarle un documento a tu cliente o a tu proveedor por correo sin salir de Etendo. La ventana de envío es la misma en todas las ventanas, así que lo que aprendas aquí te sirve para cualquiera de ellas.
 
 Funciona en los documentos que tú le mandas a la otra parte:
 
@@ -21,6 +21,8 @@ Funciona en los documentos que tú le mandas a la otra parte:
 - **Compras** — el pedido que le mandas a tu proveedor.
 
 La factura de compra no se envía desde aquí: esa la recibes tú del proveedor.
+
+Si tu cuenta tiene el portal del cliente, los documentos de venta le llegan a tu cliente de otra forma. Lo ves en [Si tienes el portal del cliente (beta)](#si-tienes-el-portal-del-cliente-beta).
 
 !!! info "El documento tiene que estar confirmado"
     El botón **Enviar** solo aparece cuando el documento ha salido de **Borrador**. Mientras sigue en borrador, ni la vista lista ni la vista detalle ni el formulario lo muestran.
@@ -36,7 +38,7 @@ La factura de compra no se envía desde aquí: esa la recibes tú del proveedor.
       <figcaption>La ventana de envío, con la vista previa del documento y el mensaje ya preparado.</figcaption>
     </figure>
 
-    A la izquierda tienes la vista previa del PDF que se va a adjuntar, con botones para acercarlo, alejarlo o verlo a pantalla completa.
+    A la izquierda tienes la vista previa del PDF del documento, con botones para acercarlo, alejarlo o verlo a pantalla completa.
 
 3. Revisa los datos del correo:
 
@@ -48,6 +50,20 @@ La factura de compra no se envía desde aquí: esa la recibes tú del proveedor.
 4. Si quieres revisar el documento antes de mandarlo, descárgalo con **Descargar PDF** sin salir de la ventana.
 
 5. Haz clic en **Enviar**.
+
+## Si tienes el portal del cliente (beta)
+
+!!! experimental "Funcionalidad en beta"
+    El portal del cliente está en beta y todavía no está activado en todas las cuentas. Si en tu cuenta no está activo, tus emails se envían como se explica arriba.
+
+Con el [portal del cliente](../que-es-el-portal-del-cliente/que-es-el-portal-del-cliente.md) activado, cambia lo que recibe tu cliente en los documentos de venta:
+
+| Documento | Qué recibe tu cliente |
+| --- | --- |
+| **Presupuesto**, **pedido**, **albarán** y **factura**, incluida la rectificativa | Un email con el botón **Ver documento en el portal**. El PDF no va adjunto: tu cliente lo ve y lo descarga desde el portal. Si lo necesita adjunto, mira el aviso **Si prefieres mandarlo por otro canal**, más abajo. |
+| **Pedido de compra** | Nada cambia. El portal es solo para tus clientes. |
+
+El enlace del email sirve durante 48 horas. Si caduca, tu cliente recibe uno nuevo cuando lo abre, siempre que se lo hayas enviado a una dirección guardada en su ficha de contacto. Si lo envías a otra dirección, esa persona pierde el acceso a las 48 horas y tienes que volver a enviárselo (ver [Qué direcciones mantienen el acceso](../que-es-el-portal-del-cliente/que-es-el-portal-del-cliente.md#que-direcciones-mantienen-el-acceso)). Desde el portal también puede [aceptar o rechazar tus presupuestos](../crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md#si-responde-desde-el-portal-del-cliente-beta) sin escribirte.
 
 ## Consultar los envíos
 
@@ -64,10 +80,11 @@ Desde el enlace **Enviar email** de esa misma sección abres la ventana de enví
     Puedes reenviarlo tantas veces como haga falta, por ejemplo si el cliente te pide otra copia. Cada envío se suma al historial y ninguno cambia el estado del documento.
 
 !!! tip "Si prefieres mandarlo por otro canal"
-    Para compartirlo por mensajería o desde tu propio correo, usa **Descargar PDF** y manda el archivo por donde quieras. Ten en cuenta que esos envíos no quedan en el historial: ahí solo se guardan los que haces con el botón **Enviar** de Etendo.
+    Para compartirlo por mensajería o desde tu propio correo, usa **Descargar PDF** y manda el archivo por donde quieras. Es también la forma de mandarle el PDF adjunto a un cliente si tienes el portal activado. Ten en cuenta que esos envíos no quedan en el historial: ahí solo se guardan los que haces con el botón **Enviar** de Etendo.
 
 ## Artículos Relacionados
 
+- [¿Qué es el portal del cliente?](../que-es-el-portal-del-cliente/que-es-el-portal-del-cliente.md)
 - [Gestionar tus facturas de venta](../gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md)
 - [Crear y gestionar presupuestos](../crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md)
 - [Gestionar tus pedidos de compra](../../../operaciones/compras/gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md)

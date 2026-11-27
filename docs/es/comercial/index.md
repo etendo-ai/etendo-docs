@@ -60,6 +60,14 @@ Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etend
 
     [:octicons-arrow-right-24: Leer más](ventas/que-es-la-seccion-ventas/que-es-la-seccion-ventas.md)
 
+-   :material-web:{ .lg .middle } **¿Qué es el portal del cliente?**
+
+    ---
+
+    Descubre el portal donde tus clientes consultan los documentos de venta que les envías y responden a tus presupuestos. Funcionalidad en beta.
+
+    [:octicons-arrow-right-24: Leer más](ventas/que-es-el-portal-del-cliente/que-es-el-portal-del-cliente.md)
+
 -   :material-file-document-edit-outline:{ .lg .middle } **Crear y gestionar presupuestos**
 
     ---
