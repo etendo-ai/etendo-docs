@@ -310,6 +310,19 @@ H2: [Siguiente pregunta]
 - Listas ordenadas: para pasos que deben seguirse en secuencia.
 - Listas anidadas: aceptable un nivel de profundidad; evitar más niveles.
 - Cada elemento de lista: una idea, conciso, estructura paralela.
+- **Líneas en blanco (obligatorio)**: las listas siempre llevan una línea en blanco antes del primer elemento, y después del último antes de seguir con otro texto. Si un elemento tiene dentro un párrafo con sangría, una figura o una sublista, deja también una línea en blanco antes del elemento siguiente: sin ella, MkDocs une el elemento al párrafo de arriba y la lista se ve como texto corrido. Ejemplo:
+
+    ```markdown
+    Tienes tres formas de enviarlo:
+
+    - **Por email** — haz clic en **Enviar**.
+
+        Si tu cuenta tiene el portal activado, el email lleva el enlace.
+
+    - **Descargando el PDF** — usa **Descargar PDF**.
+    ```
+
+  (actualizado 2026-11-27: varias listas de Ventas se rompían por esto).
 
 ### Párrafos
 

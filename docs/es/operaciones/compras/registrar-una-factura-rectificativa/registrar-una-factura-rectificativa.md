@@ -47,6 +47,7 @@ Sigue estos pasos para registrar la rectificativa desde la factura. Sirven para 
     Al importar, puedes indicar en cada línea cuántas unidades traer.
 
     No puedes importar líneas desde un pedido ni desde un albarán de compra.
+
 6. Revisa los importes y pulsa **Confirmar**.
 
 !!! warning "Indica siempre qué factura corriges"

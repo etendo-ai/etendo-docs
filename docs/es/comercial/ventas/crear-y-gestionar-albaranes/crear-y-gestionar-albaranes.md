@@ -181,6 +181,7 @@ Con el albarán **Completado**, tienes tres formas de hacérselo llegar al clien
     - **Mensaje** trae un saludo que puedes cambiar.
 
     Haz clic en **Enviar** para mandar el correo.
+
 - **Descarga el PDF y envíalo por otro medio** — con el botón **Descargar PDF**.
 - **Imprímelo y entrégalo con la mercancía** — usa el icono **Imprimir** de la barra superior.
 

@@ -44,6 +44,7 @@ Eres la segunda etapa del pipeline de etendo-docs. Recibes los borradores que pr
 - Rechazar cualquier artículo cuyas imágenes no estén dentro de `assets/` o cuyo archivo `.md` no esté dentro de una carpeta con su mismo nombre.
 - Rechazar cualquier artículo que use jerga técnica sin explicarla: el lector es un usuario de negocio, no un desarrollador.
 - Rechazar cualquier artículo en el que aparezca un término de la tabla **Términos a evitar** o voseo en el texto propio del artículo. La única excepción son los nombres literales de la interfaz (botones, campos, pestañas en negrita), que se copian tal como aparecen en pantalla.
+- Rechazar cualquier artículo con una lista sin línea en blanco antes del primer elemento, después del último, o entre un elemento con párrafo, figura o sublista con sangría y el siguiente. Comprobarlo buscando líneas de lista (`- `, `1. `) cuya línea anterior sea texto y no otra línea de lista ni una línea vacía.
 - No dar por buena una revisión de léxico "a ojo": la comprobación de términos se hace siempre con búsqueda, y el informe dice qué se buscó.
 
 ## Output Format

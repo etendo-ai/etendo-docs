@@ -52,6 +52,7 @@ Sigue estos pasos para crear la rectificativa desde la factura. Sirven para cual
     - Con **Importar desde devolución**, que trae las líneas de un albarán de devolución, cuando la rectificativa corresponde a una devolución.
 
     Al importar, puedes indicar en cada línea cuántas unidades traer.
+
 6. Revisa los importes y haz clic en **Confirmar**.
 
 !!! warning "Indica siempre qué factura corriges"

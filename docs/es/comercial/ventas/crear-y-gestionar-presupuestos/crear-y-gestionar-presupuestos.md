@@ -136,6 +136,7 @@ Con el presupuesto ya confirmado, tienes tres formas de hacérselo llegar al cli
     - **Mensaje** trae un saludo que puedes cambiar.
 
     Haz clic en **Enviar** para mandar el correo. Si tu cuenta tiene activado el [portal del cliente](../que-es-el-portal-del-cliente/que-es-el-portal-del-cliente.md) (en beta), el email incluye además el botón **Ver documento en el portal**, desde el que tu cliente puede aceptar o rechazar el presupuesto sin escribirte.
+
 - **Descarga el PDF y envíalo por otro medio** — por ejemplo, por WhatsApp. Usa el botón **Descargar PDF**, que está en la vista detalle y en el panel de envío por email.
 - **Imprímelo y entrégalo en persona** — usa el icono **Imprimir** de la barra superior.
 
