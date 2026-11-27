@@ -48,11 +48,23 @@ El PDF no va adjunto: tu cliente lo ve y lo descarga desde el portal. El enlace 
 Cada enlace sirve durante **48 horas**. En ese plazo, tu cliente puede abrirlo todas las veces que quiera.
 
 - **Reenviar un documento no anula los enlaces anteriores.** Cada envío trae su propio enlace.
-- **Si tu cliente abre un enlace caducado, recibe uno nuevo sin que hagas nada.** El portal le muestra **Te hemos enviado un enlace nuevo**. A las mismas direcciones a las que enviaste el documento les llega el email **Su nuevo enlace al portal de cliente de …**.
+- **Si tu cliente abre un enlace caducado, recibe uno nuevo sin que hagas nada**, siempre que le hayas enviado el documento a una dirección guardada en su ficha (ver [Qué direcciones mantienen el acceso](#que-direcciones-mantienen-el-acceso)). El portal le muestra **Te hemos enviado un enlace nuevo** y le llega el email **Su nuevo enlace al portal de cliente de …**.
 - **Si vuelve a abrir el enlace caducado en menos de 15 minutos**, ve **Ya te enviamos un enlace nuevo** y no le llega otro email.
 - **Si el contacto está bloqueado o inactivo, o el plan de tu empresa en Etendo ha vencido**, el portal muestra **No podemos darte acceso al portal** y no envía ningún enlace.
 
-!!! tip "Cómo cortar el acceso a un cliente"
+### Qué direcciones mantienen el acceso
+
+El enlace solo se renueva para las direcciones que tienes guardadas en la ficha del contacto:
+
+- El **Correo electrónico** del contacto.
+- El correo de cualquiera de sus personas de contacto, en la sub-solapa [**Persona**](../../contactos/gestionar-tus-contactos/gestionar-tus-contactos.md#persona).
+
+Si envías el documento a otra dirección, Etendo la trata como externa. Esa persona puede usar el enlace durante 48 horas, pero cuando caduca no recibe uno nuevo. Para que vuelva a entrar, tienes que enviarle el documento otra vez. Así controlas quién ve los documentos de tu cliente.
+
+!!! tip "Para que una persona mantenga el acceso"
+    Añádela como persona de contacto en la ficha del cliente, con su correo, desde **Añadir Persona** en la sub-solapa **Persona**. A partir de ahí, sus enlaces se renuevan solos al caducar.
+
+!!! info "Cómo cortar el acceso a un cliente"
     No hay un botón para quitarle el acceso. El enlace caduca solo, y deja de renovarse si bloqueas al cliente o lo desactivas en su ficha de [Contactos](../../contactos/gestionar-tus-contactos/gestionar-tus-contactos.md).
 
 ## Qué ve tu cliente

@@ -63,7 +63,7 @@ Con el [portal del cliente](../que-es-el-portal-del-cliente/que-es-el-portal-del
 | **Presupuesto**, **pedido**, **albarán** y **factura**, incluida la rectificativa | Un email con el botón **Ver documento en el portal**. El PDF no va adjunto: tu cliente lo ve y lo descarga desde el portal. Si lo necesita adjunto, mira el aviso **Si prefieres mandarlo por otro canal**, más abajo. |
 | **Pedido de compra** | Nada cambia. El portal es solo para tus clientes. |
 
-El enlace del email sirve durante 48 horas. Si caduca, tu cliente recibe uno nuevo cuando lo abre. Desde el portal también puede [aceptar o rechazar tus presupuestos](../crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md#si-responde-desde-el-portal-del-cliente-beta) sin escribirte.
+El enlace del email sirve durante 48 horas. Si caduca, tu cliente recibe uno nuevo cuando lo abre, siempre que se lo hayas enviado a una dirección guardada en su ficha de contacto. Si lo envías a otra dirección, esa persona pierde el acceso a las 48 horas y tienes que volver a enviárselo (ver [Qué direcciones mantienen el acceso](../que-es-el-portal-del-cliente/que-es-el-portal-del-cliente.md#que-direcciones-mantienen-el-acceso)). Desde el portal también puede [aceptar o rechazar tus presupuestos](../crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md#si-responde-desde-el-portal-del-cliente-beta) sin escribirte.
 
 ## Consultar los envíos
 
